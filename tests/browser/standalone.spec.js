@@ -1,0 +1,91 @@
+import { test, expect } from "@playwright/test";
+import { resolve } from "node:path";
+import { readFile } from "node:fs/promises";
+import { scrollScene } from "./helpers.js";
+
+test("exported HTML runs without server or network, with assets, animation and calendar", async ({
+  page,
+  context,
+}) => {
+  const requests = [];
+  const errors = [];
+  page.on("request", (request) => {
+    if (/^https?:/.test(request.url())) requests.push(request.url());
+  });
+  page.on("pageerror", (error) => errors.push(error.message));
+  await context.setOffline(true);
+  // Managed Chromium blocks file:// navigation. Load our generated document
+  // directly rather than disabling the browser's administrator policy.
+  await page.setContent(
+    await readFile(resolve("dist-standalone/index.html"), "utf8"),
+  );
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText(
+    "Hay cosas que se viven.",
+  );
+
+  for (const [selector, p] of [
+    [".calendar-scene", 0.96],
+    [".journey-scene", 0.5],
+    [".journey-scene", 0.98],
+    [".opera-scene", 0.9],
+  ]) {
+    await scrollScene(page, selector, p);
+    if (selector === ".calendar-scene")
+      await expect(page.locator(".calendar-result")).toHaveCSS("opacity", "1");
+    if (selector === ".journey-scene" && p < 0.6)
+      await expect(page.locator(".journey-flight-description")).toContainText(
+        "Barcelona",
+      );
+    if (selector === ".journey-scene" && p > 0.9) {
+      await expect(page.getByTestId("stay-location")).toHaveCSS("opacity", "1");
+      await expect(page.getByTestId("stay-location")).toHaveAttribute(
+        "data-precision",
+        "approximate-street",
+      );
+      await expect(page.locator(".real-street-network")).toHaveAttribute(
+        "data-source-commit",
+        "734333a5f858729a6bc227c2f8dae742af050d25",
+      );
+      await page.getByRole("button", { name: "Datos y precisión" }).click();
+      const dataDownload = page.waitForEvent("download");
+      await page
+        .getByRole("button", { name: "Descargar datos cartográficos" })
+        .click();
+      const data = JSON.parse(
+        await readFile(await (await dataDownload).path(), "utf8"),
+      );
+      expect(data.source.license).toBe("ODbL-1.0");
+      await page.keyboard.press("Escape");
+    }
+    if (selector === ".opera-scene")
+      await expect(page.locator(".opera-content")).toHaveCSS("opacity", "1");
+  }
+
+  const images = await page
+    .locator("main img")
+    .evaluateAll((nodes) => nodes.map((img) => img.getAttribute("src")));
+  expect(images.length).toBeGreaterThan(0);
+  expect(images.every((src) => src.startsWith("data:image/"))).toBe(true);
+  await expect(
+    page.locator("script[src], link[rel=stylesheet][href]"),
+  ).toHaveCount(0);
+  await page.evaluate(() => document.fonts.ready);
+  expect(
+    await page.evaluate(() =>
+      [...document.fonts].some(
+        (font) => font.family.includes("Inter") && font.status === "loaded",
+      ),
+    ),
+  ).toBe(true);
+
+  const downloadPromise = page.waitForEvent("download");
+  await page
+    .getByRole("button", { name: "Guardar las fechas", exact: true })
+    .click();
+  const calendar = await downloadPromise;
+  expect(await readFile(await calendar.path(), "utf8")).toContain(
+    "DTSTART:20270122T180000Z",
+  );
+  expect(requests).toEqual([]);
+  expect(errors).toEqual([]);
+});

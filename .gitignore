@@ -1,0 +1,11 @@
+node_modules/
+__pycache__/
+artifacts/
+dist/
+dist-standalone/
+.DS_Store
+playwright-report/
+test-results/
+.env
+.env.*
+!.env.example

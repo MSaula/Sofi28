@@ -1,0 +1,274 @@
+{
+  "before": [
+    {
+      "viewport": "desktop",
+      "size": [
+        1440,
+        1000
+      ],
+      "reachedEnd": true,
+      "errors": [],
+      "overflowSamples": 0,
+      "rotated": {
+        "width": 1000,
+        "scrollWidth": 1147
+      },
+      "flowLongTasks": null,
+      "diagnosticLongTasks": [
+        106,
+        87,
+        86,
+        86,
+        72,
+        112,
+        82,
+        120,
+        99,
+        77,
+        81,
+        111,
+        107,
+        79,
+        77,
+        84
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "size": [
+        390,
+        844
+      ],
+      "reachedEnd": true,
+      "errors": [],
+      "overflowSamples": 0,
+      "rotated": {
+        "width": 844,
+        "scrollWidth": 1136
+      },
+      "flowLongTasks": null,
+      "diagnosticLongTasks": [
+        122,
+        81,
+        113,
+        70,
+        73,
+        86,
+        103,
+        102,
+        64
+      ]
+    },
+    {
+      "viewport": "landscape",
+      "size": [
+        844,
+        390
+      ],
+      "reachedEnd": true,
+      "errors": [],
+      "overflowSamples": 39,
+      "rotated": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "flowLongTasks": null,
+      "diagnosticLongTasks": [
+        113,
+        65,
+        115,
+        55,
+        118,
+        72,
+        91,
+        96,
+        110,
+        98,
+        52
+      ]
+    },
+    {
+      "viewport": "reduced",
+      "size": [
+        390,
+        844
+      ],
+      "reachedEnd": true,
+      "errors": [],
+      "overflowSamples": 0,
+      "rotated": {
+        "width": 844,
+        "scrollWidth": 1136
+      },
+      "flowLongTasks": null,
+      "diagnosticLongTasks": [
+        133,
+        67,
+        113,
+        82,
+        111,
+        93,
+        111,
+        106,
+        63
+      ]
+    }
+  ],
+  "after": [
+    {
+      "viewport": "desktop",
+      "size": [
+        1440,
+        1000
+      ],
+      "reachedEnd": true,
+      "errors": [],
+      "overflowSamples": 0,
+      "rotated": {
+        "width": 1000,
+        "scrollWidth": 985
+      },
+      "flowLongTasks": null,
+      "diagnosticLongTasks": [
+        59
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "size": [
+        390,
+        844
+      ],
+      "reachedEnd": true,
+      "errors": [],
+      "overflowSamples": 0,
+      "rotated": {
+        "width": 844,
+        "scrollWidth": 829
+      },
+      "flowLongTasks": null,
+      "diagnosticLongTasks": [
+        127
+      ]
+    },
+    {
+      "viewport": "landscape",
+      "size": [
+        844,
+        390
+      ],
+      "reachedEnd": true,
+      "errors": [],
+      "overflowSamples": 0,
+      "rotated": {
+        "width": 390,
+        "scrollWidth": 375
+      },
+      "flowLongTasks": null,
+      "diagnosticLongTasks": [
+        117
+      ]
+    },
+    {
+      "viewport": "reduced",
+      "size": [
+        390,
+        844
+      ],
+      "reachedEnd": true,
+      "errors": [],
+      "overflowSamples": 0,
+      "rotated": {
+        "width": 844,
+        "scrollWidth": 829
+      },
+      "flowLongTasks": null,
+      "diagnosticLongTasks": [
+        62,
+        63,
+        60,
+        61,
+        58
+      ]
+    }
+  ],
+  "flow-performance": [
+    {
+      "viewport": "desktop",
+      "size": [
+        1440,
+        1000
+      ],
+      "reachedEnd": true,
+      "errors": [],
+      "overflowSamples": 0,
+      "rotated": {
+        "width": 1000,
+        "scrollWidth": 985
+      },
+      "flowLongTasks": [],
+      "diagnosticLongTasks": [
+        65
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "size": [
+        390,
+        844
+      ],
+      "reachedEnd": true,
+      "errors": [],
+      "overflowSamples": 0,
+      "rotated": {
+        "width": 844,
+        "scrollWidth": 829
+      },
+      "flowLongTasks": [
+        79
+      ],
+      "diagnosticLongTasks": [
+        79,
+        102
+      ]
+    },
+    {
+      "viewport": "landscape",
+      "size": [
+        844,
+        390
+      ],
+      "reachedEnd": true,
+      "errors": [],
+      "overflowSamples": 0,
+      "rotated": {
+        "width": 390,
+        "scrollWidth": 375
+      },
+      "flowLongTasks": [],
+      "diagnosticLongTasks": [
+        129
+      ]
+    },
+    {
+      "viewport": "reduced",
+      "size": [
+        390,
+        844
+      ],
+      "reachedEnd": true,
+      "errors": [],
+      "overflowSamples": 0,
+      "rotated": {
+        "width": 844,
+        "scrollWidth": 829
+      },
+      "flowLongTasks": [],
+      "diagnosticLongTasks": [
+        64,
+        83,
+        69
+      ]
+    }
+  ]
+}

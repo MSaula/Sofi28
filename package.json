@@ -1,0 +1,36 @@
+{
+  "name": "para-ti-viena",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "build:standalone": "vite build --config vite.standalone.config.js",
+    "deploy:preview": "npm run build:standalone && python3 scripts/publish-preview.py",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --test --experimental-test-isolation=none tests/*.test.js",
+    "audit:flow": "node scripts/audit-flow.cjs",
+    "validate": "npm test && npm run build && npm run test:e2e && npm run test:standalone",
+    "test:e2e": "playwright test",
+    "test:standalone": "npm run build:standalone && playwright test --config playwright.standalone.config.js"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
+    "d3-geo": "^3.1.1",
+    "lucide-react": "^1.66.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.64.1",
+    "@vitejs/plugin-react": "^6.1.2",
+    "ical.js": "^2.2.1",
+    "topojson-simplify": "^3.0.3",
+    "vite": "^8.3.5",
+    "vite-plugin-singlefile": "^2.3.4"
+  }
+}
