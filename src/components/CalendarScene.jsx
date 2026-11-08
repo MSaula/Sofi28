@@ -142,22 +142,19 @@ function BirthdayCard({ gift, frame }) {
         "--copy-gap": `${mix(2, layout.compact ? 5 : 9, detail)}px`,
         "--date-opacity": dateReveal,
         "--date-height": `${(layout.compact ? 14 : 44) * dateReveal}px`,
+        "--date-gap": `${(layout.compact ? 5 : 9) * detail * dateReveal}px`,
       }}
     >
-      {detail > 0 && <PhotoSlot gift={gift} className="birthday-card-photo" />}
+      <PhotoSlot gift={gift} className="birthday-card-photo" />
       <div className="birthday-card-copy">
         <span className="birthday-card-edition">Sofi {gift.birthdayAge}</span>
         <strong className="birthday-card-place">{gift.name}</strong>
-        {dateReveal > 0 && (
-          <div className="birthday-card-date">
-            <span>
-              {layout.compact
-                ? names[gift.month].slice(0, 3)
-                : names[gift.month]}
-            </span>
-            <span>{gift.year}</span>
-          </div>
-        )}
+        <div className="birthday-card-date">
+          <span>
+            {layout.compact ? names[gift.month].slice(0, 3) : names[gift.month]}
+          </span>
+          <span>{gift.year}</span>
+        </div>
       </div>
     </article>
   );
@@ -208,7 +205,7 @@ export default function CalendarScene() {
   const w = size.width,
     h = size.height;
   const frame = timelineFrame(p, w, h);
-  const { tx, ty, scale, zoom, labelOpacity, arrived } = frame;
+  const { tx, ty, scale, zoom, arrived } = frame;
   const fitted = fitTimelineLabels(frame, w);
   return (
     <section
@@ -237,11 +234,19 @@ export default function CalendarScene() {
           </h2>
         </div>
         {reduced && <StaticHistory />}
-        <div className="calendar-art" ref={artRef}>
+        <div
+          className="calendar-art"
+          ref={artRef}
+          style={{
+            "--calendar-edge-strength": frame.edgeStrength,
+            "--calendar-feather": `${Math.min(28, w * 0.055) * frame.edgeStrength}px`,
+          }}
+        >
           {w > 0 && h > 0 && (
             <svg
               className="calendar-canvas"
               viewBox={`0 0 ${w} ${h}`}
+              style={{ width: w, height: h }}
               role="img"
               aria-label="De enero de 2022 a enero de 2027. Sofi 23 a Sofi 28. El siguiente viaje es del 22 al 24 de enero de 2027."
             >
@@ -293,7 +298,7 @@ export default function CalendarScene() {
                       d={`M${label.anchorX} ${ty - 3}L${label.x} ${ty - 16}`}
                       stroke="#afc3e5"
                       fill="none"
-                      opacity={label.current ? 1 : labelOpacity}
+                      opacity={label.opacity}
                     />
                   ))}
               </g>
@@ -314,7 +319,7 @@ export default function CalendarScene() {
                     left: label.x,
                     top: gift ? ty - 16 - label.height : frame.axisY + 23,
                     width: label.width,
-                    opacity: label.current ? 1 : labelOpacity,
+                    opacity: label.opacity,
                   }}
                 >
                   {gift ? (

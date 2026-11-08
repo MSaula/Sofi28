@@ -2201,6 +2201,46 @@ html:has(dialog[open]) {
   width: 100%;
   height: 100%;
 }
+.calendar-art .calendar-canvas,
+.timeline-annotations {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 var(--calendar-feather),
+    #000 calc(100% - var(--calendar-feather)),
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 var(--calendar-feather),
+    #000 calc(100% - var(--calendar-feather)),
+    transparent
+  );
+}
+.calendar-art::before,
+.calendar-art::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 10%;
+  bottom: 14%;
+  width: 1px;
+  background: linear-gradient(
+    transparent,
+    #bec9da66 25%,
+    #bec9da66 75%,
+    transparent
+  );
+  opacity: var(--calendar-edge-strength);
+  pointer-events: none;
+}
+.calendar-art::before {
+  left: 0;
+}
+.calendar-art::after {
+  right: 0;
+}
 .timeline-annotations {
   position: absolute;
   inset: 0;
@@ -2216,11 +2256,15 @@ html:has(dialog[open]) {
   align-items: center;
   width: 100%;
   background: white;
-  box-shadow: 0 4px 18px #23355308, inset 0 0 0 1px #dfe6f0;
+  box-shadow:
+    0 4px 18px #23355308,
+    inset 0 0 0 1px #dfe6f0;
   overflow: hidden;
 }
 .birthday-card-current {
-  box-shadow: 0 4px 18px #23355308, inset 0 0 0 1px #9fbcf7;
+  box-shadow:
+    0 4px 18px #23355308,
+    inset 0 0 0 1px #9fbcf7;
 }
 .birthday-photo {
   overflow: hidden;
@@ -2264,10 +2308,11 @@ html:has(dialog[open]) {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: var(--copy-gap);
+  gap: 0;
   line-height: 1.1;
 }
 .birthday-card-edition {
+  margin-bottom: var(--copy-gap);
   color: #2360ce;
   font-size: var(--edition-size);
   font-weight: 650;
@@ -2281,6 +2326,7 @@ html:has(dialog[open]) {
   white-space: nowrap;
 }
 .birthday-card-date {
+  margin-top: var(--date-gap);
   max-height: var(--date-height);
   opacity: var(--date-opacity);
   display: flex;

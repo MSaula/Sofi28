@@ -136,11 +136,21 @@ test("timeline spans 2022–2027 and all annotations remain discoverable without
     for (let i = 0; i <= 200; i++) {
       const frame = timelineFrame(i / 200, w, h);
       const labels = fitTimelineLabels(frame, w);
+      assert.equal(labels.length, 16);
       for (const a of labels) {
-        seen.add(a.name);
-        assert.ok(a.x - a.width / 2 >= 7.99 && a.x + a.width / 2 <= w - 7.99);
+        const visibleWidth = Math.max(
+          0,
+          Math.min(w, a.x + a.width / 2) - Math.max(0, a.x - a.width / 2),
+        );
+        if (a.opacity > 0.65 && visibleWidth >= a.width * 0.8) seen.add(a.name);
+        assert.ok(Math.abs(a.x - a.anchorX) < 0.001);
         for (const b of labels)
-          if (a.index < b.index && a.lane === b.lane)
+          if (
+            a.index < b.index &&
+            a.lane === b.lane &&
+            a.opacity > 0.65 &&
+            b.opacity > 0.65
+          )
             assert.ok(a.x + a.width / 2 + 11.99 <= b.x - b.width / 2);
       }
     }
@@ -151,6 +161,53 @@ test("timeline spans 2022–2027 and all annotations remain discoverable without
     );
     assert.ok(end.ty - end.cardHeight - 16 >= 0);
     assert.ok(end.ty + 140 * end.scale <= h);
+  }
+});
+
+test("timeline movement and collision fades are continuous through zoom and edge crossings", () => {
+  for (const [w, h] of [
+    [1218, 680],
+    [331, 560],
+    [261, 416],
+    [841, 332],
+  ]) {
+    let previous = null;
+    for (let i = 0; i <= 10000; i++) {
+      const frame = timelineFrame(i / 10000, w, h);
+      const labels = fitTimelineLabels(frame, w);
+      assert.equal(labels.length, 16);
+      for (let j = 0; j < labels.length; j++) {
+        const label = labels[j];
+        assert.ok(label.opacity >= 0 && label.opacity <= 1);
+        if (previous) {
+          assert.equal(label.name, previous[j].name);
+          assert.ok(
+            Math.abs(label.opacity - previous[j].opacity) < 0.06,
+            `${label.name}: opacity jumped`,
+          );
+          const inView =
+            Math.max(
+              label.x + label.width / 2,
+              previous[j].x + previous[j].width / 2,
+            ) > 0 &&
+            Math.min(
+              label.x - label.width / 2,
+              previous[j].x - previous[j].width / 2,
+            ) < w;
+          if (inView)
+            assert.ok(
+              Math.abs(label.x - previous[j].x) < 8,
+              `${label.name}: position jumped`,
+            );
+          if (i > 1401 && i < 6800)
+            assert.ok(
+              label.x < previous[j].x,
+              `${label.name}: stopped at an edge`,
+            );
+        }
+      }
+      previous = labels;
+    }
   }
 });
 

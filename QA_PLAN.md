@@ -6,6 +6,8 @@ Subsequent iteration: [Sofi 28 — title and 2022–2027 chronology](docs/plan-s
 
 Photo-card iteration: [composition and integration plan](docs/plan-timeline-fotos.md). The five originals from `s28p.zip` are assigned by filename and validated in the enlarged cards. The final suite passes 34 checks, including four viewport sizes, static layouts and byte-identical image embedding in the offline export. Earlier placeholder evidence remains labelled separately.
 
+Timeline continuity iteration: [edge traversal and zoom plan](docs/plan-timeline-motion.md). Removes edge clamping and element removal, adds continuous opacity and soft window edges, and synchronizes SVG/HTML resizing. The full suite passes 41 checks; forward/reverse wheel recordings and measured card/month alignment accompany the change.
+
 ## Process and evidence
 
 1. Reproduce before editing application code. `node scripts/audit-flow.cjs` scrolls the **entire page with wheel events**, samples animation boundaries, reverses direction and rotates the viewport.

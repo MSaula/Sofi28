@@ -1,0 +1,32 @@
+[
+  {
+    "name": "desktop",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "frames": 276,
+    "errors": [],
+    "overflowFrames": 0,
+    "partialFrames": 150,
+    "maxMonthDeviation": 0.015625,
+    "maxVisibleGapError": 0.026611328125,
+    "identityPreserved": true,
+    "returnedToStart": true
+  },
+  {
+    "name": "mobile",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "frames": 232,
+    "errors": [],
+    "overflowFrames": 0,
+    "partialFrames": 134,
+    "maxMonthDeviation": 0.015625,
+    "maxVisibleGapError": 0.029541015625,
+    "identityPreserved": true,
+    "returnedToStart": true
+  }
+]

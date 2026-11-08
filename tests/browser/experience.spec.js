@@ -79,7 +79,7 @@ for (const [name, width, height] of [
     expect(errors).toEqual([]);
   });
 
-  test(`${name}: chronology labels remain bounded, non-overlapping and all memories are discoverable`, async ({
+  test(`${name}: chronology clips at the window, crossfades crowded labels and keeps all memories discoverable`, async ({
     page,
   }) => {
     await page.setViewportSize({ width, height });
@@ -124,20 +124,29 @@ for (const [name, width, height] of [
               let opacity = 1;
               for (let parent = n; parent; parent = parent.parentElement)
                 opacity *= Number(getComputedStyle(parent).opacity);
-              return opacity > 0.95;
+              const b = n.getBoundingClientRect(),
+                art = n.closest(".calendar-art").getBoundingClientRect();
+              const overlap = Math.max(
+                0,
+                Math.min(b.right, art.right) - Math.max(b.left, art.left),
+              );
+              return opacity > 0.95 && b.width > 0 && overlap >= b.width * 0.85;
             })
             .map((n) => n.dataset.photoSlot),
         );
       slots.forEach((age) => photos.add(age));
-      for (const a of labels) {
-        if (a.opacity > 0.65) seen.add(a.name);
-        expect(a.x).toBeGreaterThanOrEqual(art.x - 1);
-        expect(a.x + a.w).toBeLessThanOrEqual(art.x + art.width + 1);
+      const visible = labels.filter(
+        (a) => a.opacity > 0.65 && a.x + a.w > art.x && a.x < art.x + art.width,
+      );
+      for (const a of visible) {
+        const overlap =
+          Math.min(a.x + a.w, art.x + art.width) - Math.max(a.x, art.x);
+        if (overlap >= a.w * 0.8) seen.add(a.name);
         expect(a.y).toBeGreaterThanOrEqual(art.y - 1);
         expect(a.y + a.h).toBeLessThanOrEqual(art.y + art.height + 1);
         if (a.lane === "gift") expect(a.y + a.h).toBeLessThan(month.y);
         else expect(a.y).toBeGreaterThan(month.y + month.height);
-        for (const b of labels)
+        for (const b of visible)
           if (a.name !== b.name) {
             const intersection =
               Math.min(a.x + a.w, b.x + b.w) - Math.max(a.x, b.x);
@@ -255,7 +264,7 @@ test("landscape and reduced motion use readable static maps, preserving every es
   );
 });
 
-test("narrow and short laptop calendars keep photos, labels and the final month inside the stage", async ({
+test("narrow and short laptop calendars clip sliding cards and keep photo copy and the final month readable", async ({
   page,
 }) => {
   test.setTimeout(60000);
@@ -269,9 +278,21 @@ test("narrow and short laptop calendars keep photos, labels and the final month 
     for (const p of [0, 0.07, 0.14, 0.28, 0.36, 0.44, 0.54, 0.7, 0.84, 0.98]) {
       await scrollScene(page, ".calendar-scene", p);
       for (const card of await page.locator("[data-gift-card]").all()) {
-        await expectInside(page.locator(".calendar-art"), card);
+        const box = await card.boundingBox(),
+          art = await page.locator(".calendar-art").boundingBox();
+        const opacity = await card
+          .locator("..")
+          .evaluate((n) => Number(getComputedStyle(n).opacity));
+        if (
+          opacity < 0.65 ||
+          box.x + box.width <= art.x ||
+          box.x >= art.x + art.width
+        )
+          continue;
+        expect(box.y).toBeGreaterThanOrEqual(art.y - 1);
+        expect(box.y + box.height).toBeLessThanOrEqual(art.y + art.height + 1);
         const photo = card.locator("[data-photo-slot]");
-        if (await photo.count()) {
+        if ((await photo.count()) && p > 0) {
           const photoBox = await photo.boundingBox();
           const textBox = await card
             .locator(".birthday-card-edition")
