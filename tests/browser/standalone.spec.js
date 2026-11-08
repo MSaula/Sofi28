@@ -20,8 +20,9 @@ test("exported HTML runs without server or network, with assets, animation and c
     await readFile(resolve("dist-standalone/index.html"), "utf8"),
   );
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(
-    "Hay cosas que se viven.",
+    "Hoy cumples 28 años.",
   );
+  await expect(page).toHaveTitle("Sofi 28");
 
   for (const [selector, p] of [
     [".calendar-scene", 0.96],
@@ -30,8 +31,13 @@ test("exported HTML runs without server or network, with assets, animation and c
     [".opera-scene", 0.9],
   ]) {
     await scrollScene(page, selector, p);
-    if (selector === ".calendar-scene")
+    if (selector === ".calendar-scene") {
       await expect(page.locator(".calendar-result")).toHaveCSS("opacity", "1");
+      await expect(page.locator('[data-gift-card="28"]')).toContainText(
+        "Sofi 28",
+      );
+      await expect(page.locator('[data-photo-slot="28"]')).toHaveCount(1);
+    }
     if (selector === ".journey-scene" && p < 0.6)
       await expect(page.locator(".journey-flight-description")).toContainText(
         "Barcelona",

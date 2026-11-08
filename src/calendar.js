@@ -41,7 +41,7 @@ export function buildCalendar(data = trip, now = new Date()) {
   const lines = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
-    "PRODID:-//Para ti//Viena//ES",
+    "PRODID:-//Sofi 28//Viena//ES",
     "CALSCALE:GREGORIAN",
     "BEGIN:VEVENT",
     `UID:viena-${compactDate(data.startDate)}@para-ti.local`,

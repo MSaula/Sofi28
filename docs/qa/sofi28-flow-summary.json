@@ -1,0 +1,58 @@
+[
+  {
+    "name": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "reduced": false,
+    "errors": [],
+    "fullFlowReachedEnd": true,
+    "overflowFrames": 0,
+    "flowLongTasks": [],
+    "resize": {
+      "width": 1000,
+      "scrollWidth": 985
+    }
+  },
+  {
+    "name": "mobile",
+    "width": 390,
+    "height": 844,
+    "reduced": false,
+    "errors": [],
+    "fullFlowReachedEnd": true,
+    "overflowFrames": 0,
+    "flowLongTasks": [],
+    "resize": {
+      "width": 844,
+      "scrollWidth": 829
+    }
+  },
+  {
+    "name": "landscape",
+    "width": 844,
+    "height": 390,
+    "reduced": false,
+    "errors": [],
+    "fullFlowReachedEnd": true,
+    "overflowFrames": 0,
+    "flowLongTasks": [],
+    "resize": {
+      "width": 390,
+      "scrollWidth": 375
+    }
+  },
+  {
+    "name": "reduced",
+    "width": 390,
+    "height": 844,
+    "reduced": true,
+    "errors": [],
+    "fullFlowReachedEnd": true,
+    "overflowFrames": 0,
+    "flowLongTasks": [],
+    "resize": {
+      "width": 844,
+      "scrollWidth": 829
+    }
+  }
+]

@@ -2169,7 +2169,7 @@ html:has(dialog[open]) {
   background: none;
 }
 .calendar-scene {
-  height: 390svh;
+  height: 660svh;
 }
 .calendar-stage {
   display: flex;
@@ -2200,6 +2200,87 @@ html:has(dialog[open]) {
   position: absolute;
   width: 100%;
   height: 100%;
+}
+.timeline-static-history {
+  padding: 16px 0 40px;
+  flex-shrink: 0;
+}
+.timeline-static-history h3 {
+  font-size: clamp(24px, 3vw, 38px);
+  letter-spacing: -0.055em;
+  margin-bottom: 26px;
+}
+.birthday-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.birthday-gallery figure {
+  margin: 0;
+  padding: 12px;
+  background: white;
+  border: 1px solid #dfe6f0;
+  border-radius: 18px;
+}
+.birthday-gallery img,
+.birthday-photo-placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.birthday-photo-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  color: #596b85;
+  background: #edf2fa;
+  font-size: 11px;
+}
+.birthday-gallery figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 15px 3px 6px;
+}
+.birthday-gallery figcaption > span {
+  color: #2360ce;
+  font-size: 11px;
+  font-weight: 650;
+}
+.birthday-gallery strong {
+  font-size: 19px;
+  letter-spacing: -0.04em;
+}
+.birthday-gallery small,
+.other-trips span {
+  font-size: 11px;
+  color: #617087;
+}
+.other-trips {
+  list-style: none;
+  padding: 30px 0 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px 16px;
+}
+.other-trips li {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.other-trips strong {
+  font-size: 14px;
+  font-weight: 550;
+}
+@media (max-width: 700px) {
+  .birthday-gallery,
+  .other-trips {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
 }
 .target-month rect:first-child {
   filter: drop-shadow(0 2px 4px #202b4410);

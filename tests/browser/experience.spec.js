@@ -85,15 +85,28 @@ for (const [name, width, height] of [
     await page.setViewportSize({ width, height });
     await page.goto("/");
     const seen = new Set();
-    for (let i = 0; i <= 34; i++) {
+    const photos = new Set();
+    await expect(page).toHaveTitle("Sofi 28");
+    await expect(page.getByRole("heading", { level: 1 })).toHaveText(
+      "Hoy cumples 28 años.",
+    );
+    await expect(page.locator(".hero-copy > p")).toHaveText(
+      "Y eso merece un regalo a la altura.",
+    );
+    for (let i = 0; i <= 50; i++) {
       await scrollScene(page, ".calendar-scene", i / 50);
       const labels = await page
         .locator("[data-memory-label]")
         .evaluateAll((nodes) =>
           nodes.map((n) => {
             const b = n.getBoundingClientRect();
+            let opacity = 1;
+            for (let parent = n; parent; parent = parent.parentElement)
+              opacity *= Number(getComputedStyle(parent).opacity);
             return {
               name: n.dataset.memoryLabel,
+              lane: n.dataset.lane,
+              opacity,
               x: b.x,
               y: b.y,
               w: b.width,
@@ -102,10 +115,28 @@ for (const [name, width, height] of [
           }),
         );
       const art = await page.locator(".calendar-art").boundingBox();
+      const month = await page.locator(".target-month").boundingBox();
+      const slots = await page
+        .locator("[data-photo-slot]")
+        .evaluateAll((nodes) =>
+          nodes
+            .filter((n) => {
+              let opacity = 1;
+              for (let parent = n; parent; parent = parent.parentElement)
+                opacity *= Number(getComputedStyle(parent).opacity);
+              return opacity > 0.95;
+            })
+            .map((n) => n.dataset.photoSlot),
+        );
+      slots.forEach((age) => photos.add(age));
       for (const a of labels) {
-        seen.add(a.name);
+        if (a.opacity > 0.65) seen.add(a.name);
         expect(a.x).toBeGreaterThanOrEqual(art.x - 1);
         expect(a.x + a.w).toBeLessThanOrEqual(art.x + art.width + 1);
+        expect(a.y).toBeGreaterThanOrEqual(art.y - 1);
+        expect(a.y + a.h).toBeLessThanOrEqual(art.y + art.height + 1);
+        if (a.lane === "gift") expect(a.y + a.h).toBeLessThan(month.y);
+        else expect(a.y).toBeGreaterThan(month.y + month.height);
         for (const b of labels)
           if (a.name !== b.name) {
             const intersection =
@@ -119,13 +150,19 @@ for (const [name, width, height] of [
           }
       }
     }
-    expect(seen.size).toBe(9);
+    expect(seen.size).toBe(16);
+    expect([...photos].sort()).toEqual(["23", "24", "25", "26", "27", "28"]);
     await scrollScene(page, ".calendar-scene", 0.95);
     await expect(page.locator(".calendar-result")).toHaveCSS("opacity", "1");
     await expectInside(
       page.locator(".calendar-art"),
       page.locator(".target-month"),
     );
+    await expectInside(
+      page.locator(".calendar-art"),
+      page.locator('[data-gift-card="28"]'),
+    );
+    await expect(page.locator(".calendar-canvas")).not.toContainText("Viena");
     for (const day of ["22", "23", "24"]) {
       await expect(
         page.locator(`[data-selected-day="${day}"] text`),
@@ -216,6 +253,75 @@ test("landscape and reduced motion use readable static maps, preserving every es
   await expect(page.locator(".summary-ballet")).toContainText(
     "Living Legacies",
   );
+});
+
+test("narrow and short laptop calendars keep photos, labels and the final month inside the stage", async ({
+  page,
+}) => {
+  test.setTimeout(60000);
+  for (const [width, height] of [
+    [320, 700],
+    [1000, 650],
+    [390, 620],
+  ]) {
+    await page.setViewportSize({ width, height });
+    await page.goto("/");
+    for (const p of [0, 0.07, 0.14, 0.28, 0.36, 0.44, 0.54, 0.7, 0.84, 0.98]) {
+      await scrollScene(page, ".calendar-scene", p);
+      for (const card of await page.locator("[data-gift-card]").all()) {
+        await expectInside(page.locator(".calendar-art"), card);
+        const photo = card.locator("[data-photo-slot]");
+        if (await photo.count()) {
+          const photoBox = await photo.boundingBox();
+          const textBox = await card
+            .locator("text")
+            .filter({ hasText: /^Sofi / })
+            .boundingBox();
+          expect(photoBox.x + photoBox.width).toBeLessThanOrEqual(
+            textBox.x - 1,
+          );
+        }
+      }
+    }
+    await expectInside(
+      page.locator(".calendar-art"),
+      page.locator(".target-month"),
+    );
+    await expect(page.locator(".calendar-result")).toHaveCSS("opacity", "1");
+  }
+});
+
+test("static chronology retains all six birthday photo spaces and the ten ordinary trips", async ({
+  page,
+}) => {
+  for (const [width, height, reduced] of [
+    [844, 390, false],
+    [390, 844, true],
+  ]) {
+    await page.setViewportSize({ width, height });
+    await page.emulateMedia({
+      reducedMotion: reduced ? "reduce" : "no-preference",
+    });
+    await page.goto("/");
+    await expect(page.locator(".calendar-scene")).toHaveClass(/reduced-scene/);
+    await expect(page.locator(".birthday-gallery figure")).toHaveCount(5);
+    await expect(page.locator(".other-trips li")).toHaveCount(10);
+    for (const age of [23, 24, 25, 26, 27])
+      await expect(
+        page.locator(`[data-static-photo-slot="${age}"]`),
+      ).toContainText(`Sofi ${age}`);
+    await expect(page.locator('[data-photo-slot="28"]')).toHaveCount(1);
+    const history = await page
+      .locator(".timeline-static-history")
+      .boundingBox();
+    const final = await page.locator(".calendar-art").boundingBox();
+    expect(history.y + history.height).toBeLessThanOrEqual(final.y);
+    expect(
+      await page.evaluate(
+        () => document.documentElement.scrollWidth <= innerWidth,
+      ),
+    ).toBe(true);
+  }
 });
 
 test("map provenance and downloadable source data preserve the approximate location claim", async ({

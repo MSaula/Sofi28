@@ -13,7 +13,15 @@ import {
   journeyState,
   sceneProgress,
 } from "../src/motion.js";
-import { memories, trip } from "../src/content.js";
+import { memories, trip, timelineEvents } from "../src/content.js";
+import {
+  fitTimelineLabels,
+  months,
+  targetIndex,
+  timelineFrame,
+  monthX,
+  timelineItems,
+} from "../src/timeline.js";
 import { buildCalendar } from "../src/calendar.js";
 import {
   airports,
@@ -36,8 +44,8 @@ test("January 2027 correctly places 22–24 in Friday, Saturday and Sunday", () 
   assert.equal(days.filter(Boolean).length, 31);
 });
 
-test("all nine memories preserve the supplied months without invented days", () => {
-  assert.equal(memories.length, 9);
+test("all fifteen memories preserve the supplied months without invented days", () => {
+  assert.equal(memories.length, 15);
   const indices = memories.map((m) => monthIndex(m.year, m.month));
   assert.deepEqual(
     indices,
@@ -46,6 +54,12 @@ test("all nine memories preserve the supplied months without invented days", () 
   assert.deepEqual(
     memories.map((m) => m.name),
     [
+      "Niza",
+      "Mallorca",
+      "Londres",
+      "Montenegro",
+      "Roma",
+      "Islandia",
       "Grecia",
       "País Vasco",
       "Dolomitas",
@@ -58,6 +72,72 @@ test("all nine memories preserve the supplied months without invented days", () 
     ],
   );
   assert.ok(memories.every((m) => !("day" in m)));
+  assert.deepEqual(
+    memories.slice(0, 6).map((m) => [m.year, m.month]),
+    [
+      [2022, 2],
+      [2022, 7],
+      [2023, 0],
+      [2023, 7],
+      [2023, 9],
+      [2023, 11],
+    ],
+  );
+});
+
+test("birthday editions 23–28 have six configurable photos and use the upper lane", () => {
+  assert.deepEqual(
+    timelineEvents
+      .filter((m) => m.birthdayAge)
+      .map((m) => [m.name, m.birthdayAge, m.photo]),
+    [
+      ["Niza", 23, null],
+      ["Londres", 24, null],
+      ["Islandia", 25, null],
+      ["Dolomitas", 26, null],
+      ["Florencia", 27, null],
+      ["Lo próximo", 28, null],
+    ],
+  );
+  assert.equal(timelineItems.filter((m) => m.lane === "trip").length, 10);
+  assert.ok(
+    timelineItems.filter((m) => m.birthdayAge).every((m) => m.lane === "gift"),
+  );
+});
+
+test("timeline spans 2022–2027 and all annotations remain discoverable without lane collisions", () => {
+  assert.equal(months.length, 61);
+  assert.deepEqual([months[0].year, months[0].month], [2022, 0]);
+  assert.deepEqual(
+    [months[targetIndex].year, months[targetIndex].month],
+    [2027, 0],
+  );
+  for (const [w, h] of [
+    [1260, 580],
+    [346, 480],
+    [276, 310],
+    [820, 190],
+  ]) {
+    const seen = new Set();
+    for (let i = 0; i <= 200; i++) {
+      const frame = timelineFrame(i / 200, w, h);
+      const labels = fitTimelineLabels(frame, w);
+      for (const a of labels) {
+        seen.add(a.name);
+        assert.ok(a.x - a.width / 2 >= 7.99 && a.x + a.width / 2 <= w - 7.99);
+        for (const b of labels)
+          if (a.index < b.index && a.lane === b.lane)
+            assert.ok(a.x + a.width / 2 + 11.99 <= b.x - b.width / 2);
+      }
+    }
+    assert.equal(seen.size, 16, `${w}×${h}: missing a trip`);
+    const end = timelineFrame(1, w, h);
+    assert.ok(
+      Math.abs(end.tx + monthX(targetIndex) * end.scale - w / 2) < 0.01,
+    );
+    assert.ok(end.ty - end.cardHeight - 16 >= 0);
+    assert.ok(end.ty + 140 * end.scale <= h);
+  }
 });
 
 test("scene progress respects the actual sticky height and both boundaries", () => {

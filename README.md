@@ -1,4 +1,4 @@
-# Para ti — Viena, enero de 2027
+# Sofi 28 — Viena, enero de 2027
 
 Primera versión de una web-regalo con carta, cronología, mapa animado y revelación del ballet. React + Vite. El desplazamiento es nativo: las escenas usan CSS `sticky` y su animación depende de la posición del scroll, también al retroceder.
 
@@ -40,7 +40,8 @@ Las pruebas de navegador usan Chromium del sistema si existe en `/usr/bin/chromi
 Todo el contenido personal está en [`src/content.js`](src/content.js):
 
 - **Carta:** rellenar `trip.letter` con un párrafo por elemento. Admite cualquier longitud; no hay animación de lectura. `letterTitle` controla su título.
-- **Viajes anteriores:** los nueve lugares y meses proporcionados están en `memories`, ordenados cronológicamente. No se inventan días concretos.
+- **Viajes anteriores:** los quince lugares y meses proporcionados están en `memories`, desde Niza (marzo de 2022). No se inventan días concretos. `birthdayAge` identifica Niza, Londres, Islandia, Dolomitas y Florencia como Sofi 23–27; `currentBirthdayGift` contiene Sofi 28. Los regalos van arriba del calendario y los otros diez viajes, abajo.
+- **Fotos de los dos:** hay seis espacios, uno por edición Sofi 23–28. En `src/content.js`, sustituir el `photo: null` correspondiente por `{ src: '/images/niza.webp', alt: 'Los dos en Niza' }` y añadir el archivo a `public/images`. El HTML offline incluye también imágenes WebP, JPEG, PNG, AVIF y SVG referenciadas así. Hasta entonces se muestra un espacio neutro «Nosotros». El calendario mantiene la sorpresa del destino con «Lo próximo» para Sofi 28.
 - **Apartamento:** referencia proporcionada por el usuario: **Untere Weißgerberstraße 37, 1030 Wien**, expresamente orientativa. El mapa usa el punto medio de la geometría real de esa calle y un círculo de incertidumbre de 362m. `locationPrecision` indica `approximate-street`: no es una geocodificación confirmada del edificio ni una ubicación exacta del anuncio. El enlace real de Airbnb permanece disponible.
 - **Fotos del apartamento:** añadir archivos en `public/images` y objetos `{ src, title, alt }` a `trip.airbnb.photos`. La galería horizontal y el visor ampliado ya están preparados. Hasta entonces se muestra una ilustración claramente identificada como provisional.
 - **Vuelos:** origen y aeropuertos proporcionados, sin aerolínea ni horarios inventados. Solo se anima la conexión aérea BCN–VIE; se retiraron los trazados de coche y taxi que no correspondían a rutas verificadas. La salida desde Sant Vicenç de Montalt permanece en el resumen.
@@ -85,4 +86,4 @@ npm run audit:flow
 # Opcional: QA_OUT=/otra/ruta QA_URL=http://127.0.0.1:5173 npm run audit:flow
 ```
 
-La salida por defecto es `artifacts/qa-flow` (ignorada por Git). Las pruebas verifican geometría real, precisión declarada del alojamiento, correspondencia entre avión y trazo SVG, las nueve etiquetas históricas, recortes, overflow, preservación del capítulo al rotar, teclado/modales, accesibilidad y exportación offline. Las pruebas usan Chromium con emulación móvil; no sustituyen a una revisión en dispositivos físicos.
+La salida por defecto es `artifacts/qa-flow` (ignorada por Git). Las pruebas verifican geometría real, precisión declarada del alojamiento, correspondencia entre avión y trazo SVG, los quince viajes históricos y Sofi 28, los seis espacios de foto, bandas sin solapes, recortes, overflow, preservación del capítulo al rotar, teclado/modales, accesibilidad y exportación offline. Las pruebas usan Chromium con emulación móvil; no sustituyen a una revisión en dispositivos físicos. La planificación de esta iteración está en [docs/plan-sofi28.md](docs/plan-sofi28.md).

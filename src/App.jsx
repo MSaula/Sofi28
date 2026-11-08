@@ -15,8 +15,12 @@ import {
   Plus,
   Check,
 } from "lucide-react";
-import { trip, cityIdeas } from "./content";
-import { useReveal, useReducedMotion, useResponsiveScrollAnchor } from "./hooks";
+import { trip, cityIdeas, site } from "./content";
+import {
+  useReveal,
+  useReducedMotion,
+  useResponsiveScrollAnchor,
+} from "./hooks";
 import { downloadCalendar } from "./calendar";
 import { tripDateLabels } from "./dates";
 import CalendarScene from "./components/CalendarScene";
@@ -30,7 +34,7 @@ function App() {
   const reduced = useReducedMotion();
   const menu = useRef(null);
   const credits = useRef(null);
-  const [chapter, setChapter] = useState("Para ti");
+  const [chapter, setChapter] = useState(site.name);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -61,7 +65,8 @@ function App() {
       </a>
       <header className="site-header">
         <a href="#inicio" className="wordmark" aria-label="Volver al inicio">
-          Para ti<span>•</span>
+          {site.name}
+          <span>•</span>
         </a>
         <span className="header-chapter" aria-hidden="true">
           {chapter}
@@ -76,7 +81,7 @@ function App() {
         </button>
       </header>
       <main>
-        <section className="hero" id="inicio" data-chapter="Para ti">
+        <section className="hero" id="inicio" data-chapter={site.name}>
           <div className="hero-orbit" aria-hidden="true">
             <span />
             <span />
@@ -84,13 +89,13 @@ function App() {
           </div>
           <div className="hero-copy">
             <span className="eyebrow hero-eyebrow">
-              <span className="blue-dot" /> ALGO QUE QUIERO CONTARTE
+              <span className="blue-dot" /> UN DÍA A TU ALTURA
             </span>
             <h1>
-              Hay cosas <br />
-              que se <span>viven.</span>
+              Hoy cumples <br />
+              <span>28 años.</span>
             </h1>
-            <p>Y esta empieza contigo.</p>
+            <p>{site.heroSubtitle}</p>
           </div>
           <div className="hero-bottom">
             <span>
@@ -159,7 +164,8 @@ function App() {
       </main>
       <footer className="site-footer">
         <a className="wordmark" href="#inicio">
-          Para ti<span>•</span>
+          {site.name}
+          <span>•</span>
         </a>
         <p>El próximo recuerdo lo hacemos juntos.</p>
         <div>
@@ -177,7 +183,8 @@ function App() {
       >
         <div className="dialog-top">
           <span className="wordmark">
-            Para ti<span>•</span>
+            {site.name}
+            <span>•</span>
           </span>
           <button
             className="icon-button"

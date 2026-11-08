@@ -1,41 +1,25 @@
-import { memo, useMemo } from "react";
-import { ArrowDown, CalendarDays } from "lucide-react";
+import { memo, useId } from "react";
+import { ArrowDown, CalendarDays, Camera } from "lucide-react";
 import { memories, trip } from "../content";
 import { useElementSize, useScene } from "../hooks";
-import { calendarDays, clamp, mix, monthIndex, range, smooth } from "../motion";
+import { mix } from "../motion";
+import {
+  fitTimelineLabels,
+  last,
+  monthNames as names,
+  months,
+  monthX,
+  targetIndex,
+  timelineFrame,
+  timelineItems,
+} from "../timeline";
 import { tripDateLabels } from "../dates";
 
-const names = [
-  "Enero",
-  "Febrero",
-  "Marzo",
-  "Abril",
-  "Mayo",
-  "Junio",
-  "Julio",
-  "Agosto",
-  "Septiembre",
-  "Octubre",
-  "Noviembre",
-  "Diciembre",
-];
 const startDate = new Date(`${trip.startDate}T12:00:00Z`),
   endDate = new Date(`${trip.endDate}T12:00:00Z`);
 const startDay = startDate.getUTCDate(),
   endDay = endDate.getUTCDate();
-const targetIndex =
-  monthIndex(startDate.getUTCFullYear(), startDate.getUTCMonth()) -
-  monthIndex(2024, 7);
-const months = Array.from({ length: targetIndex + 1 }, (_, i) => {
-  const d = new Date(Date.UTC(2024, 7 + i, 1));
-  return {
-    year: d.getUTCFullYear(),
-    month: d.getUTCMonth(),
-    days: calendarDays(d.getUTCFullYear(), d.getUTCMonth()),
-  };
-});
 const travelLabels = tripDateLabels(trip);
-const last = targetIndex * 110 + 48;
 const Month = memo(function Month({ index, selected = false }) {
   const month = months[index];
   return (
@@ -115,52 +99,164 @@ const History = memo(function History() {
   return months.slice(0, -1).map((_, i) => <Month key={i} index={i} />);
 });
 
-function visibleLabels(labels, w) {
-  const ends = [-Infinity, -Infinity];
-  return labels.filter((label) => {
-    const left = label.x - label.width / 2,
-      right = label.x + label.width / 2;
-    if (left < 8 || right > w - 8 || left < ends[label.lane] + 12) return false;
-    ends[label.lane] = right;
-    return true;
-  });
+function PhotoSlot({ gift, width, height, clipId }) {
+  return (
+    <g
+      data-photo-slot={gift.birthdayAge}
+      aria-label={`Foto de los dos: Sofi ${gift.birthdayAge}`}
+    >
+      <defs>
+        <clipPath id={clipId}>
+          <rect width={width} height={height} rx="9" />
+        </clipPath>
+      </defs>
+      {gift.photo ? (
+        <image
+          href={gift.photo.src}
+          width={width}
+          height={height}
+          preserveAspectRatio="xMidYMid slice"
+          clipPath={`url(#${clipId})`}
+        >
+          <title>{gift.photo.alt}</title>
+        </image>
+      ) : (
+        <>
+          <rect width={width} height={height} rx="9" fill="#edf2fa" />
+          <Camera
+            x={width / 2 - 9}
+            y={height / 2 - 17}
+            width="18"
+            height="18"
+            stroke="#657691"
+            strokeWidth="1.4"
+          />
+          <text
+            x={width / 2}
+            y={height / 2 + 13}
+            textAnchor="middle"
+            fontSize="7.5"
+            fill="#596b85"
+          >
+            Nosotros
+          </text>
+        </>
+      )}
+    </g>
+  );
+}
+
+function BirthdayCard({ gift, frame, id }) {
+  const { cardHeight: height, detail } = frame;
+  const photoSize = height - 20;
+  const textX = mix(
+    -gift.width / 2 + 9,
+    -gift.width / 2 + photoSize + 21,
+    detail,
+  );
+  return (
+    <g data-gift-card={gift.birthdayAge}>
+      <rect
+        x={-gift.width / 2}
+        width={gift.width}
+        height={height}
+        rx="13"
+        fill="white"
+        stroke={gift.current ? "#9fbcf7" : "#dfe6f0"}
+      />
+      {detail > 0 && (
+        <g
+          transform={`translate(${-gift.width / 2 + 10} ${height / 2 - (photoSize * detail) / 2}) scale(${detail})`}
+          opacity={detail}
+        >
+          <PhotoSlot
+            gift={gift}
+            width={photoSize}
+            height={photoSize}
+            clipId={`${id}-photo-${gift.birthdayAge}`}
+          />
+        </g>
+      )}
+      <g transform={`translate(${textX} 0)`}>
+        <text
+          y={mix(14, height / 2 - 13, detail)}
+          fill="#2360ce"
+          fontSize={mix(9, 10, detail)}
+          fontWeight="650"
+        >
+          Sofi {gift.birthdayAge}
+        </text>
+        <text
+          y={mix(28, height / 2 + 3, detail)}
+          fill="#293341"
+          fontSize={mix(9, 12, detail)}
+          fontWeight="550"
+        >
+          {gift.name}
+        </text>
+        <text y={height / 2 + 18} fill="#617087" fontSize="8" opacity={detail}>
+          {names[gift.month].slice(0, 3).toUpperCase()} {gift.year}
+        </text>
+      </g>
+    </g>
+  );
+}
+
+function StaticHistory() {
+  return (
+    <div className="timeline-static-history">
+      <h3>Cumplir años. Sumar recuerdos.</h3>
+      <div className="birthday-gallery">
+        {memories
+          .filter((gift) => gift.birthdayAge)
+          .map((gift) => (
+            <figure
+              key={gift.birthdayAge}
+              data-static-photo-slot={gift.birthdayAge}
+            >
+              {gift.photo ? (
+                <img src={gift.photo.src} alt={gift.photo.alt} />
+              ) : (
+                <div className="birthday-photo-placeholder">
+                  <Camera size={22} strokeWidth={1.3} />
+                  <span>Nuestra foto</span>
+                </div>
+              )}
+              <figcaption>
+                <span>Sofi {gift.birthdayAge}</span>
+                <strong>{gift.name}</strong>
+                <small>
+                  {names[gift.month]} {gift.year}
+                </small>
+              </figcaption>
+            </figure>
+          ))}
+      </div>
+      <ul className="other-trips" aria-label="Más viajes juntos">
+        {memories
+          .filter((m) => !m.birthdayAge)
+          .map((m) => (
+            <li key={m.name}>
+              <strong>{m.name}</strong>
+              <span>
+                {names[m.month]} {m.year}
+              </span>
+            </li>
+          ))}
+      </ul>
+    </div>
+  );
 }
 
 export default function CalendarScene() {
   const { ref, progress: p, reduced } = useScene();
   const [artRef, size] = useElementSize();
+  const id = useId();
   const w = size.width,
     h = size.height;
-  const overviewScale = Math.min((w - 52) / ((targetIndex + 1) * 110), 0.33);
-  const approach = smooth(range(p, 0, 0.14)),
-    travel = smooth(range(p, 0.14, 0.68)),
-    zoom = smooth(range(p, 0.68, 0.93));
-  const fitScale = Math.max(0.1, Math.min((w - 36) / 96, (h - 24) / 140, 3.5));
-  const scale = mix(mix(overviewScale, 0.53, approach), fitScale, zoom);
-  const focus = mix(mix(last / 2, 48, approach), last, travel);
-  const tx = w / 2 - focus * scale,
-    ty = h / 2 - 70 * scale;
-  const labelOpacity = 1 - range(p, 0.66, 0.76);
-  const arrived = smooth(range(p, 0.86, 0.93));
-  const labels = useMemo(
-    () =>
-      memories.map((m, i) => ({
-        name: m.name,
-        month: m.month,
-        year: m.year,
-        index: monthIndex(m.year, m.month) - monthIndex(2024, 7),
-        lane: i % 2,
-        width: Math.max(m.name.length * 6.4, 62) + 12,
-      })),
-    [],
-  );
-  const fitted = visibleLabels(
-    labels.map((label) => ({
-      ...label,
-      x: tx + (label.index * 110 + 48) * scale,
-    })),
-    w,
-  );
+  const frame = timelineFrame(p, w, h);
+  const { tx, ty, scale, zoom, labelOpacity, arrived } = frame;
+  const fitted = fitTimelineLabels(frame, w);
   return (
     <section
       className={`scroll-scene calendar-scene ${reduced ? "reduced-scene" : ""}`}
@@ -175,7 +271,7 @@ export default function CalendarScene() {
             01 — CUÁNDO
           </span>
           <h2>
-            {p < 0.7 ? (
+            {p < 0.7 || reduced ? (
               <>
                 Siempre hay
                 <br />
@@ -186,13 +282,14 @@ export default function CalendarScene() {
             )}
           </h2>
         </div>
+        {reduced && <StaticHistory />}
         <div className="calendar-art" ref={artRef}>
           {w > 0 && h > 0 && (
             <svg
               className="calendar-canvas"
               viewBox={`0 0 ${w} ${h}`}
               role="img"
-              aria-label="De agosto de 2024 a enero de 2027. El siguiente viaje es del 22 al 24 de enero de 2027."
+              aria-label="De enero de 2022 a enero de 2027. Sofi 23 a Sofi 28. El siguiente viaje es del 22 al 24 de enero de 2027."
             >
               <g transform={`translate(${tx} ${ty}) scale(${scale})`}>
                 <g opacity={mix(0.9, 0.06, zoom)}>
@@ -201,47 +298,86 @@ export default function CalendarScene() {
                 <Month index={targetIndex} selected={p >= 0.84} />
                 <g opacity={1 - zoom}>
                   <path
-                    d="M48 164H3238"
+                    d={`M48 164H${last}`}
                     stroke="#b9c2d0"
                     strokeWidth={1 / scale}
                   />
-                  {memories.map((m) => (
+                  {timelineItems.map((m) => (
                     <circle
                       key={m.name}
-                      cx={(monthIndex(m.year, m.month) - 7) * 110 + 48}
+                      cx={monthX(m.index)}
                       cy="164"
                       r={2.5 / scale}
-                      fill="#8a9ebc"
+                      fill={m.birthdayAge ? "#2368f5" : "#8a9ebc"}
                     />
                   ))}
                 </g>
               </g>
-              <g opacity={labelOpacity} className="memory-labels">
-                {fitted.map((label) => (
-                  <g
-                    key={label.name}
-                    data-memory-label={label.name}
-                    transform={`translate(${label.x} ${h / 2 + (label.lane === 0 ? -1 : 1) * (70 * scale + 30)})`}
-                  >
-                    <text
-                      textAnchor="middle"
-                      fontSize="12"
-                      fontWeight="550"
-                      fill="#3b414d"
-                    >
-                      {label.name}
-                    </text>
-                    <text
-                      textAnchor="middle"
-                      y="17"
-                      fontSize="9"
-                      fill="#697281"
-                    >
-                      {names[label.month].slice(0, 3).toUpperCase()}{" "}
-                      {label.year}
-                    </text>
-                  </g>
-                ))}
+              <g opacity={1 - zoom} aria-hidden="true">
+                {months.map(
+                  (month, index) =>
+                    month.month === 0 && (
+                      <text
+                        key={month.year}
+                        x={tx + monthX(index) * scale}
+                        y={frame.axisY + 15}
+                        textAnchor="middle"
+                        fontSize="9"
+                        fill="#637087"
+                      >
+                        {month.year}
+                      </text>
+                    ),
+                )}
+              </g>
+              <g className="memory-labels">
+                {fitted.map((label) => {
+                  const gift = label.lane === "gift";
+                  const y = gift
+                    ? ty - 16 - frame.cardHeight
+                    : frame.axisY + 35;
+                  const opacity = label.current ? 1 : labelOpacity;
+                  return (
+                    <g key={label.name} opacity={opacity}>
+                      {gift && (
+                        <path
+                          d={`M${label.anchorX} ${ty - 3}L${label.x} ${ty - 16}`}
+                          stroke="#afc3e5"
+                          fill="none"
+                        />
+                      )}
+                      <g
+                        data-memory-label={label.name}
+                        data-lane={label.lane}
+                        transform={`translate(${label.x} ${y})`}
+                      >
+                        {gift ? (
+                          <BirthdayCard gift={label} frame={frame} id={id} />
+                        ) : (
+                          <>
+                            <text
+                              textAnchor="middle"
+                              fontSize="12"
+                              fontWeight="550"
+                              fill="#3b414d"
+                            >
+                              {label.name}
+                            </text>
+                            <text
+                              textAnchor="middle"
+                              y="17"
+                              fontSize="9"
+                              fill="#697281"
+                            >
+                              {names[label.month].slice(0, 3).toUpperCase()}{" "}
+                              {label.year}
+                            </text>
+                          </>
+                        )}
+                      </g>
+                    </g>
+                  );
+                })}
               </g>
             </svg>
           )}
@@ -266,7 +402,11 @@ export default function CalendarScene() {
         <ul className="sr-only" aria-label="Viajes anteriores">
           {memories.map((m) => (
             <li key={m.name}>
+              {m.birthdayAge ? `Sofi ${m.birthdayAge}: ` : ""}
               {m.name}, {names[m.month]} de {m.year}
+              {m.birthdayAge && !m.photo
+                ? ". Espacio para una foto de los dos."
+                : ""}
             </li>
           ))}
         </ul>

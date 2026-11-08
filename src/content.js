@@ -6,6 +6,11 @@ const performanceStartsAt = "2027-01-22T19:00:00+01:00";
 const travelLabels = tripDateLabels(travelDates);
 const performanceLabels = performanceDateLabels(performanceStartsAt);
 
+export const site = {
+  name: "Sofi 28",
+  heroSubtitle: "Y eso merece un regalo a la altura.",
+};
+
 // All personal content lives here. Never add ticket PDFs, barcodes or booking credentials.
 export const trip = {
   dates: travelLabels.long,
@@ -44,16 +49,36 @@ export const trip = {
 
 // Months are zero-based. Within-month days are deliberately unspecified.
 export const memories = [
+  // Birthday photos: replace null with { src: '/images/niza.webp', alt: 'Los dos en Niza' }.
+  { name: "Niza", year: 2022, month: 2, birthdayAge: 23, photo: null },
+  { name: "Mallorca", year: 2022, month: 7 },
+  { name: "Londres", year: 2023, month: 0, birthdayAge: 24, photo: null },
+  { name: "Montenegro", year: 2023, month: 7 },
+  { name: "Roma", year: 2023, month: 9 },
+  { name: "Islandia", year: 2023, month: 11, birthdayAge: 25, photo: null },
   { name: "Grecia", year: 2024, month: 7 },
   { name: "País Vasco", year: 2024, month: 8 },
-  { name: "Dolomitas", year: 2025, month: 0 },
+  { name: "Dolomitas", year: 2025, month: 0, birthdayAge: 26, photo: null },
   { name: "Indonesia", year: 2025, month: 7 },
   { name: "Lanzarote", year: 2025, month: 9 },
-  { name: "Florencia", year: 2026, month: 2 },
+  { name: "Florencia", year: 2026, month: 2, birthdayAge: 27, photo: null },
   { name: "Egipto", year: 2026, month: 5 },
   { name: "México", year: 2026, month: 7 },
   { name: "Lisboa", year: 2026, month: 8 },
 ];
+
+export const timelineStart = { year: 2022, month: 0 };
+const nextDate = new Date(`${trip.startDate}T12:00:00Z`);
+export const currentBirthdayGift = {
+  // Keep the destination reveal in the following map scene.
+  name: "Lo próximo",
+  year: nextDate.getUTCFullYear(),
+  month: nextDate.getUTCMonth(),
+  birthdayAge: 28,
+  photo: null,
+  current: true,
+};
+export const timelineEvents = [...memories, currentBirthdayGift];
 
 export const cityIdeas = [
   {
