@@ -1,6 +1,6 @@
 # Timeline fotográfico — composición, integración y validación
 
-Estado actual: **cinco originales incorporados y revisión con fotografías reales completada; 34 pruebas aprobadas**. El usuario ha autorizado subirlas al repositorio privado y actualizar el enlace con sus permisos. Entrega preparada en una rama nueva `private-download`, separada del flujo de GitHub Pages. Las notas de la primera fase sin archivos se conservan como antecedentes.
+Estado actual: **cinco originales incorporados y revisión con fotografías reales completada; 34 pruebas aprobadas**. Entrega privada completada en `private-download`, bajo la autorización explícita del usuario y separada del flujo de GitHub Pages. El enlace del ZIP devuelve 404 sin sesión. Las notas de la primera fase sin archivos se conservan como antecedentes.
 
 ## Propósito y decisión de diseño
 
@@ -46,7 +46,7 @@ Todos tienen proporción 3:4 y orientación EXIF normal. Los archivos de `public
 - [x] Regresión end to end y exportación offline con los cinco originales.
 - [x] HTML y ZIP locales con las cinco fotos reales incorporadas y validadas.
 - [x] Autorización explícita recibida para subir las fotos al repositorio privado y entregar el ZIP con acceso restringido.
-- [ ] Subida a la rama de entrega y comprobación de acceso y contenido remoto.
+- [x] Subida a la rama de entrega y comprobación de acceso y contenido remoto.
 
 ## Implementación y primera validación de la composición
 
@@ -96,3 +96,11 @@ Maquetas anteriores, conservadas como antecedente:
 - Aclaración de acceso tras la pregunta del usuario: tanto la página de `github.com/MSaula/Sofi28` como el enlace GitHub/raw del ZIP devuelven **404 sin sesión**, mientras que el acceso Git autorizado confirma que la rama `gh-pages` existe. El enlace GitHub del ZIP no es accesible anónimamente y hereda los permisos del repositorio. No se ha confirmado mediante metadatos su etiqueta formal de visibilidad: la API está bloqueada en esta red. GitHub Pages es un canal separado; puede servir públicamente una web y el ZIP de su carpeta raíz aunque el repositorio sea privado. Su configuración/despliegue no están verificados. La referencia previa a «publicación pública» describe la acción propuesta y el motivo de la revisión automática; no demuestra que el repositorio sea público.
 - Tras esa aclaración, el usuario ha autorizado explícitamente subir las fotos a su repositorio privado siempre que el enlace requiera sus permisos. La entrega se realizará en `private-download`, una rama inexistente antes de esta autorización, con el ZIP en `downloads/Viena.zip`. No se actualizará `gh-pages`, no se activará Pages ni se cambiará la visibilidad del repositorio. La rama contiene el código y las evidencias, sin workflows de despliegue.
 - Antes de la subida, GitHub vuelve a responder 404 a una lectura anónima del repositorio. Se ha detectado y conservado la integración que el usuario hizo en `main` (`66e6acd`, merge de la iteración anterior): su contenido coincide con la base ya incorporada en este trabajo.
+
+## Entrega privada verificada
+
+- [Descargar el ZIP con las fotografías](https://github.com/MSaula/Sofi28/raw/refs/heads/private-download/downloads/Viena.zip). Requiere una cuenta con acceso al repositorio; descomprimir y abrir `Viena.html`.
+- Código, fotografías y evidencias subidos a `private-download`; primer commit de entrega: `ea297ee84a79b7816253b14c51ef131a3c84161d`.
+- ZIP recuperado de la rama remota y comparado byte a byte con el ZIP validado. Su `Viena.html` coincide con el HTML probado offline (SHA-256 `3fae2c4f3cad67eb7606adeea8516e6a85fc18c43aa7b911a3f93a785af02a02`). También se verifican los cinco JPEG remotos contra los SHA-256 originales.
+- El nuevo enlace responde **404 sin sesión**, después de la subida, mientras el contenido existe y puede leerse mediante el acceso Git autorizado.
+- `main` permanece en `66e6acd5e8f016ff52ae78eee758054b26b1a0d6` y `gh-pages` en `a276f224e4072e3f60879ed3cc6025304c551322`. No se ha cambiado la visibilidad ni la configuración de Pages, ni se ha actualizado su rama con las fotografías.
