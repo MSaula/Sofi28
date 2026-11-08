@@ -1,0 +1,37 @@
+[
+  {
+    "file": "niza.jpeg",
+    "width": 768,
+    "height": 1024,
+    "bytes": 394439,
+    "sha256": "91218e52d0c390ff94d82a42657c7a364763971174c91d809101b6268f307acb"
+  },
+  {
+    "file": "londres.jpeg",
+    "width": 768,
+    "height": 1024,
+    "bytes": 292054,
+    "sha256": "a36bb174105f7875d7967a42bbd9c602919bec9474fbb451520140c12d87c519"
+  },
+  {
+    "file": "islandia.jpeg",
+    "width": 1536,
+    "height": 2048,
+    "bytes": 761862,
+    "sha256": "cf9413e500d1c1146dd95fa839244693f58474b26460515e54a62151c4682cde"
+  },
+  {
+    "file": "dolomitas.jpeg",
+    "width": 768,
+    "height": 1024,
+    "bytes": 272606,
+    "sha256": "6565d70f7bccda16cd45e463bc576d92f37fcc914b691fe5a36d26cf88307a88"
+  },
+  {
+    "file": "florencia.jpeg",
+    "width": 768,
+    "height": 1024,
+    "bytes": 267647,
+    "sha256": "6a72eb007db4244d091e721d17df56efa833cbad7d8361db6e869c0be89f0a1c"
+  }
+]

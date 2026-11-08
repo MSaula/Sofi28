@@ -330,6 +330,63 @@ test("historical photos get a large portrait frame and release space for the fin
   }
 });
 
+test("supplied portraits load in their correct cards without cropping, including reverse and static views", async ({
+  page,
+}) => {
+  test.setTimeout(60000);
+  const photos = [
+    [23, 0.14, "niza", 768, 1024],
+    [24, 0.28, "londres", 768, 1024],
+    [25, 0.36, "islandia", 1536, 2048],
+    [26, 0.44, "dolomitas", 768, 1024],
+    [27, 0.54, "florencia", 768, 1024],
+  ];
+  for (const [width, height] of [
+    [1440, 1000],
+    [390, 844],
+    [320, 700],
+    [1000, 650],
+  ]) {
+    await page.setViewportSize({ width, height });
+    await page.goto("/");
+    for (const [age, p, file, naturalWidth, naturalHeight] of photos) {
+      await scrollScene(page, ".calendar-scene", p);
+      const img = page.locator(`[data-photo-slot="${age}"] img`);
+      await expect(img).toHaveAttribute("src", `/images/${file}.jpeg`);
+      await expect
+        .poll(() => img.evaluate((n) => n.complete && n.naturalWidth))
+        .toBe(naturalWidth);
+      expect(await img.evaluate((n) => n.naturalHeight)).toBe(naturalHeight);
+      await expect(img).toHaveCSS("object-fit", "contain");
+      const rect = await img.boundingBox();
+      expect(
+        Math.abs(rect.width / rect.height - naturalWidth / naturalHeight),
+      ).toBeLessThan(0.005);
+      await expectInside(page.locator(`[data-gift-card="${age}"]`), img);
+    }
+    await scrollScene(page, ".calendar-scene", 0.98);
+    await scrollScene(page, ".calendar-scene", 0.14);
+    await expect
+      .poll(() =>
+        page
+          .locator('[data-photo-slot="23"] img')
+          .evaluate((n) => n.complete && n.naturalWidth),
+      )
+      .toBe(768);
+  }
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await page.goto("/");
+  await expect(page.locator(".birthday-gallery img")).toHaveCount(5);
+  for (const img of await page.locator(".birthday-gallery img").all()) {
+    await expect
+      .poll(() =>
+        img.evaluate((n) => n.complete && n.naturalHeight > n.naturalWidth),
+      )
+      .toBe(true);
+    await expect(img).toHaveCSS("object-fit", "contain");
+  }
+});
+
 test("static chronology retains all six birthday photo spaces and the ten ordinary trips", async ({
   page,
 }) => {

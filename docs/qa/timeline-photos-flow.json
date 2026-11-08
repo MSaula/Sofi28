@@ -1,0 +1,94 @@
+[
+  {
+    "name": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "reduced": false,
+    "fullFlowReachedEnd": true,
+    "errors": [],
+    "overflowFrames": 0,
+    "photoEditionsLoaded": [
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ],
+    "visiblePhotoLoadFailures": 0,
+    "flowLongTasks": [],
+    "sampledFrames": 24,
+    "resized": {
+      "width": 1000,
+      "scrollWidth": 985
+    }
+  },
+  {
+    "name": "mobile",
+    "width": 390,
+    "height": 844,
+    "reduced": false,
+    "fullFlowReachedEnd": true,
+    "errors": [],
+    "overflowFrames": 0,
+    "photoEditionsLoaded": [
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ],
+    "visiblePhotoLoadFailures": 0,
+    "flowLongTasks": [],
+    "sampledFrames": 24,
+    "resized": {
+      "width": 844,
+      "scrollWidth": 829
+    }
+  },
+  {
+    "name": "landscape",
+    "width": 844,
+    "height": 390,
+    "reduced": false,
+    "fullFlowReachedEnd": true,
+    "errors": [],
+    "overflowFrames": 0,
+    "photoEditionsLoaded": [
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ],
+    "visiblePhotoLoadFailures": 0,
+    "flowLongTasks": [],
+    "sampledFrames": 24,
+    "resized": {
+      "width": 390,
+      "scrollWidth": 375
+    }
+  },
+  {
+    "name": "reduced",
+    "width": 390,
+    "height": 844,
+    "reduced": true,
+    "fullFlowReachedEnd": true,
+    "errors": [],
+    "overflowFrames": 0,
+    "photoEditionsLoaded": [
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ],
+    "visiblePhotoLoadFailures": 0,
+    "flowLongTasks": [],
+    "sampledFrames": 24,
+    "resized": {
+      "width": 844,
+      "scrollWidth": 829
+    }
+  }
+]

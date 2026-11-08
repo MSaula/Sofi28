@@ -172,6 +172,22 @@ test("portrait birthday compositions preserve photo ratio and fit the available 
   }
 });
 
+test("all five supplied portraits are assigned by filename to their birthday editions", () => {
+  assert.deepEqual(
+    memories
+      .filter((m) => m.birthdayAge)
+      .map((m) => [m.name, m.birthdayAge, m.photo?.src]),
+    [
+      ["Niza", 23, "/images/niza.jpeg"],
+      ["Londres", 24, "/images/londres.jpeg"],
+      ["Islandia", 25, "/images/islandia.jpeg"],
+      ["Dolomitas", 26, "/images/dolomitas.jpeg"],
+      ["Florencia", 27, "/images/florencia.jpeg"],
+    ],
+  );
+  assert.equal(timelineEvents.at(-1).photo, null);
+});
+
 test("scene progress respects the actual sticky height and both boundaries", () => {
   assert.equal(sceneProgress(100, 4000, 800), 0);
   assert.equal(sceneProgress(-1600, 4000, 800), 0.5);

@@ -1,0 +1,10 @@
+{
+  "status": "local-ready-publication-awaits-explicit-photo-approval",
+  "html_sha256": "3fae2c4f3cad67eb7606adeea8516e6a85fc18c43aa7b911a3f93a785af02a02",
+  "html_bytes": 4019542,
+  "zip_bytes": 2375279,
+  "unit_tests": 17,
+  "browser_tests": 16,
+  "offline_tests": 1,
+  "photos": 5
+}
