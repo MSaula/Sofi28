@@ -34,7 +34,7 @@ const sample = async (page, selector, p) => {
     };
     const text = [
       ...root.querySelectorAll(
-        "h2, svg text, .scene-bottom, .calendar-result, .opera-date",
+        "h2, svg text, .birthday-card-copy, .timeline-trip-label, .scene-bottom, .calendar-result, .opera-date",
       ),
     ]
       .map((node) => ({
@@ -60,6 +60,16 @@ const sample = async (page, selector, p) => {
       sceneStatic: root.classList.contains("reduced-scene"),
       pageWidth: document.documentElement.scrollWidth,
       active: root.dataset.journeyPhase,
+      photos: [...root.querySelectorAll("[data-photo-slot]")].map((slot) => {
+        const img = slot.querySelector("img");
+        return {
+          edition: slot.dataset.photoSlot,
+          rect: rect(slot),
+          opacity: opacity(slot),
+          hasImage: Boolean(img),
+          loaded: img ? img.complete && img.naturalWidth > 0 : false,
+        };
+      }),
       text,
     };
   }, selector);

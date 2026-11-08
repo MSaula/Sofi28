@@ -2201,6 +2201,131 @@ html:has(dialog[open]) {
   width: 100%;
   height: 100%;
 }
+.timeline-annotations {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.timeline-gift-label,
+.timeline-trip-label {
+  position: absolute;
+  transform: translateX(-50%);
+}
+.birthday-card {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: white;
+  box-shadow: 0 4px 18px #23355308, inset 0 0 0 1px #dfe6f0;
+  overflow: hidden;
+}
+.birthday-card-current {
+  box-shadow: 0 4px 18px #23355308, inset 0 0 0 1px #9fbcf7;
+}
+.birthday-photo {
+  overflow: hidden;
+  background: #edf2fa;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+.birthday-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.birthday-card-photo {
+  width: var(--photo-width);
+  height: var(--photo-height);
+  opacity: var(--photo-opacity);
+}
+.birthday-photo-empty {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #596b85;
+  font-size: 10px;
+}
+.birthday-card-current .birthday-photo-empty {
+  gap: 6px;
+  font-size: 7px;
+}
+.birthday-card-current .birthday-photo-empty svg {
+  width: 16px;
+  height: 16px;
+}
+.birthday-card-copy {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--copy-gap);
+  line-height: 1.1;
+}
+.birthday-card-edition {
+  color: #2360ce;
+  font-size: var(--edition-size);
+  font-weight: 650;
+  white-space: nowrap;
+}
+.birthday-card-place {
+  color: #293341;
+  font-size: var(--place-size);
+  letter-spacing: -0.05em;
+  font-weight: 550;
+  white-space: nowrap;
+}
+.birthday-card-date {
+  max-height: var(--date-height);
+  opacity: var(--date-opacity);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  overflow: hidden;
+  color: #617087;
+}
+.birthday-card-date > span:first-child {
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.birthday-card-date > span:last-child {
+  font-size: 20px;
+  letter-spacing: -0.04em;
+  color: #3b485c;
+}
+.birthday-card-compact .birthday-card-date {
+  flex-direction: row;
+  gap: 4px;
+}
+.birthday-card-compact .birthday-card-date > span {
+  font-size: 9px;
+  line-height: 14px;
+  letter-spacing: 0;
+}
+.timeline-trip-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+}
+.timeline-trip-label strong {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 550;
+  color: #3b414d;
+}
+.timeline-trip-label > span {
+  font-size: 9px;
+  line-height: 13px;
+  color: #697281;
+}
 .timeline-static-history {
   padding: 16px 0 40px;
   flex-shrink: 0;
@@ -2222,22 +2347,10 @@ html:has(dialog[open]) {
   border: 1px solid #dfe6f0;
   border-radius: 18px;
 }
-.birthday-gallery img,
-.birthday-photo-placeholder {
+.birthday-gallery-photo {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 4;
   border-radius: 10px;
-  object-fit: cover;
-}
-.birthday-photo-placeholder {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 9px;
-  color: #596b85;
-  background: #edf2fa;
-  font-size: 11px;
 }
 .birthday-gallery figcaption {
   display: flex;
@@ -2456,6 +2569,20 @@ html:has(dialog[open]) {
     height: 480px;
     min-height: 0;
     aspect-ratio: auto;
+  }
+}
+/* Keep the date area available to portraits until the final reveal. */
+.calendar-scene {
+  --calendar-result-size: 72px;
+}
+.calendar-stage .calendar-result {
+  min-height: 0;
+  height: calc(var(--calendar-result-size) * var(--calendar-arrived));
+  overflow: hidden;
+}
+@media (max-width: 700px) {
+  .calendar-scene {
+    --calendar-result-size: 64px;
   }
 }
 /* Reading hierarchy remains muted, with sufficient contrast for small text. */

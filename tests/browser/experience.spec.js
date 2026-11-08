@@ -274,13 +274,16 @@ test("narrow and short laptop calendars keep photos, labels and the final month 
         if (await photo.count()) {
           const photoBox = await photo.boundingBox();
           const textBox = await card
-            .locator("text")
-            .filter({ hasText: /^Sofi / })
+            .locator(".birthday-card-edition")
             .boundingBox();
           expect(photoBox.x + photoBox.width).toBeLessThanOrEqual(
             textBox.x - 1,
           );
         }
+        const copy = card.locator(".birthday-card-copy");
+        expect(
+          await copy.evaluate((n) => n.scrollWidth <= n.clientWidth + 1),
+        ).toBe(true);
       }
     }
     await expectInside(
@@ -288,6 +291,42 @@ test("narrow and short laptop calendars keep photos, labels and the final month 
       page.locator(".target-month"),
     );
     await expect(page.locator(".calendar-result")).toHaveCSS("opacity", "1");
+  }
+});
+
+test("historical photos get a large portrait frame and release space for the final dates", async ({
+  page,
+}) => {
+  for (const [width, height, minPhotoWidth] of [
+    [1440, 1000, 230],
+    [390, 844, 170],
+  ]) {
+    await page.setViewportSize({ width, height });
+    await page.goto("/");
+    await page.evaluate(() => document.fonts.ready);
+    await scrollScene(page, ".calendar-scene", 0.14);
+    const photo = await page.locator('[data-photo-slot="23"]').boundingBox();
+    expect(photo.width).toBeGreaterThan(minPhotoWidth);
+    expect(Math.abs(photo.width / photo.height - 3 / 4)).toBeLessThan(0.005);
+    expect(
+      await page.locator(".calendar-result").evaluate((n) => n.clientHeight),
+    ).toBe(0);
+    await scrollScene(page, ".calendar-scene", 0.98);
+    await expect(page.locator(".calendar-result")).toHaveCSS("opacity", "1");
+    expect(
+      await page.locator(".calendar-result").evaluate((n) => n.clientHeight),
+    ).toBeGreaterThan(60);
+    await scrollScene(page, ".calendar-scene", 0.14);
+    await expect
+      .poll(
+        async () =>
+          (await page.locator('[data-photo-slot="23"]').boundingBox()).width,
+      )
+      .toBeGreaterThan(minPhotoWidth);
+    await expectInside(
+      page.locator(".calendar-art"),
+      page.locator('[data-gift-card="23"]'),
+    );
   }
 });
 

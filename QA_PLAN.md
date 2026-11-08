@@ -4,6 +4,8 @@ Audit started: 2026-11-01. Scope: the complete gift experience, its map geograph
 
 Subsequent iteration: [Sofi 28 — title and 2022–2027 chronology](docs/plan-sofi28.md), with its own change plan, root-cause notes, regression checks and visual evidence. The audit below remains the record of the preceding map/animation fixes.
 
+Photo-card iteration: [composition and integration plan](docs/plan-timeline-fotos.md). The enlarged layout passes its regression suite; original photo files remain an input dependency. Its evidence explicitly distinguishes placeholders from real-image validation.
+
 ## Process and evidence
 
 1. Reproduce before editing application code. `node scripts/audit-flow.cjs` scrolls the **entire page with wheel events**, samples animation boundaries, reverses direction and rotates the viewport.

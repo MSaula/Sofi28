@@ -2,6 +2,7 @@ import { test, expect } from "@playwright/test";
 import { resolve } from "node:path";
 import { readFile } from "node:fs/promises";
 import { scrollScene } from "./helpers.js";
+import { memories } from "../../src/content.js";
 
 test("exported HTML runs without server or network, with assets, animation and calendar", async ({
   page,
@@ -23,6 +24,23 @@ test("exported HTML runs without server or network, with assets, animation and c
     "Hoy cumples 28 años.",
   );
   await expect(page).toHaveTitle("Sofi 28");
+
+  const seenPhotos = new Set();
+  for (const p of [0.14, 0.28, 0.36, 0.44, 0.54]) {
+    await scrollScene(page, ".calendar-scene", p);
+    for (const photo of await page.locator("[data-photo-slot] img").all()) {
+      await expect
+        .poll(() =>
+          photo.evaluate((img) => img.complete && img.naturalWidth > 0),
+        )
+        .toBe(true);
+      expect(await photo.getAttribute("src")).toMatch(/^data:image\//);
+      seenPhotos.add(await photo.locator("..").getAttribute("data-photo-slot"));
+    }
+  }
+  expect(seenPhotos.size).toBe(
+    memories.filter((m) => m.birthdayAge && m.photo).length,
+  );
 
   for (const [selector, p] of [
     [".calendar-scene", 0.96],

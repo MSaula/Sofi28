@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { readdirSync } from "node:fs";
+import { existsSync, readdirSync } from "node:fs";
 import ICAL from "ical.js";
 import { geoMercator } from "d3-geo";
 import {
@@ -21,6 +21,7 @@ import {
   timelineFrame,
   monthX,
   timelineItems,
+  birthdayLayout,
 } from "../src/timeline.js";
 import { buildCalendar } from "../src/calendar.js";
 import {
@@ -89,20 +90,33 @@ test("birthday editions 23–28 have six configurable photos and use the upper l
   assert.deepEqual(
     timelineEvents
       .filter((m) => m.birthdayAge)
-      .map((m) => [m.name, m.birthdayAge, m.photo]),
+      .map((m) => [m.name, m.birthdayAge]),
     [
-      ["Niza", 23, null],
-      ["Londres", 24, null],
-      ["Islandia", 25, null],
-      ["Dolomitas", 26, null],
-      ["Florencia", 27, null],
-      ["Lo próximo", 28, null],
+      ["Niza", 23],
+      ["Londres", 24],
+      ["Islandia", 25],
+      ["Dolomitas", 26],
+      ["Florencia", 27],
+      ["Lo próximo", 28],
     ],
   );
   assert.equal(timelineItems.filter((m) => m.lane === "trip").length, 10);
   assert.ok(
     timelineItems.filter((m) => m.birthdayAge).every((m) => m.lane === "gift"),
   );
+  for (const gift of timelineEvents.filter((m) => m.birthdayAge)) {
+    assert.ok(Object.hasOwn(gift, "photo"));
+    if (!gift.photo) continue;
+    assert.match(
+      gift.photo.src,
+      /^\/images\/[\w.-]+\.(webp|jpe?g|png|avif|svg)$/i,
+    );
+    assert.ok(gift.photo.alt.trim());
+    assert.ok(
+      existsSync(new URL(`../public${gift.photo.src}`, import.meta.url)),
+      `${gift.name}: missing photo asset`,
+    );
+  }
 });
 
 test("timeline spans 2022–2027 and all annotations remain discoverable without lane collisions", () => {
@@ -137,6 +151,24 @@ test("timeline spans 2022–2027 and all annotations remain discoverable without
     );
     assert.ok(end.ty - end.cardHeight - 16 >= 0);
     assert.ok(end.ty + 140 * end.scale <= h);
+  }
+});
+
+test("portrait birthday compositions preserve photo ratio and fit the available stage", () => {
+  for (const [width, height] of [
+    [1218, 680],
+    [331, 560],
+    [261, 416],
+    [841, 332],
+  ]) {
+    const frame = timelineFrame(0.3, width, height);
+    const card = birthdayLayout(width, height, frame.scale);
+    assert.ok(card.width <= width - 16);
+    assert.ok(card.photoWidth > 90);
+    assert.ok(Math.abs(card.photoWidth / card.photoHeight - 3 / 4) < 0.001);
+    assert.ok(frame.ty - 16 - card.height >= 0);
+    assert.ok(frame.axisY + 55 <= height);
+    assert.ok(card.photoHeight * card.photoWidth > 64 * 64 * 3);
   }
 });
 

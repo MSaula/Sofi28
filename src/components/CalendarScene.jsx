@@ -1,4 +1,4 @@
-import { memo, useId } from "react";
+import { memo } from "react";
 import { ArrowDown, CalendarDays, Camera } from "lucide-react";
 import { memories, trip } from "../content";
 import { useElementSize, useScene } from "../hooks";
@@ -99,106 +99,67 @@ const History = memo(function History() {
   return months.slice(0, -1).map((_, i) => <Month key={i} index={i} />);
 });
 
-function PhotoSlot({ gift, width, height, clipId }) {
+function PhotoSlot({ gift, className = "" }) {
   return (
-    <g
+    <div
+      className={`birthday-photo ${className}`}
       data-photo-slot={gift.birthdayAge}
-      aria-label={`Foto de los dos: Sofi ${gift.birthdayAge}`}
     >
-      <defs>
-        <clipPath id={clipId}>
-          <rect width={width} height={height} rx="9" />
-        </clipPath>
-      </defs>
       {gift.photo ? (
-        <image
-          href={gift.photo.src}
-          width={width}
-          height={height}
-          preserveAspectRatio="xMidYMid slice"
-          clipPath={`url(#${clipId})`}
-        >
-          <title>{gift.photo.alt}</title>
-        </image>
+        <img src={gift.photo.src} alt={gift.photo.alt} decoding="async" />
       ) : (
-        <>
-          <rect width={width} height={height} rx="9" fill="#edf2fa" />
-          <Camera
-            x={width / 2 - 9}
-            y={height / 2 - 17}
-            width="18"
-            height="18"
-            stroke="#657691"
-            strokeWidth="1.4"
-          />
-          <text
-            x={width / 2}
-            y={height / 2 + 13}
-            textAnchor="middle"
-            fontSize="7.5"
-            fill="#596b85"
-          >
-            Nosotros
-          </text>
-        </>
+        <div className="birthday-photo-empty">
+          <Camera size={22} strokeWidth={1.3} aria-hidden="true" />
+          <span>{gift.current ? "Por vivir" : "Nosotros"}</span>
+        </div>
       )}
-    </g>
+    </div>
   );
 }
 
-function BirthdayCard({ gift, frame, id }) {
-  const { cardHeight: height, detail } = frame;
-  const photoSize = height - 20;
-  const textX = mix(
-    -gift.width / 2 + 9,
-    -gift.width / 2 + photoSize + 21,
-    detail,
+function BirthdayCard({ gift, frame }) {
+  const { detail } = frame;
+  const layout = gift.layout;
+  const titleSize = Math.min(
+    gift.current ? 14 : 30,
+    layout.textWidth / (gift.name.length * 0.52),
   );
+  const dateReveal = Math.max(0, Math.min(1, (detail - 0.4) / 0.5));
   return (
-    <g data-gift-card={gift.birthdayAge}>
-      <rect
-        x={-gift.width / 2}
-        width={gift.width}
-        height={height}
-        rx="13"
-        fill="white"
-        stroke={gift.current ? "#9fbcf7" : "#dfe6f0"}
-      />
-      {detail > 0 && (
-        <g
-          transform={`translate(${-gift.width / 2 + 10} ${height / 2 - (photoSize * detail) / 2}) scale(${detail})`}
-          opacity={detail}
-        >
-          <PhotoSlot
-            gift={gift}
-            width={photoSize}
-            height={photoSize}
-            clipId={`${id}-photo-${gift.birthdayAge}`}
-          />
-        </g>
-      )}
-      <g transform={`translate(${textX} 0)`}>
-        <text
-          y={mix(14, height / 2 - 13, detail)}
-          fill="#2360ce"
-          fontSize={mix(9, 10, detail)}
-          fontWeight="650"
-        >
-          Sofi {gift.birthdayAge}
-        </text>
-        <text
-          y={mix(28, height / 2 + 3, detail)}
-          fill="#293341"
-          fontSize={mix(9, 12, detail)}
-          fontWeight="550"
-        >
-          {gift.name}
-        </text>
-        <text y={height / 2 + 18} fill="#617087" fontSize="8" opacity={detail}>
-          {names[gift.month].slice(0, 3).toUpperCase()} {gift.year}
-        </text>
-      </g>
-    </g>
+    <article
+      className={`birthday-card ${gift.current ? "birthday-card-current" : ""} ${layout.compact ? "birthday-card-compact" : ""}`}
+      data-gift-card={gift.birthdayAge}
+      style={{
+        height: gift.height,
+        padding: mix(8, layout.padding, detail),
+        gap: mix(0, layout.gap, detail),
+        borderRadius: mix(12, 22, detail),
+        "--photo-width": `${layout.photoWidth * detail}px`,
+        "--photo-height": `${layout.photoHeight * detail}px`,
+        "--photo-opacity": detail,
+        "--edition-size": `${mix(9, 11, detail)}px`,
+        "--place-size": `${mix(9, titleSize, detail)}px`,
+        "--copy-gap": `${mix(2, layout.compact ? 5 : 9, detail)}px`,
+        "--date-opacity": dateReveal,
+        "--date-height": `${(layout.compact ? 14 : 44) * dateReveal}px`,
+      }}
+    >
+      {detail > 0 && <PhotoSlot gift={gift} className="birthday-card-photo" />}
+      <div className="birthday-card-copy">
+        <span className="birthday-card-edition">Sofi {gift.birthdayAge}</span>
+        <strong className="birthday-card-place">{gift.name}</strong>
+        {dateReveal > 0 && (
+          <div className="birthday-card-date">
+            <span>
+              {layout.compact
+                ? names[gift.month].slice(0, 3)
+                : names[gift.month]}
+            </span>
+            <span>{gift.year}</span>
+          </div>
+        )}
+      </div>
+    </article>
   );
 }
 
@@ -214,14 +175,7 @@ function StaticHistory() {
               key={gift.birthdayAge}
               data-static-photo-slot={gift.birthdayAge}
             >
-              {gift.photo ? (
-                <img src={gift.photo.src} alt={gift.photo.alt} />
-              ) : (
-                <div className="birthday-photo-placeholder">
-                  <Camera size={22} strokeWidth={1.3} />
-                  <span>Nuestra foto</span>
-                </div>
-              )}
+              <PhotoSlot gift={gift} className="birthday-gallery-photo" />
               <figcaption>
                 <span>Sofi {gift.birthdayAge}</span>
                 <strong>{gift.name}</strong>
@@ -251,7 +205,6 @@ function StaticHistory() {
 export default function CalendarScene() {
   const { ref, progress: p, reduced } = useScene();
   const [artRef, size] = useElementSize();
-  const id = useId();
   const w = size.width,
     h = size.height;
   const frame = timelineFrame(p, w, h);
@@ -263,6 +216,7 @@ export default function CalendarScene() {
       ref={ref}
       id="fechas"
       aria-label="Nuestros viajes y el próximo fin de semana"
+      style={{ "--calendar-arrived": arrived }}
     >
       <div className="scene-sticky calendar-stage">
         <div className="calendar-heading">
@@ -330,57 +284,54 @@ export default function CalendarScene() {
                     ),
                 )}
               </g>
-              <g className="memory-labels">
-                {fitted.map((label) => {
-                  const gift = label.lane === "gift";
-                  const y = gift
-                    ? ty - 16 - frame.cardHeight
-                    : frame.axisY + 35;
-                  const opacity = label.current ? 1 : labelOpacity;
-                  return (
-                    <g key={label.name} opacity={opacity}>
-                      {gift && (
-                        <path
-                          d={`M${label.anchorX} ${ty - 3}L${label.x} ${ty - 16}`}
-                          stroke="#afc3e5"
-                          fill="none"
-                        />
-                      )}
-                      <g
-                        data-memory-label={label.name}
-                        data-lane={label.lane}
-                        transform={`translate(${label.x} ${y})`}
-                      >
-                        {gift ? (
-                          <BirthdayCard gift={label} frame={frame} id={id} />
-                        ) : (
-                          <>
-                            <text
-                              textAnchor="middle"
-                              fontSize="12"
-                              fontWeight="550"
-                              fill="#3b414d"
-                            >
-                              {label.name}
-                            </text>
-                            <text
-                              textAnchor="middle"
-                              y="17"
-                              fontSize="9"
-                              fill="#697281"
-                            >
-                              {names[label.month].slice(0, 3).toUpperCase()}{" "}
-                              {label.year}
-                            </text>
-                          </>
-                        )}
-                      </g>
-                    </g>
-                  );
-                })}
+              <g className="memory-connectors" aria-hidden="true">
+                {fitted
+                  .filter((label) => label.lane === "gift")
+                  .map((label) => (
+                    <path
+                      key={label.name}
+                      d={`M${label.anchorX} ${ty - 3}L${label.x} ${ty - 16}`}
+                      stroke="#afc3e5"
+                      fill="none"
+                      opacity={label.current ? 1 : labelOpacity}
+                    />
+                  ))}
               </g>
             </svg>
           )}
+          <div className="timeline-annotations" aria-hidden="true">
+            {fitted.map((label) => {
+              const gift = label.lane === "gift";
+              return (
+                <div
+                  key={label.name}
+                  data-memory-label={label.name}
+                  data-lane={label.lane}
+                  className={
+                    gift ? "timeline-gift-label" : "timeline-trip-label"
+                  }
+                  style={{
+                    left: label.x,
+                    top: gift ? ty - 16 - label.height : frame.axisY + 23,
+                    width: label.width,
+                    opacity: label.current ? 1 : labelOpacity,
+                  }}
+                >
+                  {gift ? (
+                    <BirthdayCard gift={label} frame={frame} />
+                  ) : (
+                    <>
+                      <strong>{label.name}</strong>
+                      <span>
+                        {names[label.month].slice(0, 3).toUpperCase()}{" "}
+                        {label.year}
+                      </span>
+                    </>
+                  )}
+                </div>
+              );
+            })}
+          </div>
         </div>
         <div className="calendar-result" style={{ opacity: arrived }}>
           <span className="date-pill">
@@ -399,17 +350,21 @@ export default function CalendarScene() {
           </span>
           <ArrowDown size={15} />
         </div>
-        <ul className="sr-only" aria-label="Viajes anteriores">
-          {memories.map((m) => (
-            <li key={m.name}>
-              {m.birthdayAge ? `Sofi ${m.birthdayAge}: ` : ""}
-              {m.name}, {names[m.month]} de {m.year}
-              {m.birthdayAge && !m.photo
-                ? ". Espacio para una foto de los dos."
-                : ""}
-            </li>
-          ))}
-        </ul>
+        {!reduced && (
+          <ul className="sr-only" aria-label="Viajes anteriores">
+            {memories.map((m) => (
+              <li key={m.name}>
+                {m.birthdayAge ? `Sofi ${m.birthdayAge}: ` : ""}
+                {m.name}, {names[m.month]} de {m.year}
+                {m.birthdayAge && !m.photo
+                  ? ". Espacio para una foto de los dos."
+                  : m.photo
+                    ? `. ${m.photo.alt}.`
+                    : ""}
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </section>
   );

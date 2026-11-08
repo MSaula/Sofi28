@@ -44,25 +44,59 @@ export const timelineItems = timelineEvents.map((event) => ({
 export const monthX = (index) => index * 110 + 48;
 export const last = monthX(targetIndex);
 
-// Fixed-size annotations sit outside the scaled calendar world. Reserve their
-// actual height before fitting the month, including on short laptop screens.
+// Portrait photos keep their complete 3:4 composition. The remaining width is
+// a separate caption column, so no text has to sit over a face or landscape.
+export function birthdayLayout(w, h, scale, current = false) {
+  if (current)
+    return {
+      width: 184,
+      height: 84,
+      photoWidth: 45,
+      photoHeight: 60,
+      textWidth: 103,
+      gap: 12,
+      padding: 12,
+      compact: true,
+    };
+  const textWidth = w < 400 ? 94 : w < 700 ? 112 : 154;
+  const maxWidth = Math.min(w - 16, 440);
+  const availablePhotoHeight = Math.max(30, h - 16 - 164 * scale - 56 - 8 - 24);
+  const photoWidth = Math.max(
+    20,
+    Math.min(maxWidth - textWidth - 40, (availablePhotoHeight * 3) / 4),
+  );
+  const photoHeight = (photoWidth * 4) / 3;
+  return {
+    width: photoWidth + textWidth + 40,
+    height: photoHeight + 24,
+    photoWidth,
+    photoHeight,
+    textWidth,
+    gap: 16,
+    padding: 12,
+    compact: photoHeight < 120,
+  };
+}
+
+// Calendar and HTML annotations share one camera. Dates reserve their space
+// only as they arrive; historical photos finish fading before the final zoom.
 export function timelineFrame(p, w, h) {
   const approach = smooth(range(p, 0, 0.14));
   const travel = smooth(range(p, 0.14, 0.68));
-  const zoom = smooth(range(p, 0.68, 0.93));
-  const fullCardHeight = h < 280 ? 64 : 84;
-  const fullCardWidth = h < 280 ? 164 : 184;
+  const zoom = smooth(range(p, 0.76, 0.93));
   const detail = approach;
-  const cardHeight = mix(38, fullCardHeight, detail);
-  const cardWidth = mix(72, fullCardWidth, detail);
   const overview = Math.min((w - 52) / (months.length * 110), 0.33);
-  const travelScale = Math.max(
-    0.1,
-    Math.min(0.62, (h - fullCardHeight - 16 - 56) / 164),
+  const travelScale = Math.max(0.16, Math.min(0.5, (h - 200) / 250));
+  const giftLayout = birthdayLayout(w, h, travelScale);
+  const currentLayout = birthdayLayout(w, h, travelScale, true);
+  const cardHeight = mix(
+    mix(38, giftLayout.height, detail),
+    currentLayout.height,
+    smooth(range(p, 0.74, 0.82)),
   );
   const finalScale = Math.max(
     0.1,
-    Math.min((w - 36) / 96, (h - fullCardHeight - 16 - 12) / 140, 3.5),
+    Math.min((w - 36) / 96, (h - currentLayout.height - 16 - 12) / 140, 3.5),
   );
   const scale = mix(mix(overview, travelScale, approach), finalScale, zoom);
   const focus = mix(
@@ -80,9 +114,10 @@ export function timelineFrame(p, w, h) {
     zoom,
     detail,
     cardHeight,
-    cardWidth,
+    giftLayout,
+    currentLayout,
     axisY: ty + 164 * scale,
-    labelOpacity: 1 - range(p, 0.66, 0.76),
+    labelOpacity: 1 - range(p, 0.66, 0.74),
     arrived: smooth(range(p, 0.86, 0.93)),
   };
 }
@@ -92,17 +127,25 @@ export function fitTimelineLabels(frame, w) {
   const candidates = timelineItems
     .map((item) => {
       const anchorX = frame.tx + monthX(item.index) * frame.scale;
+      const layout = item.current ? frame.currentLayout : frame.giftLayout;
       const width = item.birthdayAge
-        ? frame.cardWidth
+        ? mix(72, layout.width, frame.detail)
         : Math.max(item.name.length * 6.4, 62) + 12;
       return {
         ...item,
         anchorX,
         width,
+        height: item.birthdayAge ? mix(38, layout.height, frame.detail) : 32,
+        layout,
         x: clamp(anchorX, width / 2 + 8, w - width / 2 - 8),
       };
     })
-    .filter((label) => label.anchorX >= 8 && label.anchorX <= w - 8);
+    .filter(
+      (label) =>
+        label.anchorX >= 8 &&
+        label.anchorX <= w - 8 &&
+        (label.current || frame.labelOpacity > 0),
+    );
   // Give the trip nearest the camera first choice. Chronological greediness
   // starves adjacent months (e.g. Greece and the Basque Country) until the
   // earlier label has almost left the screen.
