@@ -160,7 +160,7 @@ for (const [name, width, height] of [
       }
     }
     expect(seen.size).toBe(16);
-    expect([...photos].sort()).toEqual(["23", "24", "25", "26", "27", "28"]);
+    expect([...photos].sort()).toEqual(["23", "24", "25", "26", "27"]);
     await scrollScene(page, ".calendar-scene", 0.95);
     await expect(page.locator(".calendar-result")).toHaveCSS("opacity", "1");
     await expectInside(
@@ -408,7 +408,7 @@ test("supplied portraits load in their correct cards without cropping, including
   }
 });
 
-test("static chronology retains all six birthday photo spaces and the ten ordinary trips", async ({
+test("static chronology retains five portraits, a typographic future card and the ten ordinary trips", async ({
   page,
 }) => {
   for (const [width, height, reduced] of [
@@ -427,7 +427,7 @@ test("static chronology retains all six birthday photo spaces and the ten ordina
       await expect(
         page.locator(`[data-static-photo-slot="${age}"]`),
       ).toContainText(`Sofi ${age}`);
-    await expect(page.locator('[data-photo-slot="28"]')).toHaveCount(1);
+    await expect(page.locator('[data-photo-slot="28"]')).toHaveCount(0);
     const history = await page
       .locator(".timeline-static-history")
       .boundingBox();

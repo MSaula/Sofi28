@@ -121,8 +121,8 @@ function BirthdayCard({ gift, frame }) {
   const { detail } = frame;
   const layout = gift.layout;
   const titleSize = Math.min(
-    gift.current ? 14 : 30,
-    layout.textWidth / (gift.name.length * 0.52),
+    gift.current ? 32 : 30,
+    layout.textWidth / (gift.name.length * (gift.current ? 0.46 : 0.52)),
   );
   const dateReveal = Math.max(0, Math.min(1, (detail - 0.4) / 0.5));
   return (
@@ -143,9 +143,13 @@ function BirthdayCard({ gift, frame }) {
         "--date-opacity": dateReveal,
         "--date-height": `${(layout.compact ? 14 : 44) * dateReveal}px`,
         "--date-gap": `${(layout.compact ? 5 : 9) * detail * dateReveal}px`,
+        "--date-column-width": `${40 * dateReveal}px`,
+        "--date-column-gap": `${16 * detail * dateReveal}px`,
       }}
     >
-      <PhotoSlot gift={gift} className="birthday-card-photo" />
+      {!gift.current && (
+        <PhotoSlot gift={gift} className="birthday-card-photo" />
+      )}
       <div className="birthday-card-copy">
         <span className="birthday-card-edition">Sofi {gift.birthdayAge}</span>
         <strong className="birthday-card-place">{gift.name}</strong>

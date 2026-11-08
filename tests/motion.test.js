@@ -86,7 +86,7 @@ test("all fifteen memories preserve the supplied months without invented days", 
   );
 });
 
-test("birthday editions 23–28 have six configurable photos and use the upper lane", () => {
+test("birthday editions 23–28 use the upper lane, with photos reserved for memories", () => {
   assert.deepEqual(
     timelineEvents
       .filter((m) => m.birthdayAge)

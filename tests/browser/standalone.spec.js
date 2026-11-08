@@ -66,7 +66,7 @@ test("exported HTML runs without server or network, with assets, animation and c
       await expect(page.locator('[data-gift-card="28"]')).toContainText(
         "Sofi 28",
       );
-      await expect(page.locator('[data-photo-slot="28"]')).toHaveCount(1);
+      await expect(page.locator('[data-photo-slot="28"]')).toHaveCount(0);
     }
     if (selector === ".journey-scene" && p < 0.6)
       await expect(page.locator(".journey-flight-description")).toContainText(

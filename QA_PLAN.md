@@ -8,6 +8,8 @@ Photo-card iteration: [composition and integration plan](docs/plan-timeline-foto
 
 Timeline continuity iteration: [edge traversal and zoom plan](docs/plan-timeline-motion.md). Removes edge clamping and element removal, adds continuous opacity and soft window edges, and synchronizes SVG/HTML resizing. The full suite passes 41 checks; forward/reverse wheel recordings and measured card/month alignment accompany the change.
 
+Europe reveal iteration: [typographic final card and continental map](docs/plan-europe-reveal.md). Wider verified geography, sourced place names, route-only reveal and focused synchronization checks. All 51 checks pass, with 96 full-flow screenshots and offline export verification. This iteration updates only the private delivery.
+
 ## Process and evidence
 
 1. Reproduce before editing application code. `node scripts/audit-flow.cjs` scrolls the **entire page with wheel events**, samples animation boundaries, reverses direction and rotates the viewport.

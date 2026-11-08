@@ -1965,17 +1965,46 @@ html:has(dialog[open]) {
   stroke: #cad4db;
   stroke-width: 0.8;
 }
-.air-route-track {
-  stroke: #a2b5ca;
-  fill: none;
-  stroke-width: 1;
-  stroke-dasharray: 3 5;
-}
 .air-route-progress {
   stroke: var(--blue);
   fill: none;
   stroke-width: 2.5;
   stroke-linecap: round;
+}
+.europe-place circle {
+  fill: #778b99;
+  stroke: #f7f9f8;
+  stroke-width: 1.2;
+}
+.europe-place text {
+  fill: #637482;
+  font-weight: 450;
+  paint-order: stroke;
+  stroke: #f8f9f6;
+  stroke-width: 3;
+  stroke-linejoin: round;
+}
+.europe-place-visited circle,
+.europe-legend circle {
+  fill: #306dd5;
+}
+.europe-place-visited text {
+  fill: #315776;
+  font-weight: 600;
+}
+.europe-place-region circle {
+  fill: #f8f9f6;
+  stroke: #306dd5;
+}
+.place-leader {
+  fill: none;
+  stroke: #9aaebe;
+  stroke-width: 0.65;
+}
+.europe-legend text {
+  font-size: 7.5px;
+  fill: #526c83;
+  font-weight: 550;
 }
 .plane-halo {
   fill: #2368f51c;
@@ -2262,9 +2291,37 @@ html:has(dialog[open]) {
   overflow: hidden;
 }
 .birthday-card-current {
+  background: linear-gradient(115deg, #fff 45%, #f0f5ff);
   box-shadow:
     0 4px 18px #23355308,
     inset 0 0 0 1px #9fbcf7;
+}
+.birthday-card-current .birthday-card-copy {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--date-column-width);
+  column-gap: var(--date-column-gap);
+}
+.birthday-card-current .birthday-card-edition,
+.birthday-card-current .birthday-card-place {
+  grid-column: 1;
+}
+.birthday-card-current .birthday-card-date {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  margin-top: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+.birthday-card-current .birthday-card-date > span {
+  font-size: 10px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.birthday-card-current .birthday-card-date > span:last-child {
+  font-size: 18px;
 }
 .birthday-photo {
   overflow: hidden;
@@ -2293,14 +2350,6 @@ html:has(dialog[open]) {
   gap: 10px;
   color: #596b85;
   font-size: 10px;
-}
-.birthday-card-current .birthday-photo-empty {
-  gap: 6px;
-  font-size: 7px;
-}
-.birthday-card-current .birthday-photo-empty svg {
-  width: 16px;
-  height: 16px;
 }
 .birthday-card-copy {
   min-width: 0;

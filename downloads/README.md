@@ -6,4 +6,4 @@ Abre el enlace con una cuenta de GitHub que tenga acceso al repositorio privado.
 
 La rama `private-download` conserva el código, las fotografías y las evidencias de validación. El acceso a estos archivos hereda los permisos del repositorio. Esta entrega no utiliza GitHub Pages ni actualiza su rama `gh-pages`.
 
-Validación: 41 pruebas aprobadas, incluidas entradas y salidas suaves de las tarjetas, continuidad del zoom, carga y encuadre de las cinco fotos, recorrido inverso, móvil y exportación offline. El ZIP contiene únicamente `Viena.html` y `LEEME.txt`.
+Validación: 51 pruebas aprobadas, incluidas coordenadas y etiquetas del mapa, sincronización de traza/avión/zoom, ausencia de destino anticipado, tarjeta final sin imagen, continuidad del timeline, fotos originales, recorrido inverso, móvil y exportación offline. El ZIP contiene únicamente `Viena.html` y `LEEME.txt`.

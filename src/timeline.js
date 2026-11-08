@@ -42,14 +42,14 @@ export const last = monthX(targetIndex);
 export function birthdayLayout(w, h, scale, current = false) {
   if (current)
     return {
-      width: 184,
-      height: 84,
-      photoWidth: 45,
-      photoHeight: 60,
-      textWidth: 103,
-      gap: 12,
-      padding: 12,
-      compact: true,
+      width: Math.min(w - 16, 320),
+      height: h < 280 ? 88 : 104,
+      photoWidth: 0,
+      photoHeight: 0,
+      textWidth: Math.min(w - 16, 320) - (h < 280 || w < 300 ? 32 : 44) - 56,
+      gap: 0,
+      padding: h < 280 || w < 300 ? 16 : 22,
+      compact: false,
     };
   const textWidth = w < 400 ? 94 : w < 700 ? 112 : 154;
   const maxWidth = Math.min(w - 16, 440);

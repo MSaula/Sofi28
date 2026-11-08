@@ -11,6 +11,12 @@ import {
 import { useElementSize, useScene } from "../hooks";
 import { trip } from "../content";
 import {
+  buildEuropeModel,
+  europeCamera,
+  europePlaces,
+  flightAt,
+} from "../europeMap";
+import {
   airports,
   boundsFeature,
   downloadMapData,
@@ -20,15 +26,7 @@ import {
   transformPoint,
   vienna,
 } from "../geography";
-import {
-  clamp,
-  journeyState,
-  mix,
-  quadraticPoint,
-  quadraticTangent,
-  quadraticLengthTable,
-  quadraticParameterAtLength,
-} from "../motion";
+import { clamp, journeyState, range, smooth } from "../motion";
 
 const EuropeanLand = memo(function EuropeanLand({ projection }) {
   const paths = useMemo(
@@ -76,16 +74,20 @@ function Label({
   height,
   primary = false,
   hidden = false,
+  testId,
+  below = false,
+  opacity = 1,
 }) {
   const textWidth =
     Math.max(title.length * 6.3, (subtitle?.length || 0) * 4.8) + 20;
   const x = clamp(point[0], textWidth / 2 + 8, width - textWidth / 2 - 8);
-  const above = point[1] > 58;
+  const above = !below && point[1] > 58;
   const y = clamp(point[1] + (above ? -33 : 31), 25, height - 36);
   return (
     <g
       className={`map-label ${primary ? "primary-map-label" : ""}`}
-      opacity={hidden ? 0 : 1}
+      data-testid={testId}
+      opacity={hidden ? 0 : opacity}
     >
       {Math.abs(x - point[0]) > 8 && (
         <path d={`M${point}L${x},${y + 8}`} stroke="#b3bbc6" fill="none" />
@@ -108,97 +110,161 @@ function Label({
   );
 }
 
+function EuropeanPlaces({ model, opacity, flight, planeOpacity }) {
+  return (
+    <g className="europe-place-labels" opacity={opacity}>
+      {model.labels
+        .filter((p) => p.rect)
+        .map((place) => {
+          const { point, rect } = place;
+          const x = clamp(point[0], rect.x + 3, rect.x + rect.width - 3);
+          const y = clamp(point[1], rect.y + 2, rect.y + rect.height - 2);
+          return (
+            <g
+              key={place.id}
+              data-map-place={place.id}
+              data-place-kind={place.kind}
+              data-visited={place.visited ? "true" : "false"}
+              data-lon={place.coordinates[0]}
+              data-lat={place.coordinates[1]}
+              opacity={
+                1 -
+                planeOpacity *
+                  (1 -
+                    smooth(
+                      range(
+                        Math.hypot(
+                          clamp(flight.point[0], rect.x, rect.x + rect.width) -
+                            flight.point[0],
+                          clamp(flight.point[1], rect.y, rect.y + rect.height) -
+                            flight.point[1],
+                        ),
+                        16,
+                        34,
+                      ),
+                    ))
+              }
+              className={`europe-place ${place.visited ? "europe-place-visited" : ""} ${place.kind !== "city" ? "europe-place-region" : ""}`}
+            >
+              <title>
+                {place.name}
+                {place.kind === "city"
+                  ? ""
+                  : " · referencia regional, no una ciudad concreta"}
+              </title>
+              {Math.hypot(x - point[0], y - point[1]) > 14 && (
+                <path className="place-leader" d={`M${point}L${x},${y}`} />
+              )}
+              <circle
+                data-place-marker
+                cx={point[0]}
+                cy={point[1]}
+                r={place.visited ? 2.8 : 2}
+              />
+              <text
+                data-place-label
+                x={rect.x + 2}
+                y={rect.y + place.fontSize + 1}
+                fontSize={place.fontSize}
+              >
+                {place.name}
+              </text>
+            </g>
+          );
+        })}
+    </g>
+  );
+}
+
 function EuropeMap({ size, state, staticMode }) {
   const { width: w, height: h } = size;
-  const projection = useMemo(
-    () =>
-      geoMercator().fitExtent(
-        [
-          [Math.min(64, w * 0.17), h * 0.22],
-          [w - Math.min(64, w * 0.17), h * 0.79],
-        ],
-        {
-          type: "LineString",
-          coordinates: [airports.BCN.coordinates, airports.VIE.coordinates],
-        },
-      ),
-    [w, h],
-  );
-  const a = projection(airports.BCN.coordinates),
-    b = projection(airports.VIE.coordinates);
-  const control = [
-    (a[0] + b[0]) / 2,
-    Math.max(38, Math.min(a[1], b[1]) - Math.min(95, h * 0.16)),
-  ];
+  const model = useMemo(() => buildEuropeModel(w, h), [w, h]);
   const t = staticMode ? 1 : state.flightProgress;
-  const lengths = useMemo(
-    () => quadraticLengthTable(a, control, b),
-    [projection],
-  );
-  const parameter = quadraticParameterAtLength(lengths, t);
-  const plane = quadraticPoint(a, control, b, parameter);
-  const tangent = quadraticTangent(a, control, b, parameter);
-  const angle = (Math.atan2(tangent[1], tangent[0]) * 180) / Math.PI + 45;
+  const flight = flightAt(model, t);
   const zoom = staticMode ? 0 : state.europeZoom;
-  const s = mix(1, 1.65, zoom);
-  // Linear matrix interpolation keeps the destination on screen during handoff.
-  const tx = (w / 2 - b[0] * 1.65) * zoom,
-    ty = (h / 2 - b[1] * 1.65) * zoom;
+  const camera = europeCamera(model, zoom);
   const reveal = staticMode || state.destinationRevealed;
+  const labelsOpacity = 1 - smooth(range(zoom, 0, 0.25));
   return (
     <svg
       viewBox={`0 0 ${w} ${h}`}
+      style={{ width: w, height: h }}
       className="geographic-svg europe-map"
       role="img"
       aria-label={
         reveal
           ? "Mapa real de Europa: Barcelona a Viena"
-          : "Mapa de Europa: salida desde Barcelona"
+          : "Mapa de Europa con ciudades y recuerdos anteriores. Salida desde Barcelona; destino por descubrir."
       }
     >
-      <g transform={`translate(${tx} ${ty}) scale(${s})`}>
-        <EuropeanLand projection={projection} />
-        <path className="air-route-track" d={`M${a}Q${control} ${b}`} />
+      <g
+        transform={`translate(${camera.x} ${camera.y}) scale(${camera.scale})`}
+      >
+        <EuropeanLand projection={model.projection} />
+        <EuropeanPlaces
+          model={model}
+          opacity={labelsOpacity}
+          flight={flight}
+          planeOpacity={
+            staticMode
+              ? 0
+              : state.planeOpacity *
+                smooth(range(t, 0, 0.06)) *
+                (1 - smooth(range(t, 0.92, 1)))
+          }
+        />
         <path
           data-testid="flight-route"
           className="air-route-progress"
-          d={`M${a}Q${control} ${b}`}
+          d={model.d}
           pathLength="1"
           strokeDasharray="1"
           strokeDashoffset={1 - t}
+          opacity={t > 0 ? labelsOpacity : 0}
         />
         <Label
-          point={a}
+          point={model.a}
           title="Barcelona"
           subtitle="BCN · EL PRAT"
           width={w}
           height={h}
-          hidden={zoom > 0.1}
+          opacity={1 - smooth(range(zoom, 0, 0.2))}
+          testId="departure-label"
+          below
         />
-        <Label
-          point={b}
-          title={reveal ? "Viena" : "El siguiente destino"}
-          subtitle={reveal ? "VIE" : ""}
-          width={w}
-          height={h}
-          hidden={!reveal || zoom > 0.35}
-          primary
-        />
+        {reveal && (
+          <Label
+            point={model.b}
+            title="Viena"
+            subtitle="VIE"
+            width={w}
+            height={h}
+            opacity={labelsOpacity}
+            primary
+            testId="destination-label"
+          />
+        )}
         <g
           data-testid="plane-marker"
           data-progress={t}
-          data-angle={angle}
-          transform={`translate(${plane[0]} ${plane[1]})`}
-          opacity={staticMode ? 1 : state.planeOpacity}
+          data-angle={flight.angle}
+          transform={`translate(${flight.point[0]} ${flight.point[1]})`}
+          opacity={staticMode ? 1 : state.planeOpacity * labelsOpacity}
         >
-          <circle r="21" className="plane-halo" />
-          <circle r="14" className="plane-disc" />
-          <g transform={`rotate(${angle})`}>
-            <g transform="translate(-8 -8)">
-              <Plane size={16} strokeWidth={1.7} />
+          <circle r="16" className="plane-halo" />
+          <circle r="11" className="plane-disc" />
+          <g transform={`rotate(${flight.angle})`}>
+            <g transform="translate(-6.5 -6.5)">
+              <Plane size={13} strokeWidth={1.7} />
             </g>
           </g>
         </g>
+      </g>
+      <g className="europe-legend" opacity={labelsOpacity}>
+        <circle cx="17" cy="18" r="2.5" />
+        <text x="25" y="21">
+          Lugares compartidos
+        </text>
       </g>
     </svg>
   );
@@ -245,6 +311,7 @@ function ViennaMap({ size, state, staticMode }) {
     <svg
       viewBox={`0 0 ${w} ${h}`}
       className="geographic-svg vienna-map"
+      style={{ width: w, height: h }}
       role="img"
       aria-label="Calles reales del centro de Viena. Zona aproximada del alojamiento en Untere Weißgerberstraße, no ubicación verificada del edificio 37."
     >
@@ -342,7 +409,7 @@ function MapPanel({ state, staticMode, kind }) {
           ? kind === "europe-static"
             ? "EUROPA"
             : "VIENA · CENTRO"
-          : state.cityOpacity > 0.5
+          : state.phase === "city" || state.phase === "stay"
             ? "VIENA · CENTRO"
             : "EUROPA"}
       </span>
@@ -361,7 +428,11 @@ export default function JourneyScene() {
       ref={ref}
       id="destino"
       data-journey-phase={state.phase}
-      aria-label="El vuelo a Viena y la zona del alojamiento"
+      aria-label={
+        staticMode || state.destinationRevealed
+          ? "El vuelo a Viena y la zona del alojamiento"
+          : "Un viaje y un destino por descubrir"
+      }
     >
       <div className="scene-sticky journey-stage">
         <div className="journey-heading-row">
@@ -372,7 +443,7 @@ export default function JourneyScene() {
           <span className="tiny-label">{trip.shortDates}</span>
         </div>
         <div className="journey-heading-copy">
-          <h2>{staticMode ? "De Barcelona a Viena." : state.title}</h2>
+          <h2>{staticMode ? "¿A dónde iremos?" : state.title}</h2>
           <p>
             {state.destinationRevealed || staticMode
               ? "Barcelona · BCN → Viena · VIE"
@@ -431,13 +502,13 @@ export default function JourneyScene() {
                 >
                   © OpenStreetMap contributors
                 </a>
-                <button onClick={() => credits.current.showModal()}>
-                  Datos y precisión
-                </button>
               </>
             ) : (
-              "Cartografía: Natural Earth · conexión aérea ilustrativa"
+              "Natural Earth · GeoNames · conexión aérea ilustrativa"
             )}
+            <button onClick={() => credits.current.showModal()}>
+              Datos y precisión
+            </button>
           </span>
           <ArrowDown size={13} />
         </div>
@@ -457,6 +528,12 @@ export default function JourneyScene() {
         <span className="eyebrow">CARTOGRAFÍA Y UBICACIÓN</span>
         <h2 id="map-credits-title">Sobre este mapa.</h2>
         <p>
+          Europa: límites de Natural Earth y ciudades de Natural Earth y
+          GeoNames. Los nombres de islas y regiones señalan referencias
+          geográficas, sin atribuir una ciudad visitada. La traza aérea es una
+          conexión ilustrativa entre los aeropuertos, no un itinerario de vuelo.
+        </p>
+        <p>
           Cartografía de calles de OpenStreetMap. Extracto de Viena:
           EqualStreetNames, 2 de octubre de 2026. Puedes abrir el mapa de
           OpenStreetMap para consultar más capas y comprobar una dirección.
@@ -467,6 +544,22 @@ export default function JourneyScene() {
           edificio confirmado.
         </p>
         <div className="map-data-links">
+          <a
+            className="text-link"
+            href={europePlaces.source.naturalEarth.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Natural Earth · dominio público <ArrowUpRight size={14} />
+          </a>
+          <a
+            className="text-link"
+            href={europePlaces.source.geonames.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GeoNames · CC BY 4.0 <ArrowUpRight size={14} />
+          </a>
           <a
             className="text-link"
             href={vienna.source.url}

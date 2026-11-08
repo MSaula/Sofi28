@@ -1,0 +1,406 @@
+{
+  "source": {
+    "naturalEarth": {
+      "name": "Natural Earth 1:10m populated places",
+      "license": "Public domain",
+      "url": "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_populated_places_simple.geojson",
+      "revision": "ca96624a56bd078437bca8184e78163e5039ad19",
+      "sha256": "fd3fa867a320cbd5c5b6bb5bc550afeec2939fb2cef688e508007282a55ac42f"
+    },
+    "geonames": {
+      "name": "GeoNames",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "url": "https://www.geonames.org/",
+      "distribution": "geonamescache 3.0.2",
+      "distributionSha256": "b830e8942f2d58c7e68782dcf4dff2ffe8c4104a35ee881ed1ad4023cefcdba4"
+    }
+  },
+  "places": [
+    {
+      "id": "nice",
+      "name": "Niza",
+      "coordinates": [
+        7.263078,
+        43.716964
+      ],
+      "country": "FR",
+      "kind": "city",
+      "capital": false,
+      "source": "natural-earth",
+      "sourceId": 1159147221,
+      "sourceName": "Nice",
+      "visited": true
+    },
+    {
+      "id": "london",
+      "name": "Londres",
+      "coordinates": [
+        -0.118668,
+        51.501941
+      ],
+      "country": "GB",
+      "kind": "city",
+      "capital": true,
+      "source": "natural-earth",
+      "sourceId": 1159151577,
+      "sourceName": "London",
+      "visited": true
+    },
+    {
+      "id": "rome",
+      "name": "Roma",
+      "coordinates": [
+        12.481313,
+        41.897902
+      ],
+      "country": "IT",
+      "kind": "city",
+      "capital": true,
+      "source": "natural-earth",
+      "sourceId": 1159151593,
+      "sourceName": "Rome",
+      "visited": true
+    },
+    {
+      "id": "florence",
+      "name": "Florencia",
+      "coordinates": [
+        11.25,
+        43.780001
+      ],
+      "country": "IT",
+      "kind": "city",
+      "capital": false,
+      "source": "natural-earth",
+      "sourceId": 1159149751,
+      "sourceName": "Florence",
+      "visited": true
+    },
+    {
+      "id": "lisbon",
+      "name": "Lisboa",
+      "coordinates": [
+        -9.146812,
+        38.724669
+      ],
+      "country": "PT",
+      "kind": "city",
+      "capital": true,
+      "source": "natural-earth",
+      "sourceId": 1159151273,
+      "sourceName": "Lisbon",
+      "visited": true
+    },
+    {
+      "id": "cortina",
+      "name": "Cortina d’Ampezzo",
+      "coordinates": [
+        12.13903,
+        46.5369
+      ],
+      "country": "IT",
+      "kind": "city",
+      "visited": true,
+      "source": "geonames",
+      "sourceId": 3177952,
+      "sourceName": "Cortina d'Ampezzo"
+    },
+    {
+      "id": "mallorca",
+      "name": "Mallorca",
+      "coordinates": [
+        2.965135,
+        39.630966
+      ],
+      "kind": "island",
+      "visited": true,
+      "source": "natural-earth-centroid",
+      "sourceId": "724",
+      "precision": "regional-reference-not-city"
+    },
+    {
+      "id": "paros",
+      "name": "Paros",
+      "coordinates": [
+        25.197501,
+        37.068255
+      ],
+      "kind": "island",
+      "visited": true,
+      "source": "natural-earth-centroid",
+      "sourceId": "300",
+      "precision": "regional-reference-not-city"
+    },
+    {
+      "id": "montenegro",
+      "name": "Montenegro",
+      "coordinates": [
+        19.239285,
+        42.786772
+      ],
+      "kind": "country",
+      "visited": true,
+      "source": "natural-earth-centroid",
+      "sourceId": "499",
+      "precision": "regional-reference-not-city"
+    },
+    {
+      "id": "basque",
+      "name": "País Vasco",
+      "coordinates": [
+        -2.524317,
+        43.14184
+      ],
+      "kind": "region",
+      "visited": true,
+      "source": "geonames-regional-reference",
+      "sourceIds": [
+        3104499,
+        3110044,
+        3128026
+      ],
+      "precision": "regional-reference-not-claimed-city-visit"
+    },
+    {
+      "id": "edinburgh",
+      "name": "Edimburgo",
+      "coordinates": [
+        -3.219091,
+        55.948328
+      ],
+      "country": "GB",
+      "kind": "city",
+      "capital": false,
+      "source": "natural-earth",
+      "sourceId": 1159146365,
+      "sourceName": "Edinburgh",
+      "frameReference": true
+    },
+    {
+      "id": "copenhagen",
+      "name": "Copenhague",
+      "coordinates": [
+        12.56154,
+        55.68051
+      ],
+      "country": "DK",
+      "kind": "city",
+      "capital": true,
+      "source": "natural-earth",
+      "sourceId": 1159151437,
+      "sourceName": "København",
+      "frameReference": true
+    },
+    {
+      "id": "madrid",
+      "name": "Madrid",
+      "coordinates": [
+        -3.685297,
+        40.401972
+      ],
+      "country": "ES",
+      "kind": "city",
+      "capital": true,
+      "source": "natural-earth",
+      "sourceId": 1159151503,
+      "sourceName": "Madrid"
+    },
+    {
+      "id": "paris",
+      "name": "París",
+      "coordinates": [
+        2.352992,
+        48.858092
+      ],
+      "country": "FR",
+      "kind": "city",
+      "capital": true,
+      "source": "natural-earth",
+      "sourceId": 1159151613,
+      "sourceName": "Paris"
+    },
+    {
+      "id": "berlin",
+      "name": "Berlín",
+      "coordinates": [
+        13.399603,
+        52.523764
+      ],
+      "country": "DE",
+      "kind": "city",
+      "capital": true,
+      "source": "natural-earth",
+      "sourceId": 1159151529,
+      "sourceName": "Berlin"
+    },
+    {
+      "id": "dublin",
+      "name": "Dublín",
+      "coordinates": [
+        -6.25698,
+        53.346731
+      ],
+      "country": "IE",
+      "kind": "city",
+      "capital": true,
+      "source": "natural-earth",
+      "sourceId": 1159151309,
+      "sourceName": "Dublin"
+    },
+    {
+      "id": "amsterdam",
+      "name": "Ámsterdam",
+      "coordinates": [
+        4.914694,
+        52.351914
+      ],
+      "country": "NL",
+      "kind": "city",
+      "capital": true,
+      "source": "natural-earth",
+      "sourceId": 1159151519,
+      "sourceName": "Amsterdam"
+    },
+    {
+      "id": "brussels",
+      "name": "Bruselas",
+      "coordinates": [
+        4.331371,
+        50.835263
+      ],
+      "country": "BE",
+      "kind": "city",
+      "capital": true,
+      "source": "natural-earth",
+      "sourceId": 1159151465,
+      "sourceName": "Brussels"
+    },
+    {
+      "id": "prague",
+      "name": "Praga",
+      "coordinates": [
+        14.422939,
+        50.086967
+      ],
+      "country": "CZ",
+      "kind": "city",
+      "capital": true,
+      "source": "natural-earth",
+      "sourceId": 1159151359,
+      "sourceName": "Prague"
+    },
+    {
+      "id": "budapest",
+      "name": "Budapest",
+      "coordinates": [
+        19.081375,
+        47.501952
+      ],
+      "country": "HU",
+      "kind": "city",
+      "capital": true,
+      "source": "natural-earth",
+      "sourceId": 1159151257,
+      "sourceName": "Budapest"
+    },
+    {
+      "id": "bern",
+      "name": "Berna",
+      "coordinates": [
+        7.466976,
+        46.916683
+      ],
+      "country": "CH",
+      "kind": "city",
+      "capital": true,
+      "source": "natural-earth",
+      "sourceId": 1159149737,
+      "sourceName": "Bern"
+    },
+    {
+      "id": "warsaw",
+      "name": "Varsovia",
+      "coordinates": [
+        21.005347,
+        52.230872
+      ],
+      "country": "PL",
+      "kind": "city",
+      "capital": true,
+      "source": "natural-earth",
+      "sourceId": 1159151299,
+      "sourceName": "Warsaw"
+    },
+    {
+      "id": "stockholm",
+      "name": "Estocolmo",
+      "coordinates": [
+        18.0663,
+        59.324127
+      ],
+      "country": "SE",
+      "kind": "city",
+      "capital": true,
+      "source": "natural-earth",
+      "sourceId": 1159151507,
+      "sourceName": "Stockholm"
+    },
+    {
+      "id": "athens",
+      "name": "Atenas",
+      "coordinates": [
+        23.731375,
+        37.985272
+      ],
+      "country": "GR",
+      "kind": "city",
+      "capital": true,
+      "source": "natural-earth",
+      "sourceId": 1159151545,
+      "sourceName": "Athens"
+    },
+    {
+      "id": "zagreb",
+      "name": "Zagreb",
+      "coordinates": [
+        15.999995,
+        45.800007
+      ],
+      "country": "HR",
+      "kind": "city",
+      "capital": true,
+      "source": "natural-earth",
+      "sourceId": 1159150875,
+      "sourceName": "Zagreb"
+    },
+    {
+      "id": "ljubljana",
+      "name": "Liubliana",
+      "coordinates": [
+        14.514969,
+        46.055288
+      ],
+      "country": "SI",
+      "kind": "city",
+      "capital": true,
+      "source": "natural-earth",
+      "sourceId": 1159149461,
+      "sourceName": "Ljubljana"
+    },
+    {
+      "id": "reykjavik",
+      "name": "Reikiavik",
+      "coordinates": [
+        -21.936546,
+        64.143459
+      ],
+      "country": "IS",
+      "kind": "city",
+      "capital": true,
+      "source": "natural-earth",
+      "sourceId": 1159150587,
+      "sourceName": "Reykjavík"
+    }
+  ]
+}

@@ -15,56 +15,13 @@ const atlas = JSON.parse(
 );
 const weighted = presimplify(atlas, sphericalTriangleArea);
 const topology = simplify(weighted, quantile(weighted, 0.75));
-const ids = new Set([
-  "008",
-  "012",
-  "020",
-  "040",
-  "056",
-  "070",
-  "100",
-  "191",
-  "196",
-  "203",
-  "208",
-  "233",
-  "246",
-  "250",
-  "276",
-  "300",
-  "348",
-  "352",
-  "372",
-  "380",
-  "428",
-  "440",
-  "442",
-  "470",
-  "504",
-  "498",
-  "499",
-  "528",
-  "578",
-  "616",
-  "620",
-  "642",
-  "688",
-  "703",
-  "705",
-  "724",
-  "752",
-  "756",
-  "788",
-  "792",
-  "804",
-  "807",
-  "826",
-]);
+// Include every neighbouring land mass that can enter the wider frame.
+// Selecting countries manually omitted Belarus and Russia, painting them as sea.
+const selectionBounds = [-50, 24, 70, 74];
 const round = (value) =>
   Array.isArray(value) ? value.map(round) : Math.round(value * 10000) / 10000;
 const features = feature(topology, topology.objects.countries)
-  .features.filter((f) => ids.has(String(f.id).padStart(3, "0")))
-  .map((f) => {
+  .features.map((f) => {
     const polygons =
       f.geometry.type === "MultiPolygon"
         ? f.geometry.coordinates
@@ -75,12 +32,19 @@ const features = feature(topology, topology.objects.countries)
         type: "MultiPolygon",
         coordinates: round(
           polygons.filter((poly) =>
-            poly[0].some(([x, y]) => x > -30 && x < 45 && y > 27 && y < 72),
+            poly[0].some(
+              ([x, y]) =>
+                x > selectionBounds[0] &&
+                x < selectionBounds[2] &&
+                y > selectionBounds[1] &&
+                y < selectionBounds[3],
+            ),
           ),
         ),
       },
     };
-  });
+  })
+  .filter((f) => f.geometry.coordinates.length > 0);
 const result = {
   type: "FeatureCollection",
   source: {
@@ -89,6 +53,7 @@ const result = {
     url: "https://www.naturalearthdata.com/",
     processing:
       "Topological simplification, 75th percentile spherical triangle area; rounded to 4 decimal places.",
+    selectionBounds,
   },
   features,
 };
