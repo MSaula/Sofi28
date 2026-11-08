@@ -24,7 +24,7 @@
 - [x] Ruta sin anticipación y etiquetas de Europa.
 - [x] Pruebas localizadas y revisión visual.
 - [x] Validación end to end y offline.
-- [ ] ZIP privado actualizado y comprobado.
+- [x] ZIP privado actualizado y comprobado.
 
 
 ## Causas y correcciones
@@ -73,3 +73,11 @@ La inspección de capturas del recorrido completo encontró un problema que las 
 - [Tarjeta final](qa/sofi28-final-card.png) y [composición a 320 px](qa/sofi28-final-card-narrow.png).
 - [Registro del flujo](qa/europe-reveal-flow.json). Capturas originales en `artifacts/europe-map/final-flow/`.
 - [Recibo de la entrega privada](qa/timeline-photo-delivery.json).
+
+
+## Entrega privada verificada
+
+- Código, evidencias y ZIP subidos a `private-download`, commit `9723b9476eeef92e16c22fa68b9d989aff61235a`. [Descargar esta versión](https://github.com/MSaula/Sofi28/raw/9723b9476eeef92e16c22fa68b9d989aff61235a/downloads/Viena.zip).
+- El ZIP recuperado de GitHub coincide byte a byte con el local y contiene el HTML final validado (SHA-256 `f627bb45749f045cd241955f905fdfeb1c08ff9ce58d7204aa9442efeb7adbf0`). Las cinco fotografías remotas conservan sus hashes originales.
+- La descarga sin credenciales responde **404**. El acceso sigue dependiendo de una cuenta autorizada en el repositorio.
+- `main` permanece en `66e6acd5e8f016ff52ae78eee758054b26b1a0d6` y `gh-pages` en `a276f224e4072e3f60879ed3cc6025304c551322`. No se ha actualizado la vista pública ni la configuración del entorno.
