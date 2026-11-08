@@ -24,7 +24,7 @@ Otros dos mecanismos añaden saltos: la selección discreta de etiquetas que cab
 - [x] Movimiento, opacidades, apertura y bordes suaves.
 - [x] Revisión visual y pruebas específicas en escritorio, móvil y portátil bajo.
 - [x] Regresión completa y exportación offline.
-- [ ] ZIP privado actualizado y verificado.
+- [x] ZIP privado actualizado y verificado.
 
 ## Correcciones y comprobaciones
 
@@ -50,3 +50,9 @@ Otros dos mecanismos añaden saltos: la selección discreta de etiquetas que cab
 - [Grabación móvil: zoom, avance y regreso con rueda](qa/timeline-motion-mobile.webm).
 - [Mediciones de ambos recorridos](qa/timeline-motion-review.json).
 - Capturas y vídeos originales: `artifacts/timeline-motion/` (no incluidos en el ZIP del regalo). La grabación de escritorio queda en ese directorio; la móvil se conserva también en las evidencias versionadas.
+
+## Entrega privada
+
+- ZIP actualizado en `private-download`, commit `d44afd91993460c09d7ed6af4c7736652e60f164`; incluye el HTML probado offline. El archivo recuperado de GitHub coincide byte a byte con el ZIP local y con el SHA-256 de la exportación validada.
+- [Descargar esta versión concreta](https://github.com/MSaula/Sofi28/raw/d44afd91993460c09d7ed6af4c7736652e60f164/downloads/Viena.zip). [Enlace estable a la última entrega](https://github.com/MSaula/Sofi28/raw/refs/heads/private-download/downloads/Viena.zip).
+- La descarga sigue respondiendo 404 sin sesión. Se han vuelto a verificar las cinco fotografías remotas contra los originales y las referencias de `main` y `gh-pages` permanecen intactas. No se ha actualizado GitHub Pages.

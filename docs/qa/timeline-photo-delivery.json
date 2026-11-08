@@ -1,5 +1,5 @@
 {
-  "status": "private-repository-delivery-prepared",
+  "status": "private-repository-delivery-verified",
   "html_sha256": "a6120383c205cf3d710a2d50dfae6b586853571752ee4a704ae19989dd975c98",
   "html_bytes": 4020699,
   "zip_bytes": 2375593,
@@ -15,5 +15,12 @@
   "main_before": "66e6acd5e8f016ff52ae78eee758054b26b1a0d6",
   "gh_pages_before": "a276f224e4072e3f60879ed3cc6025304c551322",
   "previous_delivery_commit": "ea297ee84a79b7816253b14c51ef131a3c84161d",
-  "iteration": "smooth-timeline-edge-traversal"
+  "iteration": "smooth-timeline-edge-traversal",
+  "delivery_commit": "d44afd91993460c09d7ed6af4c7736652e60f164",
+  "versioned_download_url": "https://github.com/MSaula/Sofi28/raw/d44afd91993460c09d7ed6af4c7736652e60f164/downloads/Viena.zip",
+  "anonymous_download_http_status": 404,
+  "remote_zip_matches_validated_html": true,
+  "remote_originals_match": true,
+  "main_unchanged": true,
+  "gh_pages_unchanged": true
 }
