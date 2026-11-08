@@ -1,5 +1,7 @@
 # Sofi 28 — Viena, enero de 2027
 
+**Entrega privada con las cinco fotografías:** [descargar Viena.zip](https://github.com/MSaula/Sofi28/raw/refs/heads/private-download/downloads/Viena.zip), en la rama `private-download`. Requiere una cuenta autorizada en este repositorio. Descomprimir y abrir `Viena.html`. Esta entrega no actualiza GitHub Pages.
+
 Primera versión de una web-regalo con carta, cronología, mapa animado y revelación del ballet. React + Vite. El desplazamiento es nativo: las escenas usan CSS `sticky` y su animación depende de la posición del scroll, también al retroceder.
 
 ## Desarrollo
@@ -62,7 +64,9 @@ Las fechas del viaje y el inicio de la función se editan una sola vez al princi
 
 El PDF de las entradas, códigos QR, números de pedido y datos del comprador **no se incorporan** al repositorio ni a `public`. La página solo contiene los datos de la experiencia. No hay analítica, backend, peticiones automáticas a proveedores de mapas/fotos ni almacenamiento de datos. Los enlaces externos solo se abren al pulsarlos. `noindex` evita solicitar indexación; no sustituye al control de acceso si se publica en una URL pública.
 
-La vista previa autorizada se publica como página autocontenida y ZIP en la rama separada **`gh-pages`** de `MSaula/Sofi28`. El exportador verifica que está actualizando su propia rama. `main` no se modifica. La activación de GitHub Pages y la URL en vivo no pueden verificarse desde esta red, que bloquea `api.github.com`.
+La entrega actual autorizada es privada: código y ZIP en **`private-download`**, con la descarga en `downloads/Viena.zip`. Los permisos los establece el repositorio, no el nombre de la rama. La rama nueva no es la fuente previamente propuesta para Pages y no contiene workflows de despliegue.
+
+La rama anterior **`gh-pages`** conserva la vista previa sin estas fotografías. No se actualiza en esta entrega: GitHub Pages puede exponer contenido públicamente incluso desde un repositorio privado. Su configuración y la URL en vivo no pueden verificarse desde esta red, que bloquea `api.github.com`. El exportador antiguo de los párrafos siguientes corresponde a ese flujo separado; no se usa para entregar las fotos bajo la autorización privada actual.
 
 Para activar el alojamiento: en <https://github.com/MSaula/Sofi28/settings/pages>, elegir **Deploy from a branch → gh-pages → / (root)** y guardar. GitHub mostrará la URL cuando finalice el despliegue. La disponibilidad de Pages depende de la configuración y el plan del repositorio; no se ha cambiado su visibilidad.
 

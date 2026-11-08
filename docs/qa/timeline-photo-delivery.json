@@ -1,10 +1,17 @@
 {
-  "status": "local-ready-publication-awaits-explicit-photo-approval",
+  "status": "private-repository-delivery-prepared",
   "html_sha256": "3fae2c4f3cad67eb7606adeea8516e6a85fc18c43aa7b911a3f93a785af02a02",
   "html_bytes": 4019542,
   "zip_bytes": 2375279,
   "unit_tests": 17,
   "browser_tests": 16,
   "offline_tests": 1,
-  "photos": 5
+  "photos": 5,
+  "branch": "private-download",
+  "download_path": "downloads/Viena.zip",
+  "download_url": "https://github.com/MSaula/Sofi28/raw/refs/heads/private-download/downloads/Viena.zip",
+  "zip_sha256": "f56f34ce492a55df335ccba5855bb7f57bef1ce112323069e581cba36662d61f",
+  "approved_scope": "Private repository upload only; no GitHub Pages update",
+  "main_before": "66e6acd5e8f016ff52ae78eee758054b26b1a0d6",
+  "gh_pages_before": "a276f224e4072e3f60879ed3cc6025304c551322"
 }

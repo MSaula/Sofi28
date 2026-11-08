@@ -1,6 +1,6 @@
 # Timeline fotográfico — composición, integración y validación
 
-Estado actual: **cinco originales incorporados y revisión con fotografías reales completada; 34 pruebas aprobadas**. Entrega local preparada; publicación pendiente de aprobación explícita para estas fotografías personales. Las notas de la primera fase sin archivos se conservan como antecedentes.
+Estado actual: **cinco originales incorporados y revisión con fotografías reales completada; 34 pruebas aprobadas**. El usuario ha autorizado subirlas al repositorio privado y actualizar el enlace con sus permisos. Entrega preparada en una rama nueva `private-download`, separada del flujo de GitHub Pages. Las notas de la primera fase sin archivos se conservan como antecedentes.
 
 ## Propósito y decisión de diseño
 
@@ -45,7 +45,8 @@ Todos tienen proporción 3:4 y orientación EXIF normal. Los archivos de `public
 - [x] Pruebas localizadas y revisión visual de las fases con espacios de foto.
 - [x] Regresión end to end y exportación offline con los cinco originales.
 - [x] HTML y ZIP locales con las cinco fotos reales incorporadas y validadas.
-- [ ] Publicación: pendiente de aprobación explícita para estas cinco fotografías personales.
+- [x] Autorización explícita recibida para subir las fotos al repositorio privado y entregar el ZIP con acceso restringido.
+- [ ] Subida a la rama de entrega y comprobación de acceso y contenido remoto.
 
 ## Implementación y primera validación de la composición
 
@@ -86,11 +87,12 @@ Maquetas anteriores, conservadas como antecedente:
 - Se mantienen las verificaciones de mapas, ballet, selección de fechas, accesibilidad, navegación, rotación y overflow del recorrido completo.
 - Auditoría final con fotos: 96 capturas (24 por tamaño/modo), los cuatro recorridos llegan al final, **0 errores JavaScript, 0 muestras con overflow y las cinco fotos cargadas en los cuatro casos**. No se registran tareas de más de 50 ms durante el avance con rueda; las capturas y rotaciones posteriores sí generan tareas largas. La prueba se realiza en Chromium, sin una revisión en dispositivos físicos ni Safari.
 
-## Entrega local y bloqueo de publicación
+## Entrega local, autorización y privacidad
 
 - HTML validado: `artifacts/entrega-sofi28/Viena.html`.
 - ZIP preparado y comprobado: `artifacts/entrega-sofi28/Sofi28-fotos.zip`. Contiene únicamente `Viena.html` y `LEEME.txt`; el HTML coincide byte a byte con la exportación validada.
 - [Recibo de entrega local y SHA-256](qa/timeline-photo-delivery.json).
 - La revisión automática rechazó ejecutar `python3 scripts/publish-preview.py`: consideró las cinco fotografías personales un contenido sensible nuevo y que la autorización anterior para detalles e ilustraciones no cubría su publicación pública. Se necesita aprobación explícita del usuario para publicar estas fotos concretas.
 - Aclaración de acceso tras la pregunta del usuario: tanto la página de `github.com/MSaula/Sofi28` como el enlace GitHub/raw del ZIP devuelven **404 sin sesión**, mientras que el acceso Git autorizado confirma que la rama `gh-pages` existe. El enlace GitHub del ZIP no es accesible anónimamente y hereda los permisos del repositorio. No se ha confirmado mediante metadatos su etiqueta formal de visibilidad: la API está bloqueada en esta red. GitHub Pages es un canal separado; puede servir públicamente una web y el ZIP de su carpeta raíz aunque el repositorio sea privado. Su configuración/despliegue no están verificados. La referencia previa a «publicación pública» describe la acción propuesta y el motivo de la revisión automática; no demuestra que el repositorio sea público.
-- No se ha intentado publicar por otra vía. No se ha actualizado `gh-pages` ni subido las fotos o sus capturas a la rama de código. Los cambios y evidencias quedan preparados localmente para revisión y publicación tras la aprobación.
+- Tras esa aclaración, el usuario ha autorizado explícitamente subir las fotos a su repositorio privado siempre que el enlace requiera sus permisos. La entrega se realizará en `private-download`, una rama inexistente antes de esta autorización, con el ZIP en `downloads/Viena.zip`. No se actualizará `gh-pages`, no se activará Pages ni se cambiará la visibilidad del repositorio. La rama contiene el código y las evidencias, sin workflows de despliegue.
+- Antes de la subida, GitHub vuelve a responder 404 a una lectura anónima del repositorio. Se ha detectado y conservado la integración que el usuario hizo en `main` (`66e6acd`, merge de la iteración anterior): su contenido coincide con la base ya incorporada en este trabajo.
