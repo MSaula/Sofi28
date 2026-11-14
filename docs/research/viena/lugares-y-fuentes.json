@@ -1,0 +1,2861 @@
+{
+  "title": "Viena, lugar a lugar.",
+  "preparedDate": "2026-11-14",
+  "tripDates": [
+    "2027-01-22",
+    "2027-01-24"
+  ],
+  "scope": "Centro histórico, Ring y zonas próximas. Belvedere y el sector Hundertwasser son extensiones del núcleo central. Índice editorial para investigar y seleccionar, no itinerario cerrado.",
+  "zones": {
+    "casco": "Casco histórico",
+    "ring": "Ring y museos",
+    "sur": "Karlsplatz y Belvedere",
+    "landstrasse": "Stadtpark y Landstraße"
+  },
+  "categories": {
+    "arquitectura": "Arquitectura",
+    "plazas": "Calles y plazas",
+    "interiores": "Arte e interiores",
+    "paseos": "Parques y paseos",
+    "cafe": "Cafés y mercados"
+  },
+  "selectionMeaning": "La marca Selección visual identifica prioridades editoriales para una presentación de Viena; no indica reservas ni entradas incluidas.",
+  "photoMethod": "Copias de visualización descargadas de Wikimedia Commons, con 1.600 px o más en su lado largo real. No se han ampliado, recomprimido, retocado ni generado imágenes. Las fichas y el visor conservan la proporción completa. Autor, licencia y fuente individual documentados.",
+  "places": [
+    {
+      "id": "stephansdom",
+      "name": "Stephansdom",
+      "subtitle": "El gran símbolo de Viena",
+      "zone": "casco",
+      "category": "arquitectura",
+      "priority": true,
+      "description": "La catedral de San Esteban concentra buena parte de la identidad del casco histórico: una torre gótica muy esbelta, fachadas de piedra y un tejado de azulejos de colores. La plaza permite rodearla y descubrir perspectivas muy distintas sin alejarse del centro.",
+      "photoTip": "Desde el extremo de Stephansplatz se entiende mejor la silueta completa. Para destacar el tejado, busca una vista lateral; la subida a las torres es una visita distinta del paseo exterior.",
+      "visit": "Plaza y exterior; visita interior y torres según modalidad de acceso.",
+      "winter": "Las horas con menos gente facilitan fotografiar la plaza; no es necesario subir a una torre para disfrutar del conjunto.",
+      "official": "https://www.stephanskirche.at/",
+      "wikipedia": {
+        "title": "St. Stephen's Cathedral, Vienna",
+        "pageid": 214393,
+        "fullurl": "https://en.wikipedia.org/wiki/St._Stephen%27s_Cathedral,_Vienna",
+        "extract": "St. Stephen's Cathedral (German: Domkirche St. Stephan [ˈdɔmˌkɪʁçə ˈzaŋkt ˈʃ͡tɛfan] also known as Stephansdom German pronunciation: [ˈʃ͡tɛfansˌdoːm]) is a Roman Catholic church in Vienna, Austria, and the mother church of the Archdiocese of Vienna. It is the seat of the Archbishop of Vienna, Josef Grünwidl.\nThe current Romanesque and Gothic form of the cathedral, seen today in the Stephansplatz, was largely initiated by Duke Rudolf IV (1339–1365) and stands on the ruins of two earlier churches, the first a parish church consecrated in 1147. The most important religious building in Vienna, St. Stephen's Cathedral has borne witness to many important events in Habsburg and Austrian history and has, with its multi-coloured tile roof, become one of the city's most recognizable symbols. It has 256 stairs from the top to the bottom",
+        "coordinates": [
+          {
+            "lat": 48.2085,
+            "lon": 16.373,
+            "primary": "",
+            "globe": "earth"
+          }
+        ],
+        "pageimage": "Wien_-_Stephansdom_(1).JPG",
+        "original": {
+          "source": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Wien_-_Stephansdom_%281%29.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+          "width": 2625,
+          "height": 3937
+        }
+      },
+      "number": 1,
+      "referenceUrl": "https://en.wikipedia.org/wiki/St._Stephen%27s_Cathedral,_Vienna",
+      "photoIds": [
+        "V01"
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/St._Stephen%27s_Cathedral,_Vienna",
+          "status": 200
+        },
+        {
+          "kind": "official",
+          "url": "https://www.stephanskirche.at/",
+          "resolvedUrl": "https://www.stephanskirche.at/",
+          "status": 200,
+          "title": "Wiener Stephansdom | Tickets | Gottesdienste | Konzerte"
+        }
+      ]
+    },
+    {
+      "id": "graben",
+      "name": "Graben y la Pestsäule",
+      "subtitle": "La Viena monumental a pie de calle",
+      "zone": "casco",
+      "category": "plazas",
+      "priority": true,
+      "description": "Esta gran calle peatonal combina fachadas históricas, comercios y la columna barroca de la Peste. Es uno de los paseos más reconocibles de Viena y enlaza de forma natural con Stephansplatz, Peterskirche y Kohlmarkt.",
+      "photoTip": "La columna funciona como primer plano y las fachadas construyen la profundidad. También merece una segunda mirada al encenderse las luces de los edificios.",
+      "visit": "Paseo exterior.",
+      "winter": "Las decoraciones de invierno son temporales; no se debe dar por segura la iluminación navideña para finales de enero.",
+      "official": "https://www.wien.info/",
+      "wikipedia": {
+        "title": "Graben, Vienna",
+        "pageid": 2343936,
+        "fullurl": "https://en.wikipedia.org/wiki/Graben,_Vienna",
+        "extract": "The Graben (Austrian German pronunciation: [ˈɡraːbn̩] ) is one of the most famous squares in Vienna's first district, the city center. It begins at Stock-im-Eisen-Platz next to the Palais Equitable, and ends at the junction of Kohlmarkt and Tuchlauben. Another street in the first district is called Tiefer Graben (deep ditch). It is crossed by Wipplinger Straße by means of the Hohe Brücke, a bridge about 10 meters (33 ft) above street level.",
+        "coordinates": [
+          {
+            "lat": 48.20861111,
+            "lon": 16.36916667,
+            "primary": "",
+            "globe": "earth"
+          }
+        ],
+        "pageimage": "Wien_-_Graben_(2).JPG",
+        "original": {
+          "source": "https://upload.wikimedia.org/wikipedia/commons/4/49/Wien_-_Graben_%282%29.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+          "width": 4250,
+          "height": 2832
+        }
+      },
+      "number": 2,
+      "referenceUrl": "https://en.wikipedia.org/wiki/Graben,_Vienna",
+      "photoIds": [
+        "V02"
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Graben,_Vienna",
+          "status": 200
+        },
+        {
+          "kind": "official",
+          "url": "https://www.wien.info/",
+          "resolvedUrl": "https://www.wien.info/",
+          "status": 200,
+          "title": "Vienna’s online travel guide: the latest information and services - vienna.info"
+        }
+      ]
+    },
+    {
+      "id": "peterskirche",
+      "name": "Peterskirche",
+      "subtitle": "Una cúpula entre calles estrechas",
+      "zone": "casco",
+      "category": "interiores",
+      "priority": false,
+      "description": "La iglesia de San Pedro aparece casi encajada entre las calles del centro. Su volumen barroco y su cúpula contrastan con la escala de las fachadas vecinas; el interior añade una concentración de frescos, dorados y ornamentación.",
+      "photoTip": "Busca la cúpula asomando entre las calles y, en el interior, una composición simétrica que mire hacia el altar o hacia la bóveda.",
+      "visit": "Exterior e interior de un templo en uso.",
+      "winter": "Es una parada interior interesante; las celebraciones religiosas tienen prioridad sobre la visita fotográfica.",
+      "official": "https://www.peterskirche.at/",
+      "wikipedia": {
+        "title": "Peterskirche, Vienna",
+        "pageid": 4349136,
+        "fullurl": "https://en.wikipedia.org/wiki/Peterskirche,_Vienna",
+        "extract": "The Peterskirche (English: St. Peter's Church) is a Baroque Roman Catholic parish church in  Vienna, Austria. It was transferred in 1970 by the Archbishop of Vienna Franz Cardinal König to the priests of the Opus Dei.",
+        "coordinates": [
+          {
+            "lat": 48.2093,
+            "lon": 16.3695,
+            "primary": "",
+            "globe": "earth"
+          }
+        ],
+        "pageimage": "Wien_-_Peterskirche_(1).JPG",
+        "original": {
+          "source": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Wien_-_Peterskirche_%281%29.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+          "width": 2763,
+          "height": 3907
+        }
+      },
+      "number": 3,
+      "referenceUrl": "https://en.wikipedia.org/wiki/Peterskirche,_Vienna",
+      "photoIds": [
+        "V03"
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Peterskirche,_Vienna",
+          "status": 200
+        },
+        {
+          "kind": "official",
+          "url": "https://www.peterskirche.at/",
+          "resolvedUrl": "https://www.peterskirche.at/",
+          "status": 200,
+          "title": "Peterskirche"
+        }
+      ]
+    },
+    {
+      "id": "kohlmarkt",
+      "name": "Kohlmarkt y Michaelerplatz",
+      "subtitle": "La llegada más elegante al Hofburg",
+      "zone": "casco",
+      "category": "plazas",
+      "priority": true,
+      "description": "Kohlmarkt conduce hacia la fachada curva y la cúpula de la entrada de San Miguel del Hofburg. En Michaelerplatz conviven el palacio imperial, la iglesia de San Miguel, las excavaciones visibles y la arquitectura de Adolf Loos.",
+      "photoTip": "Desde Kohlmarkt, usa la calle como eje hacia la cúpula. Ya en la plaza, una toma más abierta explica la relación entre los distintos edificios.",
+      "visit": "Paseo exterior y plaza.",
+      "winter": "La escena funciona incluso con cielo cubierto; conviene separar la fotografía de fachadas del movimiento de coches y carruajes.",
+      "official": "https://www.wien.info/",
+      "wikipedia": {
+        "title": "Michaelerplatz",
+        "pageid": 74536732,
+        "fullurl": "https://en.wikipedia.org/wiki/Michaelerplatz",
+        "extract": "The Michaelerplatz  (English: St. Michael's Square) is a major square in the center of Vienna. It is a baroque, star-shaped square that functions as the point of intersection of several inner-city streets – the Kohlmarkt, the Herrengasse, the Schauflergasse, and the Reitschulgasse – as well as the northeast entry point to the Hofburg. The square is named after St. Michael's Church, which lies on the eastern part of the Michaelerplatz.",
+        "coordinates": [
+          {
+            "lat": 48.20797222,
+            "lon": 16.36641667,
+            "primary": "",
+            "globe": "earth"
+          }
+        ],
+        "pageimage": "Wien_6_März_2021_20_03_48_119000.jpeg",
+        "original": {
+          "source": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Wien_6_M%C3%A4rz_2021_20_03_48_119000.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+          "width": 4032,
+          "height": 3024
+        }
+      },
+      "number": 4,
+      "referenceUrl": "https://en.wikipedia.org/wiki/Michaelerplatz",
+      "photoIds": [
+        "V04"
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Michaelerplatz",
+          "status": 200
+        },
+        {
+          "kind": "official",
+          "url": "https://www.wien.info/",
+          "resolvedUrl": "https://www.wien.info/",
+          "status": 200,
+          "title": "Vienna’s online travel guide: the latest information and services - vienna.info"
+        }
+      ]
+    },
+    {
+      "id": "hofburg",
+      "name": "Hofburg y Heldenplatz",
+      "subtitle": "La escala de la Viena imperial",
+      "zone": "casco",
+      "category": "arquitectura",
+      "priority": true,
+      "description": "El antiguo complejo imperial reúne patios, alas palaciegas, instituciones y museos. Heldenplatz permite apreciar el gran frente del Neue Burg y la escala del conjunto, mientras los patios ofrecen una experiencia más recogida.",
+      "photoTip": "Alterna una vista amplia del Neue Burg con encuadres de arcos y patios. El espacio abierto de Heldenplatz ayuda a no cortar la arquitectura.",
+      "visit": "Exteriores y patios; los museos y espacios interiores son visitas diferenciadas.",
+      "winter": "Es una zona muy expuesta al frío y al viento: las visitas interiores cercanas permiten alternar el paseo.",
+      "official": "https://www.hofburg-wien.at/",
+      "wikipedia": {
+        "title": "Hofburg",
+        "pageid": 1651794,
+        "fullurl": "https://en.wikipedia.org/wiki/Hofburg",
+        "extract": "The Hofburg (German: [ˈhoːfbʊʁk]) is the former principal imperial palace of the Habsburg dynasty in Austria. Located in the center of Vienna, it was built in the 13th century by Ottokar II of Bohemia and expanded several times afterwards. It also served as the imperial winter residence, as Schönbrunn Palace was the summer residence. Since 1946, it has been the official residence and workplace of the president of Austria.\nSince 1279, the Hofburg area has been the documented seat of government. The Hofburg has been expanded over the centuries to include various residences (with the Amalienburg and the Albertina), the imperial chapel (Hofkapelle or Burgkapelle), the imperial library (Hofbibliothek), the treasury (Schatzkammer), the Burgtheater, the Spanish Riding School (Hofreitschule), the imperial mews (Stallburg and Hofstallungen).\nThe palace faces the Heldenplatz (Heroes' Square) ordered under the reign of Emperor Franz Joseph I, as part of what was planned to become the Kaiserforum but which was never completed.\nNumerous architects have executed work at the Hofburg as it expanded, notably the Italian architect-engineer Filiberto Luchese, Lodovico Burnacini and Martino and Domenico Carlone, the Baroque architects Lukas von Hildebrandt and Joseph Emanuel Fischer von Erlach, Johann Fischer von Erlach, and the architects of the Neue Burg built between 1881 and 1913.",
+        "coordinates": [
+          {
+            "lat": 48.20638889,
+            "lon": 16.36527778,
+            "primary": "",
+            "globe": "earth"
+          }
+        ],
+        "pageimage": "Wien_-_Neue_Hofburg.JPG",
+        "original": {
+          "source": "https://upload.wikimedia.org/wikipedia/commons/3/31/Wien_-_Neue_Hofburg.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+          "width": 5050,
+          "height": 2220
+        }
+      },
+      "number": 5,
+      "referenceUrl": "https://en.wikipedia.org/wiki/Hofburg",
+      "photoIds": [
+        "V05"
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Hofburg",
+          "status": 200
+        },
+        {
+          "kind": "official",
+          "url": "https://www.hofburg-wien.at/",
+          "resolvedUrl": "https://www.hofburg-wien.at/",
+          "status": 200,
+          "title": "Feeling Sisi’s aura as a living experience | Sisi Museum"
+        }
+      ]
+    },
+    {
+      "id": "prunksaal",
+      "name": "Prunksaal de la Biblioteca Nacional",
+      "subtitle": "Un interior que parece un decorado",
+      "zone": "casco",
+      "category": "interiores",
+      "priority": true,
+      "description": "La sala de gala de la Biblioteca Nacional Austriaca es uno de los interiores barrocos más impactantes de la ciudad. Estanterías de madera oscura, frescos, mármoles y grandes globos históricos componen una escena muy distinta de las calles del centro.",
+      "photoTip": "Una vista longitudinal permite ordenar las estanterías; otra, dirigida a la cúpula, destaca la pintura del techo y la escala de la gran sala barroca.",
+      "visit": "Interior de pago; comprobar las condiciones de fotografía de la sala.",
+      "winter": "Es una de las opciones interiores más atractivas para un día frío o lluvioso.",
+      "official": "https://www.onb.ac.at/en/museums/state-hall",
+      "wikipedia": {
+        "title": "Austrian National Library",
+        "pageid": 2073193,
+        "fullurl": "https://en.wikipedia.org/wiki/Austrian_National_Library",
+        "extract": "The Austrian National Library (German: Österreichische Nationalbibliothek, pronounced [ˌøːstəʁaɪçɪʃə natsi̯oˈnaːlbiblioˌteːk]) is the largest library in Austria, with more than 12 million items in its various collections. The library is located in the Neue Burg Wing of the Hofburg in center of Vienna. Since 2005, some of the collections have been relocated within the Baroque structure of the Palais Mollard-Clary. Founded by the Habsburgs, the library was originally called the Imperial Court Library (German: Kaiserliche Hofbibliothek); the change to the current name occurred in 1920, following the end of the Habsburg Monarchy and the proclamation of the Austrian Republic. The library complex includes four museums, as well as multiple special collections and archives.",
+        "coordinates": [
+          {
+            "lat": 48.20611111,
+            "lon": 16.36638889,
+            "primary": "",
+            "globe": "earth"
+          }
+        ],
+        "pageimage": "Neue_Burg_Vienna_June_2006_271.jpg",
+        "original": {
+          "source": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Neue_Burg_Vienna_June_2006_271.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+          "width": 2560,
+          "height": 1920
+        }
+      },
+      "number": 6,
+      "referenceUrl": "https://en.wikipedia.org/wiki/Austrian_National_Library",
+      "photoIds": [
+        "V06"
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Austrian_National_Library",
+          "status": 200
+        },
+        {
+          "kind": "official",
+          "url": "https://www.onb.ac.at/en/museums/state-hall",
+          "resolvedUrl": "https://www.onb.ac.at/en/museums/state-hall",
+          "status": 200,
+          "title": "State Hall of the Austrian National Library"
+        },
+        {
+          "kind": "tourism",
+          "placeId": "prunksaal",
+          "url": "https://www.wien.info/en/art-culture/imperial-sights/national-library-353578",
+          "resolvedUrl": "https://www.wien.info/en/art-culture/imperial-sights/national-library-353578",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "id": "albertina",
+      "name": "Albertina y su terraza",
+      "subtitle": "Arte y una perspectiva de la Ópera",
+      "zone": "casco",
+      "category": "interiores",
+      "priority": true,
+      "description": "El museo Albertina ocupa un antiguo palacio en una posición elevada junto al Burggarten. La zona exterior y su terraza aportan una perspectiva privilegiada del entorno de la Ópera; el museo es, además, una visita artística por derecho propio.",
+      "photoTip": "Distingue dos motivos: el edificio del Albertina y la vista de la Staatsoper desde el entorno elevado. Para la segunda, comprueba el acceso efectivo a la terraza en ese momento.",
+      "visit": "Entorno exterior y museo de pago; accesos exteriores sujetos a condiciones del lugar.",
+      "winter": "Buen punto para combinar una foto urbana con una visita interior, sin depender de que haya vegetación en flor.",
+      "official": "https://www.albertina.at/en/",
+      "wikipedia": {
+        "title": "Albertina",
+        "pageid": 1397722,
+        "fullurl": "https://en.wikipedia.org/wiki/Albertina",
+        "extract": "The Albertina is a museum in the Innere Stadt (First District) of Vienna, Austria. It houses one of the largest and most important print rooms in the world with approximately 65,000 drawings and approximately 1 million old master prints, as well as more modern graphic works, photographs and architectural drawings. Apart from the graphics collection the museum has acquired, on permanent loan, two significant collections of Impressionist and early 20th-century art, some of which are on permanent display. The museum also houses temporary exhibitions. The museum had 1,037,347 visitors in 2025, down 3 percent from 2024, but up 4% from 2019, before the COVID-19 pandemic. It ranked 74th in the list of most-visited art museums in the world.",
+        "coordinates": [
+          {
+            "lat": 48.20472222,
+            "lon": 16.36833333,
+            "primary": "",
+            "globe": "earth"
+          }
+        ],
+        "pageimage": "Wien_-_Albertina.JPG",
+        "original": {
+          "source": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Wien_-_Albertina.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+          "width": 4600,
+          "height": 2849
+        }
+      },
+      "number": 7,
+      "referenceUrl": "https://en.wikipedia.org/wiki/Albertina",
+      "photoIds": [
+        "V07",
+        "V34"
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Albertina",
+          "status": 200
+        },
+        {
+          "kind": "official",
+          "url": "https://www.albertina.at/en/",
+          "resolvedUrl": "https://www.albertina.at/en/",
+          "status": 200,
+          "title": "The ALBERTINA Museum Vienna"
+        }
+      ]
+    },
+    {
+      "id": "staatsoper",
+      "name": "Wiener Staatsoper",
+      "subtitle": "El escenario del regalo",
+      "zone": "casco",
+      "category": "arquitectura",
+      "priority": true,
+      "description": "La Ópera Estatal es uno de los grandes edificios del Ring y un punto especialmente relevante para este viaje: aquí tiene lugar el ballet. Su fachada, sus arcadas y su relación con la avenida permiten presentarla antes de descubrir el interior durante la función.",
+      "photoTip": "Una vista desde el lado opuesto de la avenida muestra el volumen completo; las arcadas permiten imágenes más próximas. La vista elevada del entorno del Albertina aporta otra composición.",
+      "visit": "Exterior; interior con función o visita guiada según disponibilidad.",
+      "winter": "La fachada iluminada permite una imagen nocturna potente. El interior de una función no equivale a permiso para fotografiar el espectáculo.",
+      "official": "https://www.wiener-staatsoper.at/en/",
+      "wikipedia": {
+        "title": "Vienna State Opera",
+        "pageid": 379066,
+        "fullurl": "https://en.wikipedia.org/wiki/Vienna_State_Opera",
+        "extract": "The Vienna State Opera (German: Wiener Staatsoper, IPA: [ˈviːnɐ ˈʃtaːtsˌʔoːpɐ]) is an opera house and opera company located in Vienna, Austria. The 1,709-seat Renaissance Revival venue was the first major building on the Vienna Ring Road. It was built from 1861 to 1869 following plans by August Sicard von Sicardsburg and Eduard van der Nüll, and designs by Josef Hlávka. The opera house was inaugurated as the \"Vienna Court Opera\" (Wiener Hofoper) in the presence of Emperor Franz Joseph I and Empress Elisabeth of Austria. It became known by its current name after the establishment of the First Austrian Republic in 1921. The Vienna State Opera is the successor of the old Vienna Court Opera (built in 1636 inside the Hofburg). The new site was chosen and the construction paid by Emperor Franz Joseph in 1861.\nThe members of the Vienna Philharmonic are recruited from the Vienna State Opera orchestra. The building is also the home of the Vienna State Ballet and it hosts the annual Vienna Opera Ball during the carnival season.",
+        "coordinates": null,
+        "pageimage": "Wiener_Staatsoper_Front.jpg",
+        "original": {
+          "source": "https://upload.wikimedia.org/wikipedia/commons/9/94/Wiener_Staatsoper_Front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+          "width": 2362,
+          "height": 1527
+        }
+      },
+      "number": 8,
+      "referenceUrl": "https://en.wikipedia.org/wiki/Vienna_State_Opera",
+      "photoIds": [
+        "V08",
+        "V33"
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Vienna_State_Opera",
+          "status": 200
+        },
+        {
+          "kind": "official",
+          "url": "https://www.wiener-staatsoper.at/en/",
+          "resolvedUrl": "https://www.wiener-staatsoper.at/en/",
+          "status": 200,
+          "title": "The Vienna State Opera"
+        }
+      ]
+    },
+    {
+      "id": "burggarten",
+      "name": "Burggarten y Palmenhaus",
+      "subtitle": "Un invernadero en el corazón imperial",
+      "zone": "ring",
+      "category": "paseos",
+      "priority": false,
+      "description": "El jardín situado junto al Hofburg combina caminos, monumentos y la gran estructura de hierro y cristal del Palmenhaus. El conjunto ofrece una pausa visual entre museos y edificios monumentales.",
+      "photoTip": "El motivo más singular es la estructura acristalada: una toma oblicua destaca su longitud y los detalles metálicos. El monumento a Mozart es otro punto conocido del jardín.",
+      "visit": "Jardín exterior; los servicios y espacios del Palmenhaus tienen acceso propio.",
+      "winter": "Prioriza el invernadero y las siluetas de los árboles; las composiciones de flores de temporada no están garantizadas en enero.",
+      "official": "https://www.wien.info/en/livable-vienna/parks-green-spaces/burggarten-994538",
+      "wikipedia": {
+        "title": "Palmenhaus (Burggarten)",
+        "pageid": 74198507,
+        "fullurl": "https://en.wikipedia.org/wiki/Palmenhaus_(Burggarten)",
+        "extract": "The Palmenhaus (Palm House), also known as the Glashaus (Glass House), is a building in the Innere Stadt district of Vienna. It is located on the edge of the Burggarten near the Albertina and the State Opera. It is 180 metres long and 13 metres wide, and has a floor area of around 2,050m².",
+        "coordinates": [
+          {
+            "lat": 48.20497778,
+            "lon": 16.36697222,
+            "primary": "",
+            "globe": "earth"
+          }
+        ],
+        "pageimage": "AT-13768_Palmenhaus_Burggarten_05.JPG",
+        "original": {
+          "source": "https://upload.wikimedia.org/wikipedia/commons/2/2d/AT-13768_Palmenhaus_Burggarten_05.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+          "width": 3648,
+          "height": 2736
+        }
+      },
+      "number": 9,
+      "referenceUrl": "https://en.wikipedia.org/wiki/Palmenhaus_(Burggarten)",
+      "photoIds": [
+        "V09"
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Palmenhaus_(Burggarten)",
+          "status": 200
+        },
+        {
+          "kind": "tourism",
+          "placeId": "burggarten",
+          "url": "https://www.wien.info/en/livable-vienna/parks-green-spaces/burggarten-994538",
+          "resolvedUrl": "https://www.wien.info/en/livable-vienna/parks-green-spaces/burggarten-994538",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "id": "maria-theresien",
+      "name": "Maria-Theresien-Platz",
+      "subtitle": "Dos museos, una gran simetría",
+      "zone": "ring",
+      "category": "plazas",
+      "priority": true,
+      "description": "La plaza reúne el monumento a María Teresa y los edificios casi gemelos de los museos de Historia del Arte e Historia Natural. Es una de las composiciones urbanas más claras de la Viena monumental.",
+      "photoTip": "Usa el monumento y las cúpulas para construir una imagen simétrica, o encuadra uno de los museos desde el jardín central.",
+      "visit": "Plaza exterior; cada museo se visita por separado.",
+      "winter": "No se considera el mercado navideño como parte de la visita de finales de enero.",
+      "official": "https://www.wien.info/",
+      "wikipedia": {
+        "title": "Maria-Theresien-Platz",
+        "pageid": 3091924,
+        "fullurl": "https://en.wikipedia.org/wiki/Maria-Theresien-Platz",
+        "extract": "Maria-Theresien-Platz is a large public square in Vienna, Austria, that joins the Ringstraße with the Museumsquartier, a museum of modern arts located in the former Imperial Stables. Facing each other from the sides of the square are two near identical buildings, the Naturhistorisches Museum (Natural History Museum) and the Kunsthistorisches Museum (Art History Museum). The buildings are near identical, except for the statuary on their façades. The Naturhistorisches' façade has statues depicting personifications of Africa, Asia, Europe, and the Americas. The Kunsthistorisches façade features famous European artists, such as the Dutch Bruegel, among others.\nThe Naturhistorisches Museum and the Kunsthistorisches Museum and the square adjoining them were built in 1889. At the center of the square stands the Maria-Theresia Memorial, a large statue depicting Empress Maria Theresa, namesake of the square. The Modern Art Museum in the former Imperial Stables shows contemporary works that some may consider controversial. The three museums are popular destinations for tourists.\nThe Kunsthistorisches Museum contains numerous famous works by the Northern European masters, such as Bruegel's Tower of Babel, as well as an extensive collection of ancient world art. The Egyptian collection (Aegyptisches Sammlung) houses mummified forms, stone carvings, and the tomb of an Egyptian prince that was transported to Vienna and reassembled for Emperor Franz Joseph I of Austria. On the stairwell's roof are frescoes by the Austrian artist Gustav Klimt.\nThe Naturhistorisches Museum houses displays of butterflies and other insects, and an extensive preserved and stuffed animal collection, the most poignant examples of which include a Przewalskii's horse, a baby Javanese rhinoceros, and a case of dodo remains. Also notable is the museum's famous Mikrotheater, showing slides of microscopic organisms, its two spider crabs which were sent to Emperor Franz Joseph by the Japanese Emperor as a gift, and the first ever human depiction of an underwater scene made from life observation and the diving bell from which it was made. The stairwell contains paintings of Emperor Franz Joseph, Empress Maria Theresa and her stuffed pet lap dog, a miniature hound.\n\n",
+        "coordinates": [
+          {
+            "lat": 48.2045,
+            "lon": 16.3608,
+            "primary": "",
+            "globe": "earth"
+          }
+        ],
+        "pageimage": "Maria-Theresien-Platz_Kunsthistorisches_Museum_Wien_2010.jpg",
+        "original": {
+          "source": "https://upload.wikimedia.org/wikipedia/commons/0/00/Maria-Theresien-Platz_Kunsthistorisches_Museum_Wien_2010.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+          "width": 3888,
+          "height": 2592
+        }
+      },
+      "number": 10,
+      "referenceUrl": "https://en.wikipedia.org/wiki/Maria-Theresien-Platz",
+      "photoIds": [
+        "V10"
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Maria-Theresien-Platz",
+          "status": 200
+        },
+        {
+          "kind": "official",
+          "url": "https://www.wien.info/",
+          "resolvedUrl": "https://www.wien.info/en",
+          "status": 200,
+          "title": "Vienna’s online travel guide: the latest information and services - vienna.info"
+        }
+      ]
+    },
+    {
+      "id": "kunsthistorisches",
+      "name": "Kunsthistorisches Museum",
+      "subtitle": "La arquitectura también es la obra",
+      "zone": "ring",
+      "category": "interiores",
+      "priority": true,
+      "description": "El museo de Historia del Arte destaca tanto por sus colecciones como por su arquitectura interior. La gran escalera, las cúpulas y la decoración convierten la propia visita al edificio en un motivo visual muy poderoso.",
+      "photoTip": "La escalera monumental y la vista hacia la cúpula explican mejor su carácter que una fotografía aislada de un cuadro. El café del museo ofrece otra perspectiva de ese interior.",
+      "visit": "Museo de pago; condiciones de fotografía y acceso al café según el museo.",
+      "winter": "Una visita interior extensa; merece elegirse por interés artístico, no solo como parada fotográfica rápida.",
+      "official": "https://www.khm.at/en/",
+      "wikipedia": {
+        "title": "Kunsthistorisches Museum",
+        "pageid": 1010262,
+        "fullurl": "https://en.wikipedia.org/wiki/Kunsthistorisches_Museum",
+        "extract": "The Kunsthistorisches Museum Wien (lit. \"Vienna Museum of Art History\", often referred to as the \"Museum of Fine Arts, Vienna\") is an art museum in Vienna, Austria. Housed in its festive palatial building on the Vienna Ring Road, it is crowned with an octagonal dome. The term Kunsthistorisches Museum applies to both the institution and the main building. It is the largest art museum in the country.\nEmperor Franz Joseph I of Austria-Hungary opened the facility around 1891 at the same time as the Natural History Museum, Vienna which has a similar design and is directly across Maria-Theresien-Platz. The two buildings were constructed between 1871 and 1891 according to plans by Gottfried Semper and Baron Karl von Hasenauer. The emperor commissioned the two Ringstraße museums to create a suitable home for the Habsburgs' formidable art collection and to make it accessible to the general public. The buildings are rectangular, with symmetrical Renaissance Revival façades of sandstone lined with large arched windows on the main levels and topped with octagonal domes 60 metres (200 ft) high. The interiors of the museums are lavishly decorated with marble, stucco ornamentation, gold-leaf, and murals. The grand stairway features paintings by Gustav Klimt, Ernst Klimt, Franz Matsch, Hans Makart and Mihály Munkácsy.\n\n",
+        "coordinates": [
+          {
+            "lat": 48.20388056,
+            "lon": 16.3616,
+            "primary": "",
+            "globe": "earth"
+          }
+        ],
+        "pageimage": "Kunsthistorisches_Museum_logo.svg",
+        "original": {
+          "source": "https://upload.wikimedia.org/wikipedia/en/a/a3/Kunsthistorisches_Museum_logo.svg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+          "width": 206,
+          "height": 128
+        }
+      },
+      "number": 11,
+      "referenceUrl": "https://en.wikipedia.org/wiki/Kunsthistorisches_Museum",
+      "photoIds": [
+        "V11"
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Kunsthistorisches_Museum",
+          "status": 200
+        },
+        {
+          "kind": "official",
+          "url": "https://www.khm.at/en/",
+          "resolvedUrl": "https://www.khm.at/en",
+          "status": 200,
+          "title": "The Kunsthistorisches Museum - Vienna - KHM.at"
+        }
+      ]
+    },
+    {
+      "id": "museumsquartier",
+      "name": "MuseumsQuartier",
+      "subtitle": "El contrapunto contemporáneo",
+      "zone": "ring",
+      "category": "arquitectura",
+      "priority": false,
+      "description": "Antiguos edificios de uso imperial rodean patios en los que aparecen volúmenes contemporáneos como el mumok y el Leopold Museum. Es un buen contraste frente al barroco y al historicismo del resto del paseo.",
+      "photoTip": "Busca el diálogo entre la piedra histórica y los bloques modernos. Los patios permiten jugar con personas, escala y superficies de formas sencillas.",
+      "visit": "Patios y espacios exteriores; museos y exposiciones con acceso propio.",
+      "winter": "El ambiente de los patios cambia con el tiempo; las visitas interiores son la opción más previsible.",
+      "official": "https://www.mqw.at/en/",
+      "wikipedia": {
+        "title": "MuseumsQuartier",
+        "pageid": 1144909,
+        "fullurl": "https://en.wikipedia.org/wiki/MuseumsQuartier",
+        "extract": "The Museumsquartier (MQ) is an area of 9 ha (22 acres) in the 7th district of the city of Vienna, Austria.",
+        "coordinates": [
+          {
+            "lat": 48.20333333,
+            "lon": 16.35888889,
+            "primary": "",
+            "globe": "earth"
+          }
+        ],
+        "pageimage": "MuseumsQuartier_Wien_Sept_2020_1.jpg",
+        "original": {
+          "source": "https://upload.wikimedia.org/wikipedia/commons/0/06/MuseumsQuartier_Wien_Sept_2020_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+          "width": 5464,
+          "height": 3640
+        }
+      },
+      "number": 12,
+      "referenceUrl": "https://en.wikipedia.org/wiki/MuseumsQuartier",
+      "photoIds": [
+        "V12"
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/MuseumsQuartier",
+          "status": 200
+        },
+        {
+          "kind": "official",
+          "url": "https://www.mqw.at/en/",
+          "resolvedUrl": "https://www.mqw.at/en/",
+          "status": 200,
+          "title": "Museum Quarter, Vienna - MuseumsQuartier Wien"
+        }
+      ]
+    },
+    {
+      "id": "volksgarten",
+      "name": "Volksgarten",
+      "subtitle": "Columnas, paseos y vistas al Ring",
+      "zone": "ring",
+      "category": "paseos",
+      "priority": false,
+      "description": "Este jardín conecta visualmente el Hofburg con el Ring. El Templo de Teseo y los recorridos entre árboles y parterres aportan un cambio de escala respecto a las grandes fachadas del entorno.",
+      "photoTip": "El pequeño templo ofrece una composición frontal limpia; los paseos laterales ayudan a enmarcar los edificios del Ring.",
+      "visit": "Jardín exterior, sujeto a sus accesos y horario.",
+      "winter": "Los famosos rosales no estarán en su aspecto de primavera o verano. En enero el interés está en la arquitectura y el trazado.",
+      "official": "https://www.bundesgaerten.at/",
+      "wikipedia": {
+        "title": "Volksgarten, Vienna",
+        "pageid": 22533198,
+        "fullurl": "https://en.wikipedia.org/wiki/Volksgarten,_Vienna",
+        "extract": "The Volksgarten is a public park in the Innere Stadt, the first district of Vienna, Austria. Opened in 1823, it was Vienna's first public park.",
+        "coordinates": [
+          {
+            "lat": 48.20805556,
+            "lon": 16.36111111,
+            "primary": "",
+            "globe": "earth"
+          }
+        ],
+        "pageimage": "Wien_-_Volksgarten_(b).JPG",
+        "original": {
+          "source": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Wien_-_Volksgarten_%28b%29.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+          "width": 4180,
+          "height": 2352
+        }
+      },
+      "number": 13,
+      "referenceUrl": "https://en.wikipedia.org/wiki/Volksgarten,_Vienna",
+      "photoIds": [
+        "V13"
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Volksgarten,_Vienna",
+          "status": 200
+        },
+        {
+          "kind": "official",
+          "url": "https://www.bundesgaerten.at/",
+          "resolvedUrl": "https://www.bundesgaerten.at/",
+          "status": 200,
+          "title": "Österreichische Bundesgärten, Österreichische Bundesgärten"
+        },
+        {
+          "kind": "tourism",
+          "placeId": "volksgarten",
+          "url": "https://www.wien.info/en/livable-vienna/parks-green-spaces/volksgarten-994420",
+          "resolvedUrl": "https://www.wien.info/en/livable-vienna/parks-green-spaces/volksgarten-994420",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "id": "parlament",
+      "name": "Parlamento de Austria",
+      "subtitle": "Una fachada de inspiración clásica",
+      "zone": "ring",
+      "category": "arquitectura",
+      "priority": false,
+      "description": "El Parlamento destaca en el Ring por su lenguaje inspirado en la arquitectura griega, sus columnatas y la fuente de Palas Atenea. Su fachada es muy diferente del neogótico del Ayuntamiento cercano.",
+      "photoTip": "La fuente y el pórtico permiten una composición por capas. Una vista lateral evita que todos los elementos se superpongan en el centro.",
+      "visit": "Exterior; visitas interiores sujetas al programa y controles de acceso.",
+      "winter": "La fuente puede no estar en funcionamiento; la arquitectura sigue siendo el motivo principal.",
+      "official": "https://www.parlament.gv.at/en/",
+      "wikipedia": {
+        "title": "Austrian Parliament Building",
+        "pageid": 3227097,
+        "fullurl": "https://en.wikipedia.org/wiki/Austrian_Parliament_Building",
+        "extract": "The Austrian Parliament Building (German: Parlamentsgebäude, pronounced [paʁlaˈmɛnt͡sɡəˌbɔɪ̯də]  colloquially das Parlament) in Vienna is the meeting place of the two houses of the Austrian Parliament. The building is located on the Ringstraße in the first district, Innere Stadt, near Hofburg Palace and the Palace of Justice. It was built to house the two chambers of the Imperial Council (Reichsrat), the bicameral legislature of the Cisleithanian (Austrian) part of the Austro-Hungarian Empire. Since its construction, the Parliament Building has been the seat of these two houses, and their successors—the National Council (Nationalrat) and the Federal Council (Bundesrat)—of the Austrian legislature.\nThe foundation stone was laid in 1874; the building was completed in 1883. The architect responsible for its Greek Revival style was Theophil Hansen. He designed the building holistically, aiming to have each element harmonize with all the others, and was also responsible for the interior decoration, such as statues, paintings, furniture, chandeliers, and numerous other elements. Hansen was honored by Emperor Franz Joseph with the title of Freiherr (Baron) after its completion. Following heavy damage and destruction in World War II, most of the interior has been restored to its original splendor.\nThe parliament building covers over 13,500 square meters (145,300 sq ft), making it one of the largest structures on the Ringstraße. It contains over one hundred rooms, the most prominent of which are the Chambers of the National Council, the Federal Council, and the former House of Deputies (Abgeordnetenhaus). The building also includes committee rooms, libraries, lobbies, dining rooms, bars and gymnasiums. One of the building's most famous features is the Pallas Athena fountain in front of the main entrance, built by Carl Kundmann after plans from Hansen from 1898 to 1902; it is one of the city's most notable  tourist attractions.\nThe Parliament Building is the site of important state ceremonies, most notably the swearing-in ceremony of the president of Austria. The building is closely associated with the two parliamentary bodies, as is shown by the use of the term Hohes Haus as a metonym for \"Parliament\". Parliamentary offices spill over into nearby buildings, such as the Palais Epstein.\nAfter five years of renovations, the building reopened in 2023.\n\n",
+        "coordinates": [
+          {
+            "lat": 48.20805556,
+            "lon": 16.35805556,
+            "primary": "",
+            "globe": "earth"
+          }
+        ],
+        "pageimage": "Wien_-_Parlamentsgebäude.JPG",
+        "original": {
+          "source": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Wien_-_Parlamentsgeb%C3%A4ude.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+          "width": 4614,
+          "height": 2596
+        }
+      },
+      "number": 14,
+      "referenceUrl": "https://en.wikipedia.org/wiki/Austrian_Parliament_Building",
+      "photoIds": [
+        "V14"
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Austrian_Parliament_Building",
+          "status": 200
+        },
+        {
+          "kind": "official",
+          "url": "https://www.parlament.gv.at/en/",
+          "resolvedUrl": "https://www.parlament.gv.at/en",
+          "status": 200,
+          "title": "Parlament Österreich"
+        }
+      ]
+    },
+    {
+      "id": "rathaus",
+      "name": "Rathaus y Rathausplatz",
+      "subtitle": "La gran silueta neogótica",
+      "zone": "ring",
+      "category": "arquitectura",
+      "priority": false,
+      "description": "El Ayuntamiento de Viena se reconoce por su gran torre central y su fachada neogótica. El espacio de Rathausplatz permite observarlo con distancia; enfrente, el Burgtheater completa otro eje monumental del Ring.",
+      "photoTip": "Una vista frontal muestra la simetría; los laterales permiten incluir árboles y arcadas. El Burgtheater merece una mirada en la dirección contraria.",
+      "visit": "Exterior; patios y visitas interiores según disponibilidad.",
+      "winter": "La plaza suele acoger instalaciones estacionales. No se da por confirmada ninguna actividad para las fechas del viaje sin consultar su programación.",
+      "official": "https://www.wien.info/en/see-do/sights-from-a-to-z/city-hall-343230",
+      "wikipedia": {
+        "title": "Vienna City Hall",
+        "pageid": 5474869,
+        "fullurl": "https://en.wikipedia.org/wiki/Vienna_City_Hall",
+        "extract": "The Vienna City Hall (German: Wiener Rathaus; [ʁaːtˌhaʊs]) is the town hall of Vienna, Austria, located in the Innere Stadt on the Rathausplatz, off the Ringstrasse. The Gothic Revival building was designed by Friedrich von Schmidt and constructed between 1872 and 1883. It houses the offices of the Mayor of Vienna, as well as the city and state government.",
+        "coordinates": [
+          {
+            "lat": 48.21083333,
+            "lon": 16.35722222,
+            "primary": "",
+            "globe": "earth"
+          }
+        ],
+        "pageimage": "Wien_Rathaus_hochauflösend.jpg",
+        "original": {
+          "source": "https://upload.wikimedia.org/wikipedia/commons/6/66/Wien_Rathaus_hochaufl%C3%B6send.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+          "width": 11379,
+          "height": 6869
+        }
+      },
+      "number": 15,
+      "referenceUrl": "https://en.wikipedia.org/wiki/Vienna_City_Hall",
+      "photoIds": [
+        "V15"
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Vienna_City_Hall",
+          "status": 200
+        },
+        {
+          "kind": "tourism",
+          "placeId": "rathaus",
+          "url": "https://www.wien.info/en/see-do/sights-from-a-to-z/city-hall-343230",
+          "resolvedUrl": "https://www.wien.info/en/see-do/sights-from-a-to-z/city-hall-343230",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "id": "freyung",
+      "name": "Freyung y Palais Ferstel",
+      "subtitle": "Pasajes y elegancia menos obvia",
+      "zone": "casco",
+      "category": "plazas",
+      "priority": false,
+      "description": "Freyung reúne palacios, fachadas históricas y el entorno del monasterio de los Escoceses. El pasaje de Palais Ferstel añade una secuencia de arcadas y detalles que resulta especialmente interesante para una fotografía más íntima.",
+      "photoTip": "Busca la profundidad de las arcadas del pasaje y las fachadas de la plaza. Los accesos al pasaje deben comprobarse en el momento de la visita.",
+      "visit": "Plaza exterior; confirmar el acceso al pasaje durante las obras anunciadas en Palais Ferstel.",
+      "winter": "Palais Ferstel y Café Central figuran en reforma en 2026. La imagen del pasaje es una referencia arquitectónica; comprobar el acceso para enero.",
+      "official": "https://www.palaisevents.at/en/",
+      "wikipedia": {
+        "title": "Palais Ferstel",
+        "pageid": 59128926,
+        "fullurl": "https://en.wikipedia.org/wiki/Palais_Ferstel",
+        "extract": "Palais Ferstel is a building located in Herrengasse street, in Vienna. It was originally built for the Austrian National Bank and stock exchange in 1860, and from 1878 served as head office of the Austro-Hungarian Bank. It was constructed by Baron Heinrich von Ferstel. The design of the building is reminiscent of early Florentine Renaissance architecture.",
+        "coordinates": [
+          {
+            "lat": 48.2106,
+            "lon": 16.3656,
+            "primary": "",
+            "globe": "earth"
+          }
+        ],
+        "pageimage": "Rudolf_von_Alt_Palais_Ferstel.jpg",
+        "original": {
+          "source": "https://upload.wikimedia.org/wikipedia/commons/1/11/Rudolf_von_Alt_Palais_Ferstel.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+          "width": 511,
+          "height": 700
+        }
+      },
+      "number": 16,
+      "referenceUrl": "https://en.wikipedia.org/wiki/Palais_Ferstel",
+      "photoIds": [
+        "V16"
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Palais_Ferstel",
+          "status": 200
+        },
+        {
+          "kind": "official",
+          "url": "https://www.palaisevents.at/en/",
+          "resolvedUrl": "https://palaisevents.at/en/",
+          "status": 200,
+          "title": "Home | Palais Events"
+        },
+        {
+          "kind": "renovation",
+          "url": "https://cafecentral.wien/en/",
+          "status": 200
+        }
+      ],
+      "statusNote": "Acceso al pasaje por comprobar"
+    },
+    {
+      "id": "am-hof",
+      "name": "Am Hof",
+      "subtitle": "Una plaza para mirar con calma",
+      "zone": "casco",
+      "category": "plazas",
+      "priority": false,
+      "description": "Una de las plazas históricas del centro, con la columna mariana y fachadas de épocas distintas. Es una parada natural entre Graben, Freyung y Judenplatz que permite salir de los ejes más concurridos.",
+      "photoTip": "La columna central funciona como referencia de escala. Los extremos de la plaza permiten escoger qué fachada domina el fondo.",
+      "visit": "Plaza exterior.",
+      "winter": "El aspecto depende de posibles instalaciones temporales; la recomendación se centra en el conjunto urbano permanente.",
+      "official": "https://www.wien.info/",
+      "wikipedia": {
+        "title": "Am Hof",
+        "pageid": 816198,
+        "fullurl": "https://de.wikipedia.org/wiki/Am_Hof",
+        "extract": "Am Hof ist einer der historisch bedeutendsten Plätze der Wiener Innenstadt. Er befindet sich zwischen Bognergasse, Naglergasse, Heidenschuss, Färbergasse, Judenplatz und Schulhof im ältesten Kern der Stadt in unmittelbarer Nachbarschaft der mittelalterlichen Judenstadt.",
+        "coordinates": [
+          {
+            "lat": 48.21111111,
+            "lon": 16.36777778,
+            "primary": "",
+            "globe": "earth"
+          }
+        ]
+      },
+      "number": 17,
+      "referenceUrl": "https://de.wikipedia.org/wiki/Am_Hof",
+      "photoIds": [
+        "V17"
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://de.wikipedia.org/wiki/Am_Hof",
+          "status": 200
+        },
+        {
+          "kind": "official",
+          "url": "https://www.wien.info/",
+          "resolvedUrl": "https://www.wien.info/en",
+          "status": 200,
+          "title": "Vienna’s online travel guide: the latest information and services - vienna.info"
+        }
+      ]
+    },
+    {
+      "id": "judenplatz",
+      "name": "Judenplatz",
+      "subtitle": "Una plaza de memoria",
+      "zone": "casco",
+      "category": "plazas",
+      "priority": false,
+      "description": "La plaza reúne una escala urbana recogida y un fuerte significado histórico. El memorial de la Shoá de Rachel Whiteread, con su forma de biblioteca cerrada, es su elemento más reconocible; el Museo Judío aporta contexto a la historia del lugar.",
+      "photoTip": "Una composición sobria que relacione el memorial con las fachadas explica mejor el lugar que usar el monumento como simple decorado para una pose.",
+      "visit": "Plaza exterior; sede del Museo Judío con entrada propia.",
+      "winter": "Puede servir como pausa tranquila dentro del paseo, manteniendo el carácter de lugar de memoria.",
+      "official": "https://www.jmw.at/en",
+      "wikipedia": {
+        "title": "Judenplatz",
+        "pageid": 1929841,
+        "fullurl": "https://en.wikipedia.org/wiki/Judenplatz",
+        "extract": "Judenplatz (German, \"Jewish Square\") is a square in Vienna's Innere Stadt that was the center of Jewish life in the city in the Middle Ages. It is located in the immediate proximity of Am Hof square, Schulhof, and Wipplingerstraße. It exemplifies the long and eventful history of the city and the Jewish community focused on this place. Archaeological excavations of the medieval synagogue are viewable underground by way of the museum on the square, Misrachi-Haus. Two sculptural works, a carved relief and several inscribed texts are located around the square that all have subject matter relating to Jewish history. One of these sculptures is a statue of Gotthold Ephraim Lessing. The other is a memorial to Austrian Holocaust Victims, a project based on an idea of Simon Wiesenthal and unveiled in 2000. Created by British artist Rachel Whiteread, the memorial is a reinforced concrete cube resembling a library with its volumes turned inside out.\nThe Austrian Supreme Administrative Court has its seat on the square.",
+        "coordinates": [
+          {
+            "lat": 48.21166667,
+            "lon": 16.36972222,
+            "primary": "",
+            "globe": "earth"
+          }
+        ],
+        "pageimage": "Judenplatz_z01.JPG",
+        "original": {
+          "source": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Judenplatz_z01.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+          "width": 1024,
+          "height": 768
+        }
+      },
+      "number": 18,
+      "referenceUrl": "https://en.wikipedia.org/wiki/Judenplatz",
+      "photoIds": [
+        "V18"
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Judenplatz",
+          "status": 200
+        },
+        {
+          "kind": "official",
+          "url": "https://www.jmw.at/en",
+          "resolvedUrl": "https://www.jmw.at/en",
+          "status": 200,
+          "title": "Jewish Museum Vienna | Jüdisches Museum Wien"
+        }
+      ]
+    },
+    {
+      "id": "ankeruhr",
+      "name": "Ankeruhr y Hoher Markt",
+      "subtitle": "Un reloj que cruza la calle",
+      "zone": "casco",
+      "category": "arquitectura",
+      "priority": false,
+      "description": "El reloj Anker se sitúa en un puente que une dos edificios cerca de Hoher Markt. Sus figuras históricas y su lenguaje modernista ofrecen un detalle singular dentro del casco antiguo.",
+      "photoTip": "Una vista algo retirada permite entender el puente y el reloj; un encuadre más cerrado destaca las figuras y los acabados.",
+      "visit": "Exterior; el mecanismo y su secuencia deben contrastarse si se quiere acudir a una hora concreta.",
+      "winter": "Es una parada breve que no exige una visita interior ni una larga exposición al frío.",
+      "official": "https://www.wien.info/",
+      "wikipedia": {
+        "title": "Ankeruhr",
+        "pageid": 991497,
+        "fullurl": "https://de.wikipedia.org/wiki/Ankeruhr",
+        "extract": "Die Ankeruhr ist eine große Spieluhr beim Haus der Helvetia-Versicherung – vormals Lebens- und Rentenversicherungs-Gesellschaft „Der Anker“ – am Hohen Markt 10–11 in der Altstadt der österreichischen Hauptstadt Wien.\nSie gilt als eines der herausragenden Werke des Jugendstils und ist eine beliebte Touristenattraktion.\n\n",
+        "coordinates": [
+          {
+            "lat": 48.21076095,
+            "lon": 16.37367415,
+            "primary": "",
+            "globe": "earth"
+          }
+        ]
+      },
+      "number": 19,
+      "referenceUrl": "https://de.wikipedia.org/wiki/Ankeruhr",
+      "photoIds": [
+        "V19"
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://de.wikipedia.org/wiki/Ankeruhr",
+          "status": 200
+        },
+        {
+          "kind": "official",
+          "url": "https://www.wien.info/",
+          "resolvedUrl": "https://www.wien.info/en",
+          "status": 200,
+          "title": "Vienna’s online travel guide: the latest information and services - vienna.info"
+        },
+        {
+          "kind": "tourism",
+          "placeId": "ankeruhr",
+          "url": "https://www.wien.info/en/see-do/sights-from-a-to-z/anker-clock-339092",
+          "resolvedUrl": "https://www.wien.info/en/see-do/sights-from-a-to-z/anker-clock-339092",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "id": "franziskanerplatz",
+      "name": "Franziskanerplatz",
+      "subtitle": "Una Viena pequeña y recogida",
+      "zone": "casco",
+      "category": "plazas",
+      "priority": false,
+      "description": "La pequeña plaza de los Franciscanos combina la iglesia, la fuente de Moisés y el entorno del Kleines Café. Interesa por su escala íntima y por una atmósfera distinta de las grandes plazas monumentales.",
+      "photoTip": "Encuadra la fuente con la iglesia al fondo o busca una escena de calle que conserve la sensación de plaza pequeña, sin forzar una perspectiva panorámica.",
+      "visit": "Plaza exterior; iglesia y café con accesos independientes.",
+      "winter": "Las mesas exteriores pueden no estar desplegadas; el interés arquitectónico de la plaza permanece.",
+      "official": "https://www.wien.info/",
+      "wikipedia": {
+        "title": "Franziskanerkirche (Wien)",
+        "pageid": 5703601,
+        "fullurl": "https://de.wikipedia.org/wiki/Franziskanerkirche_(Wien)",
+        "extract": "Die Klosterkirche St. Hieronymus (im allgemeinen Sprachgebrauch: Franziskanerkirche) ist eine römisch-katholische Klosterkirche im 1. Wiener Gemeindebezirk Innere Stadt am Franziskanerplatz. Sie ist dem heiligen Hieronymus gewidmet. Das Bauwerk steht unter Denkmalschutz. In der Kirche befindet sich die älteste funktionierende Orgel Wiens, die Wöckherl-Orgel.\n\n",
+        "coordinates": [
+          {
+            "lat": 48.20625,
+            "lon": 16.37463889,
+            "primary": "",
+            "globe": "earth"
+          }
+        ]
+      },
+      "number": 20,
+      "referenceUrl": "https://de.wikipedia.org/wiki/Franziskanerkirche_(Wien)",
+      "photoIds": [
+        "V20"
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://de.wikipedia.org/wiki/Franziskanerkirche_(Wien)",
+          "status": 200
+        },
+        {
+          "kind": "official",
+          "url": "https://www.wien.info/",
+          "resolvedUrl": "https://www.wien.info/en",
+          "status": 200,
+          "title": "Vienna’s online travel guide: the latest information and services - vienna.info"
+        }
+      ]
+    },
+    {
+      "id": "karlskirche",
+      "name": "Karlskirche y Karlsplatz",
+      "subtitle": "La postal barroca",
+      "zone": "sur",
+      "category": "arquitectura",
+      "priority": true,
+      "description": "La iglesia de San Carlos combina una gran cúpula con dos columnas monumentales y un pórtico clásico. Su posición junto a Karlsplatz permite una vista amplia, muy reconocible y especialmente adecuada para una escena de presentación de Viena.",
+      "photoTip": "La toma frontal ordena la cúpula y las columnas. El conocido reflejo en el estanque solo es posible cuando el agua y las condiciones del lugar lo permiten.",
+      "visit": "Exterior; interior según modalidad de acceso.",
+      "winter": "No se garantiza el estanque con agua ni reflejos. Las fotografías de primavera o verano no describen necesariamente su aspecto en enero.",
+      "official": "https://www.karlskirche.at/",
+      "wikipedia": {
+        "title": "Karlskirche",
+        "pageid": 1246704,
+        "fullurl": "https://en.wikipedia.org/wiki/Karlskirche",
+        "extract": "The Karlskirche (English: Charles Church) is a Baroque church in the Karlsplatz in Vienna, Austria. The church is dedicated to Saint Charles Borromeo, a leading figure of the Counter-Reformation. The church is located on the border of Wieden and the Innere Stadt, the city centre.\n\n",
+        "coordinates": [
+          {
+            "lat": 48.19828056,
+            "lon": 16.3719,
+            "primary": "",
+            "globe": "earth"
+          }
+        ],
+        "pageimage": "Karlskirche_Abendsonne_1.jpg",
+        "original": {
+          "source": "https://upload.wikimedia.org/wikipedia/commons/3/39/Karlskirche_Abendsonne_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+          "width": 8724,
+          "height": 5816
+        }
+      },
+      "number": 21,
+      "referenceUrl": "https://en.wikipedia.org/wiki/Karlskirche",
+      "photoIds": [
+        "V21"
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Karlskirche",
+          "status": 200
+        },
+        {
+          "kind": "official",
+          "url": "https://www.karlskirche.at/",
+          "resolvedUrl": "https://www.karlskirche.at/",
+          "status": 200,
+          "title": "Die Wiener Karlskirche | Heilsort der Stadt"
+        }
+      ]
+    },
+    {
+      "id": "musikverein",
+      "name": "Musikverein",
+      "subtitle": "La Viena musical más clásica",
+      "zone": "sur",
+      "category": "interiores",
+      "priority": false,
+      "description": "El edificio del Musikverein es una referencia esencial de la vida musical vienesa. La Sala Dorada es su interior más famoso, mientras la fachada permite integrarlo en un paseo entre la Ópera y Karlskirche.",
+      "photoTip": "Distingue la fachada de la Sala Dorada: una foto del interior no significa que sea accesible durante un simple paseo. Para enseñarla en el futuro regalo debe conservarse esa distinción.",
+      "visit": "Exterior; interior con concierto o visita cuando se ofrezca.",
+      "winter": "Puede ser una opción cultural interior, pero no se presenta como una actividad ya incluida en el regalo.",
+      "official": "https://www.musikverein.at/en/",
+      "wikipedia": {
+        "title": "Musikverein",
+        "pageid": 277933,
+        "fullurl": "https://en.wikipedia.org/wiki/Musikverein",
+        "extract": "The Wiener Musikverein (German: [ˌviːnɐ  muˈziːkfɐ̯ˌaɪn] or German: [ˌviːnɐ  muˈziːkfəˌʁaɪn]; German for 'Viennese Music Association'), commonly shortened to Musikverein, is a concert hall in Vienna, Austria, which is located in the Innere Stadt district. During the 1863 construction of the Vienna Ring Road (Ringstraße) a piece of land for a new concert hall was granted to the Society of Friends of Music in Vienna by Emperor Franz Joseph I of Austria. Designed by Danish-born architect Theophil Hansen, the concert hall has housed the Vienna Philharmonic since its opening in 1870.\nThe acoustics of the building's 'Great Hall' (Großer Saal) have earned it recognition alongside other prominent concert halls, such as the Konzerthaus in Berlin, the Concertgebouw in Amsterdam and Symphony Hall in Boston. \n\n",
+        "coordinates": [
+          {
+            "lat": 48.20055556,
+            "lon": 16.37222222,
+            "primary": "",
+            "globe": "earth"
+          }
+        ],
+        "pageimage": "Wien_-_Haus_des_Wiener_Musikvereins_(1).JPG",
+        "original": {
+          "source": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Wien_-_Haus_des_Wiener_Musikvereins_%281%29.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+          "width": 4500,
+          "height": 3103
+        }
+      },
+      "number": 22,
+      "referenceUrl": "https://en.wikipedia.org/wiki/Musikverein",
+      "photoIds": [
+        "V22"
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Musikverein",
+          "status": 200
+        },
+        {
+          "kind": "official",
+          "url": "https://www.musikverein.at/en/",
+          "resolvedUrl": "https://www.musikverein.at/en/",
+          "status": 200,
+          "title": "Musikverein Vienna"
+        }
+      ]
+    },
+    {
+      "id": "secession",
+      "name": "Secession",
+      "subtitle": "La cúpula de hojas doradas",
+      "zone": "sur",
+      "category": "arquitectura",
+      "priority": false,
+      "description": "El edificio de la Secesión se reconoce por sus volúmenes blancos y la cúpula de hojas doradas. Es una pieza clave del modernismo vienés; el Friso de Beethoven de Klimt constituye uno de los grandes intereses del interior.",
+      "photoTip": "Una composición frontal y despejada destaca la geometría blanca y el dorado de la cúpula. Los detalles de la fachada funcionan bien en una segunda fotografía.",
+      "visit": "Exterior; exposiciones e interior con entrada propia.",
+      "winter": "La fachada tiene un lenguaje gráfico potente incluso con luz difusa; revisar las exposiciones si se quiere entrar.",
+      "official": "https://secession.at/en/",
+      "wikipedia": {
+        "title": "Vienna Secession",
+        "pageid": 1398982,
+        "fullurl": "https://en.wikipedia.org/wiki/Vienna_Secession",
+        "extract": "The Vienna Secession (German: Wiener Secession; also known as the Union of Austrian Artists or Vereinigung Bildender Künstler Österreichs) is an art movement, closely related to Art Nouveau, that was formed in 1897 by a group of Austrian painters, graphic artists, sculptors and architects, including Josef Hoffman, Koloman Moser, Otto Wagner and Gustav Klimt.\nThey resigned from the Association of Austrian Artists (Vienna Künstlerhaus) in protest against its support for more traditional artistic styles. Their most influential architectural work was the Secession exhibitions hall designed by Joseph Maria Olbrich as a venue for expositions of the group. Their official magazine was called Ver Sacrum ('Sacred Spring'), which published highly stylised and influential works of graphic art. In 1905 the group itself split, when some of the most prominent members, including Klimt, Wagner, and Hoffmann, resigned in a dispute over priorities, but it continued to function, and still functions today, from its headquarters in the Secession Building. In its current form, the Secession exhibition gallery is independently led and managed by artists.",
+        "coordinates": null,
+        "pageimage": "Secession_2016,_Vienna.jpg",
+        "original": {
+          "source": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Secession_2016%2C_Vienna.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+          "width": 5716,
+          "height": 3810
+        }
+      },
+      "number": 23,
+      "referenceUrl": "https://en.wikipedia.org/wiki/Vienna_Secession",
+      "photoIds": [
+        "V23"
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Vienna_Secession",
+          "status": 200
+        },
+        {
+          "kind": "official",
+          "url": "https://secession.at/en/",
+          "resolvedUrl": "https://secession.at/en/",
+          "status": 200,
+          "title": "Secession"
+        }
+      ]
+    },
+    {
+      "id": "naschmarkt",
+      "name": "Naschmarkt",
+      "subtitle": "Color y vida cotidiana",
+      "zone": "sur",
+      "category": "cafe",
+      "priority": false,
+      "description": "El mercado combina puestos de alimentación, productos de procedencias diversas y restauración. Aporta una escena más cotidiana y gastronómica frente a la secuencia de palacios y museos; cerca aparecen las fachadas de Otto Wagner en Linke Wienzeile.",
+      "photoTip": "Fotografía los productos y la profundidad de los pasillos con respeto al trabajo de los comerciantes. Como complemento arquitectónico, busca la Majolikahaus y la casa de los medallones cercanas.",
+      "visit": "Mercado exterior y restauración; cada puesto tiene sus condiciones de apertura.",
+      "winter": "El viaje incluye un domingo: no debe planificarse el mercado de puestos como si funcionara igual todos los días. Comprobar el día concreto.",
+      "official": "https://www.wien.info/en/dine-drink/markets/naschmarkt-353536",
+      "wikipedia": {
+        "title": "Naschmarkt",
+        "pageid": 1684077,
+        "fullurl": "https://en.wikipedia.org/wiki/Naschmarkt",
+        "extract": "The Naschmarkt is a popular fruit and vegetable market in Vienna. Located at the Wienzeile over the Wien River, it is about 1.5 kilometres (0.93 mi) long. Originally known as Aschenmarkt, it started to be called the Naschmarkt around 1820.\nNowadays, one can buy fresh fruit and vegetables from around the world, exotic herbs, cheese, baked goods such as bread, kaiser rolls, torte, meats, and seafood. There are also many small restaurants which offer e.g. sushi, kebab, seafood, traditional Viennese food such as Kaiserschmarrn or Palatschinken (rolled up crepes) and stalls which offer clothes and accessories. Since 1977, the market extends further along the Wienzeile to an adjacent area every Saturday, when a flea market takes place there.\nThe atmosphere of the Naschmarkt is famous far beyond the borders of Vienna, and large numbers of tourists visit the market every year.",
+        "coordinates": [
+          {
+            "lat": 48.19888889,
+            "lon": 16.36361111,
+            "primary": "",
+            "globe": "earth"
+          }
+        ],
+        "pageimage": "Wien_-_Naschmarkt.JPG",
+        "original": {
+          "source": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Wien_-_Naschmarkt.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+          "width": 4961,
+          "height": 2048
+        }
+      },
+      "number": 24,
+      "referenceUrl": "https://en.wikipedia.org/wiki/Naschmarkt",
+      "photoIds": [
+        "V24"
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Naschmarkt",
+          "status": 200
+        },
+        {
+          "kind": "tourism",
+          "placeId": "naschmarkt",
+          "url": "https://www.wien.info/en/dine-drink/markets/naschmarkt-353536",
+          "resolvedUrl": "https://www.wien.info/en/dine-drink/markets/naschmarkt-353536",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "id": "stadtpark",
+      "name": "Stadtpark y Johann Strauss",
+      "subtitle": "Un dorado entre árboles",
+      "zone": "landstrasse",
+      "category": "paseos",
+      "priority": false,
+      "description": "El parque de la ciudad ofrece caminos, agua y monumentos cerca del Ring. La estatua dorada de Johann Strauss hijo, enmarcada por su arco de piedra, es una de las imágenes más reconocibles de la Viena musical.",
+      "photoTip": "El arco permite una composición frontal clara; una toma más abierta incorpora el entorno y evita que parezca un objeto aislado.",
+      "visit": "Paseo exterior.",
+      "winter": "La vegetación será distinta a las fotos estivales y no se garantiza nieve. Sigue siendo un enlace agradable hacia el centro si el tiempo acompaña.",
+      "official": "https://www.wien.gv.at/english/environment/parks/",
+      "wikipedia": {
+        "title": "Stadtpark, Vienna",
+        "pageid": 1397758,
+        "fullurl": "https://en.wikipedia.org/wiki/Stadtpark,_Vienna",
+        "extract": "The Stadtpark (German: [ˈʃtatˌpaʁk] , City Park) in Vienna, Austria is a large municipal park that extends from the Ringstraße in the Innere Stadt first district up to the Heumarkt (Hay Market) in the Landstraße third district. The park is divided in two sections by the Wienfluss (Vienna River), and has a total surface area of 65,000 square metres (28 acres). Scattered throughout the park are statues of famous Viennese artists, writers, and composers, including Hans Canon, Emil Jakob Schindler, Johann Strauss II, Franz Schubert, and Anton Bruckner. The opulent Kursalon building on Johannesgasse, with its broad terrace that reaches into the park, is the site of popular waltz concerts.",
+        "coordinates": [
+          {
+            "lat": 48.20472222,
+            "lon": 16.38055556,
+            "primary": "",
+            "globe": "earth"
+          }
+        ],
+        "pageimage": "Stadtpark_station.JPG",
+        "original": {
+          "source": "https://upload.wikimedia.org/wikipedia/commons/1/15/Stadtpark_station.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+          "width": 2560,
+          "height": 1920
+        }
+      },
+      "number": 25,
+      "referenceUrl": "https://en.wikipedia.org/wiki/Stadtpark,_Vienna",
+      "photoIds": [
+        "V25"
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Stadtpark,_Vienna",
+          "status": 200
+        },
+        {
+          "kind": "official",
+          "url": "https://www.wien.gv.at/english/environment/parks/",
+          "resolvedUrl": "https://www.wien.gv.at/en/leisure/parks-gardens",
+          "status": 200,
+          "title": "Parks and gardens in Vienna - City of Vienna"
+        },
+        {
+          "kind": "tourism",
+          "placeId": "stadtpark",
+          "url": "https://www.wien.info/en/livable-vienna/parks-green-spaces/stadtpark-994650",
+          "resolvedUrl": "https://www.wien.info/en/livable-vienna/parks-green-spaces/stadtpark-994650",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "id": "belvedere",
+      "name": "Belvedere",
+      "subtitle": "Palacio, jardín y horizonte",
+      "zone": "sur",
+      "category": "arquitectura",
+      "priority": true,
+      "description": "El conjunto de palacios y jardines del Belvedere amplía el paseo hacia el sur del centro. La fachada del Belvedere Superior, las perspectivas del jardín y la colección de arte, que incluye El beso de Klimt, permiten combinar fotografía y visita cultural.",
+      "photoTip": "La vista desde el jardín organiza el palacio, las terrazas y el eje central. Un reflejo del edificio depende del estado del agua; no debe darse por hecho en invierno.",
+      "visit": "Jardines según accesos; museos y edificios con entradas diferenciadas.",
+      "winter": "Las fuentes y los parterres cambian de aspecto. Es una extensión del centro, no una parada dentro de la misma manzana que la Ópera.",
+      "official": "https://www.belvedere.at/en",
+      "wikipedia": {
+        "title": "Belvedere, Vienna",
+        "pageid": 747154,
+        "fullurl": "https://en.wikipedia.org/wiki/Belvedere,_Vienna",
+        "extract": "The Belvedere is a historic building complex and art museum in Vienna, Austria. The complex consists of two Baroque palaces, the Upper and Lower Belvedere, together with the Orangery, the Palace Stables, and a formal Baroque garden. It is located in the city's third district, Landstraße, on the south-eastern edge of Vienna's historic centre. Built as the summer residence of Prince Eugene of Savoy, the complex was designed principally by Johann Lukas von Hildebrandt and completed in the early eighteenth century.\nToday the Belvedere is one of Austria's major art museums. The museum institution presents Austrian art from the Middle Ages to the present in an international context, with the Upper Belvedere housing the permanent collection, the Lower Belvedere used for special exhibitions, and Belvedere 21 devoted to contemporary Austrian and international art, film, and music. The Belvedere Palace and garden ensemble forms part of the Baroque heritage of the Historic Centre of Vienna, a World Heritage Site.\nThe Belvedere was built during a period of extensive construction in Vienna, which was then the imperial capital and residence city of the Habsburg monarchy. This period of prosperity followed Prince Eugene's successful military campaigns against the Ottoman Empire.",
+        "coordinates": [
+          {
+            "lat": 48.19416667,
+            "lon": 16.38027778,
+            "primary": "",
+            "globe": "earth"
+          }
+        ],
+        "pageimage": "Palacio_Belvedere,_Viena,_Austria,_2020-02-01,_DD_93-95_HDR.jpg",
+        "original": {
+          "source": "https://upload.wikimedia.org/wikipedia/commons/8/84/Palacio_Belvedere%2C_Viena%2C_Austria%2C_2020-02-01%2C_DD_93-95_HDR.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+          "width": 7785,
+          "height": 3428
+        }
+      },
+      "number": 26,
+      "referenceUrl": "https://en.wikipedia.org/wiki/Belvedere,_Vienna",
+      "photoIds": [
+        "V26"
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Belvedere,_Vienna",
+          "status": 200
+        },
+        {
+          "kind": "official",
+          "url": "https://www.belvedere.at/en",
+          "resolvedUrl": "https://www.belvedere.at/en",
+          "status": 200,
+          "title": "Home | Austrian Gallery Belvedere"
+        }
+      ]
+    },
+    {
+      "id": "hundertwasserhaus",
+      "name": "Hundertwasserhaus",
+      "subtitle": "La Viena de las líneas irregulares",
+      "zone": "landstrasse",
+      "category": "arquitectura",
+      "priority": true,
+      "description": "El edificio residencial asociado a Friedensreich Hundertwasser combina colores, ventanas diferentes, curvas y vegetación. Es uno de los contrapuntos visuales más originales de la ciudad y resulta especialmente relevante por su proximidad al sector del alojamiento.",
+      "photoTip": "Busca una vista oblicua que explique las curvas y los distintos planos, y otra más próxima para las ventanas y los detalles de color.",
+      "visit": "Exterior de un edificio de viviendas; no se presenta el interior residencial como visitable.",
+      "winter": "La vegetación será menos protagonista que en verano. El color de las fachadas mantiene su interés.",
+      "official": "https://www.hundertwasser-haus.info/",
+      "wikipedia": {
+        "title": "Hundertwasserhaus",
+        "pageid": 1651220,
+        "fullurl": "https://en.wikipedia.org/wiki/Hundertwasserhaus",
+        "extract": "The Hundertwasserhaus (\"Hundertwasser house\") is an apartment house in Vienna, Austria, completed in 1985, after the idea and concept of Austrian artist Friedensreich Hundertwasser.\n\n",
+        "coordinates": [
+          {
+            "lat": 48.20722222,
+            "lon": 16.39416667,
+            "primary": "",
+            "globe": "earth"
+          }
+        ],
+        "pageimage": "Wien_-_Hundertwasserhaus_(03).JPG",
+        "original": {
+          "source": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Wien_-_Hundertwasserhaus_%2803%29.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+          "width": 2944,
+          "height": 3425
+        }
+      },
+      "number": 27,
+      "referenceUrl": "https://en.wikipedia.org/wiki/Hundertwasserhaus",
+      "photoIds": [
+        "V27"
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Hundertwasserhaus",
+          "status": 200
+        },
+        {
+          "kind": "official",
+          "url": "https://www.hundertwasser-haus.info/",
+          "resolvedUrl": "https://www.hundertwasser-haus.info/",
+          "status": 200,
+          "title": "Hundertwasserhaus Blog"
+        }
+      ]
+    },
+    {
+      "id": "kunsthaus",
+      "name": "Kunst Haus Wien",
+      "subtitle": "Un museo que empieza en la fachada",
+      "zone": "landstrasse",
+      "category": "interiores",
+      "priority": false,
+      "description": "Este museo dedicado a Hundertwasser y a exposiciones temporales presenta una fachada de tramas blancas y negras, superficies irregulares y detalles de color. Es un lugar distinto del Hundertwasserhaus y merece identificarse por su propio nombre.",
+      "photoTip": "Una imagen frontal destaca el patrón de la fachada. El patio y el interior aportan otras escenas, siempre según el acceso y las normas del museo.",
+      "visit": "Exterior; museo y exposiciones con entrada propia.",
+      "winter": "Es una alternativa interior cercana al área del alojamiento, útil para equilibrar el paseo exterior.",
+      "official": "https://www.kunsthauswien.com/en/",
+      "wikipedia": {
+        "title": "Kunst Haus Wien",
+        "pageid": 2129057,
+        "fullurl": "https://de.wikipedia.org/wiki/Kunst_Haus_Wien",
+        "extract": "Das 1991 eröffnete Kunst Haus Wien ist ein von Friedensreich Hundertwasser gestaltetes Museum. Es befindet sich in der Unteren Weißgerberstraße 13 im 3. Wiener Gemeindebezirk, Landstraße.\nEs handelt sich um die weltweit einzige permanente Ausstellung der Werke von Friedensreich Hundertwasser, darüber hinaus werden regelmäßig Wechselausstellungen von Werken anderer Künstler gezeigt. Die Ausstellungsfläche beträgt rund 1600 m².",
+        "coordinates": [
+          {
+            "lat": 48.211111,
+            "lon": 16.393333,
+            "primary": "",
+            "globe": "earth"
+          }
+        ]
+      },
+      "number": 28,
+      "referenceUrl": "https://de.wikipedia.org/wiki/Kunst_Haus_Wien",
+      "photoIds": [
+        "V28"
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://de.wikipedia.org/wiki/Kunst_Haus_Wien",
+          "status": 200
+        },
+        {
+          "kind": "official",
+          "url": "https://www.kunsthauswien.com/en/",
+          "resolvedUrl": "https://www.kunsthauswien.com/en/",
+          "status": 200,
+          "title": "KunstHausWien — Museum Hundertwasser"
+        }
+      ]
+    },
+    {
+      "id": "cafe-central",
+      "name": "Café Central",
+      "subtitle": "Bóvedas, café y sobremesa",
+      "zone": "casco",
+      "category": "cafe",
+      "priority": false,
+      "description": "Situado en Palais Ferstel, Café Central es uno de los cafés históricos más conocidos de Viena. Su gran interés visual está en las columnas, las bóvedas y la profundidad del salón, además de la experiencia de sentarse a tomar algo.",
+      "photoTip": "El interior se entiende mejor con una vista que incluya las bóvedas. Las fotografías deben respetar a otros clientes y las indicaciones del establecimiento.",
+      "visit": "La web oficial anuncia una reforma desde el 16 de marzo de 2026 y una reapertura prevista para el invierno de 2026. No se confirma aquí la reapertura efectiva para enero de 2027.",
+      "winter": "Comprobar la reapertura antes de incorporarlo al plan. La imagen del salón es una referencia anterior a la reforma.",
+      "official": "https://cafecentral.wien/en/",
+      "wikipedia": {
+        "title": "Café Central",
+        "pageid": 2951090,
+        "fullurl": "https://en.wikipedia.org/wiki/Caf%C3%A9_Central",
+        "extract": "Café Central is a traditional Viennese coffeehouse located at Herrengasse 14 in the Innere Stadt first district of Vienna, Austria. The café occupies the ground floor of the former Bank and Stockmarket Building, today called the Palais Ferstel after its architect Heinrich von Ferstel.",
+        "coordinates": [
+          {
+            "lat": 48.21027778,
+            "lon": 16.36527778,
+            "primary": "",
+            "globe": "earth"
+          }
+        ],
+        "pageimage": "Palais_Ferstel.jpg",
+        "original": {
+          "source": "https://upload.wikimedia.org/wikipedia/commons/9/92/Palais_Ferstel.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+          "width": 3072,
+          "height": 2304
+        }
+      },
+      "number": 29,
+      "referenceUrl": "https://en.wikipedia.org/wiki/Caf%C3%A9_Central",
+      "photoIds": [
+        "V29"
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Caf%C3%A9_Central",
+          "status": 200
+        },
+        {
+          "kind": "official",
+          "url": "https://cafecentral.wien/en/",
+          "resolvedUrl": "https://cafecentral.wien/en/",
+          "status": 200,
+          "title": "Café Central"
+        }
+      ],
+      "statusNote": "Reapertura pendiente de confirmar",
+      "statusSource": "https://cafecentral.wien/en/",
+      "statusQuote": "Reopening is scheduled for winter 2026."
+    },
+    {
+      "id": "cafe-sacher",
+      "name": "Café Sacher",
+      "subtitle": "Una pausa junto a la Ópera",
+      "zone": "casco",
+      "category": "cafe",
+      "priority": false,
+      "description": "El entorno del Hotel Sacher y su café se asocia a una de las tartas más famosas de Viena. Su situación junto a la Ópera permite incorporarlo con facilidad al mismo sector del paseo, sin convertirlo en una obligación gastronómica.",
+      "photoTip": "La fachada y el acceso sitúan el lugar; una fotografía de la tarta cuenta una experiencia distinta y no sustituye a la del edificio.",
+      "visit": "Café de hotel; consumo, disponibilidad y posibles reservas según el establecimiento.",
+      "winter": "Puede ser una pausa antes o después del entorno de la Ópera, dejando margen para esperas.",
+      "official": "https://www.sacher.com/en/vienna/",
+      "wikipedia": {
+        "title": "Hotel Sacher",
+        "pageid": 2727599,
+        "fullurl": "https://en.wikipedia.org/wiki/Hotel_Sacher",
+        "extract": "Hotel Sacher is a five-star luxury hotel in Vienna, Austria, facing the Vienna State Opera in the city's central Innere Stadt district. It is famous for the specialty of the house, the Original Sachertorte, a chocolate cake with apricot filling. There is also an art gallery in the hotel, with works from the 19th century. The hotel is located near the former residence of Antonio Vivaldi. Hotel Sacher is a member of The Leading Hotels of the World, a marketing network.",
+        "coordinates": [
+          {
+            "lat": 48.20388889,
+            "lon": 16.36944444,
+            "primary": "",
+            "globe": "earth"
+          }
+        ],
+        "pageimage": "Hotel_sacher_logo_2021.jpg",
+        "original": {
+          "source": "https://upload.wikimedia.org/wikipedia/commons/8/86/Hotel_sacher_logo_2021.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+          "width": 1064,
+          "height": 670
+        }
+      },
+      "number": 30,
+      "referenceUrl": "https://en.wikipedia.org/wiki/Hotel_Sacher",
+      "photoIds": [
+        "V30"
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Hotel_Sacher",
+          "status": 200
+        },
+        {
+          "kind": "official",
+          "url": "https://www.sacher.com/en/vienna/",
+          "resolvedUrl": "https://www.sacher.com/en/vienna/",
+          "status": 200,
+          "title": "Luxury Historic Hotel in Vienna | Hotel Sacher Vienna"
+        }
+      ]
+    },
+    {
+      "id": "demel",
+      "name": "Demel",
+      "subtitle": "La Viena de la pastelería",
+      "zone": "casco",
+      "category": "cafe",
+      "priority": false,
+      "description": "La pastelería histórica de Kohlmarkt aporta escaparates, elaboraciones dulces y una escena de comercio tradicional cerca del Hofburg. Interesa como pausa gastronómica y como detalle de la vida del centro, además de los grandes monumentos.",
+      "photoTip": "El escaparate y los detalles del local pueden servir para una secuencia visual más pequeña. Fotografiar la elaboración o el interior depende de lo permitido en el establecimiento.",
+      "visit": "Pastelería y café; compra y consumo según funcionamiento del local.",
+      "winter": "Una alternativa de pausa interior; conviene escoger entre varios cafés históricos para no duplicar experiencias en un fin de semana corto.",
+      "official": "https://www.demel.com/",
+      "wikipedia": {
+        "title": "Demel",
+        "pageid": 1920165,
+        "fullurl": "https://en.wikipedia.org/wiki/Demel",
+        "extract": "Demel is an Austrian confectioner and Konditorei that was established in 1786 in Vienna, Austria. The company was granted the status of a Purveyor to the Imperial and Royal Court (K.u.K. Hoflieferant), specifically as K.u.K. Hofzuckerbäcker.\n\n",
+        "coordinates": [
+          {
+            "lat": 48.20861111,
+            "lon": 16.36722222,
+            "primary": "",
+            "globe": "earth"
+          }
+        ],
+        "pageimage": "Demel_aussen.jpg",
+        "original": {
+          "source": "https://upload.wikimedia.org/wikipedia/commons/9/90/Demel_aussen.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+          "width": 3595,
+          "height": 2336
+        }
+      },
+      "number": 31,
+      "referenceUrl": "https://en.wikipedia.org/wiki/Demel",
+      "photoIds": [
+        "V31"
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Demel",
+          "status": 200
+        },
+        {
+          "kind": "official",
+          "url": "https://www.demel.com/",
+          "resolvedUrl": "https://www.demel.com/",
+          "status": 200,
+          "title": "Willkommen bei DEMEL - K.u.K. Hofzuckerbäcker Wien – Demel Wien"
+        }
+      ]
+    },
+    {
+      "id": "justizpalast",
+      "name": "Justizpalast",
+      "subtitle": "Una escalera monumental",
+      "zone": "ring",
+      "category": "interiores",
+      "priority": false,
+      "description": "El Palacio de Justicia cuenta con un gran vestíbulo y una escalera monumental que lo han convertido en un motivo fotográfico conocido. Su función principal sigue siendo judicial: no debe tratarse como un museo con acceso turístico garantizado.",
+      "photoTip": "La composición frontal de la escalera destaca su simetría y la altura del vestíbulo. Solo tiene sentido planificarla si está permitido acceder y fotografiar.",
+      "visit": "Edificio judicial con controles y restricciones; comprobar el acceso antes de desplazarse.",
+      "winter": "El viaje es de viernes a domingo. No se da por supuesto que el vestíbulo pueda visitarse durante el fin de semana.",
+      "official": "https://www.justiz.gv.at/",
+      "wikipedia": {
+        "title": "Palace of Justice, Vienna",
+        "pageid": 31575532,
+        "fullurl": "https://en.wikipedia.org/wiki/Palace_of_Justice,_Vienna",
+        "extract": "The Palace of Justice (German: Justizpalast) is the seat of the Supreme Court (Oberster Gerichtshof) of Austria. The Neo-Renaissance building erected from 1875 to 1881 is located in the Austrian capital Vienna on Schmerlingplatz, a square near the Ringstraße boulevard in the central district of Innere Stadt. In addition to the Supreme Court, the Palace of Justice houses the Higher Regional Court of Vienna and the Regional Court for Civil Matters Vienna and the General Prosecution and the Supreme Public Prosecutor for Vienna.",
+        "coordinates": [
+          {
+            "lat": 48.20638889,
+            "lon": 16.35722222,
+            "primary": "",
+            "globe": "earth"
+          }
+        ],
+        "pageimage": "Wien_01_Justizpalast_a.jpg",
+        "original": {
+          "source": "https://upload.wikimedia.org/wikipedia/commons/3/32/Wien_01_Justizpalast_a.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+          "width": 3000,
+          "height": 1687
+        }
+      },
+      "number": 32,
+      "referenceUrl": "https://en.wikipedia.org/wiki/Palace_of_Justice,_Vienna",
+      "photoIds": [
+        "V32"
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Palace_of_Justice,_Vienna",
+          "status": 200
+        },
+        {
+          "kind": "official",
+          "url": "https://www.justiz.gv.at/",
+          "resolvedUrl": "https://www.justiz.gv.at/",
+          "status": 200,
+          "title": "Die österreichische Justiz"
+        }
+      ]
+    }
+  ],
+  "photos": [
+    {
+      "fileTitle": "File:Wien - Stephansdom (1).JPG",
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Wien_-_Stephansdom_(1).JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Wien_-_Stephansdom_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Wien_-_Stephansdom_%281%29.JPG/1920px-Wien_-_Stephansdom_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 2625,
+      "originalHeight": 3937,
+      "artist": "C.Stadler/Bwag",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Westansicht des Stephansdoms in der österreichischen Bundeshauptstadt Wien . Der Grundstein für den Stephansdom wurde 1359 unter Rudolf IV. („Der Stifter“) gelegt. Der Südturm wurde 1433 unter Hans von Prachatitz fertiggestellt, mit 137 Metern war er damals das höchste Bauwerk Europas: [1] .",
+      "date": "2014-08-09",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V01",
+      "placeId": "stephansdom",
+      "localFile": "01-stephansdom.jpg",
+      "primary": true,
+      "width": 1920,
+      "height": 2880,
+      "format": "JPEG",
+      "bytes": 1716289,
+      "sha256": "023de045c24cfa4e4c9c98c9c21897630ea1fe07b8d6b3167c2c485011fec51b",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Wien_-_Stephansdom_%281%29.JPG/1920px-Wien_-_Stephansdom_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "caption": "Stephansdom: torre gótica y tejado de azulejos vistos desde Stephansplatz.",
+      "alt": "Stephansdom: torre gótica y tejado de azulejos vistos desde Stephansplatz.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:Wien - Graben (2).JPG",
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Wien_-_Graben_(2).JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/49/Wien_-_Graben_%282%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Wien_-_Graben_%282%29.JPG/1920px-Wien_-_Graben_%282%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 4250,
+      "originalHeight": 2832,
+      "artist": "C.Stadler/Bwag",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Die Prachtstrasse und jetzige Fußgängerzone Graben im 1. Wiener Gemeindebezirk Innere Stadt mit der 1679 gestifteten Dreifaltigkeitssäule (Pestsäule) im Zentrum. Der Graben wird 1294 erstmals urkundlich als Verkehrsfläche erwähnt und 1300 erstmals als Marktplatz bezeichnet. 1971 wurde erstmals in Wien an dem rund 250 Meter langen Straßenzug probeweise die Fußgängerzone eingeführt.",
+      "date": "2018-05-20",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V02",
+      "placeId": "graben",
+      "localFile": "02-graben.jpg",
+      "primary": true,
+      "width": 1920,
+      "height": 1279,
+      "format": "JPEG",
+      "bytes": 837395,
+      "sha256": "4cbf960c54e2fa9a96ef98894c6a05bd05d51dc73c6d2780b19698900d7fa731",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Wien_-_Graben_%282%29.JPG/1920px-Wien_-_Graben_%282%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "caption": "El paseo de Graben con la columna de la Peste y las fachadas históricas.",
+      "alt": "El paseo de Graben con la columna de la Peste y las fachadas históricas.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:Wien - Peterskirche (1).JPG",
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Wien_-_Peterskirche_(1).JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Wien_-_Peterskirche_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Wien_-_Peterskirche_%281%29.JPG/1920px-Wien_-_Peterskirche_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 2763,
+      "originalHeight": 3907,
+      "artist": "C.Stadler/Bwag",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Die Hauptfassade bzw. Südwestansicht der Peterskirche im 1. Wiener Gemeindebezirk Innere Stadt . Der erste Kuppelbau des barocken Wien wurde ab 1701/02 errichtet. Die Planung und der Baubeginn (Fundamente) erfolgte unter Gabriele Montani . Nachdem dieser als Festungsarchitekt nach Madrid zog, setzte ab 1703 sehr wahrscheinlich Johann Lucas von Hildebrandt den Bau nach veränderten Plänen fort.",
+      "date": "2015-06-28",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V03",
+      "placeId": "peterskirche",
+      "localFile": "03-peterskirche.jpg",
+      "primary": true,
+      "width": 1920,
+      "height": 2715,
+      "format": "JPEG",
+      "bytes": 1282618,
+      "sha256": "03688b6fd3d15fa134b82763416f6b9402d61a8e18851b94198062cd4a6ae74e",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Wien_-_Peterskirche_%281%29.JPG/1920px-Wien_-_Peterskirche_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "caption": "La fachada y la cúpula de Peterskirche entre los edificios del centro.",
+      "alt": "La fachada y la cúpula de Peterskirche entre los edificios del centro.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:Wien 6 März 2021 20 03 48 119000.jpeg",
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Wien_6_M%C3%A4rz_2021_20_03_48_119000.jpeg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Wien_6_M%C3%A4rz_2021_20_03_48_119000.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Wien_6_M%C3%A4rz_2021_20_03_48_119000.jpeg/1920px-Wien_6_M%C3%A4rz_2021_20_03_48_119000.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 4032,
+      "originalHeight": 3024,
+      "artist": "Robot8A",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Vienna, Austria, March 2021",
+      "date": "2021-03-06 15:33:09",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V04",
+      "placeId": "kohlmarkt",
+      "localFile": "04-kohlmarkt.jpg",
+      "primary": true,
+      "width": 1920,
+      "height": 1440,
+      "format": "JPEG",
+      "bytes": 636515,
+      "sha256": "65c0dfc9c9f9555ef1cbd65f9400e9201eb7ea3ef3055499d3e058d9041c76af",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Wien_6_M%C3%A4rz_2021_20_03_48_119000.jpeg/1920px-Wien_6_M%C3%A4rz_2021_20_03_48_119000.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "caption": "La fachada de San Miguel del Hofburg en Michaelerplatz.",
+      "alt": "La fachada de San Miguel del Hofburg en Michaelerplatz.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:Wien - Neue Hofburg.JPG",
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Wien_-_Neue_Hofburg.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/31/Wien_-_Neue_Hofburg.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Wien_-_Neue_Hofburg.JPG/1920px-Wien_-_Neue_Hofburg.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 5050,
+      "originalHeight": 2220,
+      "artist": "C.Stadler/Bwag",
+      "credit": "Own work",
+      "license": "CC BY-SA 3.0 at",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/at/deed.en",
+      "description": "This is a photo of public art indexed in a public art catalogue of Vienna (Austria) under the number: 48287 ( commons , de ) .",
+      "date": "2014-07-06",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V05",
+      "placeId": "hofburg",
+      "localFile": "05-hofburg.jpg",
+      "primary": true,
+      "width": 1920,
+      "height": 844,
+      "format": "JPEG",
+      "bytes": 361258,
+      "sha256": "e38a3cfe1a2c2c7f8cee0a52c4384833743b0eeeb9170ac016386f4737db8d1f",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Wien_-_Neue_Hofburg.JPG/1920px-Wien_-_Neue_Hofburg.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "caption": "Neue Burg y monumento ecuestre en Heldenplatz.",
+      "alt": "Neue Burg y monumento ecuestre en Heldenplatz.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:State Hall of the Austrian National Library NightFall404 1.jpg",
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:State_Hall_of_the_Austrian_National_Library_NightFall404_1.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/61/State_Hall_of_the_Austrian_National_Library_NightFall404_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/State_Hall_of_the_Austrian_National_Library_NightFall404_1.jpg/1920px-State_Hall_of_the_Austrian_National_Library_NightFall404_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 3193,
+      "originalHeight": 4856,
+      "artist": "Richard Hopkins",
+      "credit": "Flickr : Österreichische Nationalbibliothek",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "description": "Austrian National Library. State Hall",
+      "date": "2012-05-25 14:35:03",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V06",
+      "placeId": "prunksaal",
+      "localFile": "06-prunksaal.jpg",
+      "primary": true,
+      "width": 1920,
+      "height": 2920,
+      "format": "JPEG",
+      "bytes": 1538401,
+      "sha256": "ba6bfec997aec5a49b1a7b8abc1b1fd8eea421e57b0018a28ed306b585cf7320",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/State_Hall_of_the_Austrian_National_Library_NightFall404_1.jpg/1920px-State_Hall_of_the_Austrian_National_Library_NightFall404_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "caption": "Cúpula, estanterías y mármoles del Prunksaal de la Biblioteca Nacional.",
+      "alt": "Cúpula, estanterías y mármoles del Prunksaal de la Biblioteca Nacional.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:Wien - Albertina.JPG",
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Wien_-_Albertina.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Wien_-_Albertina.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Wien_-_Albertina.JPG/1920px-Wien_-_Albertina.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 4600,
+      "originalHeight": 2849,
+      "artist": "C.Stadler/Bwag",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Albertina Museum with Archduke Albrecht Monument in Vienna.",
+      "date": "2021-08-15",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V07",
+      "placeId": "albertina",
+      "localFile": "07-albertina.jpg",
+      "primary": true,
+      "width": 1920,
+      "height": 1189,
+      "format": "JPEG",
+      "bytes": 513243,
+      "sha256": "942883e3192a84668a486b61828e448bf0d69a648f592b0fb3deba4256899ec0",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Wien_-_Albertina.JPG/1920px-Wien_-_Albertina.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "caption": "La fachada del Albertina, su acceso elevado y el monumento ecuestre.",
+      "alt": "La fachada del Albertina, su acceso elevado y el monumento ecuestre.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:Wiener Staatsoper Front.jpg",
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Wiener_Staatsoper_Front.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/Wiener_Staatsoper_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Wiener_Staatsoper_Front.jpg/1920px-Wiener_Staatsoper_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 2362,
+      "originalHeight": 1527,
+      "artist": "Wiener Staatsoper GmbH",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Front der Wiener Staatsoper",
+      "date": "2022-06-13",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V08",
+      "placeId": "staatsoper",
+      "localFile": "08-staatsoper.jpg",
+      "primary": true,
+      "width": 1920,
+      "height": 1241,
+      "format": "JPEG",
+      "bytes": 554809,
+      "sha256": "016a5a80afca553ab7b03aadf01faffb9979001e3b2b1c4fa8064e03abdb9308",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Wiener_Staatsoper_Front.jpg/1920px-Wiener_Staatsoper_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "caption": "Vista frontal de la Wiener Staatsoper desde el otro lado del Ring.",
+      "alt": "Vista frontal de la Wiener Staatsoper desde el otro lado del Ring.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:AT-13768 Palmenhaus Burggarten 05.JPG",
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:AT-13768_Palmenhaus_Burggarten_05.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2d/AT-13768_Palmenhaus_Burggarten_05.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/AT-13768_Palmenhaus_Burggarten_05.JPG/1920px-AT-13768_Palmenhaus_Burggarten_05.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 3648,
+      "originalHeight": 2736,
+      "artist": "Hubertl",
+      "credit": "Own work",
+      "license": "CC BY 3.0 at",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/at/deed.en",
+      "description": "Palmenhaus, burggarten Wien",
+      "date": "2012-08-01 14:24:08",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V09",
+      "placeId": "burggarten",
+      "localFile": "09-burggarten.jpg",
+      "primary": true,
+      "width": 1920,
+      "height": 1440,
+      "format": "JPEG",
+      "bytes": 731922,
+      "sha256": "6a7a8536660b9cca8ed5b6dcf9c112832d71b37e080f7d627636abd183434b30",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/AT-13768_Palmenhaus_Burggarten_05.JPG/1920px-AT-13768_Palmenhaus_Burggarten_05.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "caption": "La estructura de hierro y cristal del Palmenhaus junto al Burggarten.",
+      "alt": "La estructura de hierro y cristal del Palmenhaus junto al Burggarten.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:Maria-Theresien-Platz Kunsthistorisches Museum Wien 2010.jpg",
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Maria-Theresien-Platz_Kunsthistorisches_Museum_Wien_2010.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/00/Maria-Theresien-Platz_Kunsthistorisches_Museum_Wien_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Maria-Theresien-Platz_Kunsthistorisches_Museum_Wien_2010.jpg/1920px-Maria-Theresien-Platz_Kunsthistorisches_Museum_Wien_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 3888,
+      "originalHeight": 2592,
+      "artist": "Manfred Werner - Tsui",
+      "credit": "Own work",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Kunsthistorisches Museum in Vienna with Maria-Theresien-Platz .",
+      "date": "2010-07-11",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V10",
+      "placeId": "maria-theresien",
+      "localFile": "10-maria-theresien.jpg",
+      "primary": true,
+      "width": 1920,
+      "height": 1280,
+      "format": "JPEG",
+      "bytes": 586151,
+      "sha256": "ca9ccc98edca2ebbc7855fb31e6fc925b2d3b77518fd4b645f58e97791c067a3",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Maria-Theresien-Platz_Kunsthistorisches_Museum_Wien_2010.jpg/1920px-Maria-Theresien-Platz_Kunsthistorisches_Museum_Wien_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "caption": "Maria-Theresien-Platz con el monumento central y uno de los museos.",
+      "alt": "Maria-Theresien-Platz con el monumento central y uno de los museos.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:Kunsthistorisches Museum Interior.JPG",
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Kunsthistorisches_Museum_Interior.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/Kunsthistorisches_Museum_Interior.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Kunsthistorisches_Museum_Interior.JPG/1920px-Kunsthistorisches_Museum_Interior.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 3008,
+      "originalHeight": 2000,
+      "artist": "C1815",
+      "credit": "Own work",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_rules_by_territory#Public_domain",
+      "description": "Kunsthistorisches Museum",
+      "date": "",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V11",
+      "placeId": "kunsthistorisches",
+      "localFile": "11-kunsthistorisches.jpg",
+      "width": 1920,
+      "height": 1277,
+      "format": "JPEG",
+      "bytes": 672455,
+      "sha256": "27494d9aa08e7e7ab4fc5fd6d002019a85cd9ba512e6ef555ea3aed30309e2de",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Kunsthistorisches_Museum_Interior.JPG/1920px-Kunsthistorisches_Museum_Interior.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "primary": true,
+      "caption": "La rotonda y el café bajo la cúpula del Kunsthistorisches Museum.",
+      "alt": "La rotonda y el café bajo la cúpula del Kunsthistorisches Museum.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:Museumsquartier courtyard.jpg",
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Museumsquartier_courtyard.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Museumsquartier_courtyard.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Museumsquartier_courtyard.jpg/1920px-Museumsquartier_courtyard.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 2795,
+      "originalHeight": 1900,
+      "artist": "MrPanyGoff",
+      "credit": "Own work",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "MuseumsQuartier courtyard in Vienna, Austria.",
+      "date": "2012-05-24",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V12",
+      "placeId": "museumsquartier",
+      "localFile": "12-museumsquartier.jpg",
+      "width": 1920,
+      "height": 1305,
+      "format": "JPEG",
+      "bytes": 579296,
+      "sha256": "60652971e6185c0851ccf9718c704d389ce53370ddf08b66115f6d7af193a3c8",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Museumsquartier_courtyard.jpg/1920px-Museumsquartier_courtyard.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "primary": true,
+      "caption": "Un patio del MuseumsQuartier y sus edificios históricos, a nivel de calle.",
+      "alt": "Un patio del MuseumsQuartier y sus edificios históricos, a nivel de calle.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:Wien - Volksgarten (b).JPG",
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Wien_-_Volksgarten_(b).JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Wien_-_Volksgarten_%28b%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Wien_-_Volksgarten_%28b%29.JPG/1920px-Wien_-_Volksgarten_%28b%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 4180,
+      "originalHeight": 2352,
+      "artist": "C.Stadler/Bwag",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "This media shows the natural monument in Vienna with the ID 376 .",
+      "date": "2021-08-02",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V13",
+      "placeId": "volksgarten",
+      "localFile": "13-volksgarten.jpg",
+      "primary": true,
+      "width": 1920,
+      "height": 1080,
+      "format": "JPEG",
+      "bytes": 754577,
+      "sha256": "84e0b36196f95f339a86fc3cb142faac7b617e8f8339804206816e8286a198e2",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Wien_-_Volksgarten_%28b%29.JPG/1920px-Wien_-_Volksgarten_%28b%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "caption": "El trazado del Volksgarten y sus parterres, fotografiados en otra estación.",
+      "alt": "El trazado del Volksgarten y sus parterres, fotografiados en otra estación.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:Wien - Parlamentsgebäude.JPG",
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Wien_-_Parlamentsgeb%C3%A4ude.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Wien_-_Parlamentsgeb%C3%A4ude.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Wien_-_Parlamentsgeb%C3%A4ude.JPG/1920px-Wien_-_Parlamentsgeb%C3%A4ude.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 4614,
+      "originalHeight": 2596,
+      "artist": "C.Stadler/Bwag",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "The Austrian Parliament Building in Vienna.",
+      "date": "2023-05-20",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V14",
+      "placeId": "parlament",
+      "localFile": "14-parlament.jpg",
+      "primary": true,
+      "width": 1920,
+      "height": 1080,
+      "format": "JPEG",
+      "bytes": 823412,
+      "sha256": "1cc0b28c1a71c2251064b91aa3ce6739562c0655e521d15aff6d6872a44001ef",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Wien_-_Parlamentsgeb%C3%A4ude.JPG/1920px-Wien_-_Parlamentsgeb%C3%A4ude.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "caption": "El Parlamento y la fuente de Palas Atenea vistos desde el Ring.",
+      "alt": "El Parlamento y la fuente de Palas Atenea vistos desde el Ring.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:Wien Rathaus hochauflösend.jpg",
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Wien_Rathaus_hochaufl%C3%B6send.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/66/Wien_Rathaus_hochaufl%C3%B6send.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Wien_Rathaus_hochaufl%C3%B6send.jpg/1920px-Wien_Rathaus_hochaufl%C3%B6send.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 11379,
+      "originalHeight": 6869,
+      "artist": "Thomas Ledl",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Vienna City Hall high resolution",
+      "date": "Taken on 3 June 2015, 09:35:20",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V15",
+      "placeId": "rathaus",
+      "localFile": "15-rathaus.jpg",
+      "primary": true,
+      "width": 1920,
+      "height": 1159,
+      "format": "JPEG",
+      "bytes": 466181,
+      "sha256": "1ec09284c4aa12e55315f514cd5594ceabe6d8091fac9ba4d2ee90f247940e5f",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Wien_Rathaus_hochaufl%C3%B6send.jpg/1920px-Wien_Rathaus_hochaufl%C3%B6send.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "caption": "La fachada neogótica del Rathaus y la amplitud de Rathausplatz.",
+      "alt": "La fachada neogótica del Rathaus y la amplitud de Rathausplatz.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:Wien, Ferstel-Passage -- 2018 -- 3091.jpg",
+      "index": 1,
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Wien,_Ferstel-Passage_--_2018_--_3091.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/Wien%2C_Ferstel-Passage_--_2018_--_3091.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Wien%2C_Ferstel-Passage_--_2018_--_3091.jpg/1920px-Wien%2C_Ferstel-Passage_--_2018_--_3091.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 6720,
+      "originalHeight": 4480,
+      "artist": "Dietmar Rabich",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Palais Ferstel , Vienna , Austria",
+      "date": "Taken on 14 June 2018, 10:57",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V16",
+      "placeId": "freyung",
+      "localFile": "16-freyung.jpg",
+      "primary": true,
+      "width": 1920,
+      "height": 1280,
+      "format": "JPEG",
+      "bytes": 804051,
+      "sha256": "e9a09abcb86ac34e149bb084e1fe678c69a91dd82adc4957af16dfdec6f7173c",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Wien%2C_Ferstel-Passage_--_2018_--_3091.jpg/1920px-Wien%2C_Ferstel-Passage_--_2018_--_3091.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "caption": "La cubierta acristalada y las arcadas interiores del pasaje de Palais Ferstel.",
+      "alt": "La cubierta acristalada y las arcadas interiores del pasaje de Palais Ferstel.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:Wien 01 Am Hof a.jpg",
+      "index": 2,
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Wien_01_Am_Hof_a.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Wien_01_Am_Hof_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Wien_01_Am_Hof_a.jpg/1920px-Wien_01_Am_Hof_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 3000,
+      "originalHeight": 1688,
+      "artist": "Gugerell",
+      "credit": "Own work",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Am Hof in Wien 1 Richtung Nordosten",
+      "date": "2012-09-09",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V17",
+      "placeId": "am-hof",
+      "localFile": "17-am-hof.jpg",
+      "primary": true,
+      "width": 1920,
+      "height": 1080,
+      "format": "JPEG",
+      "bytes": 588276,
+      "sha256": "1606be6cfd3a2c484007c619642e3415d23bfc71c26948aaa7975d636eb17706",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Wien_01_Am_Hof_a.jpg/1920px-Wien_01_Am_Hof_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "caption": "La plaza Am Hof, sus fachadas y la columna mariana.",
+      "alt": "La plaza Am Hof, sus fachadas y la columna mariana.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:20250503 Judenplatz Holocaust Memorial.jpg",
+      "index": 1,
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:20250503_Judenplatz_Holocaust_Memorial.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b1/20250503_Judenplatz_Holocaust_Memorial.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/20250503_Judenplatz_Holocaust_Memorial.jpg/1920px-20250503_Judenplatz_Holocaust_Memorial.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 5932,
+      "originalHeight": 3960,
+      "artist": "Flocci Nivis",
+      "credit": "Own work",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "description": "The memorial for the Austrian Jewish victims of the Shoah in Vienna.",
+      "date": "Taken on 3 May 2025, 14:00:06",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V18",
+      "placeId": "judenplatz",
+      "localFile": "18-judenplatz.jpg",
+      "primary": true,
+      "width": 1920,
+      "height": 1282,
+      "format": "JPEG",
+      "bytes": 821650,
+      "sha256": "5d61ee8913cadac1147dd1d2f1def3c63dc3502925bf22efd43ff98888c49140",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/20250503_Judenplatz_Holocaust_Memorial.jpg/1920px-20250503_Judenplatz_Holocaust_Memorial.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "caption": "El memorial de la Shoá de Rachel Whiteread en Judenplatz.",
+      "alt": "El memorial de la Shoá de Rachel Whiteread en Judenplatz.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:Wien, Ankeruhr -- 2018 -- 3098.jpg",
+      "index": 1,
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Wien,_Ankeruhr_--_2018_--_3098.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Wien%2C_Ankeruhr_--_2018_--_3098.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Wien%2C_Ankeruhr_--_2018_--_3098.jpg/1920px-Wien%2C_Ankeruhr_--_2018_--_3098.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 5683,
+      "originalHeight": 3789,
+      "artist": "Dietmar Rabich",
+      "credit": "Self-photographed",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "This is a photo of public art indexed in a public art catalogue of Vienna (Austria) under the number: 48304 ( commons , de ) .",
+      "date": "Taken on 14 June 2018, 14:19",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V19",
+      "placeId": "ankeruhr",
+      "localFile": "19-ankeruhr.jpg",
+      "primary": true,
+      "width": 1920,
+      "height": 1280,
+      "format": "JPEG",
+      "bytes": 641709,
+      "sha256": "884f07dc26ee9eda7e70c729e85cd14785a68541532c90bc85cbc580284bc9a8",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Wien%2C_Ankeruhr_--_2018_--_3098.jpg/1920px-Wien%2C_Ankeruhr_--_2018_--_3098.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "caption": "Detalle del reloj Anker en el puente de Hoher Markt.",
+      "alt": "Detalle del reloj Anker en el puente de Hoher Markt.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:Wien 01 Franziskanerplatz a.jpg",
+      "index": 3,
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Wien_01_Franziskanerplatz_a.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/43/Wien_01_Franziskanerplatz_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Wien_01_Franziskanerplatz_a.jpg/1920px-Wien_01_Franziskanerplatz_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 3000,
+      "originalHeight": 1688,
+      "artist": "Gugerell",
+      "credit": "Own work",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Franziskanerplatz in Wien 1 bei Nr. 3 Richtung Südwesten",
+      "date": "2012-08-19",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V20",
+      "localFile": "20-franziskanerplatz.jpg",
+      "placeId": "franziskanerplatz",
+      "width": 1920,
+      "height": 1080,
+      "format": "JPEG",
+      "bytes": 642593,
+      "sha256": "ce276607147e5e18d06fe172785604d86feaa955f1c5dd37ccddc70eb60a819f",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Wien_01_Franziskanerplatz_a.jpg/1920px-Wien_01_Franziskanerplatz_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "primary": true,
+      "caption": "Franziskanerplatz con la fuente de Moisés y sus fachadas.",
+      "alt": "Franziskanerplatz con la fuente de Moisés y sus fachadas.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:Karlskirche Abendsonne 1.jpg",
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Karlskirche_Abendsonne_1.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/Karlskirche_Abendsonne_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Karlskirche_Abendsonne_1.jpg/1920px-Karlskirche_Abendsonne_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 8724,
+      "originalHeight": 5816,
+      "artist": "Thomas Ledl",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Karlskirche von Nordwest, in Abendsonne von SW",
+      "date": "2016-04-25 17:34:30",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V21",
+      "placeId": "karlskirche",
+      "localFile": "21-karlskirche.jpg",
+      "primary": true,
+      "width": 1920,
+      "height": 1280,
+      "format": "JPEG",
+      "bytes": 537200,
+      "sha256": "62bc39937c28b2b0f855426e1bf07850a2a0a995e7bca18a3aea97a1e0cf6529",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Karlskirche_Abendsonne_1.jpg/1920px-Karlskirche_Abendsonne_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "caption": "Karlskirche con su cúpula, columnas y un reflejo que depende del estado del estanque.",
+      "alt": "Karlskirche con su cúpula, columnas y un reflejo que depende del estado del estanque.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:Wien - Musikverein, großer Saal.JPG",
+      "index": 4,
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Wien_-_Musikverein,_gro%C3%9Fer_Saal.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Wien_-_Musikverein%2C_gro%C3%9Fer_Saal.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Wien_-_Musikverein%2C_gro%C3%9Fer_Saal.JPG/1920px-Wien_-_Musikverein%2C_gro%C3%9Fer_Saal.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 4252,
+      "originalHeight": 2834,
+      "artist": "C.Stadler/Bwag",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Der große Saal, auch als \"Goldener Saal\" bezeichnet, im Wiener Musikvereinsgebäude (rund 2 Stunden nach dem Ende des Neujahrskonzertes 2015). Der Innenausbau besteht zur Gänze aus Holz, das großteils mit goldener Farbe lackiert wurde.",
+      "date": "2015-01-01",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V22",
+      "placeId": "musikverein",
+      "localFile": "22-musikverein.jpg",
+      "primary": true,
+      "width": 1920,
+      "height": 1280,
+      "format": "JPEG",
+      "bytes": 969948,
+      "sha256": "aad41d32083e5728b75fd6326b782d52d0106af49f719b5d2c527d3f26d9bace",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Wien_-_Musikverein%2C_gro%C3%9Fer_Saal.JPG/1920px-Wien_-_Musikverein%2C_gro%C3%9Fer_Saal.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "caption": "La Sala Dorada del Musikverein, vista hacia el órgano y el escenario.",
+      "alt": "La Sala Dorada del Musikverein, vista hacia el órgano y el escenario.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:Secession 2016, Vienna.jpg",
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Secession_2016,_Vienna.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Secession_2016%2C_Vienna.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Secession_2016%2C_Vienna.jpg/1920px-Secession_2016%2C_Vienna.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 5716,
+      "originalHeight": 3810,
+      "artist": "Thomas Ledl",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Secession 2016, Vienna",
+      "date": "2016-07-05 12:47:51",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V23",
+      "placeId": "secession",
+      "localFile": "23-secession.jpg",
+      "primary": true,
+      "width": 1920,
+      "height": 1280,
+      "format": "JPEG",
+      "bytes": 625945,
+      "sha256": "7c4a1d75e6e6532cbdfd1be1d1c4d1287c3127f1acf47c00d364912cc9905ec5",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Secession_2016%2C_Vienna.jpg/1920px-Secession_2016%2C_Vienna.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "caption": "La fachada blanca y la cúpula de hojas doradas de la Secession.",
+      "alt": "La fachada blanca y la cúpula de hojas doradas de la Secession.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:Wien - Naschmarkt.JPG",
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Wien_-_Naschmarkt.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Wien_-_Naschmarkt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Wien_-_Naschmarkt.JPG/1920px-Wien_-_Naschmarkt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 4961,
+      "originalHeight": 2048,
+      "artist": "C.Stadler/Bwag",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Der Naschmarkt im 6. Wiener Gemeindebezirk Mariahilf . Standort Höhe Schleifmühlgasse mit Blick Richtung Innenstadt bzw. Osten. Die fixen Marktstände am Naschmarkt wurden zwischen 1910 und 1916 errichtet und befinden sich auf der Überbauung des Wienflusses zwischen der Rechten und Linken Wienzeile .",
+      "date": "2017-08-21",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V24",
+      "placeId": "naschmarkt",
+      "localFile": "24-naschmarkt.jpg",
+      "primary": true,
+      "width": 1920,
+      "height": 793,
+      "format": "JPEG",
+      "bytes": 497276,
+      "sha256": "9dcf3763cff9f59a514d9fe3e0968be81c544a605fc96f559ee994b80061cb0b",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Wien_-_Naschmarkt.JPG/1920px-Wien_-_Naschmarkt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "caption": "Los puestos del Naschmarkt y el paisaje urbano de Wienzeile.",
+      "alt": "Los puestos del Naschmarkt y el paisaje urbano de Wienzeile.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:Monumento a Johann Strauss, Stadtpark, Viena, Austria, 2020-01-31, DD 95.jpg",
+      "index": 2,
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Monumento_a_Johann_Strauss,_Stadtpark,_Viena,_Austria,_2020-01-31,_DD_95.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/61/Monumento_a_Johann_Strauss%2C_Stadtpark%2C_Viena%2C_Austria%2C_2020-01-31%2C_DD_95.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Monumento_a_Johann_Strauss%2C_Stadtpark%2C_Viena%2C_Austria%2C_2020-01-31%2C_DD_95.jpg/1920px-Monumento_a_Johann_Strauss%2C_Stadtpark%2C_Viena%2C_Austria%2C_2020-01-31%2C_DD_95.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 7627,
+      "originalHeight": 5164,
+      "artist": "Diego Delso",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Monument to Johann Strauss, Stadtpark, Vienna, Austria",
+      "date": "2020-01-31 17:50:01",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V25",
+      "placeId": "stadtpark",
+      "localFile": "25-stadtpark.jpg",
+      "primary": true,
+      "width": 1920,
+      "height": 1300,
+      "format": "JPEG",
+      "bytes": 1043761,
+      "sha256": "420b70e84ad7c292e5cb513a20358c9f1d4709b7b017d212e95cdf8a49b1653c",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Monumento_a_Johann_Strauss%2C_Stadtpark%2C_Viena%2C_Austria%2C_2020-01-31%2C_DD_95.jpg/1920px-Monumento_a_Johann_Strauss%2C_Stadtpark%2C_Viena%2C_Austria%2C_2020-01-31%2C_DD_95.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "caption": "El monumento dorado a Johann Strauss en el Stadtpark.",
+      "alt": "El monumento dorado a Johann Strauss en el Stadtpark.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:Palacio Belvedere, Viena, Austria, 2020-02-01, DD 93-95 HDR.jpg",
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Palacio_Belvedere,_Viena,_Austria,_2020-02-01,_DD_93-95_HDR.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/84/Palacio_Belvedere%2C_Viena%2C_Austria%2C_2020-02-01%2C_DD_93-95_HDR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Palacio_Belvedere%2C_Viena%2C_Austria%2C_2020-02-01%2C_DD_93-95_HDR.jpg/1920px-Palacio_Belvedere%2C_Viena%2C_Austria%2C_2020-02-01%2C_DD_93-95_HDR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 7785,
+      "originalHeight": 3428,
+      "artist": "Diego Delso",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "View of the Upper Belvedere Palace during the blue hour, Vienna , Austria.",
+      "date": "2020-02-01 18:35:53",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V26",
+      "placeId": "belvedere",
+      "localFile": "26-belvedere.jpg",
+      "primary": true,
+      "width": 1920,
+      "height": 845,
+      "format": "JPEG",
+      "bytes": 288460,
+      "sha256": "fbd34ed70247b972e9709487116bebd3826064a38f9b0f1598e3e405a2e3bb8d",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Palacio_Belvedere%2C_Viena%2C_Austria%2C_2020-02-01%2C_DD_93-95_HDR.jpg/1920px-Palacio_Belvedere%2C_Viena%2C_Austria%2C_2020-02-01%2C_DD_93-95_HDR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "caption": "El Belvedere Superior iluminado y reflejado en el agua al anochecer.",
+      "alt": "El Belvedere Superior iluminado y reflejado en el agua al anochecer.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:Wien - Hundertwasserhaus (03).JPG",
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Wien_-_Hundertwasserhaus_(03).JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Wien_-_Hundertwasserhaus_%2803%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Wien_-_Hundertwasserhaus_%2803%29.JPG/1920px-Wien_-_Hundertwasserhaus_%2803%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 2944,
+      "originalHeight": 3425,
+      "artist": "C.Stadler/Bwag",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Ecke Kegelgasse/Löwengasse des Hundertwasserhauses im 3. Wiener Gemeindebezirk Landstraße . Die Wohnhausanlage der Gemeinde Wien mit 50 Wohneinheiten wurde als Ökohaus von 1983 bis 1985 errichtet. Entworfen wurde sie von dem Künstler Friedensreich Hundertwasser , anfangs in Zusammenarbeit mit dem Architekten Josef Krawina . Nach dem Zerwürfnis Hundertwasser mit dem Architekten Krawina, wurde die Wohnhausanlage mit dem Architekten Peter Pelikan fertiggestellt.",
+      "date": "2020-04-09",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V27",
+      "placeId": "hundertwasserhaus",
+      "localFile": "27-hundertwasserhaus.jpg",
+      "primary": true,
+      "width": 1920,
+      "height": 2234,
+      "format": "JPEG",
+      "bytes": 1478256,
+      "sha256": "9ea47608b18f268ee25d2f46b7d32d9f26baf2bb6eea6d3a2364bea7de0c809e",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Wien_-_Hundertwasserhaus_%2803%29.JPG/1920px-Wien_-_Hundertwasserhaus_%2803%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "caption": "Las fachadas de colores, curvas y vegetación del Hundertwasserhaus.",
+      "alt": "Las fachadas de colores, curvas y vegetación del Hundertwasserhaus.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:Main façade of KunstHausWien Museum, by Friedensreich Hundertwasser (Vienna, Austria).jpg",
+      "index": 1,
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Main_fa%C3%A7ade_of_KunstHausWien_Museum,_by_Friedensreich_Hundertwasser_(Vienna,_Austria).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/06/Main_fa%C3%A7ade_of_KunstHausWien_Museum%2C_by_Friedensreich_Hundertwasser_%28Vienna%2C_Austria%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Main_fa%C3%A7ade_of_KunstHausWien_Museum%2C_by_Friedensreich_Hundertwasser_%28Vienna%2C_Austria%29.jpg/1920px-Main_fa%C3%A7ade_of_KunstHausWien_Museum%2C_by_Friedensreich_Hundertwasser_%28Vienna%2C_Austria%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 3513,
+      "originalHeight": 2180,
+      "artist": "Jules Verne Times Two",
+      "credit": "Own work http://julesvernex2.com",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Main façade of KunstHausWien Museum, by Friedensreich Hundertwasser (Vienna, Austria)",
+      "date": "2018-09-02 22:17:26",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V28",
+      "placeId": "kunsthaus",
+      "localFile": "28-kunsthaus.jpg",
+      "primary": true,
+      "width": 1920,
+      "height": 1191,
+      "format": "JPEG",
+      "bytes": 957955,
+      "sha256": "08b27f894443a983bc6ce0316db9878dbc631f70c2a7bae7a7c01b04a8c86592",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Main_fa%C3%A7ade_of_KunstHausWien_Museum%2C_by_Friedensreich_Hundertwasser_%28Vienna%2C_Austria%29.jpg/1920px-Main_fa%C3%A7ade_of_KunstHausWien_Museum%2C_by_Friedensreich_Hundertwasser_%28Vienna%2C_Austria%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "caption": "La fachada de tramas blancas y negras del Kunst Haus Wien.",
+      "alt": "La fachada de tramas blancas y negras del Kunst Haus Wien.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:Cafe Central in Vienna interior near entrance.JPG",
+      "index": 3,
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Cafe_Central_in_Vienna_interior_near_entrance.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/Cafe_Central_in_Vienna_interior_near_entrance.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/Cafe_Central_in_Vienna_interior_near_entrance.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "originalWidth": 1600,
+      "originalHeight": 1067,
+      "artist": "Clayton Tang",
+      "credit": "Own work",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Cafe Central in Vienna interior near entrance with statue of Peter Altenberg",
+      "date": "2013-06-14 12:37:41",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V29",
+      "localFile": "29-cafe-central.jpg",
+      "placeId": "cafe-central",
+      "width": 1600,
+      "height": 1067,
+      "format": "JPEG",
+      "bytes": 1201269,
+      "sha256": "5e3de37c529eeeb5c49adc13b2feb2c3b6ad36878235fe6c1383e86a0e10afbf",
+      "resolvedDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/Cafe_Central_in_Vienna_interior_near_entrance.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "httpStatus": 200,
+      "primary": true,
+      "caption": "El salón y las bóvedas de Café Central, en una fotografía anterior a la reforma anunciada en 2026.",
+      "alt": "El salón y las bóvedas de Café Central, en una fotografía anterior a la reforma anunciada en 2026.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:Hotel Sacher Wien, 2019 (01).jpg",
+      "index": 2,
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Hotel_Sacher_Wien,_2019_(01).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Hotel_Sacher_Wien%2C_2019_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Hotel_Sacher_Wien%2C_2019_%2801%29.jpg/1920px-Hotel_Sacher_Wien%2C_2019_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 4861,
+      "originalHeight": 3886,
+      "artist": "Bahnfrend",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "View of the Hotel Sacher , Vienna, from the Albertinaplatz, with the Café Mozart in and in front of the ground floor at left",
+      "date": "2019-04-28 23:35:54",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V30",
+      "placeId": "cafe-sacher",
+      "localFile": "30-cafe-sacher.jpg",
+      "primary": true,
+      "width": 1920,
+      "height": 1535,
+      "format": "JPEG",
+      "bytes": 763789,
+      "sha256": "04f2aecf62b39dd46e86bfa5fc8ce62fbfc54e518eba6e49aae8de1210a5de29",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Hotel_Sacher_Wien%2C_2019_%2801%29.jpg/1920px-Hotel_Sacher_Wien%2C_2019_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "caption": "El Hotel Sacher y la fachada del café junto al entorno de la Ópera.",
+      "alt": "El Hotel Sacher y la fachada del café junto al entorno de la Ópera.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:Demel aussen.jpg",
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Demel_aussen.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/Demel_aussen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Demel_aussen.jpg/1920px-Demel_aussen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 3595,
+      "originalHeight": 2336,
+      "artist": "Johann Werfring",
+      "credit": "http://wienwiki.wienerzeitung.at/WIENWIKI/index.php/Datei:Demel_aussen.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Konditorei-Cafe Demel, Außenaufnahme, 2012",
+      "date": "",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V31",
+      "placeId": "demel",
+      "localFile": "31-demel.jpg",
+      "primary": true,
+      "width": 1920,
+      "height": 1248,
+      "format": "JPEG",
+      "bytes": 694740,
+      "sha256": "dd837c783d3e842eb5148939129b375f4c47fe148b250f1e49adcf5e11c48026",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Demel_aussen.jpg/1920px-Demel_aussen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "caption": "La fachada y el escaparate de Demel en Kohlmarkt.",
+      "alt": "La fachada y el escaparate de Demel en Kohlmarkt.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:The Entrancehall (227758835).jpeg",
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:The_Entrancehall_(227758835).jpeg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/The_Entrancehall_%28227758835%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/The_Entrancehall_%28227758835%29.jpeg/1920px-The_Entrancehall_%28227758835%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 2048,
+      "originalHeight": 1375,
+      "artist": "Bruno Holper",
+      "credit": "Imported from 500px ( archived version ) by the Archive Team . ( detail page )",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "description": "500px provided description: This is the Foyer of the viennese Justizpalast, the court palace of vienna, its truly breathtaking! [#light ,#europe ,#old ,#architecture ,#building ,#empty ,#vienna ,#stairs ,#austria ,#sculpture ,#staircase ,#palace ,#columns ,#symmetrical ,#upstairs ,#stairway ,#hallway ,#majestic ,#treppen ,#contemporary architecture ,#foyer]",
+      "date": "3 February 2017, 14:11:38 (UTC)",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V32",
+      "placeId": "justizpalast",
+      "localFile": "32-justizpalast.jpg",
+      "primary": true,
+      "width": 1920,
+      "height": 1289,
+      "format": "JPEG",
+      "bytes": 769893,
+      "sha256": "9dce2433f59ebba95f1859138ce242453d1e5862e0a423c388317be208ed359c",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/The_Entrancehall_%28227758835%29.jpeg/1920px-The_Entrancehall_%28227758835%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "caption": "El gran vestíbulo y la escalera monumental del Justizpalast.",
+      "alt": "El gran vestíbulo y la escalera monumental del Justizpalast.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:Wien - Wiener Staatsoper - Interior 02 - 2018-08-24.jpg",
+      "index": 2,
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Wien_-_Wiener_Staatsoper_-_Interior_02_-_2018-08-24.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Wien_-_Wiener_Staatsoper_-_Interior_02_-_2018-08-24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Wien_-_Wiener_Staatsoper_-_Interior_02_-_2018-08-24.jpg/1920px-Wien_-_Wiener_Staatsoper_-_Interior_02_-_2018-08-24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 5184,
+      "originalHeight": 3456,
+      "artist": "Rafa Esteve",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "This media shows the protected monument with ObjektID 24428 in Austria. ( Commons , de , Wikidata ) Dieses Bild wurde anlässlich des Spezialpreises „Innenansichten“ zum österreichischen Tag des Denkmals 2018 hochgeladen.",
+      "date": "2018-08-24 11:43:22",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V33",
+      "placeId": "staatsoper",
+      "localFile": "33-staatsoper-interior.jpg",
+      "primary": false,
+      "width": 1920,
+      "height": 1280,
+      "format": "JPEG",
+      "bytes": 754543,
+      "sha256": "d9c0ebb7f553fe39c492f9c47a2ea03cc1e7d53a8d4401df0da6f07e4288923b",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Wien_-_Wiener_Staatsoper_-_Interior_02_-_2018-08-24.jpg/1920px-Wien_-_Wiener_Staatsoper_-_Interior_02_-_2018-08-24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "caption": "El auditorio y los palcos de la Wiener Staatsoper.",
+      "alt": "El auditorio y los palcos de la Wiener Staatsoper.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    },
+    {
+      "fileTitle": "File:Vienna Opera House from the Albertina, Austria.jpg",
+      "index": 1,
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Vienna_Opera_House_from_the_Albertina,_Austria.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Vienna_Opera_House_from_the_Albertina%2C_Austria.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Vienna_Opera_House_from_the_Albertina%2C_Austria.jpg/1920px-Vienna_Opera_House_from_the_Albertina%2C_Austria.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 4896,
+      "originalHeight": 2752,
+      "artist": "Rosser1954",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "The Vienna Opera House from the Albertina, Austria. Rear view.",
+      "date": "2019-06-12 13:39:06",
+      "restrictions": "",
+      "status": "downloaded-and-visually-reviewed",
+      "id": "V34",
+      "placeId": "albertina",
+      "localFile": "34-albertina-vista.jpg",
+      "primary": false,
+      "width": 1920,
+      "height": 1079,
+      "format": "JPEG",
+      "bytes": 555553,
+      "sha256": "2ff642ace78fa66fa20cf5c3d7e30a6508009e1e513c801493f2a9d322adc1b7",
+      "resolvedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Vienna_Opera_House_from_the_Albertina%2C_Austria.jpg/1920px-Vienna_Opera_House_from_the_Albertina%2C_Austria.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "httpStatus": 200,
+      "caption": "La Staatsoper vista desde el entorno elevado del Albertina.",
+      "alt": "La Staatsoper vista desde el entorno elevado del Albertina.",
+      "review": {
+        "watermarkVisible": false,
+        "stretchedOrGenerated": false,
+        "locationMatchesCaption": true
+      }
+    }
+  ]
+}

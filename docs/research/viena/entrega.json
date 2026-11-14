@@ -1,0 +1,29 @@
+{
+  "status": "prepared-and-locally-validated",
+  "prepared_date": "2026-11-14",
+  "places": 32,
+  "photos": 34,
+  "zones": 4,
+  "editorial_priorities": 12,
+  "validation_groups": 9,
+  "html_bytes": 35936408,
+  "html_sha256": "2ddd5e1983787616e82a32a981f60b5ea8d781907f84c92f664479e9006b747b",
+  "zip_bytes": 27093705,
+  "zip_sha256": "16e534ac17f00f82c4851331dd0172720328bee011c8633fe28dc6bd483ec27e",
+  "zip_files": [
+    "Indice-visual-Viena.html",
+    "Indice-Viena-Lugares.json",
+    "Indice-Viena-Fotografias.csv",
+    "LICENCIAS.txt",
+    "LEEME.txt"
+  ],
+  "branch": "private-download",
+  "download_path": "downloads/Indice-visual-Viena.zip",
+  "branch_before": "84e1c4ba2c40d1f7d289c867b8377d08292152b5",
+  "main_before": "8a30c1af019e57149dbcf98ba8a5932feb0f87d1",
+  "gh_pages_before": "a276f224e4072e3f60879ed3cc6025304c551322",
+  "gift_zip_unchanged": true,
+  "gift_zip_sha256": "781e8ecd71ed8f72d56132233efaff80f7bfb76ac6a21bd5e1855f54ffaf2013",
+  "app_source_tree_before": "606d2163c9967d9076e25f99a8f3f3e2db6123fa",
+  "scope": "Independent internal research report; private repository delivery; gift website and public preview unchanged."
+}

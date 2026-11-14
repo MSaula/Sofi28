@@ -1,0 +1,59 @@
+{
+  "checks": [
+    {
+      "name": "metadata-and-asset-integrity",
+      "result": "passed",
+      "detail": "32 places, 34 distinct source JPEGs, dimensions, author, license and source hashes"
+    },
+    {
+      "name": "offline-document-and-all-embedded-photos",
+      "result": "passed",
+      "detail": "No server; decoded images match all 34 original hashes and intrinsic dimensions"
+    },
+    {
+      "name": "search-zones-types-priority-empty-and-reset",
+      "result": "passed",
+      "detail": "Accent-insensitive search and combined filters agree with the data"
+    },
+    {
+      "name": "photo-viewer-keyboard-focus-scroll-lock-and-download",
+      "result": "passed",
+      "detail": "All 34 photographs open and decode; wrapping, Escape, focus and original-byte download work"
+    },
+    {
+      "name": "json-and-csv-exports",
+      "result": "passed",
+      "detail": "32 places and 34 properly attributed photo rows exported without network access"
+    },
+    {
+      "name": "catalog-and-cross-links",
+      "result": "passed",
+      "detail": "Photo index opens secondary perspectives and hero links reveal filtered-out places"
+    },
+    {
+      "name": "responsive-layout",
+      "result": "passed",
+      "detail": "1440, 390, 320 and 844px; cards, renovation notice, viewer, no horizontal overflow"
+    },
+    {
+      "name": "bounded-accessibility-audit",
+      "result": "passed",
+      "detail": "No serious/critical WCAG A/AA axe violations in the complete document or open viewer"
+    },
+    {
+      "name": "print-layout",
+      "result": "passed",
+      "detail": "All selected places retained by the print layout"
+    }
+  ],
+  "screenshots": [
+    "desktop-inicio.png",
+    "mobile-inicio.png",
+    "narrow-inicio.png",
+    "landscape-inicio.png"
+  ],
+  "requests": [],
+  "errors": [],
+  "totalChecks": 9,
+  "passed": true
+}
