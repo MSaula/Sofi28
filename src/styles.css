@@ -1965,17 +1965,46 @@ html:has(dialog[open]) {
   stroke: #cad4db;
   stroke-width: 0.8;
 }
-.air-route-track {
-  stroke: #a2b5ca;
-  fill: none;
-  stroke-width: 1;
-  stroke-dasharray: 3 5;
-}
 .air-route-progress {
   stroke: var(--blue);
   fill: none;
   stroke-width: 2.5;
   stroke-linecap: round;
+}
+.europe-place circle {
+  fill: #778b99;
+  stroke: #f7f9f8;
+  stroke-width: 1.2;
+}
+.europe-place text {
+  fill: #637482;
+  font-weight: 450;
+  paint-order: stroke;
+  stroke: #f8f9f6;
+  stroke-width: 3;
+  stroke-linejoin: round;
+}
+.europe-place-visited circle,
+.europe-legend circle {
+  fill: #306dd5;
+}
+.europe-place-visited text {
+  fill: #315776;
+  font-weight: 600;
+}
+.europe-place-region circle {
+  fill: #f8f9f6;
+  stroke: #306dd5;
+}
+.place-leader {
+  fill: none;
+  stroke: #9aaebe;
+  stroke-width: 0.65;
+}
+.europe-legend text {
+  font-size: 7.5px;
+  fill: #526c83;
+  font-weight: 550;
 }
 .plane-halo {
   fill: #2368f51c;
@@ -2201,6 +2230,46 @@ html:has(dialog[open]) {
   width: 100%;
   height: 100%;
 }
+.calendar-art .calendar-canvas,
+.timeline-annotations {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 var(--calendar-feather),
+    #000 calc(100% - var(--calendar-feather)),
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 var(--calendar-feather),
+    #000 calc(100% - var(--calendar-feather)),
+    transparent
+  );
+}
+.calendar-art::before,
+.calendar-art::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 10%;
+  bottom: 14%;
+  width: 1px;
+  background: linear-gradient(
+    transparent,
+    #bec9da66 25%,
+    #bec9da66 75%,
+    transparent
+  );
+  opacity: var(--calendar-edge-strength);
+  pointer-events: none;
+}
+.calendar-art::before {
+  left: 0;
+}
+.calendar-art::after {
+  right: 0;
+}
 .timeline-annotations {
   position: absolute;
   inset: 0;
@@ -2216,11 +2285,43 @@ html:has(dialog[open]) {
   align-items: center;
   width: 100%;
   background: white;
-  box-shadow: 0 4px 18px #23355308, inset 0 0 0 1px #dfe6f0;
+  box-shadow:
+    0 4px 18px #23355308,
+    inset 0 0 0 1px #dfe6f0;
   overflow: hidden;
 }
 .birthday-card-current {
-  box-shadow: 0 4px 18px #23355308, inset 0 0 0 1px #9fbcf7;
+  background: linear-gradient(115deg, #fff 45%, #f0f5ff);
+  box-shadow:
+    0 4px 18px #23355308,
+    inset 0 0 0 1px #9fbcf7;
+}
+.birthday-card-current .birthday-card-copy {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--date-column-width);
+  column-gap: var(--date-column-gap);
+}
+.birthday-card-current .birthday-card-edition,
+.birthday-card-current .birthday-card-place {
+  grid-column: 1;
+}
+.birthday-card-current .birthday-card-date {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  margin-top: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+.birthday-card-current .birthday-card-date > span {
+  font-size: 10px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.birthday-card-current .birthday-card-date > span:last-child {
+  font-size: 18px;
 }
 .birthday-photo {
   overflow: hidden;
@@ -2250,24 +2351,17 @@ html:has(dialog[open]) {
   color: #596b85;
   font-size: 10px;
 }
-.birthday-card-current .birthday-photo-empty {
-  gap: 6px;
-  font-size: 7px;
-}
-.birthday-card-current .birthday-photo-empty svg {
-  width: 16px;
-  height: 16px;
-}
 .birthday-card-copy {
   min-width: 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: var(--copy-gap);
+  gap: 0;
   line-height: 1.1;
 }
 .birthday-card-edition {
+  margin-bottom: var(--copy-gap);
   color: #2360ce;
   font-size: var(--edition-size);
   font-weight: 650;
@@ -2281,6 +2375,7 @@ html:has(dialog[open]) {
   white-space: nowrap;
 }
 .birthday-card-date {
+  margin-top: var(--date-gap);
   max-height: var(--date-height);
   opacity: var(--date-opacity);
   display: flex;

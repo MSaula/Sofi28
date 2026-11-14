@@ -1,0 +1,106 @@
+{
+  "iteration": "typographic-final-card-and-verified-europe-reveal",
+  "unitTests": 22,
+  "browserTests": 28,
+  "offlineTests": 1,
+  "totalPassed": 51,
+  "mapViewportSizes": [
+    [
+      1440,
+      1000
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      320,
+      700
+    ],
+    [
+      1000,
+      650
+    ]
+  ],
+  "maxAircraftSvgDeviationPx": "< 1",
+  "visitedPlacesWithinFrame": 10,
+  "initialVisitedLabelsAllOpaque": true,
+  "earlyDestinationOrFutureRoute": false,
+  "flow": [
+    {
+      "name": "desktop",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "reducedMotion": false,
+      "wheelSamples": 75,
+      "fullFlowReachedEnd": true,
+      "overflowFrames": 0,
+      "errors": [],
+      "screenshots": 24,
+      "rotation": {
+        "width": 1000,
+        "scrollWidth": 985
+      },
+      "flowLongTasks": []
+    },
+    {
+      "name": "mobile",
+      "viewport": [
+        390,
+        844
+      ],
+      "reducedMotion": false,
+      "wheelSamples": 63,
+      "fullFlowReachedEnd": true,
+      "overflowFrames": 0,
+      "errors": [],
+      "screenshots": 24,
+      "rotation": {
+        "width": 844,
+        "scrollWidth": 829
+      },
+      "flowLongTasks": [
+        54,
+        69
+      ]
+    },
+    {
+      "name": "landscape",
+      "viewport": [
+        844,
+        390
+      ],
+      "reducedMotion": false,
+      "wheelSamples": 35,
+      "fullFlowReachedEnd": true,
+      "overflowFrames": 0,
+      "errors": [],
+      "screenshots": 24,
+      "rotation": {
+        "width": 390,
+        "scrollWidth": 375
+      },
+      "flowLongTasks": []
+    },
+    {
+      "name": "reduced",
+      "viewport": [
+        390,
+        844
+      ],
+      "reducedMotion": true,
+      "wheelSamples": 34,
+      "fullFlowReachedEnd": true,
+      "overflowFrames": 0,
+      "errors": [],
+      "screenshots": 24,
+      "rotation": {
+        "width": 844,
+        "scrollWidth": 829
+      },
+      "flowLongTasks": []
+    }
+  ]
+}

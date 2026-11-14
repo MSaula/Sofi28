@@ -4,7 +4,11 @@ Audit started: 2026-11-01. Scope: the complete gift experience, its map geograph
 
 Subsequent iteration: [Sofi 28 — title and 2022–2027 chronology](docs/plan-sofi28.md), with its own change plan, root-cause notes, regression checks and visual evidence. The audit below remains the record of the preceding map/animation fixes.
 
-Photo-card iteration: [composition and integration plan](docs/plan-timeline-fotos.md). The enlarged layout passes its regression suite; original photo files remain an input dependency. Its evidence explicitly distinguishes placeholders from real-image validation.
+Photo-card iteration: [composition and integration plan](docs/plan-timeline-fotos.md). The five originals from `s28p.zip` are assigned by filename and validated in the enlarged cards. The final suite passes 34 checks, including four viewport sizes, static layouts and byte-identical image embedding in the offline export. Earlier placeholder evidence remains labelled separately.
+
+Timeline continuity iteration: [edge traversal and zoom plan](docs/plan-timeline-motion.md). Removes edge clamping and element removal, adds continuous opacity and soft window edges, and synchronizes SVG/HTML resizing. The full suite passes 41 checks; forward/reverse wheel recordings and measured card/month alignment accompany the change.
+
+Europe reveal iteration: [typographic final card and continental map](docs/plan-europe-reveal.md). Wider verified geography, sourced place names, route-only reveal and focused synchronization checks. All 51 checks pass, with 96 full-flow screenshots and offline export verification. This iteration updates only the private delivery.
 
 ## Process and evidence
 

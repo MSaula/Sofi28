@@ -3,6 +3,7 @@ import { resolve } from "node:path";
 import { readFile } from "node:fs/promises";
 import { scrollScene } from "./helpers.js";
 import { memories } from "../../src/content.js";
+import { createHash } from "node:crypto";
 
 test("exported HTML runs without server or network, with assets, animation and calendar", async ({
   page,
@@ -35,7 +36,18 @@ test("exported HTML runs without server or network, with assets, animation and c
         )
         .toBe(true);
       expect(await photo.getAttribute("src")).toMatch(/^data:image\//);
-      seenPhotos.add(await photo.locator("..").getAttribute("data-photo-slot"));
+      const age = await photo.locator("..").getAttribute("data-photo-slot");
+      const gift = memories.find((m) => m.birthdayAge === Number(age));
+      const original = await readFile(
+        resolve("public", gift.photo.src.slice(1)),
+      );
+      const embedded = Buffer.from(
+        (await photo.getAttribute("src")).split(",")[1],
+        "base64",
+      );
+      const hash = (data) => createHash("sha256").update(data).digest("hex");
+      expect(hash(embedded)).toBe(hash(original));
+      seenPhotos.add(age);
     }
   }
   expect(seenPhotos.size).toBe(
@@ -54,7 +66,7 @@ test("exported HTML runs without server or network, with assets, animation and c
       await expect(page.locator('[data-gift-card="28"]')).toContainText(
         "Sofi 28",
       );
-      await expect(page.locator('[data-photo-slot="28"]')).toHaveCount(1);
+      await expect(page.locator('[data-photo-slot="28"]')).toHaveCount(0);
     }
     if (selector === ".journey-scene" && p < 0.6)
       await expect(page.locator(".journey-flight-description")).toContainText(

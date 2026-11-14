@@ -1,12 +1,5 @@
 import { timelineStart, timelineEvents, trip } from "./content.js";
-import {
-  calendarDays,
-  clamp,
-  mix,
-  monthIndex,
-  range,
-  smooth,
-} from "./motion.js";
+import { calendarDays, mix, monthIndex, range, smooth } from "./motion.js";
 
 export const monthNames = [
   "Enero",
@@ -49,14 +42,14 @@ export const last = monthX(targetIndex);
 export function birthdayLayout(w, h, scale, current = false) {
   if (current)
     return {
-      width: 184,
-      height: 84,
-      photoWidth: 45,
-      photoHeight: 60,
-      textWidth: 103,
-      gap: 12,
-      padding: 12,
-      compact: true,
+      width: Math.min(w - 16, 320),
+      height: h < 280 ? 88 : 104,
+      photoWidth: 0,
+      photoHeight: 0,
+      textWidth: Math.min(w - 16, 320) - (h < 280 || w < 300 ? 32 : 44) - 56,
+      gap: 0,
+      padding: h < 280 || w < 300 ? 16 : 22,
+      compact: false,
     };
   const textWidth = w < 400 ? 94 : w < 700 ? 112 : 154;
   const maxWidth = Math.min(w - 16, 440);
@@ -85,7 +78,7 @@ export function timelineFrame(p, w, h) {
   const travel = smooth(range(p, 0.14, 0.68));
   const zoom = smooth(range(p, 0.76, 0.93));
   const detail = approach;
-  const overview = Math.min((w - 52) / (months.length * 110), 0.33);
+  const overview = Math.min((w - 88) / (months.length * 110), 0.33);
   const travelScale = Math.max(0.16, Math.min(0.5, (h - 200) / 250));
   const giftLayout = birthdayLayout(w, h, travelScale);
   const currentLayout = birthdayLayout(w, h, travelScale, true);
@@ -119,49 +112,54 @@ export function timelineFrame(p, w, h) {
     axisY: ty + 164 * scale,
     labelOpacity: 1 - range(p, 0.66, 0.74),
     arrived: smooth(range(p, 0.86, 0.93)),
+    edgeStrength: approach * (1 - smooth(range(p, 0.74, 0.86))),
   };
 }
 
 export function fitTimelineLabels(frame, w) {
-  const accepted = [];
-  const candidates = timelineItems
-    .map((item) => {
-      const anchorX = frame.tx + monthX(item.index) * frame.scale;
-      const layout = item.current ? frame.currentLayout : frame.giftLayout;
-      const width = item.birthdayAge
-        ? mix(72, layout.width, frame.detail)
-        : Math.max(item.name.length * 6.4, 62) + 12;
-      return {
-        ...item,
-        anchorX,
-        width,
-        height: item.birthdayAge ? mix(38, layout.height, frame.detail) : 32,
-        layout,
-        x: clamp(anchorX, width / 2 + 8, w - width / 2 - 8),
-      };
-    })
-    .filter(
-      (label) =>
-        label.anchorX >= 8 &&
-        label.anchorX <= w - 8 &&
-        (label.current || frame.labelOpacity > 0),
-    );
-  // Give the trip nearest the camera first choice. Chronological greediness
-  // starves adjacent months (e.g. Greece and the Basque Country) until the
-  // earlier label has almost left the screen.
-  candidates.sort(
-    (a, b) => Math.abs(a.anchorX - w / 2) - Math.abs(b.anchorX - w / 2),
-  );
-  for (const label of candidates) {
-    if (
-      accepted.some(
-        (other) =>
-          other.lane === label.lane &&
-          Math.abs(other.x - label.x) < (other.width + label.width) / 2 + 12,
-      )
-    )
-      continue;
-    accepted.push(label);
+  const candidates = timelineItems.map((item) => {
+    const anchorX = frame.tx + monthX(item.index) * frame.scale;
+    const layout = item.current ? frame.currentLayout : frame.giftLayout;
+    const width = item.birthdayAge
+      ? mix(72, layout.width, frame.detail)
+      : Math.max(item.name.length * 6.4, 62) + 12;
+    return {
+      ...item,
+      anchorX,
+      width,
+      height: item.birthdayAge ? mix(38, layout.height, frame.detail) : 32,
+      layout,
+      x: anchorX,
+      opacity: item.current ? 1 : frame.labelOpacity,
+    };
+  });
+  const separation = (a, b) =>
+    smooth(range(Math.abs(a.x - b.x) - (a.width + b.width) / 2, 12, 32));
+
+  // Stable birthday priority in the overview; reveal each neighbour gradually
+  // as its rectangle gains room. No DOM removal or priority flips on zoom.
+  const gifts = candidates.filter((label) => label.lane === "gift").reverse();
+  gifts.forEach((label, index) => {
+    label.collisionOpacity = 1;
+    for (const other of gifts.slice(0, index))
+      label.collisionOpacity *=
+        1 - other.collisionOpacity * (1 - separation(label, other));
+    label.opacity *= label.collisionOpacity;
+  });
+
+  // Adjacent ordinary trips share their band with a spatial crossfade. The
+  // label nearest the camera becomes readable continuously, including pairs
+  // only a month apart. Their positions always follow the actual months.
+  const trips = candidates.filter((label) => label.lane === "trip");
+  for (const label of trips) {
+    for (const other of trips) {
+      if (label === other) continue;
+      const preference = smooth(
+        range(Math.abs(other.x - w / 2) - Math.abs(label.x - w / 2), -36, 36),
+      );
+      label.opacity *=
+        separation(label, other) + (1 - separation(label, other)) * preference;
+    }
   }
-  return accepted.sort((a, b) => a.index - b.index);
+  return candidates;
 }

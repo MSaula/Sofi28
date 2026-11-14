@@ -49,19 +49,64 @@ export const trip = {
 
 // Months are zero-based. Within-month days are deliberately unspecified.
 export const memories = [
-  // Birthday photos: replace null with { src: '/images/niza.webp', alt: 'Los dos en Niza' }.
-  { name: "Niza", year: 2022, month: 2, birthdayAge: 23, photo: null },
+  // Original portrait photos supplied in s28p.zip, associated by filename.
+  {
+    name: "Niza",
+    year: 2022,
+    month: 2,
+    birthdayAge: 23,
+    photo: {
+      src: "/images/niza.jpeg",
+      alt: "Los dos en Niza, sentados en un salón de madera con un perro a nuestros pies",
+    },
+  },
   { name: "Mallorca", year: 2022, month: 7 },
-  { name: "Londres", year: 2023, month: 0, birthdayAge: 24, photo: null },
+  {
+    name: "Londres",
+    year: 2023,
+    month: 0,
+    birthdayAge: 24,
+    photo: {
+      src: "/images/londres.jpeg",
+      alt: "Los dos delante de las fachadas de colores de Londres",
+    },
+  },
   { name: "Montenegro", year: 2023, month: 7 },
   { name: "Roma", year: 2023, month: 9 },
-  { name: "Islandia", year: 2023, month: 11, birthdayAge: 25, photo: null },
+  {
+    name: "Islandia",
+    year: 2023,
+    month: 11,
+    birthdayAge: 25,
+    photo: {
+      src: "/images/islandia.jpeg",
+      alt: "Los dos en un paisaje nevado de Islandia",
+    },
+  },
   { name: "Grecia", year: 2024, month: 7 },
   { name: "País Vasco", year: 2024, month: 8 },
-  { name: "Dolomitas", year: 2025, month: 0, birthdayAge: 26, photo: null },
+  {
+    name: "Dolomitas",
+    year: 2025,
+    month: 0,
+    birthdayAge: 26,
+    photo: {
+      src: "/images/dolomitas.jpeg",
+      alt: "Los dos con las montañas nevadas de las Dolomitas al fondo",
+    },
+  },
   { name: "Indonesia", year: 2025, month: 7 },
   { name: "Lanzarote", year: 2025, month: 9 },
-  { name: "Florencia", year: 2026, month: 2, birthdayAge: 27, photo: null },
+  {
+    name: "Florencia",
+    year: 2026,
+    month: 2,
+    birthdayAge: 27,
+    photo: {
+      src: "/images/florencia.jpeg",
+      alt: "Los dos junto al río Arno, con el Ponte Vecchio de Florencia detrás",
+    },
+  },
   { name: "Egipto", year: 2026, month: 5 },
   { name: "México", year: 2026, month: 7 },
   { name: "Lisboa", year: 2026, month: 8 },

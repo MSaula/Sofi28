@@ -1,5 +1,7 @@
 # Sofi 28 — Viena, enero de 2027
 
+**Entrega privada con las cinco fotografías:** [descargar Viena.zip](https://github.com/MSaula/Sofi28/raw/refs/heads/private-download/downloads/Viena.zip), en la rama `private-download`. Requiere una cuenta autorizada en este repositorio. Descomprimir y abrir `Viena.html`. Esta entrega no actualiza GitHub Pages.
+
 Primera versión de una web-regalo con carta, cronología, mapa animado y revelación del ballet. React + Vite. El desplazamiento es nativo: las escenas usan CSS `sticky` y su animación depende de la posición del scroll, también al retroceder.
 
 ## Desarrollo
@@ -29,7 +31,7 @@ npm run build:standalone
 npm run test:standalone
 ```
 
-El resultado es **`dist-standalone/index.html`**, un archivo único que puede descargarse y abrirse directamente en un navegador de escritorio. Incluye JavaScript, estilos, tipografía, cartografía e ilustraciones. Esta versión usa las ilustraciones locales y no necesita conexión para recorrer la experiencia. Los enlaces externos siguen necesitando Internet al pulsarlos.
+El resultado es **`dist-standalone/index.html`**, un archivo único que puede descargarse y abrirse directamente en un navegador de escritorio. Incluye JavaScript, estilos, tipografía, cartografía, ilustraciones y las cinco fotografías originales de los viajes. No necesita conexión para recorrer la experiencia. Los enlaces externos siguen necesitando Internet al pulsarlos.
 
 La exportación no publica ni despliega la web. Para compartir una URL será necesario un alojamiento web o una plataforma con vistas previas.
 
@@ -41,10 +43,12 @@ Todo el contenido personal está en [`src/content.js`](src/content.js):
 
 - **Carta:** rellenar `trip.letter` con un párrafo por elemento. Admite cualquier longitud; no hay animación de lectura. `letterTitle` controla su título.
 - **Viajes anteriores:** los quince lugares y meses proporcionados están en `memories`, desde Niza (marzo de 2022). No se inventan días concretos. `birthdayAge` identifica Niza, Londres, Islandia, Dolomitas y Florencia como Sofi 23–27; `currentBirthdayGift` contiene Sofi 28. Los regalos van arriba del calendario y los otros diez viajes, abajo.
-- **Fotos de los dos:** hay seis espacios, uno por edición Sofi 23–28. En `src/content.js`, sustituir el `photo: null` correspondiente por `{ src: '/images/niza.webp', alt: 'Los dos en Niza' }` y añadir el archivo a `public/images`. El HTML offline incluye también imágenes WebP, JPEG, PNG, AVIF y SVG referenciadas así. Hasta entonces se muestra un espacio neutro «Nosotros». El calendario mantiene la sorpresa del destino con «Lo próximo» para Sofi 28.
-- **Composición fotográfica:** las tarjetas históricas reservan una foto vertical 3:4 completa y una columna para edición, destino y mes/año. Tamaño, cámara, colisiones y apertura se calculan juntos. La versión estática usa el mismo recurso. Diseño y validación de esta iteración: [docs/plan-timeline-fotos.md](docs/plan-timeline-fotos.md); la incorporación de los cinco originales está pendiente de recibir los archivos.
+- **Fotos de los dos:** las cinco fotografías de `s28p.zip` están asociadas por nombre a Niza, Londres, Islandia, Dolomitas y Florencia (Sofi 23–27). Se conservan los JPEG originales, sin recortar ni recomprimir. Sofi 28 es una tarjeta tipográfica más grande, con «Lo próximo» y fecha, sin foto ni placeholder. Para cambiar una foto, editar `{ src, alt }` en `src/content.js` y colocar el archivo en `public/images`. El HTML offline incluye también WebP, PNG, AVIF y SVG.
+- **Composición fotográfica:** las tarjetas históricas reservan una foto vertical 3:4 completa y una columna para edición, destino y mes/año. Tamaño, cámara, colisiones y apertura se calculan juntos. La versión estática usa el mismo recurso. Diseño, asociación de originales y validación: [docs/plan-timeline-fotos.md](docs/plan-timeline-fotos.md).
+- **Fluidez del timeline:** las tarjetas siguen a su mes y atraviesan los bordes con un desvanecimiento estrecho. Se mantienen montadas durante el zoom y el recorrido inverso; los rótulos cercanos se cruzan gradualmente. Correcciones y vídeo de validación: [docs/plan-timeline-motion.md](docs/plan-timeline-motion.md).
 - **Apartamento:** referencia proporcionada por el usuario: **Untere Weißgerberstraße 37, 1030 Wien**, expresamente orientativa. El mapa usa el punto medio de la geometría real de esa calle y un círculo de incertidumbre de 362m. `locationPrecision` indica `approximate-street`: no es una geocodificación confirmada del edificio ni una ubicación exacta del anuncio. El enlace real de Airbnb permanece disponible.
 - **Fotos del apartamento:** añadir archivos en `public/images` y objetos `{ src, title, alt }` a `trip.airbnb.photos`. La galería horizontal y el visor ampliado ya están preparados. Hasta entonces se muestra una ilustración claramente identificada como provisional.
+- **Mapa continental:** encuadre de Europa con Edimburgo y Copenhague, capitales y los lugares compartidos que caben. Paros y Cortina d’Ampezzo sustituyen a las referencias generales de Grecia y Dolomitas; Mallorca se identifica como isla. No se amplía para Islandia o Lanzarote. Solo aparece la traza recorrida, sin ruta futura ni destino anticipado. Fuentes, geometría, diseño y comprobaciones: [docs/plan-europe-reveal.md](docs/plan-europe-reveal.md).
 - **Vuelos:** origen y aeropuertos proporcionados, sin aerolínea ni horarios inventados. Solo se anima la conexión aérea BCN–VIE; se retiraron los trazados de coche y taxi que no correspondían a rutas verificadas. La salida desde Sant Vicenç de Montalt permanece en el resumen.
 - **Ballet:** datos extraídos de las dos entradas: **Living Legacies**, Wiener Staatsoper, viernes **22/01/2027 a las 19:00**, Balanchine / Wheeldon / Ashton, Mittelloge, fila 3, asientos 23 y 24. Corrige el nombre provisional anterior «The Living Legends».
 
@@ -53,8 +57,9 @@ Las fechas del viaje y el inicio de la función se editan una sola vez al princi
 ## Imágenes y fuentes
 
 - Los SVG de `public/images` son ilustraciones originales conceptuales. El auditorio no es una fotografía del teatro ni una representación de la producción; el interior ilustrado no pretende representar el apartamento. Son sustituibles por material real.
-- Todas las imágenes mostradas son ahora recursos locales e identificados como ilustraciones; la web y el HTML exportado tienen el mismo aspecto. Se eliminó la carga automática de una fotografía externa no verificada. Las fotos reales del apartamento y del espectáculo siguen pendientes.
+- Las cinco fotografías del timeline son los originales aportados por el usuario. Los demás visuales son ilustraciones conceptuales identificadas como tales. Todos son recursos locales; la web y el HTML exportado tienen el mismo aspecto. Las fotos reales del apartamento y del espectáculo siguen pendientes.
 - Cartografía continental: Natural Earth 1:50m, dominio público, distribuida por `world-atlas` y simplificada conservando la topología. Reproducible con `node scripts/build-europe-data.mjs`.
+- Nombres y coordenadas: Natural Earth 1:10m (revisión fijada) y GeoNames, CC BY 4.0, distribuidos en geonamescache 3.0.2. Procedencia e identificadores en `src/data/europe-places.json`; las islas usan centroides de su geometría real y las regiones se distinguen de las ciudades. Las coordenadas nunca se desplazan para encajar etiquetas.
 - Calles de Viena: **OpenStreetMap contributors**, licencia **ODbL 1.0**, extracto de [EqualStreetNames Vienna](https://github.com/EqualStreetNames/equalstreetnames-vienna), snapshot 2026-10-02, commit `734333a5f858729a6bc227c2f8dae742af050d25`. `src/data/vienna-streets.json` conserva la procedencia, licencia y extensión. La agrupación por nombre y simplificación máxima de 1.5m mantienen las calles reales; no se incluyen ríos/parques inventados. Los datos derivados se pueden descargar desde «Datos y precisión» en el mapa, también sin conexión. Regeneración: `python3 scripts/build-vienna-data.py /ruta/al/checkout/equalstreetnames-vienna`.
 - Iconos: Lucide, licencia ISC. Tipografía: Inter, SIL Open Font License, servida localmente.
 
@@ -62,7 +67,9 @@ Las fechas del viaje y el inicio de la función se editan una sola vez al princi
 
 El PDF de las entradas, códigos QR, números de pedido y datos del comprador **no se incorporan** al repositorio ni a `public`. La página solo contiene los datos de la experiencia. No hay analítica, backend, peticiones automáticas a proveedores de mapas/fotos ni almacenamiento de datos. Los enlaces externos solo se abren al pulsarlos. `noindex` evita solicitar indexación; no sustituye al control de acceso si se publica en una URL pública.
 
-La vista previa autorizada se publica como página autocontenida y ZIP en la rama separada **`gh-pages`** de `MSaula/Sofi28`. El exportador verifica que está actualizando su propia rama. `main` no se modifica. La activación de GitHub Pages y la URL en vivo no pueden verificarse desde esta red, que bloquea `api.github.com`.
+La entrega actual autorizada es privada: código y ZIP en **`private-download`**, con la descarga en `downloads/Viena.zip`. Los permisos los establece el repositorio, no el nombre de la rama. La rama nueva no es la fuente previamente propuesta para Pages y no contiene workflows de despliegue.
+
+La rama anterior **`gh-pages`** conserva la vista previa sin estas fotografías. No se actualiza en esta entrega: GitHub Pages puede exponer contenido públicamente incluso desde un repositorio privado. Su configuración y la URL en vivo no pueden verificarse desde esta red, que bloquea `api.github.com`. El exportador antiguo de los párrafos siguientes corresponde a ese flujo separado; no se usa para entregar las fotos bajo la autorización privada actual.
 
 Para activar el alojamiento: en <https://github.com/MSaula/Sofi28/settings/pages>, elegir **Deploy from a branch → gh-pages → / (root)** y guardar. GitHub mostrará la URL cuando finalice el despliegue. La disponibilidad de Pages depende de la configuración y el plan del repositorio; no se ha cambiado su visibilidad.
 
@@ -87,4 +94,4 @@ npm run audit:flow
 # Opcional: QA_OUT=/otra/ruta QA_URL=http://127.0.0.1:5173 npm run audit:flow
 ```
 
-La salida por defecto es `artifacts/qa-flow` (ignorada por Git). Las pruebas verifican geometría real, precisión declarada del alojamiento, correspondencia entre avión y trazo SVG, los quince viajes históricos y Sofi 28, los seis espacios de foto, bandas sin solapes, recortes, overflow, preservación del capítulo al rotar, teclado/modales, accesibilidad y exportación offline. Las pruebas usan Chromium con emulación móvil; no sustituyen a una revisión en dispositivos físicos. La planificación de esta iteración está en [docs/plan-sofi28.md](docs/plan-sofi28.md).
+La salida por defecto es `artifacts/qa-flow` (ignorada por Git). Las pruebas verifican geometría real, precisión declarada del alojamiento, correspondencia entre avión y trazo SVG, los quince viajes históricos y Sofi 28, las cinco fotos históricas y la tarjeta final sin imagen, bandas sin solapes, recortes, overflow, preservación del capítulo al rotar, teclado/modales, accesibilidad y exportación offline. Las pruebas usan Chromium con emulación móvil; no sustituyen a una revisión en dispositivos físicos. La planificación de esta iteración está en [docs/plan-sofi28.md](docs/plan-sofi28.md).

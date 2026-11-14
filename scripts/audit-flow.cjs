@@ -130,7 +130,10 @@ const sample = async (page, selector, p) => {
       process.env.QA_CAPTURE === "0"
         ? []
         : [
-            [".calendar-scene", [0, 0.2, 0.5, 0.65, 0.77, 0.94]],
+            [
+              ".calendar-scene",
+              [0, 0.07, 0.14, 0.28, 0.36, 0.44, 0.54, 0.65, 0.78, 0.94],
+            ],
             [
               ".journey-scene",
               [0.1, 0.21, 0.25, 0.5, 0.66, 0.7, 0.73, 0.8, 0.96],

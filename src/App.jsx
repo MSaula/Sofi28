@@ -151,7 +151,7 @@ function App() {
         <div data-chapter="Unos días para nosotros">
           <CalendarScene />
         </div>
-        <div data-chapter="Un poco más lejos">
+        <div data-chapter="¿A dónde iremos?">
           <JourneyScene />
         </div>
         <Stay />

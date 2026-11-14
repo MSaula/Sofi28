@@ -97,7 +97,7 @@ export function journeyState(p) {
     stayOpacity: smooth(range(p, 0.82, 0.93)),
     title:
       phase === "departure" || phase === "flight"
-        ? "Un poco más lejos."
+        ? "¿A dónde iremos?"
         : phase === "arrival"
           ? "Viena."
           : phase === "city"

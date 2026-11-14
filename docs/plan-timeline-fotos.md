@@ -1,5 +1,7 @@
 # Timeline fotográfico — composición, integración y validación
 
+Estado actual: **cinco originales incorporados y revisión con fotografías reales completada; 34 pruebas aprobadas**. Entrega privada completada en `private-download`, bajo la autorización explícita del usuario y separada del flujo de GitHub Pages. El enlace del ZIP devuelve 404 sin sesión. Las notas de la primera fase sin archivos se conservan como antecedentes.
+
 ## Propósito y decisión de diseño
 
 La cronología conserva su narrativa: vista global desde 2022, acercamiento al primer regalo, recorrido horizontal, enero de 2027 y fechas 22–24. Los regalos permanecen arriba y los demás viajes debajo.
@@ -10,7 +12,17 @@ En la vista global se conservan las etiquetas pequeñas. El acercamiento abre fo
 
 ## Archivos recibidos
 
-Se ven cinco imágenes en el mensaje, pero inicialmente no hay archivos binarios ni nombres de esas imágenes disponibles en `/workspace/attachments`, los directorios compartidos ni el repositorio. Solo está el PDF previo. Se ha solicitado un ZIP o archivos originales conservando sus nombres mientras se avanza el diseño. No asociar una foto a un lugar basándose exclusivamente en su orden ni crear sustitutos de las imágenes reales.
+En la primera fase solo se veían las imágenes del mensaje, sin acceso a sus archivos y nombres. La recepción de **s28p.zip** ha resuelto esta dependencia. Se han leído exclusivamente los cinco JPEG; no se han importado `.DS_Store` ni los archivos auxiliares `__MACOSX`.
+
+| Archivo original | Tarjeta             | Fecha del recuerdo | Dimensiones |
+| ---------------- | ------------------- | ------------------ | ----------- |
+| `niza.jpeg`      | Sofi 23 · Niza      | Marzo 2022         | 768×1024    |
+| `londres.jpeg`   | Sofi 24 · Londres   | Enero 2023         | 768×1024    |
+| `islandia.jpeg`  | Sofi 25 · Islandia  | Diciembre 2023     | 1536×2048   |
+| `dolomitas.jpeg` | Sofi 26 · Dolomitas | Enero 2025         | 768×1024    |
+| `florencia.jpeg` | Sofi 27 · Florencia | Marzo 2026         | 768×1024    |
+
+Todos tienen proporción 3:4 y orientación EXIF normal. Los archivos de `public/images` son idénticos a los originales del ZIP; el tamaño y SHA-256 se documentan en [el manifiesto de originales](qa/timeline-photo-originals.json). La asociación procede de los nombres de los archivos, no del orden de subida. Sofi 28 conserva su espacio futuro.
 
 ## Cambios localizados
 
@@ -28,13 +40,15 @@ Se ven cinco imágenes en el mensaje, pero inicialmente no hay archivos binarios
 - [x] Análisis del estado anterior y elección de composición.
 - [x] Modelo de tamaños y cámara.
 - [x] Tarjetas grandes y vista estática.
-- [ ] Archivos reales recibidos y asociados por nombre.
-- [ ] Encuadres y carga de las cinco fotos comprobados.
+- [x] Archivos reales recibidos y asociados por nombre.
+- [x] Encuadres y carga de las cinco fotos comprobados.
 - [x] Pruebas localizadas y revisión visual de las fases con espacios de foto.
-- [x] Regresión end to end y exportación offline del borrador.
-- [ ] Entrega de la versión con las cinco fotos reales incorporadas y validadas.
+- [x] Regresión end to end y exportación offline con los cinco originales.
+- [x] HTML y ZIP locales con las cinco fotos reales incorporadas y validadas.
+- [x] Autorización explícita recibida para subir las fotos al repositorio privado y entregar el ZIP con acceso restringido.
+- [x] Subida a la rama de entrega y comprobación de acceso y contenido remoto.
 
-## Implementación y validación del borrador
+## Implementación y primera validación de la composición
 
 - Tarjeta histórica medida: **440×352 px**, con fotografía de **246×328 px**, a 1440×1000. En móvil 390×844: tarjeta de **315×265 px** y fotografía de **181×241 px**. El marco conserva la proporción 3:4 y `object-fit: contain`; el encuadre de cada archivo real debe comprobarse al recibirlo.
 - Las fotos y la tipografía se renderizan con HTML; el calendario y los conectores SVG utilizan las mismas coordenadas del modelo. No hay imágenes superpuestas sobre el texto.
@@ -44,9 +58,19 @@ Se ven cinco imágenes en el mensaje, pero inicialmente no hay archivos binarios
 - `npm run validate`: **16 pruebas unitarias + 15 de navegador + 1 offline = 32 aprobadas**, compilación incluida. Después de reforzar el contrato de recursos configurables y el recorrido offline de los cinco recuerdos: **16/16 unitarias y 1/1 offline aprobadas** de nuevo.
 - Validación localizada: **4/4 pruebas aprobadas** de bandas, colisiones, separación foto/texto, pantallas estrechas y vista estática. La prueba adicional de tamaño fotográfico, retorno y espacio de fecha también ha pasado en la ronda completa.
 - El recorrido completo con rueda, sentido inverso y rotación llega al final en escritorio, móvil, horizontal y movimiento reducido: **0 errores JavaScript, 0 posiciones con overflow**, 80 capturas de fases. Dos tareas de unos 51 ms en el recorrido móvil medido; las rotaciones y capturas añaden otras tareas. Son diagnósticos de Chromium, no una garantía de rendimiento en un teléfono físico.
-- **Límite de esta validación:** hay **0 fotos reales configuradas** porque los archivos no están disponibles. Las pruebas anteriores verifican composición, espacios, contrato de carga y regresiones del borrador; no certifican aún asociación, decodificación ni encuadre de los originales. La vista previa publicada conserva la entrega anterior mientras se completa esta incorporación.
+- **Alcance de aquella ronda:** se probó el borrador con espacios de foto. La recepción del ZIP y la ronda final descrita más abajo resuelven la comprobación pendiente de las imágenes reales.
 
 ## Evidencia para revisión
+
+Versión con fotografías originales:
+
+- [Escritorio: cinco fotos y recorrido completo del calendario](qa/timeline-photos-desktop.jpg).
+- [Móvil: las mismas fases y encuadres](qa/timeline-photos-mobile.jpg).
+- [Fotos completas con movimiento reducido](qa/timeline-photos-static.jpg).
+- [Auditoría final de carga, recorrido y rotación](qa/timeline-photos-flow.json).
+- Capturas originales en `artifacts/timeline-photos-final/` (artefactos locales ignorados por Git).
+
+Maquetas anteriores, conservadas como antecedente:
 
 - [Composición en escritorio: global, apertura, cinco cumpleaños y final](qa/timeline-photo-layout-desktop.jpg).
 - [Las mismas fases en móvil](qa/timeline-photo-layout-mobile.jpg).
@@ -54,6 +78,29 @@ Se ven cinco imágenes en el mensaje, pero inicialmente no hay archivos binarios
 - [Resumen del recorrido, orientación y presencia de imágenes](qa/timeline-photo-layout-flow.json).
 - Capturas originales: `artifacts/timeline-photos/`. Auditoría detallada: `artifacts/timeline-photos/flow/flow-report.json`. Son artefactos locales ignorados por Git.
 
-## Siguiente paso necesario
+## Cierre con los originales
 
-Recibir un ZIP con las cinco fotografías originales conservando sus nombres. A partir de esos archivos: asociar cada imagen por nombre a Niza, Londres, Islandia, Dolomitas y Florencia; revisar el encuadre y la carga en todos los tamaños; confirmar la exportación offline con cinco imágenes reales; y entregar la versión completa. No se han inferido nombres ni generado fotografías de reemplazo.
+- `npm run validate`: **17 pruebas unitarias + 16 de navegador + 1 offline = 34 aprobadas**, compilación de producción y exportación incluidas.
+- Prueba específica de los originales: asociación exacta, dimensiones naturales y carga comprobadas para las cinco fotos a 1440×1000, 390×844, 320×700 y 1000×650, regreso por el timeline y alternativa con movimiento reducido. Proporción del marco contrastada con la de cada imagen, sin recortes.
+- Revisión visual de las cinco tarjetas, la apertura y la transición al calendario final en los cuatro tamaños; también de la galería estática. Caras y entorno permanecen visibles; el texto ocupa su propia columna.
+- Exportación offline abierta sin conexión: las cinco imágenes se cargan desde `data:image/jpeg`, se recorren los cinco recuerdos y se compara el SHA-256 de cada imagen incrustada con el archivo original. No hay peticiones HTTP para ver la experiencia.
+- Se mantienen las verificaciones de mapas, ballet, selección de fechas, accesibilidad, navegación, rotación y overflow del recorrido completo.
+- Auditoría final con fotos: 96 capturas (24 por tamaño/modo), los cuatro recorridos llegan al final, **0 errores JavaScript, 0 muestras con overflow y las cinco fotos cargadas en los cuatro casos**. No se registran tareas de más de 50 ms durante el avance con rueda; las capturas y rotaciones posteriores sí generan tareas largas. La prueba se realiza en Chromium, sin una revisión en dispositivos físicos ni Safari.
+
+## Entrega local, autorización y privacidad
+
+- HTML validado: `artifacts/entrega-sofi28/Viena.html`.
+- ZIP preparado y comprobado: `artifacts/entrega-sofi28/Sofi28-fotos.zip`. Contiene únicamente `Viena.html` y `LEEME.txt`; el HTML coincide byte a byte con la exportación validada.
+- [Recibo de entrega local y SHA-256](qa/timeline-photo-delivery.json).
+- La revisión automática rechazó ejecutar `python3 scripts/publish-preview.py`: consideró las cinco fotografías personales un contenido sensible nuevo y que la autorización anterior para detalles e ilustraciones no cubría su publicación pública. Se necesita aprobación explícita del usuario para publicar estas fotos concretas.
+- Aclaración de acceso tras la pregunta del usuario: tanto la página de `github.com/MSaula/Sofi28` como el enlace GitHub/raw del ZIP devuelven **404 sin sesión**, mientras que el acceso Git autorizado confirma que la rama `gh-pages` existe. El enlace GitHub del ZIP no es accesible anónimamente y hereda los permisos del repositorio. No se ha confirmado mediante metadatos su etiqueta formal de visibilidad: la API está bloqueada en esta red. GitHub Pages es un canal separado; puede servir públicamente una web y el ZIP de su carpeta raíz aunque el repositorio sea privado. Su configuración/despliegue no están verificados. La referencia previa a «publicación pública» describe la acción propuesta y el motivo de la revisión automática; no demuestra que el repositorio sea público.
+- Tras esa aclaración, el usuario ha autorizado explícitamente subir las fotos a su repositorio privado siempre que el enlace requiera sus permisos. La entrega se realizará en `private-download`, una rama inexistente antes de esta autorización, con el ZIP en `downloads/Viena.zip`. No se actualizará `gh-pages`, no se activará Pages ni se cambiará la visibilidad del repositorio. La rama contiene el código y las evidencias, sin workflows de despliegue.
+- Antes de la subida, GitHub vuelve a responder 404 a una lectura anónima del repositorio. Se ha detectado y conservado la integración que el usuario hizo en `main` (`66e6acd`, merge de la iteración anterior): su contenido coincide con la base ya incorporada en este trabajo.
+
+## Entrega privada verificada
+
+- [Descargar el ZIP con las fotografías](https://github.com/MSaula/Sofi28/raw/refs/heads/private-download/downloads/Viena.zip). Requiere una cuenta con acceso al repositorio; descomprimir y abrir `Viena.html`.
+- Código, fotografías y evidencias subidos a `private-download`; primer commit de entrega: `ea297ee84a79b7816253b14c51ef131a3c84161d`.
+- ZIP recuperado de la rama remota y comparado byte a byte con el ZIP validado. Su `Viena.html` coincide con el HTML probado offline (SHA-256 `3fae2c4f3cad67eb7606adeea8516e6a85fc18c43aa7b911a3f93a785af02a02`). También se verifican los cinco JPEG remotos contra los SHA-256 originales.
+- El nuevo enlace responde **404 sin sesión**, después de la subida, mientras el contenido existe y puede leerse mediante el acceso Git autorizado.
+- `main` permanece en `66e6acd5e8f016ff52ae78eee758054b26b1a0d6` y `gh-pages` en `a276f224e4072e3f60879ed3cc6025304c551322`. No se ha cambiado la visibilidad ni la configuración de Pages, ni se ha actualizado su rama con las fotografías.
