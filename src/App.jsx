@@ -239,8 +239,9 @@ function App() {
         </p>
         <p className="muted">
           Las fotografías del apartamento proceden del anuncio de Airbnb
-          compartido y analizado. Son imágenes reales; las escenas de la ciudad
-          y del ballet siguen siendo ilustraciones conceptuales.
+          compartido y analizado. Las del mapa son fotografías reales de
+          Wikimedia Commons, con autor y licencia en cada ficha. Las
+          ilustraciones del paseo por la ciudad y del ballet son conceptuales.
         </p>
       </dialog>
     </>

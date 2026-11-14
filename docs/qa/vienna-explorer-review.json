@@ -1,0 +1,72 @@
+{
+  "validation": {
+    "unit_tests": 33,
+    "legacy_browser_tests": 37,
+    "map_browser_tests": 9,
+    "offline_tests": 1,
+    "unique_tests_passed": 80,
+    "full_suite": "npm run validate: 33 unit + 45 browser + 1 offline passed. Final targeted validation: 33 unit + 9 map browser + 1 offline, including one additional nearby-marker regression. Both production builds rebuilt from final sources."
+  },
+  "flow": {
+    "modes": [
+      {
+        "name": "desktop",
+        "viewport": [
+          1440,
+          1000
+        ],
+        "wheel_samples": 89,
+        "reached_end": true,
+        "javascript_errors": [],
+        "horizontal_overflow_samples": 0,
+        "states_captured": 30,
+        "rotation_overflow": false
+      },
+      {
+        "name": "mobile",
+        "viewport": [
+          390,
+          844
+        ],
+        "wheel_samples": 75,
+        "reached_end": true,
+        "javascript_errors": [],
+        "horizontal_overflow_samples": 0,
+        "states_captured": 30,
+        "rotation_overflow": false
+      },
+      {
+        "name": "landscape",
+        "viewport": [
+          844,
+          390
+        ],
+        "wheel_samples": 41,
+        "reached_end": true,
+        "javascript_errors": [],
+        "horizontal_overflow_samples": 0,
+        "states_captured": 30,
+        "rotation_overflow": false
+      },
+      {
+        "name": "reduced",
+        "viewport": [
+          390,
+          844
+        ],
+        "wheel_samples": 41,
+        "reached_end": true,
+        "javascript_errors": [],
+        "horizontal_overflow_samples": 0,
+        "states_captured": 30,
+        "rotation_overflow": false
+      }
+    ],
+    "screenshots": 120,
+    "raw_report_sha256": "d8cd126ae30d692ba88afd1f5fb27a34c7bc18c4dd083ac4a48e824f817f1311"
+  },
+  "photo_assets": 42,
+  "map_places": 32,
+  "featured_places": 5,
+  "scope": "Chromium and emulated viewports. No physical-device, Safari or Firefox certification; headless long tasks do not establish a frame-rate guarantee."
+}

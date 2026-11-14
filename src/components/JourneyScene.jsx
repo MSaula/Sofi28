@@ -1,10 +1,11 @@
-import { memo, useMemo, useRef } from "react";
+import { memo, useMemo, useRef, useState } from "react";
 import { geoMercator, geoPath } from "d3-geo";
 import {
   ArrowDown,
   ArrowRight,
   ArrowUpRight,
   Home,
+  Maximize2,
   Plane,
   X,
 } from "lucide-react";
@@ -22,11 +23,12 @@ import {
   downloadMapData,
   europe,
   fitCamera,
-  landmarks,
   transformPoint,
   vienna,
 } from "../geography";
 import { clamp, journeyState, range, smooth } from "../motion";
+import ViennaExplorer from "./ViennaExplorer";
+import { ViennaContext, ViennaMarkers } from "./ViennaCartography";
 
 const EuropeanLand = memo(function EuropeanLand({ projection }) {
   const paths = useMemo(
@@ -270,8 +272,9 @@ function EuropeMap({ size, state, staticMode }) {
   );
 }
 
-function ViennaMap({ size, state, staticMode }) {
+function ViennaMap({ size, state, staticMode, onExplore }) {
   const { width: w, height: h } = size;
+  const [hover, setHover] = useState(null);
   const projections = useMemo(
     () => ({
       from: geoMercator().fitExtent(
@@ -305,34 +308,28 @@ function ViennaMap({ size, state, staticMode }) {
       viewBox={`0 0 ${w} ${h}`}
       className="geographic-svg vienna-map"
       style={{ width: w, height: h }}
-      role="img"
-      aria-label="Calles reales de Viena y punto publicado por Airbnb para el alojamiento. La plataforma indica que la ubicación es aproximada."
+      role="group"
+      aria-label="Mapa de Viena y punto del apartamento. Selecciona un lugar para explorar la ciudad y sus recorridos a pie."
     >
       <g
         transform={`translate(${camera.x} ${camera.y}) scale(${camera.scale})`}
       >
+        <ViennaContext projection={projections.from} roads={false} />
         <CityStreets projection={projections.from} />
       </g>
-      <g className="orientation-landmarks">
-        {landmarks
-          .filter(
-            (landmark, i) =>
-              i === 0 ||
-              Math.hypot(
-                point(landmark.coordinates)[0] - home[0],
-                point(landmark.coordinates)[1] - home[1],
-              ) > 95,
-          )
-          .map((landmark) => (
-            <Label
-              key={landmark.name}
-              point={point(landmark.coordinates)}
-              title={landmark.name}
-              width={w}
-              height={h}
-            />
-          ))}
-      </g>
+      <ViennaMarkers
+        projection={projections.from}
+        view={{ k: camera.scale, x: camera.x, y: camera.y }}
+        width={w}
+        height={h}
+        opacity={staticMode ? 1 : smooth(range(state.stayOpacity, 0.55, 1))}
+        interactive={staticMode || state.stayOpacity > 0.99}
+        compact
+        showHome={false}
+        hover={hover}
+        onHover={setHover}
+        onSelect={(id, node) => onExplore(id, node)}
+      />
       <g
         className="stay-map-location"
         data-testid="stay-location"
@@ -363,7 +360,7 @@ function ViennaMap({ size, state, staticMode }) {
   );
 }
 
-function MapPanel({ state, staticMode, kind }) {
+function MapPanel({ state, staticMode, kind, onExplore }) {
   const [ref, size] = useElementSize();
   return (
     <div ref={ref} className={`map-panel ${kind || "animated-map-panel"}`}>
@@ -384,7 +381,12 @@ function MapPanel({ state, staticMode, kind }) {
               style={{ opacity: staticMode ? 1 : state.cityOpacity }}
               aria-hidden={!staticMode && state.cityOpacity < 0.1}
             >
-              <ViennaMap size={size} state={state} staticMode={staticMode} />
+              <ViennaMap
+                size={size}
+                state={state}
+                staticMode={staticMode}
+                onExplore={onExplore}
+              />
             </div>
           )}
         </>
@@ -402,6 +404,27 @@ function MapPanel({ state, staticMode, kind }) {
             ? "VIENA · CENTRO"
             : "EUROPA"}
       </span>
+      {(!staticMode || kind === "vienna-static") && (
+        <button
+          className="v-compact-explore"
+          onClick={(event) => onExplore(null, event.currentTarget)}
+          tabIndex={staticMode || state.stayOpacity > 0.99 ? 0 : -1}
+          aria-hidden={!staticMode && state.stayOpacity <= 0.99}
+          style={{
+            opacity: staticMode ? 1 : smooth(range(state.stayOpacity, 0.7, 1)),
+            visibility:
+              staticMode || state.stayOpacity > 0.7 ? "visible" : "hidden",
+            pointerEvents:
+              staticMode || state.stayOpacity > 0.99 ? "auto" : "none",
+          }}
+        >
+          <span>
+            <strong>Explorar Viena</strong>
+            <small>32 lugares · rutas a pie</small>
+          </span>
+          <Maximize2 size={18} />
+        </button>
+      )}
     </div>
   );
 }
@@ -410,6 +433,8 @@ export default function JourneyScene() {
   const { ref, progress: p, reduced: staticMode } = useScene();
   const state = journeyState(p);
   const credits = useRef(null);
+  const explorer = useRef(null);
+  const explore = (id, node) => explorer.current.open(id, node);
   const mapLink = `https://www.openstreetmap.org/?mlat=${trip.airbnb.coordinates[1]}&mlon=${trip.airbnb.coordinates[0]}#map=16/${trip.airbnb.coordinates[1]}/${trip.airbnb.coordinates[0]}`;
   return (
     <section
@@ -441,11 +466,21 @@ export default function JourneyScene() {
         </div>
         {staticMode ? (
           <div className="static-map-pair">
-            <MapPanel state={state} staticMode kind="europe-static" />
-            <MapPanel state={state} staticMode kind="vienna-static" />
+            <MapPanel
+              state={state}
+              staticMode
+              kind="europe-static"
+              onExplore={explore}
+            />
+            <MapPanel
+              state={state}
+              staticMode
+              kind="vienna-static"
+              onExplore={explore}
+            />
           </div>
         ) : (
-          <MapPanel state={state} staticMode={false} />
+          <MapPanel state={state} staticMode={false} onExplore={explore} />
         )}
         <div className="journey-location-row">
           {state.stayOpacity > 0.5 || staticMode ? (
@@ -491,6 +526,14 @@ export default function JourneyScene() {
                 >
                   © OpenStreetMap contributors
                 </a>
+                {" · "}
+                <a
+                  href="https://data.wien.gv.at/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Stadt Wien
+                </a>
               </>
             ) : (
               "Natural Earth · GeoNames · conexión aérea ilustrativa"
@@ -526,6 +569,13 @@ export default function JourneyScene() {
           Cartografía de calles de OpenStreetMap. Extracto de Viena:
           EqualStreetNames, 2 de octubre de 2026. Puedes abrir el mapa de
           OpenStreetMap para consultar más capas y comprobar una dirección.
+        </p>
+        <p>
+          Manzanas, zonas verdes y agua: datos oficiales de Stadt Wien, CC BY
+          3.0 AT. Los 32 lugares se han contrastado con objetos de
+          OpenStreetMap; las rutas usan el perfil peatonal de FOSSGIS/OSRM. Las
+          distancias y los tiempos son orientativos desde el punto del anuncio,
+          sin paradas.
         </p>
         <p>
           El marcador corresponde al punto publicado en el anuncio de Airbnb. La
@@ -583,6 +633,7 @@ export default function JourneyScene() {
           </button>
         </div>
       </dialog>
+      <ViennaExplorer ref={explorer} />
     </section>
   );
 }

@@ -115,3 +115,12 @@ The provisional apartment illustration is replaced by a reversible photo opening
 The map no longer presents the street midpoint or a fabricated uncertainty radius. Map marker, external link, summary and downloadable cartographic reference agree on the listing coordinate. The original geometry source remains unchanged; its historical reference is retained only as source metadata.
 
 See [the design and validation record](docs/plan-apartment-cinema.md) for decisions, observed integration issues, regression coverage and delivery verification. Older results above describe their corresponding snapshots, rather than the current test count.
+
+
+## Interactive Vienna map — November 2026 iteration
+
+A deliberate desktop explorer preserves the existing cinematic arrival and normal story scrolling. It includes 32 reviewed OSM objects, five visually prominent places, a protected home symbol, genuine Stadt Wien block/green/water geometry, and 32 cached pedestrian routes from FOSSGIS/OSRM. Photos, descriptions, route geometry and rounded walking metrics share one selected place. Map, list, keyboard, zoom, drag, close/focus and rotation are validated.
+
+The final catalogue corrects the generic Belvedere point to Upper Belvedere, distinguishes KunstHausWien from an unrelated gallery, and uses the photographed Strauss monument rather than the park centroid. Dashed-stroke scaling and returning to the story after a dialog orientation change were investigated and corrected. The final validation records 80 distinct passing tests and four complete wheel traversals without JavaScript errors or horizontal overflow.
+
+See [the UX strategy, sources, root causes and verification](docs/plan-vienna-explorer.md), [compact results](docs/qa/vienna-explorer-review.json) and [walking-route checks](docs/qa/vienna-walk-validation.json). The public preview branch is not part of this private delivery.

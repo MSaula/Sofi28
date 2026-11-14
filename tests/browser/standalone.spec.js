@@ -5,11 +5,13 @@ import { scrollScene } from "./helpers.js";
 import { memories } from "../../src/content.js";
 import listing from "../../src/data/airbnb-listing.json" with { type: "json" };
 import { createHash } from "node:crypto";
+import { places } from "../../src/viennaPlaces.js";
 
 test("exported HTML runs without server or network, with assets, animation and calendar", async ({
   page,
   context,
 }) => {
+  test.setTimeout(90000);
   const requests = [];
   const errors = [];
   page.on("request", (request) => {
@@ -126,6 +128,52 @@ test("exported HTML runs without server or network, with assets, animation and c
     if (selector === ".opera-scene")
       await expect(page.locator(".opera-content")).toHaveCSS("opacity", "1");
   }
+
+  await scrollScene(page, ".journey-scene", 0.98);
+  await page.getByRole("button", { name: /Explorar Viena/ }).click();
+  const explorer = page.getByRole("dialog", { name: "Viena, a pie." });
+  await expect(explorer).toBeVisible();
+  await expect(explorer.locator(".v-featured-pin")).toHaveCount(5);
+  await explorer
+    .getByRole("button", { name: "32 lugares", exact: true })
+    .click();
+  const photoUris = await explorer
+    .locator(".v-list-place img")
+    .evaluateAll((nodes) =>
+      nodes.map((n) => ({
+        id: n.closest("[data-list-place]").dataset.listPlace,
+        src: n.getAttribute("src"),
+      })),
+    );
+  expect(photoUris.length).toBe(32);
+  for (const photo of photoUris) {
+    expect(photo.src).toMatch(/^data:image\//);
+    expect(
+      createHash("sha256")
+        .update(Buffer.from(photo.src.split(",")[1], "base64"))
+        .digest("hex"),
+    ).toBe(places.find((p) => p.id === photo.id).photo.sha256);
+  }
+  await explorer
+    .getByRole("searchbox", { name: "Buscar un lugar en Viena" })
+    .fill("Kunst Haus Wien");
+  await explorer.locator('[data-list-place="kunsthaus"]').click();
+  await expect(explorer.getByTestId("vienna-place-card")).toHaveAttribute(
+    "data-place-id",
+    "kunsthaus",
+  );
+  await expect(
+    explorer.locator('[data-vienna-route="kunsthaus"]'),
+  ).toBeVisible();
+  await expect
+    .poll(() =>
+      explorer
+        .locator(".v-place-card img")
+        .evaluate((img) => img.complete && img.naturalWidth > 0),
+    )
+    .toBe(true);
+  await page.keyboard.press("Escape");
+  await expect(explorer).not.toBeVisible();
 
   const images = await page
     .locator("main img")
