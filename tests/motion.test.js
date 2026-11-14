@@ -298,7 +298,7 @@ test("distance-based curve progression is monotonic and reaches both airports", 
   assert.ok(Math.max(...lengths) - Math.min(...lengths) < 1.3);
 });
 
-test("Vienna contains real attributed streets and the supplied reference is on the named street", () => {
+test("Vienna contains attributed streets and its historical geometry reference remains on the named street", () => {
   assert.equal(
     vienna.source.commit,
     "734333a5f858729a6bc227c2f8dae742af050d25",
@@ -309,7 +309,7 @@ test("Vienna contains real attributed streets and the supplied reference is on t
     (f) => f.properties.name === "Untere Weißgerberstraße",
   );
   assert.ok(street.length);
-  const [x, y] = trip.airbnb.coordinates;
+  const [x, y] = vienna.reference.coordinates;
   const sx = 111320 * Math.cos((y * Math.PI) / 180),
     sy = 111320;
   let closest = Infinity;
@@ -336,9 +336,10 @@ test("Vienna contains real attributed streets and the supplied reference is on t
     closest < 2,
     `Reference must remain on the sourced street: ${closest}m`,
   );
-  assert.equal(trip.airbnb.locationPrecision, "approximate-street");
-  assert.ok(trip.airbnb.uncertaintyMeters >= 350);
-  assert.ok(trip.airbnb.address.includes("37"));
+  assert.deepEqual(trip.airbnb.coordinates, [16.39508, 48.20926]);
+  assert.equal(trip.airbnb.locationPrecision, "approximate-listing");
+  assert.equal(trip.airbnb.uncertaintyMeters, null);
+  assert.equal(trip.airbnb.address, null);
 });
 
 test("all street geometry lies inside its declared geographic extent", () => {
@@ -420,7 +421,6 @@ test("calendar TEXT escapes and UTF-8 folding round-trip without corruption", ()
 });
 
 test("no admission documents are public and unconfirmed content remains unset", () => {
-  assert.equal(trip.airbnb.photos.length, 0);
   assert.equal(trip.flight.outbound, null);
   assert.equal(trip.ballet.title, "Living Legacies");
   assert.ok(

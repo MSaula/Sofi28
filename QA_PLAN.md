@@ -100,9 +100,18 @@ The original audit's long-task list includes geometry sampling and screenshot ov
 
 ## Remaining content dependencies and further improvements
 
-1. **Confirmed building location:** the user explicitly supplied an approximate address. The current point is the real street's midpoint with a 362m uncertainty area, not a verified location of number 37 or of the listing. Replace it only with a confirmed booking pin/address.
-2. **Final content:** letter, apartment photographs, verified performance/city photography and flight times remain pending. The ballet is on the first evening at 19:00; arrival feasibility cannot be checked without flight times.
+1. **Confirmed building location:** the current point is now the Airbnb listing coordinate accepted by the user (48.20926, 16.39508). Airbnb marks it approximate. The old street midpoint and its 362m area have been removed from the displayed map. A verified building address remains unavailable.
+2. **Final content:** five real apartment photographs are now integrated. Letter, verified performance/city photography and flight times remain pending. The ballet is on the first evening at 19:00; arrival feasibility cannot be checked without flight times.
 3. **Additional geographic layers:** the accessible dataset contains streets. The old invented watercourse was removed. Rivers, parks, buildings or road navigation should be added only from verified, licensed geometry; an external OpenStreetMap link is available now.
 4. **Physical-device/cross-browser review:** test Safari/iOS, Firefox and real touch/scroll performance before the final gift delivery. Current automated coverage uses Chromium, including mobile viewport emulation.
 5. **Delivery optimization:** consider lazy loading the map for the hosted build if real-device/network profiling justifies it; retain the offline single-file export as a separate tested target.
 6. **Hosting:** updating the export branch proves the files uploaded, not that GitHub Pages is enabled or reachable. The current environment blocks the GitHub API, so external Pages activation/availability remains separately verifiable by the repository owner.
+
+
+## Apartment presentation — November 2026 iteration
+
+The provisional apartment illustration is replaced by a reversible photo opening, four concise benefits and four large photo cards, plus a five-photo accessible dialog. Mobile uses the portrait bedroom photograph; all five source JPEGs are preserved and embedded in the offline export. Source provenance and accepted approximate listing coordinates are recorded in [src/data/airbnb-listing.json](src/data/airbnb-listing.json).
+
+The map no longer presents the street midpoint or a fabricated uncertainty radius. Map marker, external link, summary and downloadable cartographic reference agree on the listing coordinate. The original geometry source remains unchanged; its historical reference is retained only as source metadata.
+
+See [the design and validation record](docs/plan-apartment-cinema.md) for decisions, observed integration issues, regression coverage and delivery verification. Older results above describe their corresponding snapshots, rather than the current test count.

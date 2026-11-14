@@ -299,13 +299,6 @@ function ViennaMap({ size, state, staticMode }) {
   const point = (coordinate) =>
     transformPoint(projections.from(coordinate), camera);
   const home = point(trip.airbnb.coordinates);
-  const east = point([
-    trip.airbnb.coordinates[0] +
-      trip.airbnb.uncertaintyMeters /
-        (111320 * Math.cos((trip.airbnb.coordinates[1] * Math.PI) / 180)),
-    trip.airbnb.coordinates[1],
-  ]);
-  const radius = Math.abs(east[0] - home[0]);
   const reveal = staticMode ? 1 : state.stayOpacity;
   return (
     <svg
@@ -313,7 +306,7 @@ function ViennaMap({ size, state, staticMode }) {
       className="geographic-svg vienna-map"
       style={{ width: w, height: h }}
       role="img"
-      aria-label="Calles reales del centro de Viena. Zona aproximada del alojamiento en Untere Weißgerberstraße, no ubicación verificada del edificio 37."
+      aria-label="Calles reales de Viena y punto publicado por Airbnb para el alojamiento. La plataforma indica que la ubicación es aproximada."
     >
       <g
         transform={`translate(${camera.x} ${camera.y}) scale(${camera.scale})`}
@@ -343,15 +336,11 @@ function ViennaMap({ size, state, staticMode }) {
       <g
         className="stay-map-location"
         data-testid="stay-location"
-        data-precision="approximate-street"
+        data-precision={trip.airbnb.locationPrecision}
+        data-longitude={trip.airbnb.coordinates[0]}
+        data-latitude={trip.airbnb.coordinates[1]}
         opacity={reveal}
       >
-        <circle
-          className="location-uncertainty"
-          cx={home[0]}
-          cy={home[1]}
-          r={radius}
-        />
         <g
           transform={`translate(${home[0]} ${home[1]})`}
           data-testid="stay-pin"
@@ -364,10 +353,10 @@ function ViennaMap({ size, state, staticMode }) {
         <Label
           point={home}
           title="Nuestro lugar"
-          subtitle="ZONA APROXIMADA"
+          subtitle="PUNTO DEL ANUNCIO"
           width={w}
           height={h}
-          hidden={reveal < 0.5}
+          opacity={smooth(range(reveal, 0.2, 0.9))}
         />
       </g>
     </svg>
@@ -430,7 +419,7 @@ export default function JourneyScene() {
       data-journey-phase={state.phase}
       aria-label={
         staticMode || state.destinationRevealed
-          ? "El vuelo a Viena y la zona del alojamiento"
+          ? "El vuelo a Viena y el punto del anuncio del alojamiento"
           : "Un viaje y un destino por descubrir"
       }
     >
@@ -463,8 +452,8 @@ export default function JourneyScene() {
             <div className="location-description">
               <Home size={17} />
               <div>
-                <strong>Untere Weißgerberstraße 37</strong>
-                <span>Referencia aproximada · edificio por confirmar</span>
+                <strong>{trip.airbnb.neighborhood}</strong>
+                <span>Punto del anuncio · ubicación aproximada</span>
               </div>
             </div>
           ) : (
@@ -539,9 +528,11 @@ export default function JourneyScene() {
           OpenStreetMap para consultar más capas y comprobar una dirección.
         </p>
         <p>
-          La dirección facilitada, {trip.airbnb.address}, es orientativa. El
-          círculo representa una zona sobre esa calle; el punto no identifica un
-          edificio confirmado.
+          El marcador corresponde al punto publicado en el anuncio de Airbnb. La
+          plataforma lo indica como ubicación aproximada: no identifica un
+          edificio confirmado. La dirección exacta debe consultarse en la
+          reserva. No se atribuye un radio de precisión que el anuncio no
+          proporciona.
         </p>
         <div className="map-data-links">
           <a
@@ -576,7 +567,18 @@ export default function JourneyScene() {
           >
             Licencia ODbL 1.0 <ArrowUpRight size={14} />
           </a>
-          <button className="text-link" onClick={downloadMapData}>
+          <button
+            className="text-link"
+            onClick={() =>
+              downloadMapData({
+                coordinates: trip.airbnb.coordinates,
+                precision: trip.airbnb.locationPrecision,
+                isExactLocation: false,
+                uncertaintyMeters: null,
+                source: trip.airbnb.url,
+              })
+            }
+          >
             Descargar datos cartográficos <ArrowDown size={14} />
           </button>
         </div>

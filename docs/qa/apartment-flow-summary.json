@@ -1,0 +1,74 @@
+{
+  "validation": {
+    "command": "npm run validate",
+    "unit_tests": 25,
+    "browser_tests": 37,
+    "offline_tests": 1,
+    "total": 63,
+    "result": "passed"
+  },
+  "flow": {
+    "command": "QA_OUT=artifacts/apartment-cinema/full-flow npm run audit:flow",
+    "modes": [
+      {
+        "name": "desktop",
+        "viewport": [
+          1440,
+          1000
+        ],
+        "wheel_samples": 89,
+        "reached_end": true,
+        "javascript_errors": [],
+        "overflow_samples": 0,
+        "captured_states": 30,
+        "rotation_overflow": false,
+        "apartment_hero_loaded_in_every_sample": true
+      },
+      {
+        "name": "mobile",
+        "viewport": [
+          390,
+          844
+        ],
+        "wheel_samples": 75,
+        "reached_end": true,
+        "javascript_errors": [],
+        "overflow_samples": 0,
+        "captured_states": 30,
+        "rotation_overflow": false,
+        "apartment_hero_loaded_in_every_sample": true
+      },
+      {
+        "name": "landscape",
+        "viewport": [
+          844,
+          390
+        ],
+        "wheel_samples": 41,
+        "reached_end": true,
+        "javascript_errors": [],
+        "overflow_samples": 0,
+        "captured_states": 30,
+        "rotation_overflow": false,
+        "apartment_hero_loaded_in_every_sample": true
+      },
+      {
+        "name": "reduced",
+        "viewport": [
+          390,
+          844
+        ],
+        "wheel_samples": 41,
+        "reached_end": true,
+        "javascript_errors": [],
+        "overflow_samples": 0,
+        "captured_states": 30,
+        "rotation_overflow": false,
+        "apartment_hero_loaded_in_every_sample": true
+      }
+    ],
+    "screenshots": 120,
+    "raw_report_sha256": "5e7e24a5ebe684432563f44dd22a3a9da16126ef9247f96adee42c274b95bf92"
+  },
+  "scope": "Chromium, including emulated mobile viewports; not physical-device or Safari certification."
+}

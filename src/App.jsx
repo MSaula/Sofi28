@@ -12,7 +12,6 @@ import {
   Menu,
   Plane,
   X,
-  Plus,
   Check,
 } from "lucide-react";
 import { trip, cityIdeas, site } from "./content";
@@ -27,6 +26,7 @@ import CalendarScene from "./components/CalendarScene";
 import JourneyScene from "./components/JourneyScene";
 import OperaScene, { OperaDetails } from "./components/OperaScene";
 import Picture from "./components/Picture";
+import Stay from "./components/Stay";
 
 function App() {
   useReveal();
@@ -238,142 +238,12 @@ function App() {
           versión descargable tengan el mismo aspecto, incluso sin conexión.
         </p>
         <p className="muted">
-          Las fotografías reales del apartamento se incorporarán al disponer de
-          ellas.
+          Las fotografías del apartamento proceden del anuncio de Airbnb
+          compartido y analizado. Son imágenes reales; las escenas de la ciudad
+          y del ballet siguen siendo ilustraciones conceptuales.
         </p>
       </dialog>
     </>
-  );
-}
-
-function Stay() {
-  const rail = useRef(null);
-  const lightbox = useRef(null);
-  const [selected, setSelected] = useState(0);
-  const photos = trip.airbnb.photos;
-  const openPhoto = (i) => {
-    setSelected(i);
-    lightbox.current.showModal();
-  };
-  return (
-    <section
-      className="stay-section section-pad"
-      id="estancia"
-      data-chapter="Nuestro lugar"
-    >
-      <div className="section-heading" data-reveal>
-        <div>
-          <span className="eyebrow">
-            <span className="blue-dot" /> EL APARTAMENTO
-          </span>
-          <h2>
-            Nuestro lugar.
-            <br />
-            <span>Por unos días.</span>
-          </h2>
-        </div>
-        <p>
-          Un pequeño paréntesis en Viena.
-          <br />
-          Un lugar al que volver después de perdernos por la ciudad.
-        </p>
-      </div>
-      {photos.length ? (
-        <>
-          <div className="gallery-controls">
-            <span>{photos.length} rincones por descubrir</span>
-            <RailButtons rail={rail} />
-          </div>
-          <div className="photo-rail" ref={rail}>
-            {photos.map((photo, i) => (
-              <button
-                className="apartment-photo"
-                key={photo.src}
-                onClick={() => openPhoto(i)}
-                aria-label={`Ampliar fotografía: ${photo.title}`}
-              >
-                <img src={photo.src} alt={photo.alt} loading="lazy" />
-                <div>
-                  <h3>{photo.title}</h3>
-                  <Plus size={19} />
-                </div>
-              </button>
-            ))}
-          </div>
-        </>
-      ) : (
-        <div className="stay-preview" data-reveal>
-          <img
-            src="/images/apartment-study.svg"
-            alt="Estudio visual abstracto de una habitación; no es una fotografía del apartamento"
-          />
-          <div className="stay-preview-copy">
-            <span className="tiny-label">UN LUGAR PARA NOSOTROS</span>
-            <h3>
-              Despertar
-              <br />
-              en otra ciudad.
-            </h3>
-            <span className="pending-tag">
-              Fotografías del apartamento pendientes
-            </span>
-          </div>
-        </div>
-      )}
-      <div className="stay-caption">
-        <span>
-          <MapPin size={14} />
-          {trip.airbnb.address} · referencia aproximada
-        </span>
-        <a
-          className="text-link"
-          href={trip.airbnb.url}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Ver el apartamento <ArrowUpRight size={15} />
-        </a>
-      </div>
-      <dialog
-        ref={lightbox}
-        className="lightbox"
-        aria-label="Fotografías del apartamento"
-      >
-        <button
-          className="icon-button close-dialog"
-          onClick={() => lightbox.current.close()}
-          aria-label="Cerrar fotografía"
-        >
-          <X />
-        </button>
-        {photos.length > 0 && (
-          <>
-            <img src={photos[selected].src} alt={photos[selected].alt} />
-            <div className="lightbox-caption">
-              <button
-                className="icon-button"
-                onClick={() =>
-                  setSelected((selected - 1 + photos.length) % photos.length)
-                }
-                aria-label="Fotografía anterior"
-              >
-                <ChevronLeft />
-              </button>
-              <p>
-                {photos[selected].title} · {selected + 1}/{photos.length}
-              </p>
-              <button
-                className="icon-button"
-                onClick={() => setSelected((selected + 1) % photos.length)}
-                aria-label="Fotografía siguiente"
-              >
-                <ChevronRight />
-              </button>
-            </div>
-          </>
-        )}
-      </dialog>
-    </section>
   );
 }
 
@@ -499,9 +369,9 @@ function Summary() {
           <span className="tiny-label">NUESTRO LUGAR</span>
           <h3>Un Airbnb en Viena.</h3>
           <p>
-            {trip.airbnb.address}
+            Un ático en {trip.airbnb.neighborhood}.
             <br />
-            Referencia aproximada · edificio por confirmar.
+            Referencia aproximada · punto publicado por Airbnb.
           </p>
           <a
             href={trip.airbnb.url}

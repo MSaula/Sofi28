@@ -1,0 +1,58 @@
+{
+  "listingId": "1083895869289261763",
+  "url": "https://www.airbnb.es/rooms/1083895869289261763",
+  "title": "Lujo cerca de las atracciones vienesas | HG27",
+  "snapshot": "2026-11-14",
+  "location": {
+    "coordinates": [
+      16.39508,
+      48.20926
+    ],
+    "isExactLocation": false,
+    "exactAddress": null,
+    "source": "Airbnb public listing, user-supplied saved page",
+    "userAddressReference": "Untere Weißgerberstraße 37, 1030 Wien"
+  },
+  "photos": [
+    {
+      "filename": "apartment-kitchen.jpg",
+      "sourceImageId": "2638860545",
+      "sourceUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-1083895869289261763/original/a7e512ba-192a-4ca2-97b0-41076eb5e8fe.png",
+      "sha256": "f0c1fae2a26e9095db6b4ca79ce6723ac39c5b208cd6ae8ae5f57bc675f2418f",
+      "width": 720,
+      "height": 960
+    },
+    {
+      "filename": "apartment-dining.jpg",
+      "sourceImageId": "2638860569",
+      "sourceUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-1083895869289261763/original/523bf061-11e8-4db3-a304-d1fb4a1dfde1.png",
+      "sha256": "90efe011963e4418fa9e6ea0f14531d09f1a96692c44446570f382964154babb",
+      "width": 720,
+      "height": 900
+    },
+    {
+      "filename": "apartment-bedroom-window.jpg",
+      "sourceImageId": "2638860514",
+      "sourceUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-1083895869289261763/original/9d9f95d8-eb54-4aca-b378-ae6c99611f99.png",
+      "sha256": "5fe8f12b80fe4094e08b73eb23187f059d51b2d29131ad194981370a2fe84a9a",
+      "width": 720,
+      "height": 960
+    },
+    {
+      "filename": "apartment-daybed.jpg",
+      "sourceImageId": "2638860546",
+      "sourceUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-1083895869289261763/original/aa407d23-ed9c-4cfb-9b91-1ca20be46a37.png",
+      "sha256": "07d9d3a6dcf3a5a42e7b887a091e59065178a083b55a11229579db4b8f9a8ff2",
+      "width": 720,
+      "height": 960
+    },
+    {
+      "filename": "apartment-bedroom.jpg",
+      "sourceImageId": "2638860878",
+      "sourceUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-1083895869289261763/original/468d2234-8965-4f85-9be8-ef1ded43bfcb.png",
+      "sha256": "1afb676690c3185a6eed4c57d1abff012b6add4bcaa1586e08ea5346f016f4e9",
+      "width": 720,
+      "height": 540
+    }
+  ]
+}

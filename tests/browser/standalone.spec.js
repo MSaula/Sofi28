@@ -3,6 +3,7 @@ import { resolve } from "node:path";
 import { readFile } from "node:fs/promises";
 import { scrollScene } from "./helpers.js";
 import { memories } from "../../src/content.js";
+import listing from "../../src/data/airbnb-listing.json" with { type: "json" };
 import { createHash } from "node:crypto";
 
 test("exported HTML runs without server or network, with assets, animation and calendar", async ({
@@ -54,6 +55,35 @@ test("exported HTML runs without server or network, with assets, animation and c
     memories.filter((m) => m.birthdayAge && m.photo).length,
   );
 
+  await scrollScene(page, ".stay-scene", 0.95);
+  await expect(page.locator(".stay-film-copy")).toHaveCSS("opacity", "1");
+  await expect(page.locator(".stay-photo-card")).toHaveCount(4);
+  const apartmentUris = await page
+    .locator("#estancia img")
+    .evaluateAll((nodes) => nodes.map((n) => n.getAttribute("src")));
+  for (const photo of listing.photos) {
+    expect(
+      apartmentUris.some(
+        (uri) =>
+          uri.startsWith("data:image/") &&
+          createHash("sha256")
+            .update(Buffer.from(uri.split(",")[1], "base64"))
+            .digest("hex") === photo.sha256,
+      ),
+    ).toBe(true);
+  }
+  await page.locator(".stay-hero-zoom").click();
+  await expect(
+    page.getByRole("dialog", { name: "Fotografías del apartamento" }),
+  ).toBeVisible();
+  await page.keyboard.press("ArrowRight");
+  expect(
+    await page
+      .locator(".stay-lightbox-image img")
+      .evaluate((img) => img.complete && img.naturalWidth > 0),
+  ).toBe(true);
+  await page.keyboard.press("Escape");
+
   for (const [selector, p] of [
     [".calendar-scene", 0.96],
     [".journey-scene", 0.5],
@@ -76,7 +106,7 @@ test("exported HTML runs without server or network, with assets, animation and c
       await expect(page.getByTestId("stay-location")).toHaveCSS("opacity", "1");
       await expect(page.getByTestId("stay-location")).toHaveAttribute(
         "data-precision",
-        "approximate-street",
+        "approximate-listing",
       );
       await expect(page.locator(".real-street-network")).toHaveAttribute(
         "data-source-commit",

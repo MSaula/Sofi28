@@ -45,9 +45,18 @@ export function fitCamera(from, to, t) {
   };
 }
 
-export function downloadMapData() {
+export function downloadMapData(reference = vienna.reference) {
   const url = URL.createObjectURL(
-    new Blob([JSON.stringify(vienna)], { type: "application/geo+json" }),
+    new Blob(
+      [
+        JSON.stringify({
+          ...vienna,
+          reference,
+          historicalStreetReference: vienna.reference,
+        }),
+      ],
+      { type: "application/geo+json" },
+    ),
   );
   const a = document.createElement("a");
   a.href = url;

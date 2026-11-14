@@ -1,4 +1,4 @@
-import { vienna } from "./geography.js";
+import listing from "./data/airbnb-listing.json" with { type: "json" };
 import { performanceDateLabels, tripDateLabels } from "./dates.js";
 
 const travelDates = { startDate: "2027-01-22", endDate: "2027-01-24" };
@@ -24,14 +24,77 @@ export const trip = {
   airbnb: {
     url: "https://www.airbnb.es/rooms/1083895869289261763",
     name: "Nuestro lugar en Viena",
-    address: "Untere Weißgerberstraße 37, 1030 Wien",
-    coordinates: vienna.reference.coordinates,
-    locationPrecision: "approximate-street",
+    neighborhood: "Landstraße · 1030 Viena",
+    address: null,
+    addressReference: listing.location.userAddressReference,
+    coordinates: listing.location.coordinates,
+    locationPrecision: "approximate-listing",
     locationSource:
-      "User-supplied approximate address; point derived from the real street geometry, not a verified building geocode.",
-    uncertaintyMeters: vienna.reference.uncertaintyMeters,
-    // Use local assets in /public/images. Example: { src: '/images/salon.webp', title: 'El salón', alt: '...' }
-    photos: [],
+      "Punto publicado por Airbnb en la copia del anuncio del 14/11/2026; la plataforma lo indica como aproximado.",
+    uncertaintyMeters: null,
+    benefits: [
+      {
+        icon: "light",
+        title: "Luz por ambos lados.",
+        text: "Grandes ventanales y techos inclinados. Viena, al otro lado del cristal.",
+      },
+      {
+        icon: "bed",
+        title: "Alargar la mañana.",
+        text: "Una cama doble grande y un baño con bañera para cambiar de ritmo.",
+      },
+      {
+        icon: "coffee",
+        title: "El primer café, aquí.",
+        text: "Cocina equipada para preparar el desayuno a nuestro ritmo.",
+      },
+      {
+        icon: "place",
+        title: "Volver sin prisas.",
+        text: "En Landstraße, cerca de Hundertwasserhaus. Con ascensor y llegada autónoma.",
+      },
+    ],
+    photos: [
+      {
+        src: "/images/apartment-bedroom.jpg",
+        title: "Nuestro ático en Viena.",
+        description:
+          "Una cama doble, grandes ventanales y un rincón para bajar el ritmo.",
+        alt: "Vista general del dormitorio del ático, con cama doble, dos butacas y grandes ventanas",
+      },
+      {
+        src: "/images/apartment-bedroom-window.jpg",
+        tag: "01 — EL DORMITORIO",
+        title: "Un ratito más.",
+        description:
+          "Una cama doble grande y dos butacas junto a la ventana. Para empezar el día sin correr.",
+        alt: "Cama doble y dos butacas junto a los ventanales del dormitorio, bajo el techo inclinado",
+      },
+      {
+        src: "/images/apartment-kitchen.jpg",
+        tag: "02 — LA COCINA",
+        title: "El primer café.",
+        description:
+          "Cocina equipada, cafetera y espacio para preparar algo juntos antes de salir.",
+        alt: "Cocina blanca con placa, microondas, fregadero y cafetera junto a la mesa de comedor",
+      },
+      {
+        src: "/images/apartment-dining.jpg",
+        tag: "03 — EL COMEDOR",
+        title: "Sin mirar el reloj.",
+        description:
+          "Una mesa junto a la luz del ático. Desayunos tranquilos y planes que pueden esperar.",
+        alt: "Comedor del ático con cuatro sillas, ventana de cubierta y puerta acristalada",
+      },
+      {
+        src: "/images/apartment-daybed.jpg",
+        tag: "04 — EL ESTAR",
+        title: "También, no hacer nada.",
+        description:
+          "Un rincón con televisión y una cama auxiliar abatible. Un descanso antes de volver a salir.",
+        alt: "Cama individual auxiliar desplegada bajo el mueble del televisor, junto al ventanal",
+      },
+    ],
   },
   flight: { outbound: null, inbound: null },
   ballet: {

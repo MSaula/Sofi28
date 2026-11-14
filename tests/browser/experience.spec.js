@@ -63,7 +63,7 @@ for (const [name, width, height] of [
       page.getByTestId("stay-pin"),
     );
     await expect(page.locator(".location-description")).toContainText(
-      "Untere Weißgerberstraße 37",
+      "Landstraße",
     );
     await expect(page.locator(".location-description")).toContainText(
       "aproximada",
@@ -459,6 +459,9 @@ test("map provenance and downloadable source data preserve the approximate locat
   );
   expect(data.source.license).toBe("ODbL-1.0");
   expect(data.features.length).toBeGreaterThan(1000);
+  expect(data.reference.coordinates).toEqual([16.39508, 48.20926]);
+  expect(data.reference.isExactLocation).toBe(false);
+  expect(data.reference.uncertaintyMeters).toBeNull();
   await page.keyboard.press("Escape");
   await expect(page.locator(".stay-caption")).toContainText(
     "referencia aproximada",
