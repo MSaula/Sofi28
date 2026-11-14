@@ -1,5 +1,5 @@
 {
-  "status": "prepared-and-locally-validated",
+  "status": "private-repository-delivery-verified",
   "iteration": "cinematic-apartment-and-public-listing-pin",
   "html_sha256": "87b9c2adc54b99eed064203988ff27a58aabef7777a81a4260700679c822ae2e",
   "html_bytes": 4797730,
@@ -25,5 +25,15 @@
     "longitude": 16.39508,
     "latitude": 48.20926,
     "isExactLocation": false
-  }
+  },
+  "delivery_commit": "3eb58f14277ebf8a2519af65d76cf7efcc78073d",
+  "versioned_download_url": "https://github.com/MSaula/Sofi28/raw/3eb58f14277ebf8a2519af65d76cf7efcc78073d/downloads/Viena.zip",
+  "anonymous_download_http_status": 404,
+  "remote_zip_matches_validated_html": true,
+  "remote_originals_match": true,
+  "embedded_originals_verified": 10,
+  "main_unchanged": true,
+  "gh_pages_unchanged": true,
+  "main_after": "8a30c1af019e57149dbcf98ba8a5932feb0f87d1",
+  "gh_pages_after": "a276f224e4072e3f60879ed3cc6025304c551322"
 }

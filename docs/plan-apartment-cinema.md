@@ -33,7 +33,7 @@ Se sustituye el punto medio de Untere Weißgerberstraße por el punto del anunci
 - [x] Créditos y documentación actualizados.
 - [x] Pruebas específicas de continuidad, galería, teclado, mapa y exportación.
 - [x] Revisión visual, recorrido completo, móviles/rotación y accesibilidad.
-- [ ] ZIP privado actualizado y recuperado para verificarlo.
+- [x] ZIP privado actualizado y recuperado para verificarlo.
 
 ## Aceptación
 
@@ -77,3 +77,9 @@ Solo se actualiza la entrega privada autorizada; no se modifica main ni gh-pages
 [Resultados compactos](qa/apartment-flow-summary.json) · [Portada escritorio](qa/apartment-cinema-desktop.png) · [Portada móvil](qa/apartment-cinema-mobile.png) · [Galería escritorio](qa/apartment-gallery-desktop.png) · [Galería móvil](qa/apartment-gallery-mobile.png) · [Pin móvil](qa/apartment-pin-mobile.png).
 
 Las pruebas usan Chromium y emulación móvil. La revisión en Safari/iOS y dispositivos físicos sigue pendiente de disponibilidad de esos dispositivos.
+
+## Entrega privada verificada
+
+El commit 3eb58f14277ebf8a2519af65d76cf7efcc78073d se ha subido únicamente a private-download y recuperado desde origin. El ZIP remoto coincide byte a byte con el local; su HTML coincide con el probado. Las diez fotografías remotas y las diez incrustadas conservan los hashes de sus originales. La descarga anónima responde 404; requiere los permisos del repositorio privado.
+
+[Descarga de esta versión](https://github.com/MSaula/Sofi28/raw/3eb58f14277ebf8a2519af65d76cf7efcc78073d/downloads/Viena.zip). Contiene únicamente Viena.html y LEEME.txt. La verificación de ramas confirma main y gh-pages sin cambios respecto a su estado al comenzar esta entrega. Detalles y hashes en [el recibo](qa/timeline-photo-delivery.json).
