@@ -28,7 +28,7 @@ Al seleccionar un lugar: foto real, nombre, descripción breve, metros y minutos
 - [x] Integración con la escena existente sin anticipar Viena.
 - [x] Pruebas locales de datos, geometría y selección.
 - [x] Revisión visual y end to end: scroll, retroceso, rotación, visor y versión offline.
-- [ ] Entrega privada verificada, sin desplegar la rama pública.
+- [x] Entrega privada verificada, sin desplegar la rama pública.
 
 ## Criterios de validación
 
@@ -84,3 +84,10 @@ Axe no detecta infracciones graves/críticas en la vista general, la ficha selec
 - [Integración en la historia](qa/vienna-explorer-desktop-story.png).
 
 Los informes independientes del Airbnb y del índice visual de Viena conservan sus archivos anteriores. La entrega actualiza solo la web del regalo y su ZIP privado.
+
+
+## Entrega privada verificada
+
+Commit 9dcdaa6c57d651e5f9d6485b64122722f9cd582a subido y recuperado de private-download. El ZIP remoto coincide byte a byte con el local y su HTML con el probado. Se verifican los 42 JPEG remotos y los 42 incrustados contra sus hashes originales. La descarga anónima responde 404. main y gh-pages conservan sus referencias anteriores; los dos informes independientes mantienen sus archivos.
+
+[Descargar esta versión de la web](https://github.com/MSaula/Sofi28/raw/9dcdaa6c57d651e5f9d6485b64122722f9cd582a/downloads/Viena.zip). El recibo con tamaños, hashes y alcance está en [timeline-photo-delivery.json](qa/timeline-photo-delivery.json).

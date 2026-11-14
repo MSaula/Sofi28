@@ -1,5 +1,5 @@
 {
-  "status": "prepared-and-locally-validated",
+  "status": "private-repository-delivery-verified",
   "iteration": "interactive-vienna-map-with-real-pedestrian-routes",
   "html_sha256": "c53a2b4517320ee5a9ac309a7cb6c1f23cd63736c1963c14e24476c53c346956",
   "html_bytes": 40107018,
@@ -30,5 +30,15 @@
       48.20926
     ],
     "precision": "approximate Airbnb listing point accepted by user"
-  }
+  },
+  "delivery_commit": "9dcdaa6c57d651e5f9d6485b64122722f9cd582a",
+  "versioned_download_url": "https://github.com/MSaula/Sofi28/raw/9dcdaa6c57d651e5f9d6485b64122722f9cd582a/downloads/Viena.zip",
+  "anonymous_download_http_status": 404,
+  "remote_zip_matches_validated_html": true,
+  "remote_originals_match": true,
+  "embedded_originals_verified": 42,
+  "main_unchanged": true,
+  "gh_pages_unchanged": true,
+  "main_after": "8a30c1af019e57149dbcf98ba8a5932feb0f87d1",
+  "gh_pages_after": "a276f224e4072e3f60879ed3cc6025304c551322"
 }
