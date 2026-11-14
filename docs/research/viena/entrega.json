@@ -1,5 +1,5 @@
 {
-  "status": "prepared-and-locally-validated",
+  "status": "private-repository-delivery-verified",
   "prepared_date": "2026-11-14",
   "places": 32,
   "photos": 34,
@@ -25,5 +25,15 @@
   "gift_zip_unchanged": true,
   "gift_zip_sha256": "781e8ecd71ed8f72d56132233efaff80f7bfb76ac6a21bd5e1855f54ffaf2013",
   "app_source_tree_before": "606d2163c9967d9076e25f99a8f3f3e2db6123fa",
-  "scope": "Independent internal research report; private repository delivery; gift website and public preview unchanged."
+  "scope": "Independent internal research report; private repository delivery; gift website and public preview unchanged.",
+  "delivery_commit": "c7273f61ba6c5715d25140cc4d46b3f653f0e9fe",
+  "versioned_download_url": "https://github.com/MSaula/Sofi28/raw/c7273f61ba6c5715d25140cc4d46b3f653f0e9fe/downloads/Indice-visual-Viena.zip",
+  "remote_zip_matches_validated_html": true,
+  "remote_embedded_photo_hashes_verified": 34,
+  "anonymous_download_http_status": 404,
+  "app_source_unchanged": true,
+  "public_assets_unchanged": true,
+  "previous_airbnb_report_unchanged": true,
+  "main_unchanged": true,
+  "gh_pages_unchanged": true
 }

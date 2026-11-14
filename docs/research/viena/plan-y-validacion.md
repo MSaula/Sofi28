@@ -22,7 +22,7 @@ Cada ficha debe contener: nombre, zona, categoría, descripción breve, interés
 - [x] HTML independiente con búsqueda, filtros y visor.
 - [x] Índice reutilizable JSON/CSV y originales.
 - [x] Validación de enlaces, recursos, móvil y funcionamiento offline.
-- [ ] Entrega privada separada del ZIP del regalo.
+- [x] Entrega privada separada del ZIP del regalo.
 
 ## Incidencia de acceso
 
@@ -50,3 +50,10 @@ Las imágenes se inspeccionan visualmente y se comprueban resolución y SHA-256.
 La primera auditoría detectó contraste 4,37:1 en los números laterales. Se oscurece ese color y se repite la validación completa del informe: sin infracciones graves/críticas de axe en el documento y el visor comprobados. No equivale a certificación completa ni a pruebas en Safari o dispositivos físicos.
 
 El ZIP contiene únicamente el HTML autónomo, JSON, CSV, licencias y LEEME. El HTML de 35,9 MB contiene las fotos; no duplica sus archivos en el ZIP. Cada imagen puede descargarse desde el visor. Se comprueban CRC y coincidencia exacta del HTML empaquetado con el validado.
+
+
+## Entrega remota verificada
+
+Commit c7273f61ba6c5715d25140cc4d46b3f653f0e9fe en private-download, recuperado desde origin. El ZIP remoto coincide con el local y el HTML con el validado. Las 34 fotografías incrustadas conservan sus hashes. La descarga anónima responde 404. Se comprueban sin cambios el árbol de código de la aplicación, los recursos públicos, Viena.zip, el informe anterior del Airbnb y las ramas main y gh-pages.
+
+[Descargar esta versión](https://github.com/MSaula/Sofi28/raw/c7273f61ba6c5715d25140cc4d46b3f653f0e9fe/downloads/Indice-visual-Viena.zip). Los detalles de integridad se conservan en entrega.json.
