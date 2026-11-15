@@ -4,7 +4,7 @@
   "repository": "MSaula/Sofi28",
   "branch": "private-download",
   "visibility": "PRIVATE",
-  "status": "locally-validated-awaiting-remote-verification",
+  "status": "remote-verified-private-delivery",
   "archive": "downloads/Informe-Opera-Viena.zip",
   "bytes": 68307922,
   "sha256": "f29344442190148881fb1b7e904d0d17bcfbfe2a8d5afaadee85f8ee8a2781d1",
@@ -20,5 +20,22 @@
   "mainWebsiteModified": false,
   "giftZipUnchanged": true,
   "publicDeployment": false,
-  "previousArtifactCommit": "416546937fc4ecdedbe4a6065725f8bd49d34547"
+  "previousArtifactCommit": "416546937fc4ecdedbe4a6065725f8bd49d34547",
+  "remoteVerification": {
+    "artifactCommit": "b50ab179daa6a5cb17bf5d92d1b412ba4f3ed45f",
+    "blobSha": "4bdc1d210f636106439d3588cdd0f8cbf844db33",
+    "authenticatedGitBlobDownloadVerified": true,
+    "remoteZipSha256": "f29344442190148881fb1b7e904d0d17bcfbfe2a8d5afaadee85f8ee8a2781d1",
+    "remoteHtmlSha256": "b3c461a2564de476c029242fcaed830975418316625195cd10d481cb8e6bab94",
+    "remoteOriginalPhotosVerified": 45,
+    "plansVerified": 11,
+    "reconstructedPositionsVerified": 1753,
+    "sameBoxPhotoVerified": true,
+    "exactSeatImageClaimed": false,
+    "zipCrcVerified": true,
+    "anonymousFilePageStatus": "404",
+    "repositoryPrivateVerified": true,
+    "protectedBranchRefsUnchangedVerified": true,
+    "filePageUrl": "https://github.com/MSaula/Sofi28/blob/b50ab179daa6a5cb17bf5d92d1b412ba4f3ed45f/downloads/Informe-Opera-Viena.zip"
+  }
 }

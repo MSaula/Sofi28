@@ -47,10 +47,11 @@
       "readme": "../opera/README.md",
       "archive": "downloads/Informe-Opera-Viena.zip",
       "applicationIntegrated": false,
-      "filePageUrl": "https://github.com/MSaula/Sofi28/blob/private-download/downloads/Informe-Opera-Viena.zip",
+      "filePageUrl": "https://github.com/MSaula/Sofi28/blob/b50ab179daa6a5cb17bf5d92d1b412ba4f3ed45f/downloads/Informe-Opera-Viena.zip",
       "reconstructedSeats": 1753,
       "sameBoxViewPhoto": "OP47",
-      "revision": 2
+      "revision": 2,
+      "artifactCommit": "b50ab179daa6a5cb17bf5d92d1b412ba4f3ed45f"
     }
   ]
 }
