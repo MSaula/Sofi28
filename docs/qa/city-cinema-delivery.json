@@ -99,5 +99,14 @@
     "repositoryPrivateVerified": true,
     "protectedBranchRefsUnchangedVerified": true,
     "downloadUrl": "https://github.com/MSaula/Sofi28/raw/bffd971fbf592c87207fb2b77a08421461c578a5/downloads/Viena.zip"
+  },
+  "browserAccess": {
+    "filePageUrl": "https://github.com/MSaula/Sofi28/blob/bffd971fbf592c87207fb2b77a08421461c578a5/downloads/Viena.zip",
+    "branchFilePageUrl": "https://github.com/MSaula/Sofi28/blob/private-download/downloads/Viena.zip",
+    "contentsApiVerified": true,
+    "verifiedBytes": 44982240,
+    "verifiedBlobSha": "1031154c98b1b2bcfee70fcdfc4031a0bfd7f788",
+    "instructions": "Open the file page in a browser signed into an authorized GitHub account, then use Download raw file. Anonymous 404 is expected; the ChatGPT connector does not provide browser cookies.",
+    "userBrowserSessionNotVerified": true
   }
 }
