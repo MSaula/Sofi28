@@ -5,8 +5,6 @@ import {
   ArrowUpRight,
   ArrowRight,
   CalendarDays,
-  ChevronLeft,
-  ChevronRight,
   Heart,
   MapPin,
   Menu,
@@ -14,7 +12,7 @@ import {
   X,
   Check,
 } from "lucide-react";
-import { trip, cityIdeas, site } from "./content";
+import { trip, site } from "./content";
 import {
   useReveal,
   useReducedMotion,
@@ -25,8 +23,9 @@ import { tripDateLabels } from "./dates";
 import CalendarScene from "./components/CalendarScene";
 import JourneyScene from "./components/JourneyScene";
 import OperaScene, { OperaDetails } from "./components/OperaScene";
-import Picture from "./components/Picture";
 import Stay from "./components/Stay";
+import City, { CityCredits } from "./components/City";
+import ViennaExplorer from "./components/ViennaExplorer";
 
 function App() {
   useReveal();
@@ -34,6 +33,7 @@ function App() {
   const reduced = useReducedMotion();
   const menu = useRef(null);
   const credits = useRef(null);
+  const explorer = useRef(null);
   const [chapter, setChapter] = useState(site.name);
 
   useEffect(() => {
@@ -152,10 +152,10 @@ function App() {
           <CalendarScene />
         </div>
         <div data-chapter="¿A dónde iremos?">
-          <JourneyScene />
+          <JourneyScene explorerRef={explorer} />
         </div>
         <Stay />
-        <City />
+        <City explorerRef={explorer} />
         <div data-chapter="Una noche especial">
           <OperaScene />
           <OperaDetails />
@@ -203,6 +203,7 @@ function App() {
             ["#fechas", "Unos días"],
             ["#destino", "Un destino"],
             ["#estancia", "Nuestro lugar"],
+            ["#ciudad", "La ciudad"],
             ["#ballet", "Una noche"],
             ["#resumen", "Todo, aquí"],
           ].map(([id, label], i) => (
@@ -229,9 +230,9 @@ function App() {
         <span className="eyebrow">DIRECCIÓN VISUAL</span>
         <h2 id="credits-title">Las imágenes.</h2>
         <p>
-          Las ilustraciones de esta primera versión son originales y
-          conceptuales. No representan las instalaciones del apartamento ni una
-          escena del ballet.
+          Las fotografías del paseo por Viena son imágenes reales de los dos
+          cuadernos de investigación. Cada lugar conserva su procedencia y los
+          créditos disponibles.
         </p>
         <p>
           Esta versión utiliza imágenes locales para que el recorrido y la
@@ -239,75 +240,14 @@ function App() {
         </p>
         <p className="muted">
           Las fotografías del apartamento proceden del anuncio de Airbnb
-          compartido y analizado. Las del mapa son fotografías reales de
-          Wikimedia Commons, con autor y licencia en cada ficha. Las
-          ilustraciones del paseo por la ciudad y del ballet son conceptuales.
+          compartido y analizado. Las del mapa proceden de Wikimedia Commons,
+          con autor y licencia en cada ficha. Las imágenes del ballet son
+          ilustraciones conceptuales.
         </p>
+        <CityCredits />
       </dialog>
+      <ViennaExplorer ref={explorer} />
     </>
-  );
-}
-
-function RailButtons({ rail }) {
-  const move = (direction) =>
-    rail.current?.scrollBy({
-      left: direction * rail.current.clientWidth * 0.78,
-      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
-        ? "instant"
-        : "smooth",
-    });
-  return (
-    <div className="rail-buttons">
-      <button onClick={() => move(-1)} aria-label="Ver elementos anteriores">
-        <ChevronLeft size={19} />
-      </button>
-      <button onClick={() => move(1)} aria-label="Ver elementos siguientes">
-        <ChevronRight size={19} />
-      </button>
-    </div>
-  );
-}
-
-function City() {
-  const rail = useRef(null);
-  return (
-    <section
-      className="city-section section-pad"
-      id="ciudad"
-      data-chapter="Viena, sin prisa"
-    >
-      <div className="section-heading" data-reveal>
-        <div>
-          <span className="eyebrow">ENTRE UNA COSA Y OTRA</span>
-          <h2>
-            Una ciudad.
-            <br />
-            <span>Todo por descubrir.</span>
-          </h2>
-        </div>
-        <p>
-          Sin llenarlo todo de planes.
-          <br />
-          Con tiempo para lo que nos apetezca.
-        </p>
-      </div>
-      <div className="city-rail" ref={rail}>
-        {cityIdeas.map((idea) => (
-          <article className="city-card" key={idea.title}>
-            <Picture src={idea.image} remote={idea.remote} alt={idea.alt} />
-            <div className="city-card-copy">
-              <span className="tiny-label">{idea.tag}</span>
-              <h3>{idea.title}</h3>
-              <p>{idea.subtitle}</p>
-            </div>
-          </article>
-        ))}
-      </div>
-      <div className="gallery-controls">
-        <span>Pequeñas ideas. Ninguna prisa.</span>
-        <RailButtons rail={rail} />
-      </div>
-    </section>
   );
 }
 

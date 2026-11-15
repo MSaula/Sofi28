@@ -198,7 +198,7 @@ test("navigation locks background scrolling, restores focus and calendar downloa
     page.getByRole("button", { name: "Abrir el recorrido" }),
   ).toBeFocused();
   await page.getByRole("button", { name: "Abrir el recorrido" }).click();
-  await page.getByRole("button", { name: "06 Todo, aquí" }).click();
+  await page.getByRole("button", { name: "07 Todo, aquí" }).click();
   const event = page.waitForEvent("download");
   await page
     .getByRole("button", { name: "Guardar las fechas", exact: true })
@@ -531,7 +531,8 @@ test("horizontal city cards remain reachable on mobile and intermediate viewport
     await expect
       .poll(() => page.locator(".city-rail").evaluate((n) => n.scrollLeft))
       .toBeGreaterThan(50);
-    await next.click();
+    await page.locator(".city-rail").focus();
+    await page.keyboard.press("End");
     await expect
       .poll(async () => {
         const rail = await page.locator(".city-rail").boundingBox(),

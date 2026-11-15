@@ -27,7 +27,6 @@ import {
   vienna,
 } from "../geography";
 import { clamp, journeyState, range, smooth } from "../motion";
-import ViennaExplorer from "./ViennaExplorer";
 import { ViennaContext, ViennaMarkers } from "./ViennaCartography";
 
 const EuropeanLand = memo(function EuropeanLand({ projection }) {
@@ -429,12 +428,11 @@ function MapPanel({ state, staticMode, kind, onExplore }) {
   );
 }
 
-export default function JourneyScene() {
+export default function JourneyScene({ explorerRef }) {
   const { ref, progress: p, reduced: staticMode } = useScene();
   const state = journeyState(p);
   const credits = useRef(null);
-  const explorer = useRef(null);
-  const explore = (id, node) => explorer.current.open(id, node);
+  const explore = (id, node) => explorerRef.current?.open(id, node);
   const mapLink = `https://www.openstreetmap.org/?mlat=${trip.airbnb.coordinates[1]}&mlon=${trip.airbnb.coordinates[0]}#map=16/${trip.airbnb.coordinates[1]}/${trip.airbnb.coordinates[0]}`;
   return (
     <section
@@ -633,7 +631,6 @@ export default function JourneyScene() {
           </button>
         </div>
       </dialog>
-      <ViennaExplorer ref={explorer} />
     </section>
   );
 }

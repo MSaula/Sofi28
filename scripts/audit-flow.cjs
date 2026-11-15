@@ -34,7 +34,7 @@ const sample = async (page, selector, p) => {
     };
     const text = [
       ...root.querySelectorAll(
-        "h2, svg text, .birthday-card-copy, .timeline-trip-label, .scene-bottom, .calendar-result, .opera-date, .stay-film-title, .stay-film-detail, .stay-card-copy",
+        "h2, svg text, .birthday-card-copy, .timeline-trip-label, .scene-bottom, .calendar-result, .opera-date, .stay-film-title, .stay-film-detail, .stay-card-copy, .city-film-title, .city-film-description, .city-static-hero h3",
       ),
     ]
       .map((node) => ({
@@ -73,6 +73,10 @@ const sample = async (page, selector, p) => {
       apartmentPhotos: [...root.querySelectorAll(".stay-hero-image")].map((img) => ({
         loaded: img.complete && img.naturalWidth > 0,
         rect: rect(img),
+      })),
+      cityPhotos: [...root.querySelectorAll("[data-city-shot]")].map((shot) => ({
+        id: shot.dataset.cityShot,
+        decoded: shot.dataset.photoReady === "true",
       })),
       text,
     };
@@ -143,6 +147,7 @@ const sample = async (page, selector, p) => {
               [0.1, 0.21, 0.25, 0.5, 0.66, 0.7, 0.73, 0.8, 0.96],
             ],
             [".stay-scene", [0, 0.16, 0.32, 0.5, 0.75, 0.96]],
+            [".city-scene", [0, 0.15, 0.26, 0.37, 0.49, 0.59, 0.72, 0.86, 0.995]],
             [".opera-scene", [0, 0.2, 0.4, 0.6, 0.85]],
           ];
     for (const [selector, stages] of captureStages) {
@@ -156,6 +161,7 @@ const sample = async (page, selector, p) => {
     // Reverse traversal and a resize while a scene is active.
     for (const selector of [
       ".opera-scene",
+      ".city-scene",
       ".stay-scene",
       ".journey-scene",
       ".calendar-scene",

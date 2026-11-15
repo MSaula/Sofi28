@@ -11,6 +11,7 @@
     "preview": "vite preview --host 0.0.0.0",
     "test": "node --test --experimental-test-isolation=none tests/*.test.js",
     "audit:flow": "node scripts/audit-flow.cjs",
+    "audit:city": "node scripts/audit-city.cjs",
     "validate": "npm test && npm run build && npm run test:e2e && npm run test:standalone",
     "test:e2e": "playwright test",
     "test:standalone": "npm run build:standalone && playwright test --config playwright.standalone.config.js"

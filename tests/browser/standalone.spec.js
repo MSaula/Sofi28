@@ -6,6 +6,7 @@ import { memories } from "../../src/content.js";
 import listing from "../../src/data/airbnb-listing.json" with { type: "json" };
 import { createHash } from "node:crypto";
 import { places } from "../../src/viennaPlaces.js";
+import { cityPlaces } from "../../src/cityContent.js";
 
 test("exported HTML runs without server or network, with assets, animation and calendar", async ({
   page,
@@ -84,6 +85,49 @@ test("exported HTML runs without server or network, with assets, animation and c
       .locator(".stay-lightbox-image img")
       .evaluate((img) => img.complete && img.naturalWidth > 0),
   ).toBe(true);
+  await page.keyboard.press("Escape");
+
+  for (const progress of [0.15, 0.37, 0.59, 0.86, 0.99]) {
+    await scrollScene(page, ".city-scene", progress);
+    await expect(page.locator("[data-city-shot]")).toHaveCount(8);
+  }
+  await expect
+    .poll(() =>
+      page
+        .locator("[data-city-shot]")
+        .evaluateAll((nodes) =>
+          nodes.every((node) => node.dataset.photoReady === "true"),
+        ),
+    )
+    .toBe(true);
+  const cityPhotos = await page
+    .locator(".city-card-photo img")
+    .evaluateAll((nodes) =>
+      nodes.map((img) => ({
+        id: img.closest("[data-city-place]").dataset.cityPlace,
+        src: img.getAttribute("src"),
+      })),
+    );
+  expect(cityPhotos).toHaveLength(29);
+  for (const photo of cityPhotos) {
+    expect(photo.src).toMatch(/^data:image\//);
+    expect(
+      createHash("sha256")
+        .update(Buffer.from(photo.src.split(",")[1], "base64"))
+        .digest("hex"),
+    ).toBe(cityPlaces.find((place) => place.id === photo.id).photo.sha256);
+  }
+  await page
+    .locator("#ciudad-lugares")
+    .evaluate((node) =>
+      node.scrollIntoView({ block: "start", behavior: "instant" }),
+    );
+  await page
+    .getByRole("button", { name: "Abrir el mapa de Viena", exact: true })
+    .click();
+  await expect(
+    page.getByRole("dialog", { name: "Viena, a pie." }),
+  ).toBeVisible();
   await page.keyboard.press("Escape");
 
   for (const [selector, p] of [

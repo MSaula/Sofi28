@@ -1,0 +1,105 @@
+{
+  "date": "2026-11-15",
+  "browser": "154.0.8037.57",
+  "scope": "Chromium local y emulación de viewport; no dispositivos físicos ni Safari/Firefox.",
+  "tests": {
+    "unit": 36,
+    "browser": 56,
+    "standaloneOffline": 1,
+    "uniquePassed": 93,
+    "newCityBrowserTests": 10,
+    "newCityUnitTests": 3
+  },
+  "builds": {
+    "production": "passed",
+    "standalone": "passed"
+  },
+  "cityVisual": {
+    "modes": 6,
+    "sampledFrames": 44,
+    "errors": 0,
+    "badResponses": 0
+  },
+  "fullFlow": [
+    {
+      "mode": "desktop",
+      "samples": 116,
+      "reachedEnd": true,
+      "overflowFrames": 0,
+      "errors": [],
+      "forwardLongTasksMs": [
+        80
+      ],
+      "allTasksIncludingReverseAndResizeMs": [
+        80,
+        50,
+        130
+      ]
+    },
+    {
+      "mode": "mobile",
+      "samples": 97,
+      "reachedEnd": true,
+      "overflowFrames": 0,
+      "errors": [],
+      "forwardLongTasksMs": [],
+      "allTasksIncludingReverseAndResizeMs": [
+        50,
+        180
+      ]
+    },
+    {
+      "mode": "landscape",
+      "samples": 45,
+      "reachedEnd": true,
+      "overflowFrames": 0,
+      "errors": [],
+      "forwardLongTasksMs": [],
+      "allTasksIncludingReverseAndResizeMs": [
+        204
+      ]
+    },
+    {
+      "mode": "reduced",
+      "samples": 45,
+      "reachedEnd": true,
+      "overflowFrames": 0,
+      "errors": [],
+      "forwardLongTasksMs": [],
+      "allTasksIncludingReverseAndResizeMs": [
+        55,
+        89,
+        512
+      ]
+    }
+  ],
+  "performance": {
+    "withoutRecorder": {
+      "recording": false,
+      "samples": 160,
+      "median": 16.800000000000182,
+      "p95": 50.099999999999454,
+      "max": 83.30000000000018,
+      "longTasks": []
+    },
+    "withRecorder": {
+      "samples": 147,
+      "median": 33.40000000000009,
+      "p95": 66.60000000000036,
+      "max": 99.99999999999955
+    },
+    "interpretation": "Sin grabar: mediana 16,8 ms, p95 50,1 ms, sin Long Tasks en la secuencia de ciudad. La grabación añade coste (mediana 33,4 ms). Hay variación de cadencia; no se garantiza 60 fps ni equivalencia con hardware físico. Las tareas de rotación del recorrido completo se registran aparte."
+  },
+  "counts": {
+    "editorialPlaces": 29,
+    "landmarks": 12,
+    "streets": 7,
+    "coffee": 4,
+    "restaurants": 6,
+    "cinemaPhotos": 8,
+    "newOriginalPhotos": 17,
+    "totalOriginalPhotos": 59,
+    "existingMapPlaces": 32
+  },
+  "publicDeployment": false
+}

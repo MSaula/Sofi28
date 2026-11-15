@@ -554,7 +554,8 @@ const ViennaExplorer = forwardRef(function ViennaExplorer(_, ref) {
     opener = useRef(null),
     search = useRef(null),
     map = useRef(null),
-    entryViewport = useRef(null);
+    entryViewport = useRef(null),
+    entryContext = useRef(null);
   const [open, setOpen] = useState(false),
     [selected, setSelected] = useState(null),
     [query, setQuery] = useState(""),
@@ -565,6 +566,10 @@ const ViennaExplorer = forwardRef(function ViennaExplorer(_, ref) {
       open(id = null, trigger = document.activeElement) {
         opener.current = trigger;
         entryViewport.current = [innerWidth, innerHeight];
+        entryContext.current = {
+          section: trigger?.closest?.("section[id]")?.id || "destino",
+          top: trigger?.getBoundingClientRect?.().top || 100,
+        };
         setSelected(id);
         setQuery("");
         setBrowse(false);
@@ -606,7 +611,20 @@ const ViennaExplorer = forwardRef(function ViennaExplorer(_, ref) {
       (entryViewport.current[0] !== innerWidth ||
         entryViewport.current[1] !== innerHeight);
     requestAnimationFrame(() => {
-      if (resized) {
+      if (resized && entryContext.current?.section !== "destino") {
+        const trigger = opener.current;
+        if (trigger?.isConnected) {
+          const bounds = trigger.getBoundingClientRect();
+          const targetTop = Math.max(
+            88,
+            Math.min(innerHeight - bounds.height - 40, entryContext.current.top),
+          );
+          window.scrollTo({
+            top: Math.max(0, scrollY + bounds.top - targetTop),
+            behavior: "instant",
+          });
+        }
+      } else if (resized) {
         const section = document.getElementById("destino");
         if (section) {
           const top = section.getBoundingClientRect().top + scrollY;

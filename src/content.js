@@ -187,30 +187,3 @@ export const currentBirthdayGift = {
   current: true,
 };
 export const timelineEvents = [...memories, currentBirthdayGift];
-
-export const cityIdeas = [
-  {
-    title: "Perder la noción del tiempo.",
-    subtitle: "Calles con historia. Paseos sin prisa.",
-    tag: "01 / EXPLORAR",
-    image: "/images/vienna-city.svg",
-    remote: null,
-    alt: "Una vista de Viena y su arquitectura",
-  },
-  {
-    title: "Un café. Y todo el tiempo.",
-    subtitle: "Una mesa para dos en un café vienés.",
-    tag: "02 / PARAR",
-    image: "/images/vienna-cafe.svg",
-    remote: null,
-    alt: "Ilustración de una pausa para tomar café",
-  },
-  {
-    title: "Dejarnos sorprender.",
-    subtitle: "El resto lo iremos descubriendo allí.",
-    tag: "03 / IMPROVISAR",
-    image: "/images/vienna-palace.svg",
-    remote: null,
-    alt: "Ilustración arquitectónica inspirada en Viena",
-  },
-];

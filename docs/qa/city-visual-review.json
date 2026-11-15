@@ -1,0 +1,340 @@
+{
+  "browser": "154.0.8037.57",
+  "viewportEmulation": true,
+  "modes": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "reduced": false,
+      "staticMode": false,
+      "frames": [
+        {
+          "p": 0.012423295454545454,
+          "act": 0,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.1500596590909091,
+          "act": 0,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.2000596590909091,
+          "act": 0,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.2600596590909091,
+          "act": 1,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.3700596590909091,
+          "act": 1,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.4900596590909091,
+          "act": 2,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.5900596590909091,
+          "act": 2,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.7200596590909091,
+          "act": 3,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.8600596590909091,
+          "act": 3,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.9600596590909091,
+          "act": 3,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.99496875,
+          "act": 3,
+          "overflow": false,
+          "loaded": true
+        }
+      ],
+      "errors": [],
+      "badResponses": []
+    },
+    {
+      "name": "laptop",
+      "width": 1280,
+      "height": 800,
+      "reduced": false,
+      "staticMode": false,
+      "frames": [
+        {
+          "p": 0.024907670454545453,
+          "act": 0,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.14990767045454545,
+          "act": 0,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.19990767045454547,
+          "act": 0,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.25990767045454544,
+          "act": 0,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.3699076704545455,
+          "act": 1,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.4899076704545455,
+          "act": 1,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.5899076704545455,
+          "act": 2,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.7199076704545454,
+          "act": 2,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.8599076704545454,
+          "act": 3,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.9599076704545455,
+          "act": 3,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.9949076704545454,
+          "act": 3,
+          "overflow": false,
+          "loaded": true
+        }
+      ],
+      "errors": [],
+      "badResponses": []
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "reduced": false,
+      "staticMode": false,
+      "frames": [
+        {
+          "p": 0.025030414314752267,
+          "act": 0,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.15004269338592555,
+          "act": 0,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.20009596566393884,
+          "act": 0,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.2600631710984668,
+          "act": 1,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.3700836488110081,
+          "act": 1,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.49001805968006407,
+          "act": 2,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.5901246042360907,
+          "act": 2,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.7199729482616614,
+          "act": 2,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.8599770286914666,
+          "act": 3,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.9600835732474932,
+          "act": 3,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.9951450441668744,
+          "act": 3,
+          "overflow": false,
+          "loaded": true
+        }
+      ],
+      "errors": [],
+      "badResponses": []
+    },
+    {
+      "name": "narrow",
+      "width": 320,
+      "height": 700,
+      "reduced": false,
+      "staticMode": false,
+      "frames": [
+        {
+          "p": 0.02503188775510204,
+          "act": 0,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.15010477405247813,
+          "act": 0,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.19995900145772594,
+          "act": 0,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.2600173104956268,
+          "act": 1,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.3699298469387755,
+          "act": 1,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.49004646501457727,
+          "act": 2,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.5900464650145772,
+          "act": 2,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.7200756195335277,
+          "act": 3,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.8600173104956268,
+          "act": 3,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.9600173104956268,
+          "act": 3,
+          "overflow": false,
+          "loaded": true
+        },
+        {
+          "p": 0.9950027332361516,
+          "act": 3,
+          "overflow": false,
+          "loaded": true
+        }
+      ],
+      "errors": [],
+      "badResponses": []
+    },
+    {
+      "name": "landscape",
+      "width": 844,
+      "height": 390,
+      "reduced": false,
+      "staticMode": true,
+      "frames": [],
+      "errors": [],
+      "badResponses": []
+    },
+    {
+      "name": "reduced",
+      "width": 1440,
+      "height": 1000,
+      "reduced": true,
+      "staticMode": true,
+      "frames": [],
+      "errors": [],
+      "badResponses": []
+    }
+  ],
+  "frameTimes": {
+    "samples": 147,
+    "median": 33.40000000000009,
+    "p95": 66.60000000000036,
+    "max": 99.99999999999955
+  }
+}
