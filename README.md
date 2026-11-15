@@ -1,6 +1,6 @@
 # Sofi 28 — Viena, enero de 2027
 
-**Entrega privada con montaje de Viena, fotografías y mapa interactivo:** [descargar Viena.zip](https://github.com/MSaula/Sofi28/raw/refs/heads/private-download/downloads/Viena.zip), en la rama `private-download`. Requiere una cuenta autorizada en este repositorio. Descomprimir y abrir `Viena.html`. Esta entrega no actualiza GitHub Pages.
+**Entrega privada con montaje de Viena, fotografías y mapa interactivo:** [descargar Viena.zip](https://github.com/MSaula/Sofi28/raw/bffd971fbf592c87207fb2b77a08421461c578a5/downloads/Viena.zip), en la rama `private-download`. Requiere una cuenta autorizada en este repositorio. Descomprimir y abrir `Viena.html`. Esta entrega no actualiza GitHub Pages.
 
 Web-regalo con carta, cronología, mapas, apartamento, paseo cinematográfico por Viena y revelación del ballet. React + Vite. El desplazamiento es nativo: las escenas usan CSS `sticky` y su animación depende de la posición del scroll, también al retroceder.
 

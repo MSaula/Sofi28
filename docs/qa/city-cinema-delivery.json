@@ -4,7 +4,7 @@
   "visibility": "PRIVATE",
   "branch": "private-download",
   "publicDeployment": false,
-  "status": "locally-validated-awaiting-remote-verification",
+  "status": "remote-verified-private-delivery",
   "testsPassed": 93,
   "zip": {
     "path": "downloads/Viena.zip",
@@ -86,5 +86,18 @@
   "protectedBranches": {
     "main": "8a30c1af019e57149dbcf98ba8a5932feb0f87d1",
     "gh-pages": "a276f224e4072e3f60879ed3cc6025304c551322"
+  },
+  "remoteVerification": {
+    "artifactCommit": "bffd971fbf592c87207fb2b77a08421461c578a5",
+    "blobSha": "1031154c98b1b2bcfee70fcdfc4031a0bfd7f788",
+    "authenticatedGitBlobDownloadVerified": true,
+    "remoteZipSha256": "c01d4ece62803553891a28203d2bb501c812bcb938951b48aed7ba2c8b80d82c",
+    "remoteHtmlSha256": "f3a88c603799966c663f7b758794d9bc6dd4734d6266b2830c303c0f127fee8e",
+    "remoteEmbeddedOriginalPhotosVerified": 59,
+    "zipCrcVerified": true,
+    "anonymousDownloadStatus": "404",
+    "repositoryPrivateVerified": true,
+    "protectedBranchRefsUnchangedVerified": true,
+    "downloadUrl": "https://github.com/MSaula/Sofi28/raw/bffd971fbf592c87207fb2b77a08421461c578a5/downloads/Viena.zip"
   }
 }
