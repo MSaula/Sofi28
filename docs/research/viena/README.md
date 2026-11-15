@@ -5,7 +5,7 @@ La investigación se organiza en dos documentos independientes. La segunda parte
 | Estudio | Contenido | Abrir |
 | --- | --- | --- |
 | I · Viena, lugar a lugar | 32 lugares y 34 fotos: monumentos, plazas, jardines e interiores | [Informe y documentación](#volumen-i--viena-lugar-a-lugar) |
-| II · Viena, entre calles y mesas | 29 fichas y 44 fotos: 15 calles/pasajes, 5 cafés y 9 restaurantes | [Estudio visual II](volumen-2/README.md) · [ZIP privado](https://github.com/MSaula/Sofi28/raw/refs/heads/private-download/downloads/Indice-visual-Viena-II.zip) |
+| II · Viena, entre calles y mesas | 29 fichas y 44 fotos: 15 calles/pasajes, 5 cafés y 9 restaurantes | [Estudio visual II](volumen-2/README.md) · [ZIP privado](https://github.com/MSaula/Sofi28/raw/3e41e98a4e1cbb40c135ab0e5cdead1c31dd5811/downloads/Indice-visual-Viena-II.zip) |
 
 [Registro de ambos estudios](indice-estudios.json). Los índices separados permiten elegir imágenes y lugares sin alterar los datos que utiliza actualmente el mapa de la web principal.
 

@@ -19,12 +19,21 @@
       "date": "2026-11-15",
       "places": 29,
       "photos": 44,
-      "categories": {"calle": 15, "cafe": 5, "restaurante": 9},
-      "photoRights": {"licensed": 21, "reference-only": 23},
+      "categories": {
+        "calle": 15,
+        "cafe": 5,
+        "restaurante": 9
+      },
+      "photoRights": {
+        "licensed": 21,
+        "reference-only": 23
+      },
       "data": "volumen-2/indice.json",
       "readme": "volumen-2/README.md",
       "archive": "downloads/Indice-visual-Viena-II.zip",
-      "applicationIntegrated": false
+      "applicationIntegrated": false,
+      "artifactCommit": "3e41e98a4e1cbb40c135ab0e5cdead1c31dd5811",
+      "downloadUrl": "https://github.com/MSaula/Sofi28/raw/3e41e98a4e1cbb40c135ab0e5cdead1c31dd5811/downloads/Indice-visual-Viena-II.zip"
     }
   ]
 }

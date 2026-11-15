@@ -1,6 +1,6 @@
 # Viena, entre calles y mesas — volumen II
 
-[Descargar el estudio HTML y sus índices](https://github.com/MSaula/Sofi28/raw/refs/heads/private-download/downloads/Indice-visual-Viena-II.zip). Requiere acceso al repositorio privado. Descomprime el ZIP y abre **Viena-II-Calles-Cafes-Restaurantes.html**; funciona sin servidor y sin conexión.
+[Descargar el estudio HTML y sus índices](https://github.com/MSaula/Sofi28/raw/3e41e98a4e1cbb40c135ab0e5cdead1c31dd5811/downloads/Indice-visual-Viena-II.zip). Requiere acceso al repositorio privado. Descomprime el ZIP y abre **Viena-II-Calles-Cafes-Restaurantes.html**; funciona sin servidor y sin conexión.
 
 El estudio del 15/11/2026 añade **29 fichas y 44 fotografías**: **15 calles y pasajes, 5 cafés de especialidad y 9 restaurantes**. Prioriza el interés estético, la calidad de las imágenes y la relación con los monumentos del primer volumen. El centro, Spittelberg/Neubau, Wieden y el eje del canal–Stadtpark concentran la selección; Chez Bernard amplía la mirada hacia Mariahilf por su interior.
 

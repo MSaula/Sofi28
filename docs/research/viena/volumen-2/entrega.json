@@ -31,7 +31,7 @@
   },
   "browserValidationPassed": true,
   "extractionPassed": true,
-  "status": "locally-validated-awaiting-private-upload",
+  "status": "private-repository-delivery-verified",
   "repository": "MSaula/Sofi28",
   "repositoryVisibility": "PRIVATE",
   "branch": "private-download",
@@ -39,5 +39,27 @@
     "main": "8a30c1af019e57149dbcf98ba8a5932feb0f87d1",
     "gh-pages": "a276f224e4072e3f60879ed3cc6025304c551322",
     "private-download": "45194943c9a7d7ced138cdc3e2ff970691b8591d"
+  },
+  "artifactCommit": "3e41e98a4e1cbb40c135ab0e5cdead1c31dd5811",
+  "versionedDownloadUrl": "https://github.com/MSaula/Sofi28/raw/3e41e98a4e1cbb40c135ab0e5cdead1c31dd5811/downloads/Indice-visual-Viena-II.zip",
+  "verifiedAt": "2026-11-15T11:10:11.780397+00:00",
+  "remoteVerification": {
+    "method": "Authenticated GitHub Git Blob API, base64 decoded",
+    "gitBlobSha1": "10f6d6ab6e809a560ec34e9d57b82de7e1b01bc6",
+    "bytes": 60040290,
+    "sha256": "60274a3dcf30ab1ab73fe6426f7f2f3b120f1fb599b1caf1735a0620fd97ebda",
+    "crcPassed": true,
+    "htmlMatchesValidatedVersion": true,
+    "embeddedPhotoHashesVerified": 44,
+    "anonymousDownloadHttpStatus": 404,
+    "rawCliAttempt": "Binary CLI transfer returned transform: short source buffer; discarded. Base64 transfer succeeded."
+  },
+  "preservation": {
+    "srcTree": "f21ca96f609de2349710e60fc4ac0f401d072f50",
+    "publicTree": "325209fe37789625ca4ff3a7732093c3c4e41263",
+    "giftZipUnchanged": true,
+    "volumeIZipUnchanged": true,
+    "mainUnchanged": true,
+    "ghPagesUnchanged": true
   }
 }
