@@ -1,0 +1,14 @@
+{
+  "baselineHead": "47dd49cc49b6b61e6765bb7ad73dbec1b5fd60c4",
+  "src": {
+    "files": 34,
+    "unchanged": true
+  },
+  "public": {
+    "files": 65,
+    "unchanged": true
+  },
+  "giftZipSha256": "c01d4ece62803553891a28203d2bb501c812bcb938951b48aed7ba2c8b80d82c",
+  "giftZipUnchanged": true,
+  "publicDeployment": false
+}

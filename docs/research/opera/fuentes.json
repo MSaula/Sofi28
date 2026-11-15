@@ -1,0 +1,101 @@
+[
+  {
+    "id": "S1",
+    "title": "Producción y función: Living Legacies, 22/01/2027",
+    "url": "https://www.wiener-staatsoper.at/en/calendar/detail/living-legacies/2027-01-22/",
+    "status": "200",
+    "note": "Programa, créditos, duraciones, contexto y galería oficial.",
+    "consulted": "2026-11-15",
+    "sha256": "c9176d610af6930a8f9ed07e7ee0e06f83c8836a2672daa66c2cc07b1428d33d"
+  },
+  {
+    "id": "S2",
+    "title": "Plano interactivo del edificio",
+    "url": "https://www.wiener-staatsoper.at/en/building-plan/",
+    "status": "200",
+    "note": "Siete niveles, espacios, servicios y fotografías por sala.",
+    "consulted": "2026-11-15",
+    "sha256": "f094a82f7c34398837a1d2ad77d8ff3b7b51729705354b0affb9316e8337f50c"
+  },
+  {
+    "id": "S3",
+    "title": "Visitas guiadas",
+    "url": "https://www.wiener-staatsoper.at/en/guided-tours/",
+    "status": "200",
+    "note": "Recorridos, acceso a espacios especiales y fotografía de acceso a Mittelloge.",
+    "consulted": "2026-11-15",
+    "sha256": "2dea9771afdf7677ccf997766ef586e1725b002070fc7b0aef5a0c7f32782253"
+  },
+  {
+    "id": "S4",
+    "title": "Historia del edificio",
+    "url": "https://www.wiener-staatsoper.at/en/history/",
+    "status": "200",
+    "note": "Arquitectos, inauguración, nazismo, guerra y reconstrucción.",
+    "consulted": "2026-11-15",
+    "sha256": "18b6b2616fe4980fa5255fc56524b1f10326bd2a27077a61dc37efea7190d21f"
+  },
+  {
+    "id": "S5",
+    "title": "Información práctica",
+    "url": "https://www.wiener-staatsoper.at/en/practical-info/",
+    "status": "200",
+    "note": "Puntualidad, guardarropa, vestimenta y fotografía.",
+    "consulted": "2026-11-15",
+    "sha256": "77a15d0f2dc10c6315dd8744623535968e601f5ee4e4505659db552090bdda86"
+  },
+  {
+    "id": "S6",
+    "title": "Wiener Staatsballett",
+    "url": "https://www.wiener-staatsoper.at/en/staatsballett/about-us/",
+    "status": "200",
+    "note": "Compañía, sedes y dirección de Alessandra Ferri.",
+    "consulted": "2026-11-15",
+    "sha256": "0818ddc52eea12bb82730bbf2d049a1c211ef7a2ce34c3937939b1d04a9d5dbc"
+  },
+  {
+    "id": "S7",
+    "title": "Plano oficial de asientos 2026/27",
+    "url": "https://www.wiener-staatsoper.at/files/Kalender-Tickets/Ticketinfos/Saalplan-2026_27-DE.pdf",
+    "status": "200",
+    "note": "Plano real, numeración y leyenda de categorías.",
+    "consulted": "2026-11-15",
+    "sha256": "50f0d541a3c61e65b9f11457a23d22bd101c03ba4ac3391738c40bd7e17b05c2"
+  },
+  {
+    "id": "S8",
+    "title": "Tienda oficial: función del 22 de enero",
+    "url": "https://tickets.wiener-staatsoper.at/webshop/webticket/seatmap?eventId=16677",
+    "status": "200",
+    "note": "Datos públicos de Mittelloge y vínculo individual de las imágenes APNR500/APNR501.",
+    "consulted": "2026-11-15",
+    "sha256": "50e1e5248a1d3ae5258b28cff77010ebb2ff40a368e7f407ad89b06f155feaf0"
+  },
+  {
+    "id": "S9",
+    "title": "Información sobre entradas",
+    "url": "https://www.wiener-staatsoper.at/en/ticket-info/",
+    "status": "200",
+    "note": "Leyenda y enlace al PDF de temporada.",
+    "consulted": "2026-11-15",
+    "sha256": "8dc89011ae86ebdac35ca5e5e142a6c3aaaff9ab0f09e3c3d090dc3021906e35"
+  },
+  {
+    "id": "S10",
+    "title": "Índice de fotografías exteriores en Commons",
+    "url": "https://commons.wikimedia.org/",
+    "status": "200",
+    "note": "Créditos y licencias por fotografía; las páginas de archivo se enlazan individualmente.",
+    "consulted": "2026-11-15",
+    "sha256": "168ce5c52efb768ebd12f7e39b7c9064e095f78af26dc7e7ec6980d24a4e7c34"
+  },
+  {
+    "id": "S11",
+    "title": "Programa digital externo",
+    "url": "https://issuu.com/wienerstaatsoper/docs/programme_booklet_living_legacies_",
+    "status": "403",
+    "note": "Enlazado por la Ópera, pero no leído en este entorno.",
+    "consulted": "2026-11-15",
+    "sha256": "9882cea81cd0d6edbd3a6a3c9bceafe2a507b631ebfb1fed3518a4cc0961ded8"
+  }
+]

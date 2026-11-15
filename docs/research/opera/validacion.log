@@ -1,0 +1,80 @@
+desktop: offline, images, filters, viewer, plans, keyboard and accessibility passed
+laptop: offline, images, filters, viewer, plans, keyboard and accessibility passed
+mobile: offline, images, filters, viewer, plans, keyboard and accessibility passed
+narrow: offline, images, filters, viewer, plans, keyboard and accessibility passed
+reduced: offline, images, filters, viewer, plans, keyboard and accessibility passed
+{
+  "browser": "154.0.8037.57",
+  "offlineValidation": "Local file bytes fulfilled at an intercepted localhost origin; no real HTTP traffic. Direct file navigation is blocked by managed browser policy.",
+  "directFileNavigationVerified": false,
+  "mainWebsitePreserved": true,
+  "photosVerified": 44,
+  "linkedViews": 2,
+  "modes": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "reduced": false,
+      "errors": [],
+      "httpRequests": 0,
+      "overflow": [],
+      "localViewerImagesChecked": 44,
+      "floorPlansChecked": 7,
+      "seatPlansChecked": 2,
+      "seriousCriticalAxe": 0
+    },
+    {
+      "name": "laptop",
+      "width": 1280,
+      "height": 800,
+      "reduced": false,
+      "errors": [],
+      "httpRequests": 0,
+      "overflow": [],
+      "localViewerImagesChecked": 4,
+      "floorPlansChecked": 7,
+      "seatPlansChecked": 2,
+      "seriousCriticalAxe": 0
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "reduced": false,
+      "errors": [],
+      "httpRequests": 0,
+      "overflow": [],
+      "localViewerImagesChecked": 4,
+      "floorPlansChecked": 7,
+      "seatPlansChecked": 2,
+      "seriousCriticalAxe": 0
+    },
+    {
+      "name": "narrow",
+      "width": 320,
+      "height": 700,
+      "reduced": false,
+      "errors": [],
+      "httpRequests": 0,
+      "overflow": [],
+      "localViewerImagesChecked": 4,
+      "floorPlansChecked": 7,
+      "seatPlansChecked": 2,
+      "seriousCriticalAxe": 0
+    },
+    {
+      "name": "reduced",
+      "width": 1440,
+      "height": 1000,
+      "reduced": true,
+      "errors": [],
+      "httpRequests": 0,
+      "overflow": [],
+      "localViewerImagesChecked": 4,
+      "floorPlansChecked": 7,
+      "seatPlansChecked": 2,
+      "seriousCriticalAxe": 0
+    }
+  ]
+}

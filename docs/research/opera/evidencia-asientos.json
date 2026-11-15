@@ -1,0 +1,353 @@
+{
+  "date": "2026-11-15",
+  "sourcePage": "https://tickets.wiener-staatsoper.at/webshop/webticket/seatmap?eventId=16677",
+  "eventDate": "2027-01-22",
+  "block": "Mittelloge",
+  "blockId": "b489",
+  "sector": "MILO",
+  "blockSeatCount": 36,
+  "rows": {
+    "2": 10,
+    "3": 9,
+    "4": 8,
+    "1": 9
+  },
+  "selectedSeats": [
+    {
+      "id": "s500",
+      "block": "Mittelloge",
+      "sector": "MILO",
+      "row": "3",
+      "table": "",
+      "seatNumber": "23",
+      "seatGroupId": 1,
+      "entrance": "",
+      "priceCategoryId": "p3",
+      "hold": null,
+      "seatInfos": [],
+      "rowFlag": false,
+      "viewIndex": 13,
+      "view": {
+        "previewUrl": "https://static.eventim.com/seatmap-images/Inhouse/at_bth/SP10/APNR500/p.jpg",
+        "type": 1,
+        "url": "https://static.eventim.com/seatmap-images/Inhouse/at_bth/SP10/APNR500/o.jpg"
+      }
+    },
+    {
+      "id": "s501",
+      "block": "Mittelloge",
+      "sector": "MILO",
+      "row": "3",
+      "table": "",
+      "seatNumber": "24",
+      "seatGroupId": 1,
+      "entrance": "",
+      "priceCategoryId": "p3",
+      "hold": null,
+      "seatInfos": [],
+      "rowFlag": false,
+      "viewIndex": 14,
+      "view": {
+        "previewUrl": "https://static.eventim.com/seatmap-images/Inhouse/at_bth/SP10/APNR501/p.jpg",
+        "type": 1,
+        "url": "https://static.eventim.com/seatmap-images/Inhouse/at_bth/SP10/APNR501/o.jpg"
+      }
+    }
+  ],
+  "publicBlockLayout": [
+    {
+      "id": "s506",
+      "row": "2",
+      "seatNumber": "10",
+      "priceCategory": "p2",
+      "viewIndex": null
+    },
+    {
+      "id": "s507",
+      "row": "2",
+      "seatNumber": "11",
+      "priceCategory": "p2",
+      "viewIndex": 1
+    },
+    {
+      "id": "s508",
+      "row": "2",
+      "seatNumber": "12",
+      "priceCategory": "p2",
+      "viewIndex": 2
+    },
+    {
+      "id": "s509",
+      "row": "2",
+      "seatNumber": "13",
+      "priceCategory": "p2",
+      "viewIndex": 3
+    },
+    {
+      "id": "s510",
+      "row": "2",
+      "seatNumber": "14",
+      "priceCategory": "p2",
+      "viewIndex": 4
+    },
+    {
+      "id": "s511",
+      "row": "2",
+      "seatNumber": "15",
+      "priceCategory": "p2",
+      "viewIndex": 5
+    },
+    {
+      "id": "s512",
+      "row": "2",
+      "seatNumber": "16",
+      "priceCategory": "p2",
+      "viewIndex": 6
+    },
+    {
+      "id": "s513",
+      "row": "2",
+      "seatNumber": "17",
+      "priceCategory": "p2",
+      "viewIndex": 7
+    },
+    {
+      "id": "s514",
+      "row": "2",
+      "seatNumber": "18",
+      "priceCategory": "p2",
+      "viewIndex": 8
+    },
+    {
+      "id": "s515",
+      "row": "2",
+      "seatNumber": "19",
+      "priceCategory": "p2",
+      "viewIndex": 9
+    },
+    {
+      "id": "s497",
+      "row": "3",
+      "seatNumber": "20",
+      "priceCategory": "p3",
+      "viewIndex": 10
+    },
+    {
+      "id": "s498",
+      "row": "3",
+      "seatNumber": "21",
+      "priceCategory": "p3",
+      "viewIndex": 11
+    },
+    {
+      "id": "s499",
+      "row": "3",
+      "seatNumber": "22",
+      "priceCategory": "p3",
+      "viewIndex": 12
+    },
+    {
+      "id": "s500",
+      "row": "3",
+      "seatNumber": "23",
+      "priceCategory": "p3",
+      "viewIndex": 13
+    },
+    {
+      "id": "s501",
+      "row": "3",
+      "seatNumber": "24",
+      "priceCategory": "p3",
+      "viewIndex": 14
+    },
+    {
+      "id": "s502",
+      "row": "3",
+      "seatNumber": "25",
+      "priceCategory": "p3",
+      "viewIndex": 15
+    },
+    {
+      "id": "s503",
+      "row": "3",
+      "seatNumber": "26",
+      "priceCategory": "p3",
+      "viewIndex": 16
+    },
+    {
+      "id": "s504",
+      "row": "3",
+      "seatNumber": "27",
+      "priceCategory": "p3",
+      "viewIndex": 17
+    },
+    {
+      "id": "s505",
+      "row": "3",
+      "seatNumber": "28",
+      "priceCategory": "p3",
+      "viewIndex": 18
+    },
+    {
+      "id": "s489",
+      "row": "4",
+      "seatNumber": "29",
+      "priceCategory": "p3",
+      "viewIndex": 19
+    },
+    {
+      "id": "s490",
+      "row": "4",
+      "seatNumber": "30",
+      "priceCategory": "p3",
+      "viewIndex": 20
+    },
+    {
+      "id": "s491",
+      "row": "4",
+      "seatNumber": "31",
+      "priceCategory": "p3",
+      "viewIndex": 21
+    },
+    {
+      "id": "s492",
+      "row": "4",
+      "seatNumber": "32",
+      "priceCategory": "p3",
+      "viewIndex": 22
+    },
+    {
+      "id": "s493",
+      "row": "4",
+      "seatNumber": "33",
+      "priceCategory": "p3",
+      "viewIndex": 23
+    },
+    {
+      "id": "s494",
+      "row": "4",
+      "seatNumber": "34",
+      "priceCategory": "p3",
+      "viewIndex": 24
+    },
+    {
+      "id": "s495",
+      "row": "4",
+      "seatNumber": "35",
+      "priceCategory": "p3",
+      "viewIndex": 25
+    },
+    {
+      "id": "s496",
+      "row": "4",
+      "seatNumber": "36",
+      "priceCategory": "p3",
+      "viewIndex": 26
+    },
+    {
+      "id": "s516",
+      "row": "1",
+      "seatNumber": "1",
+      "priceCategory": "p1",
+      "viewIndex": 27
+    },
+    {
+      "id": "s517",
+      "row": "1",
+      "seatNumber": "2",
+      "priceCategory": "p1",
+      "viewIndex": 28
+    },
+    {
+      "id": "s518",
+      "row": "1",
+      "seatNumber": "3",
+      "priceCategory": "p1",
+      "viewIndex": 29
+    },
+    {
+      "id": "s519",
+      "row": "1",
+      "seatNumber": "4",
+      "priceCategory": "p1",
+      "viewIndex": 30
+    },
+    {
+      "id": "s520",
+      "row": "1",
+      "seatNumber": "5",
+      "priceCategory": "p1",
+      "viewIndex": 31
+    },
+    {
+      "id": "s521",
+      "row": "1",
+      "seatNumber": "6",
+      "priceCategory": "p1",
+      "viewIndex": 32
+    },
+    {
+      "id": "s522",
+      "row": "1",
+      "seatNumber": "7",
+      "priceCategory": "p1",
+      "viewIndex": 33
+    },
+    {
+      "id": "s523",
+      "row": "1",
+      "seatNumber": "8",
+      "priceCategory": "p1",
+      "viewIndex": 34
+    },
+    {
+      "id": "s524",
+      "row": "1",
+      "seatNumber": "9",
+      "priceCategory": "p1",
+      "viewIndex": 35
+    }
+  ],
+  "pdfRow3Circles": {
+    "28": {
+      "x": 494.949,
+      "y": 731.963
+    },
+    "27": {
+      "x": 506.032,
+      "y": 731.963
+    },
+    "26": {
+      "x": 517.116,
+      "y": 731.963
+    },
+    "25": {
+      "x": 528.199,
+      "y": 731.963
+    },
+    "24": {
+      "x": 539.282,
+      "y": 731.963
+    },
+    "23": {
+      "x": 550.365,
+      "y": 731.963
+    },
+    "22": {
+      "x": 561.449,
+      "y": 731.963
+    },
+    "21": {
+      "x": 572.532,
+      "y": 731.963
+    },
+    "20": {
+      "x": 583.616,
+      "y": 731.963
+    }
+  },
+  "pdfSource": "https://www.wiener-staatsoper.at/files/Kalender-Tickets/Ticketinfos/Saalplan-2026_27-DE.pdf",
+  "pdfSha256": "50f0d541a3c61e65b9f11457a23d22bd101c03ba4ac3391738c40bd7e17b05c2",
+  "viewDownloadStatus": "Connection to static.eventim.com returns HTTP 503 upstream remote reset; images not downloaded or visually verified.",
+  "method": "Read-only public block metadata from the official shop; no purchase, seat reservation or cart submission."
+}

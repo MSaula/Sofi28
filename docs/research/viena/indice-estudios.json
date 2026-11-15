@@ -34,6 +34,20 @@
       "applicationIntegrated": false,
       "artifactCommit": "3e41e98a4e1cbb40c135ab0e5cdead1c31dd5811",
       "downloadUrl": "https://github.com/MSaula/Sofi28/raw/3e41e98a4e1cbb40c135ab0e5cdead1c31dd5811/downloads/Indice-visual-Viena-II.zip"
+    },
+    {
+      "volume": 3,
+      "title": "Wiener Staatsoper y Living Legacies",
+      "date": "2026-11-15",
+      "photos": 44,
+      "linkedUnavailableViews": 2,
+      "balletPhotos": 11,
+      "plans": 10,
+      "data": "../opera/indice-imagenes.json",
+      "readme": "../opera/README.md",
+      "archive": "downloads/Informe-Opera-Viena.zip",
+      "applicationIntegrated": false,
+      "filePageUrl": "https://github.com/MSaula/Sofi28/blob/private-download/downloads/Informe-Opera-Viena.zip"
     }
   ]
 }

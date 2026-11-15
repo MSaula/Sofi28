@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-15",
+  "repository": "MSaula/Sofi28",
+  "branch": "private-download",
+  "visibility": "PRIVATE",
+  "status": "locally-validated-awaiting-remote-verification",
+  "archive": "downloads/Informe-Opera-Viena.zip",
+  "bytes": 58278613,
+  "sha256": "7736afc9379a18fac01461c3129722d4796d9394a274bad8a4ecea8604aaadf6",
+  "htmlSha256": "8a8a1c989d5a69310a81eb3d599ccfbdfa0dd07de403fa1458ab36a47c13cefd",
+  "files": 62,
+  "localPhotos": 44,
+  "linkedUnavailableViews": 2,
+  "balletPhotos": 11,
+  "mainWebsiteModified": false,
+  "giftZipUnchanged": true,
+  "publicDeployment": false
+}
