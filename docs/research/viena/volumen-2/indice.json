@@ -1,0 +1,2746 @@
+{
+  "title": "Viena, entre calles y mesas",
+  "volume": 2,
+  "date": "2026-11-15",
+  "language": "es",
+  "scope": "Índice interno de referencias visuales; documento independiente de la web principal. Calles, café de especialidad y restaurantes en el centro y sectores próximos. No es un itinerario ni una confirmación de apertura para enero de 2027.",
+  "zones": {
+    "centro": "Casco histórico",
+    "ring": "Schottentor / borde del Ring",
+    "neubau": "Spittelberg · Neubau · Mariahilf",
+    "sur": "Wieden / Naschmarkt",
+    "canal": "Donaukanal · Stadtpark / entorno"
+  },
+  "categories": {
+    "calle": "Calles y pasajes",
+    "cafe": "Café de especialidad",
+    "restaurante": "Restaurantes"
+  },
+  "rights": {
+    "licensed": "Licencia identificada",
+    "reference-only": "Referencia · permiso por confirmar"
+  },
+  "methodology": {
+    "selection": "Valoración editorial del interés fotográfico, identidad del lugar y calidad del archivo. El programa de café se contrasta con tostado, orígenes y preparación; la propuesta gastronómica con webs oficiales y, cuando existe, la Guía MICHELIN. No se afirma una experiencia personal de degustación.",
+    "photoPolicy": "Fotografías reales, bytes recibidos intactos, sin ampliación ni recompresión local. Todas las seleccionadas tienen al menos 1.600 px en su lado largo. Los recortes de portada son solo encuadres de presentación; el visor conserva la proporción completa.",
+    "rightsPolicy": "Las fotografías con licencia y las referencias oficiales se distinguen por archivo. El informe interno no convierte una foto pública en una foto libre. No se autoriza ni ejecuta su incorporación a la web principal en esta entrega.",
+    "geography": "Agrupación de sectores amplios, sin distancias calculadas ni rutas. Las relaciones enlazan lugares del volumen I; no implican que todos sean adyacentes. Chez Bernard, en Mariahilf, es una extensión deliberada por su interior.",
+    "dates": "La fecha de las fotos corresponde al campo publicado por la fuente si existe; en medios oficiales puede ser fecha de publicación. Las escenas de terraza, vegetación y nieve no confirman su aspecto durante el viaje.",
+    "exclusions": [
+      "Variantes de MICHELIN de 1.920 px recortadas o que no acreditaban más detalle que el archivo de 1.000 px: se sustituyen por fuentes oficiales o Commons.",
+      "Fotos de habitaciones del Hotel MOTTO mezcladas en la web de Chez Bernard.",
+      "Imágenes de otras marcas del grupo Mochi, ajenas al restaurante de Praterstraße.",
+      "Fachada de la Meierei como única imagen de Steirereck: se elige la ampliación metálica identificable.",
+      "Logos, carteles, placas de calle y material de baja resolución como imágenes principales.",
+      "Locales con dominio no verificable o sin una foto representativa suficiente: no se deduce que hayan cerrado."
+    ]
+  },
+  "volumeI": {
+    "title": "Viena, lugar a lugar",
+    "places": 32,
+    "relationship": "Complemento visual; conserva sin cambios las fichas del primer estudio.",
+    "relatedLandmarks": {
+      "stephansdom": "Stephansdom",
+      "graben": "Graben y la Pestsäule",
+      "peterskirche": "Peterskirche",
+      "kohlmarkt": "Kohlmarkt y Michaelerplatz",
+      "hofburg": "Hofburg y Heldenplatz",
+      "prunksaal": "Prunksaal de la Biblioteca Nacional",
+      "albertina": "Albertina y su terraza",
+      "staatsoper": "Wiener Staatsoper",
+      "burggarten": "Burggarten y Palmenhaus",
+      "maria-theresien": "Maria-Theresien-Platz",
+      "kunsthistorisches": "Kunsthistorisches Museum",
+      "museumsquartier": "MuseumsQuartier",
+      "volksgarten": "Volksgarten",
+      "parlament": "Parlamento de Austria",
+      "rathaus": "Rathaus y Rathausplatz",
+      "freyung": "Freyung y Palais Ferstel",
+      "am-hof": "Am Hof",
+      "judenplatz": "Judenplatz",
+      "ankeruhr": "Ankeruhr y Hoher Markt",
+      "franziskanerplatz": "Franziskanerplatz",
+      "karlskirche": "Karlskirche y Karlsplatz",
+      "musikverein": "Musikverein",
+      "secession": "Secession",
+      "naschmarkt": "Naschmarkt",
+      "stadtpark": "Stadtpark y Johann Strauss",
+      "belvedere": "Belvedere",
+      "hundertwasserhaus": "Hundertwasserhaus",
+      "kunsthaus": "Kunst Haus Wien",
+      "cafe-central": "Café Central",
+      "cafe-sacher": "Café Sacher",
+      "demel": "Demel",
+      "justizpalast": "Justizpalast"
+    }
+  },
+  "sources": [
+    {
+      "id": "ref-griechengasse",
+      "url": "https://commons.wikimedia.org/wiki/File:Griechengasse_Durchgang.jpg",
+      "role": "Contexto del lugar y contraste visual",
+      "consulted": "2026-11-15"
+    },
+    {
+      "id": "ref-schoenlaterngasse",
+      "url": "https://de.wikipedia.org/wiki/Sch%C3%B6nlaterngasse",
+      "role": "Contexto del lugar y contraste visual",
+      "consulted": "2026-11-15"
+    },
+    {
+      "id": "ref-blutgasse",
+      "url": "https://de.wikipedia.org/wiki/Blutgasse",
+      "role": "Contexto del lugar y contraste visual",
+      "consulted": "2026-11-15"
+    },
+    {
+      "id": "ref-ballgasse",
+      "url": "https://de.wikipedia.org/wiki/Ballgasse",
+      "role": "Contexto del lugar y contraste visual",
+      "consulted": "2026-11-15"
+    },
+    {
+      "id": "ref-baeckerstrasse",
+      "url": "https://de.wikipedia.org/wiki/B%C3%A4ckerstra%C3%9Fe_(Wien)",
+      "role": "Contexto del lugar y contraste visual",
+      "consulted": "2026-11-15"
+    },
+    {
+      "id": "ref-domgasse",
+      "url": "https://de.wikipedia.org/wiki/Domgasse_(Wien)",
+      "role": "Contexto del lugar y contraste visual",
+      "consulted": "2026-11-15"
+    },
+    {
+      "id": "ref-naglergasse",
+      "url": "https://commons.wikimedia.org/wiki/File:Wien_01_Naglergasse_a.jpg",
+      "role": "Contexto del lugar y contraste visual",
+      "consulted": "2026-11-15"
+    },
+    {
+      "id": "ref-haarhof",
+      "url": "https://commons.wikimedia.org/wiki/File:Vienna_Haarhof_(52570867130).jpg",
+      "role": "Contexto del lugar y contraste visual",
+      "consulted": "2026-11-15"
+    },
+    {
+      "id": "ref-kohlmarkt-calle",
+      "url": "https://de.wikipedia.org/wiki/Kohlmarkt",
+      "role": "Contexto del lugar y contraste visual",
+      "consulted": "2026-11-15"
+    },
+    {
+      "id": "ref-kaerntnerstrasse",
+      "url": "https://de.wikipedia.org/wiki/K%C3%A4rntner_Stra%C3%9Fe",
+      "role": "Contexto del lugar y contraste visual",
+      "consulted": "2026-11-15"
+    },
+    {
+      "id": "ref-spittelberggasse",
+      "url": "https://de.wikipedia.org/wiki/Spittelberg_(Wien)",
+      "role": "Contexto del lugar y contraste visual",
+      "consulted": "2026-11-15"
+    },
+    {
+      "id": "ref-gutenberggasse",
+      "url": "https://commons.wikimedia.org/wiki/File:Wien_Gutenberggasse_bergauf.jpg",
+      "role": "Contexto del lugar y contraste visual",
+      "consulted": "2026-11-15"
+    },
+    {
+      "id": "ref-linke-wienzeile",
+      "url": "https://de.wikipedia.org/wiki/Wienzeile",
+      "role": "Contexto del lugar y contraste visual",
+      "consulted": "2026-11-15"
+    },
+    {
+      "id": "ref-praterstrasse",
+      "url": "https://de.wikipedia.org/wiki/Praterstra%C3%9Fe",
+      "role": "Contexto del lugar y contraste visual",
+      "consulted": "2026-11-15"
+    },
+    {
+      "id": "ref-ferstel-pasaje",
+      "url": "https://de.wikipedia.org/wiki/Palais_Ferstel",
+      "role": "Contexto del lugar y contraste visual",
+      "consulted": "2026-11-15"
+    },
+    {
+      "id": "balthasar",
+      "url": "https://balthasar.at/",
+      "role": "Fuente oficial",
+      "consulted": "2026-11-15",
+      "htmlSha256": "82d9974e9d8db9d67e5db89fdfb8fa0895479782e8cb120a3a01db9418e467c4"
+    },
+    {
+      "id": "balthasar-prensa",
+      "url": "https://balthasar.at/presse/",
+      "role": "Fuente oficial",
+      "consulted": "2026-11-15",
+      "htmlSha256": "1f4f02bde60c83cda12d1c885ab77953fc8abc83a0311aa8e8212ea10ace6f70"
+    },
+    {
+      "id": "caffe-couture",
+      "url": "https://www.caffecouture.net/",
+      "role": "Fuente oficial",
+      "consulted": "2026-11-15",
+      "htmlSha256": "a43d2d9983f5259cb0b79e838a6ae9fad9507098b559c44d7cc4a992cface8e4"
+    },
+    {
+      "id": "caffe-couture-studio",
+      "url": "https://www.caffecouture.net/studio-palais-ferstel/",
+      "role": "Fuente oficial",
+      "consulted": "2026-11-15",
+      "htmlSha256": "83dd8a53a6d917cf7bff90079eebb382fe1fa608b6f6cf06f948f7c5dc837a39"
+    },
+    {
+      "id": "chez-bernard",
+      "url": "https://www.chezbernard.at/en",
+      "role": "Fuente oficial",
+      "consulted": "2026-11-15",
+      "htmlSha256": "0446c9f1fc10485992dcb79b59497e0f1fd2b1c1fbd5b0d358919c18973fd523"
+    },
+    {
+      "id": "das-loft",
+      "url": "https://dasloftwien.at/",
+      "role": "Fuente oficial",
+      "consulted": "2026-11-15",
+      "htmlSha256": "42dad58376f90059befc151ce2ef102ed4d11d8431ea124452752529623da712"
+    },
+    {
+      "id": "flora-hotel",
+      "url": "https://www.hotel-gilbert.at/en/flora",
+      "role": "Fuente oficial",
+      "consulted": "2026-11-15",
+      "htmlSha256": "7f4916d4ac6089ee826ccfdbcd3fb309dd09262d4b1416d2a4770c6fbf32e413"
+    },
+    {
+      "id": "flora-oficial",
+      "url": "https://www.undflora.at/en/",
+      "role": "Fuente oficial",
+      "consulted": "2026-11-15",
+      "htmlSha256": "691bb7fc5f89fc53db873b48173de66717de450d737a31a763f3ccd927db9db8"
+    },
+    {
+      "id": "hotel-gilbert",
+      "url": "https://www.hotel-gilbert.at/en",
+      "role": "Fuente oficial",
+      "consulted": "2026-11-15",
+      "htmlSha256": "682a18995d9a7a88bad95401e80b28393c497a364264bef6481f49fb857ead5a"
+    },
+    {
+      "id": "jonas-reindl",
+      "url": "https://www.jonasreindl.at/",
+      "role": "Fuente oficial",
+      "consulted": "2026-11-15",
+      "htmlSha256": "3eafb49af066bdb89123780488d9d01fb18098df3e339f6b2e0accad2accc9d9"
+    },
+    {
+      "id": "kaffeefabrik",
+      "url": "https://www.kaffeefabrik.at/",
+      "role": "Fuente oficial",
+      "consulted": "2026-11-15",
+      "htmlSha256": "0197aa433544e5d17f4560a0c03d58b36bc125cc73ff110f30ec4eb7fc10a8ab"
+    },
+    {
+      "id": "kaffeefabrik-cafes",
+      "url": "https://www.kaffeefabrik.at/pages/cafes",
+      "role": "Fuente oficial",
+      "consulted": "2026-11-15",
+      "htmlSha256": "9a69982a13329df3740bfccecb63665aaa7afa95a89d285cf0419f81fecbc6cf"
+    },
+    {
+      "id": "kaffemik",
+      "url": "https://www.kaffemik.at/",
+      "role": "Fuente oficial",
+      "consulted": "2026-11-15",
+      "htmlSha256": "3657078c910b85c14c299752acb0fff6835792dd7e91f1a967b171f1be8da03c"
+    },
+    {
+      "id": "kaffemik-cafe",
+      "url": "https://www.kaffemik.at/pages/cafe",
+      "role": "Fuente oficial",
+      "consulted": "2026-11-15",
+      "htmlSha256": "d9b756f49a013643274da3b20d946f85e013db50725de96196db82183c85a13b"
+    },
+    {
+      "id": "mochi",
+      "url": "https://www.mochi.at/",
+      "role": "Fuente oficial",
+      "consulted": "2026-11-15",
+      "htmlSha256": "fab59585fca9b8bdb2c9ded3057183dfd8aaf8a137c307b509cc826d56fee0af"
+    },
+    {
+      "id": "mochi-guide",
+      "url": "https://guide.michelin.com/at/en/vienna/wien/restaurant/mochi",
+      "role": "Contraste gastronómico · Guía MICHELIN",
+      "consulted": "2026-11-15",
+      "htmlSha256": "d1fd19b80f9bba50c785cd846f83d1bfe49a9dfe9d5e7cb7f9d1538b2fe956e1"
+    },
+    {
+      "id": "motto-am-fluss",
+      "url": "https://mottoamfluss.at/",
+      "role": "Fuente oficial",
+      "consulted": "2026-11-15",
+      "htmlSha256": "2561f2b4cd177c384ce6bd3a6b4e0f35c17686d12f67c7bcf64132842c8d2ca0"
+    },
+    {
+      "id": "salonplafond",
+      "url": "https://www.salonplafond.wien/",
+      "role": "Fuente oficial",
+      "consulted": "2026-11-15",
+      "htmlSha256": "190a29d85aefa73fb1e570d1a9f511d9d2b6d301b319dd0def1f786567038e8b"
+    },
+    {
+      "id": "salonplafond-about",
+      "url": "https://www.salonplafond.wien/about.php",
+      "role": "Fuente oficial",
+      "consulted": "2026-11-15",
+      "htmlSha256": "8b112b72cc382e65f94ed9d05971f974d0f35293f1a0a08e418481a3ee1c1aac"
+    },
+    {
+      "id": "steirereck",
+      "url": "https://www.steirereck.at/",
+      "role": "Fuente oficial",
+      "consulted": "2026-11-15",
+      "htmlSha256": "fe585f33dbc0e10c3058d2a456790fc1ec145b7344a88752541ec4fbd39945c3"
+    },
+    {
+      "id": "steirereck-guide",
+      "url": "https://guide.michelin.com/at/en/vienna/wien/restaurant/steirereck-im-stadtpark",
+      "role": "Contraste gastronómico · Guía MICHELIN",
+      "consulted": "2026-11-15",
+      "htmlSha256": "bfb9c44d6a03bf4c6b7e94e1d0a323a9837b176ca1489e233e2711a3eb28c6e5"
+    },
+    {
+      "id": "tian-bistro",
+      "url": "https://www.tian-bistro.com/",
+      "role": "Fuente oficial",
+      "consulted": "2026-11-15",
+      "htmlSha256": "898c2b0f37dabfbc8d695e68f60ad222b76d9cb1469a9170bce1779dcccc5977"
+    },
+    {
+      "id": "tian-guide",
+      "url": "https://guide.michelin.com/at/en/vienna/wien/restaurant/tian",
+      "role": "Contraste gastronómico · Guía MICHELIN",
+      "consulted": "2026-11-15",
+      "htmlSha256": "e63b3c3e12e0066751f403235fd75b8639390ef941733199c363609b207c9d4d"
+    },
+    {
+      "id": "tian-wien",
+      "url": "https://www.tian-restaurant.com/wien/",
+      "role": "Fuente oficial",
+      "consulted": "2026-11-15",
+      "htmlSha256": "f950827af76c8175770b1b15167744a6b65f80189788f06f1ec5cb7114aa79fc"
+    }
+  ],
+  "places": [
+    {
+      "id": "griechengasse",
+      "name": "Griechengasse",
+      "kind": "calle",
+      "zone": "centro",
+      "address": "Entre Schwedenplatz y Fleischmarkt",
+      "subtitle": "Una Viena más íntima",
+      "description": "Calle estrecha, fachadas históricas y perspectivas quebradas; una Viena íntima en el sector del antiguo barrio griego.",
+      "photoTip": "Encuadre vertical desde el paso estrecho: adoquines, un farol y el cambio de dirección construyen la profundidad.",
+      "tags": [
+        "Piedra",
+        "faroles",
+        "tonos cálidos"
+      ],
+      "priority": true,
+      "sources": [
+        "ref-griechengasse"
+      ],
+      "evidence": "Referencia de contexto y fotografía identificada del lugar. El interés visual y el encuadre son una valoración editorial.",
+      "number": 1,
+      "photoIds": [
+        "II-001"
+      ],
+      "relatedLandmarks": [
+        {
+          "id": "ankeruhr",
+          "name": "Ankeruhr y Hoher Markt"
+        },
+        {
+          "id": "stephansdom",
+          "name": "Stephansdom"
+        }
+      ]
+    },
+    {
+      "id": "schoenlaterngasse",
+      "name": "Schönlaterngasse",
+      "kind": "calle",
+      "zone": "centro",
+      "address": "Sector Fleischmarkt–Heiligenkreuzerhof",
+      "subtitle": "La ciudad a escala de farol",
+      "description": "Faroles, muros de tonos cálidos y una escala recogida. Interesa por la profundidad de la calle y los detalles del Basiliskenhaus.",
+      "photoTip": "Alternar una vista de la calle con el detalle de la linterna. Las sombras laterales dan volumen a las fachadas.",
+      "tags": [
+        "Faroles",
+        "ventanas",
+        "perspectiva"
+      ],
+      "priority": false,
+      "sources": [
+        "ref-schoenlaterngasse"
+      ],
+      "evidence": "Referencia de contexto y fotografía identificada del lugar. El interés visual y el encuadre son una valoración editorial.",
+      "number": 2,
+      "photoIds": [
+        "II-002",
+        "II-003"
+      ],
+      "relatedLandmarks": [
+        {
+          "id": "ankeruhr",
+          "name": "Ankeruhr y Hoher Markt"
+        },
+        {
+          "id": "stephansdom",
+          "name": "Stephansdom"
+        }
+      ]
+    },
+    {
+      "id": "blutgasse",
+      "name": "Blutgasse",
+      "kind": "calle",
+      "zone": "centro",
+      "address": "Entre Domgasse y Singerstraße",
+      "subtitle": "Detrás de la gran catedral",
+      "description": "Pasaje urbano y patios históricos detrás de la catedral. Buen contraste entre pavimento, puertas, luces y fachadas de colores suaves.",
+      "photoTip": "Buscar la fuga de los adoquines y los muros claros. Los patios son una posibilidad de exploración, no un acceso garantizado.",
+      "tags": [
+        "Adoquines",
+        "fachadas suaves"
+      ],
+      "priority": false,
+      "sources": [
+        "ref-blutgasse"
+      ],
+      "evidence": "Referencia de contexto y fotografía identificada del lugar. El interés visual y el encuadre son una valoración editorial.",
+      "number": 3,
+      "photoIds": [
+        "II-004"
+      ],
+      "relatedLandmarks": [
+        {
+          "id": "stephansdom",
+          "name": "Stephansdom"
+        },
+        {
+          "id": "franziskanerplatz",
+          "name": "Franziskanerplatz"
+        }
+      ]
+    },
+    {
+      "id": "ballgasse",
+      "name": "Ballgasse",
+      "kind": "calle",
+      "zone": "centro",
+      "address": "Entre Rauhensteingasse y Franziskanerplatz",
+      "subtitle": "Una curva, dos atmósferas",
+      "description": "Una curva pequeña de casas claras y detalles de escala doméstica: una escena más personal que monumental.",
+      "photoTip": "La misma curva funciona de día y al anochecer. La vista nocturna disponible suma faroles y una perspectiva casi vacía.",
+      "tags": [
+        "Curva",
+        "luz nocturna",
+        "intimidad"
+      ],
+      "priority": true,
+      "sources": [
+        "ref-ballgasse"
+      ],
+      "evidence": "Referencia de contexto y fotografía identificada del lugar. El interés visual y el encuadre son una valoración editorial.",
+      "number": 4,
+      "photoIds": [
+        "II-005",
+        "II-006"
+      ],
+      "relatedLandmarks": [
+        {
+          "id": "stephansdom",
+          "name": "Stephansdom"
+        },
+        {
+          "id": "franziskanerplatz",
+          "name": "Franziskanerplatz"
+        }
+      ]
+    },
+    {
+      "id": "baeckerstrasse",
+      "name": "Bäckerstraße",
+      "kind": "calle",
+      "zone": "centro",
+      "address": "Sector Lugeck–Universitätsplatz",
+      "subtitle": "Una secuencia de fachadas",
+      "description": "Fachadas históricas y una perspectiva que conecta con el sector de la iglesia de los Jesuitas. Interesa la secuencia de portadas y ventanas.",
+      "photoTip": "Componer a lo largo de la calle hacia la iglesia de los Jesuitas, conservando puertas y ventanas como ritmo.",
+      "tags": [
+        "Profundidad",
+        "puertas",
+        "vida urbana"
+      ],
+      "priority": false,
+      "sources": [
+        "ref-baeckerstrasse"
+      ],
+      "evidence": "Referencia de contexto y fotografía identificada del lugar. El interés visual y el encuadre son una valoración editorial.",
+      "number": 5,
+      "photoIds": [
+        "II-007"
+      ],
+      "relatedLandmarks": [
+        {
+          "id": "ankeruhr",
+          "name": "Ankeruhr y Hoher Markt"
+        },
+        {
+          "id": "stephansdom",
+          "name": "Stephansdom"
+        }
+      ]
+    },
+    {
+      "id": "domgasse",
+      "name": "Domgasse",
+      "kind": "calle",
+      "zone": "centro",
+      "address": "Entorno de Mozarthaus, Domgasse 5",
+      "subtitle": "El reverso de Stephansdom",
+      "description": "Un reverso recogido del entorno de Stephansdom y Mozarthaus, con adoquines y fachadas próximas que llenan bien un encuadre vertical.",
+      "photoTip": "Un encuadre bajo permite que pavimento y fachadas llenen la imagen. El interés está en el paseo pequeño alrededor de Mozarthaus.",
+      "tags": [
+        "Pavimento",
+        "fachadas claras"
+      ],
+      "priority": false,
+      "sources": [
+        "ref-domgasse"
+      ],
+      "evidence": "Referencia de contexto y fotografía identificada del lugar. El interés visual y el encuadre son una valoración editorial.",
+      "number": 6,
+      "photoIds": [
+        "II-008"
+      ],
+      "relatedLandmarks": [
+        {
+          "id": "stephansdom",
+          "name": "Stephansdom"
+        }
+      ]
+    },
+    {
+      "id": "naglergasse",
+      "name": "Naglergasse",
+      "kind": "calle",
+      "zone": "centro",
+      "address": "Entre Graben y Am Hof",
+      "subtitle": "La belleza de cambiar de dirección",
+      "description": "La calle cambia de dirección entre fachadas altas: una composición potente de curvas, profundidad y vida urbana.",
+      "photoTip": "Usar la curva para esconder el final del paseo. Las fachadas próximas y los escaparates añaden capas.",
+      "tags": [
+        "Curvas",
+        "comercio",
+        "profundidad"
+      ],
+      "priority": false,
+      "sources": [
+        "ref-naglergasse"
+      ],
+      "evidence": "Referencia de contexto y fotografía identificada del lugar. El interés visual y el encuadre son una valoración editorial.",
+      "number": 7,
+      "photoIds": [
+        "II-009"
+      ],
+      "relatedLandmarks": [
+        {
+          "id": "am-hof",
+          "name": "Am Hof"
+        },
+        {
+          "id": "graben",
+          "name": "Graben y la Pestsäule"
+        },
+        {
+          "id": "freyung",
+          "name": "Freyung y Palais Ferstel"
+        }
+      ]
+    },
+    {
+      "id": "haarhof",
+      "name": "Haarhof",
+      "kind": "calle",
+      "zone": "centro",
+      "address": "Junto a Wallnerstraße, cerca de Freyung",
+      "subtitle": "Una pausa dentro del centro",
+      "description": "Un rincón breve y silencioso del centro, útil para puertas, balcones y una imagen de calle menos reconocible y más íntima.",
+      "photoTip": "Mirar hacia las mesas y los tonos pastel. En la fotografía disponible el pavimento húmedo aporta textura y reflejos discretos.",
+      "tags": [
+        "Pastel",
+        "mesas",
+        "pavimento húmedo"
+      ],
+      "priority": false,
+      "sources": [
+        "ref-haarhof"
+      ],
+      "evidence": "Referencia de contexto y fotografía identificada del lugar. El interés visual y el encuadre son una valoración editorial.",
+      "number": 8,
+      "photoIds": [
+        "II-010"
+      ],
+      "relatedLandmarks": [
+        {
+          "id": "freyung",
+          "name": "Freyung y Palais Ferstel"
+        },
+        {
+          "id": "am-hof",
+          "name": "Am Hof"
+        }
+      ]
+    },
+    {
+      "id": "kohlmarkt-calle",
+      "name": "Kohlmarkt · hacia la cúpula",
+      "kind": "calle",
+      "zone": "centro",
+      "address": "Eje Kohlmarkt–Michaelerplatz",
+      "subtitle": "La cúpula al fondo",
+      "description": "El eje de la calle conduce a la cúpula de Michaelerplatz. Se revisita un lugar del primer estudio con el paseo y la perspectiva como protagonistas.",
+      "photoTip": "Centrar la perspectiva en la cúpula y dejar espacio para la vida de la calle. Es una segunda lectura del Kohlmarkt del volumen I.",
+      "tags": [
+        "Eje imperial",
+        "cúpula",
+        "escaparates"
+      ],
+      "priority": true,
+      "sources": [
+        "ref-kohlmarkt-calle"
+      ],
+      "evidence": "Referencia de contexto y fotografía identificada del lugar. El interés visual y el encuadre son una valoración editorial.",
+      "number": 9,
+      "photoIds": [
+        "II-011"
+      ],
+      "relatedLandmarks": [
+        {
+          "id": "kohlmarkt",
+          "name": "Kohlmarkt y Michaelerplatz"
+        },
+        {
+          "id": "demel",
+          "name": "Demel"
+        },
+        {
+          "id": "hofburg",
+          "name": "Hofburg y Heldenplatz"
+        }
+      ]
+    },
+    {
+      "id": "kaerntnerstrasse",
+      "name": "Kärntner Straße",
+      "kind": "calle",
+      "zone": "centro",
+      "address": "Entre Stephansplatz y la Staatsoper",
+      "subtitle": "La Viena que se mueve",
+      "description": "La gran calle comercial permite escenas de tránsito peatonal, escaparates y fachadas. Sirve como contrapunto urbano a las calles pequeñas.",
+      "photoTip": "La vista general cuenta el paseo comercial; el puesto de flores aporta una segunda escala de color y detalle.",
+      "tags": [
+        "Paseo peatonal",
+        "flores",
+        "escaparates"
+      ],
+      "priority": false,
+      "sources": [
+        "ref-kaerntnerstrasse"
+      ],
+      "evidence": "Referencia de contexto y fotografía identificada del lugar. El interés visual y el encuadre son una valoración editorial.",
+      "number": 10,
+      "photoIds": [
+        "II-012",
+        "II-013"
+      ],
+      "relatedLandmarks": [
+        {
+          "id": "staatsoper",
+          "name": "Wiener Staatsoper"
+        },
+        {
+          "id": "cafe-sacher",
+          "name": "Café Sacher"
+        },
+        {
+          "id": "stephansdom",
+          "name": "Stephansdom"
+        }
+      ]
+    },
+    {
+      "id": "spittelberggasse",
+      "name": "Spittelberggasse",
+      "kind": "calle",
+      "zone": "neubau",
+      "address": "Spittelberg, al oeste del MuseumsQuartier",
+      "subtitle": "Casas bajas, ritmo lento",
+      "description": "Casas bajas, adoquines y una escala de barrio a pocos pasos del MuseumsQuartier. Muy útil para imágenes cálidas y escenas de paseo.",
+      "photoTip": "Buscar la sucesión de casas y faroles, con las líneas de los adoquines entrando en el encuadre. No depender de decoraciones navideñas.",
+      "tags": [
+        "Casas bajas",
+        "faroles",
+        "barrio"
+      ],
+      "priority": true,
+      "sources": [
+        "ref-spittelberggasse"
+      ],
+      "evidence": "Referencia de contexto y fotografía identificada del lugar. El interés visual y el encuadre son una valoración editorial.",
+      "number": 11,
+      "photoIds": [
+        "II-014"
+      ],
+      "relatedLandmarks": [
+        {
+          "id": "museumsquartier",
+          "name": "MuseumsQuartier"
+        },
+        {
+          "id": "volksgarten",
+          "name": "Volksgarten"
+        }
+      ]
+    },
+    {
+      "id": "gutenberggasse",
+      "name": "Gutenberggasse",
+      "kind": "calle",
+      "zone": "neubau",
+      "address": "Spittelberg, junto a Spittelberggasse",
+      "subtitle": "El paseo de al lado",
+      "description": "Otra de las calles de Spittelberg: pavimento, mesas y fachadas que permiten contar un paseo sin recurrir a un gran monumento.",
+      "photoTip": "Una vertical larga con el pavimento en primer plano resume el carácter del barrio. El empedrado tiene tanto peso como las fachadas.",
+      "tags": [
+        "Adoquines",
+        "escala doméstica"
+      ],
+      "priority": false,
+      "sources": [
+        "ref-gutenberggasse"
+      ],
+      "evidence": "Referencia de contexto y fotografía identificada del lugar. El interés visual y el encuadre son una valoración editorial.",
+      "number": 12,
+      "photoIds": [
+        "II-015"
+      ],
+      "relatedLandmarks": [
+        {
+          "id": "museumsquartier",
+          "name": "MuseumsQuartier"
+        }
+      ]
+    },
+    {
+      "id": "linke-wienzeile",
+      "name": "Linke Wienzeile · fachadas modernistas",
+      "kind": "calle",
+      "zone": "sur",
+      "address": "Fachadas de Linke Wienzeile 38–40",
+      "subtitle": "La arquitectura se vuelve estampado",
+      "description": "Las fachadas de Otto Wagner aportan color, tramas y detalles florales. El interés fotográfico se concentra en la arquitectura, no en prometer una calle sin tráfico.",
+      "photoTip": "Combinar la pareja de edificios con un acercamiento al dibujo floral del Majolikahaus. El recurso fuerte es la fachada; es un eje con tráfico.",
+      "tags": [
+        "Modernismo",
+        "cerámica",
+        "oro y rosa"
+      ],
+      "priority": false,
+      "sources": [
+        "ref-linke-wienzeile"
+      ],
+      "evidence": "Referencia de contexto y fotografía identificada del lugar. El interés visual y el encuadre son una valoración editorial.",
+      "number": 13,
+      "photoIds": [
+        "II-016",
+        "II-017"
+      ],
+      "relatedLandmarks": [
+        {
+          "id": "naschmarkt",
+          "name": "Naschmarkt"
+        },
+        {
+          "id": "secession",
+          "name": "Secession"
+        }
+      ]
+    },
+    {
+      "id": "praterstrasse",
+      "name": "Praterstraße",
+      "kind": "calle",
+      "zone": "canal",
+      "address": "Sector Nestroyplatz–Praterstraße",
+      "subtitle": "Del canal a una Viena contemporánea",
+      "description": "Una avenida de fachadas vienesas, comercio contemporáneo y cafés, al otro lado del canal. Relaciona la ciudad monumental con una escena más actual.",
+      "photoTip": "La fachada verde junto a Nestroyplatz aporta una referencia reconocible. La avenida también enlaza visualmente cafés y restaurantes del estudio.",
+      "tags": [
+        "Fachadas",
+        "verde",
+        "vida de barrio"
+      ],
+      "priority": false,
+      "sources": [
+        "ref-praterstrasse"
+      ],
+      "evidence": "Referencia de contexto y fotografía identificada del lugar. El interés visual y el encuadre son una valoración editorial.",
+      "number": 14,
+      "photoIds": [
+        "II-018"
+      ],
+      "relatedLandmarks": [
+        {
+          "id": "ankeruhr",
+          "name": "Ankeruhr y Hoher Markt"
+        },
+        {
+          "id": "kunsthaus",
+          "name": "Kunst Haus Wien"
+        }
+      ]
+    },
+    {
+      "id": "ferstel-pasaje",
+      "name": "Ferstelpassage",
+      "kind": "calle",
+      "zone": "centro",
+      "address": "Pasaje del Palais Ferstel, entre Herrengasse y Freyung",
+      "subtitle": "Una calle bajo las bóvedas",
+      "description": "Arcadas, cubiertas y profundidad interior para una secuencia arquitectónica. Las fotografías se tratan como referencia, con el acceso durante las obras por comprobar.",
+      "photoTip": "Primero una perspectiva axial de las arcadas; después mirar hacia la cubierta y la fuente. Las fotos son de archivo: comprobar acceso tras las obras.",
+      "tags": [
+        "Arcadas",
+        "cubierta",
+        "profundidad"
+      ],
+      "priority": true,
+      "sources": [
+        "ref-ferstel-pasaje"
+      ],
+      "evidence": "Referencia de contexto y fotografía identificada del lugar. El interés visual y el encuadre son una valoración editorial.",
+      "note": "Imágenes de archivo. Café Central, en el mismo conjunto, anuncia reforma; el acceso al pasaje se comprobará antes de organizar una visita.",
+      "number": 15,
+      "photoIds": [
+        "II-019",
+        "II-020"
+      ],
+      "relatedLandmarks": [
+        {
+          "id": "freyung",
+          "name": "Freyung y Palais Ferstel"
+        },
+        {
+          "id": "cafe-central",
+          "name": "Café Central"
+        }
+      ]
+    },
+    {
+      "id": "balthasar",
+      "name": "Balthasar Kaffee Bar",
+      "kind": "cafe",
+      "zone": "canal",
+      "address": "Praterstraße 38, 1020 Wien",
+      "subtitle": "Una barra que parece una escenografía",
+      "description": "Un café de barra larga, pared mineral y contraste entre superficies oscuras y cerámica clara. Es una de las referencias más completas para combinar diseño de interior con gestos de preparación y una taza en primer plano.",
+      "evidence": "La web explica su colaboración con Wildkaffee y el tostador Leonhard Wild, la selección de café y el trabajo de los baristas. La selección se apoya en ese programa de café, además de en el interior.",
+      "photoTip": "Una vista frontal de la barra y otra a ras de máquina. Funcionan las texturas claras, el negro y los pequeños acentos de madera.",
+      "tags": [
+        "Barra escénica",
+        "Texturas minerales",
+        "Café y baristas"
+      ],
+      "sources": [
+        "balthasar",
+        "balthasar-prensa"
+      ],
+      "priority": true,
+      "number": 16,
+      "photoIds": [
+        "II-021",
+        "II-022"
+      ],
+      "relatedLandmarks": [
+        {
+          "id": "ankeruhr",
+          "name": "Ankeruhr y Hoher Markt"
+        },
+        {
+          "id": "kunsthaus",
+          "name": "Kunst Haus Wien"
+        }
+      ]
+    },
+    {
+      "id": "jonas-reindl",
+      "name": "Jonas Reindl Coffee Roasters",
+      "kind": "cafe",
+      "zone": "ring",
+      "address": "Währinger Straße 2–4, 1090 Wien · sede Schottentor",
+      "subtitle": "El origen del café como lenguaje visual",
+      "description": "Tostador vienés con una sede junto a Schottentor, en el borde norte del centro. Aporta una estética de producto limpia: bolsas, etiquetas, madera y una presentación donde el café tiene el protagonismo.",
+      "evidence": "La web documenta selección de fincas de especialidad, tostado en pequeños lotes en Westbahnstraße y perfiles propios. También identifica por separado las sedes de Währinger Straße y Westbahnstraße.",
+      "photoTip": "La foto seleccionada es un detalle corporativo del expositor de café. Sirve para producto y textura; no documenta por sí sola el interior completo de Schottentor.",
+      "tags": [
+        "Tostador propio",
+        "Producto",
+        "Madera y papel"
+      ],
+      "sources": [
+        "jonas-reindl"
+      ],
+      "priority": false,
+      "note": "La foto de producto no confirma una sede concreta; no se presenta como vista general del local de Schottentor.",
+      "number": 17,
+      "photoIds": [
+        "II-023"
+      ],
+      "relatedLandmarks": [
+        {
+          "id": "rathaus",
+          "name": "Rathaus y Rathausplatz"
+        },
+        {
+          "id": "freyung",
+          "name": "Freyung y Palais Ferstel"
+        }
+      ]
+    },
+    {
+      "id": "kaffeefabrik",
+      "name": "Kaffeefabrik · Wieden",
+      "kind": "cafe",
+      "zone": "sur",
+      "address": "Favoritenstraße 4–6, 1040 Wien",
+      "subtitle": "Café pequeño, identidad propia",
+      "description": "Una pausa de escala cercana en Wieden, con fachada sencilla, mesas a pie de calle y un universo gráfico reconocible. Su fuerza visual está en los gestos cotidianos, la taza y la relación entre el local y la acera.",
+      "evidence": "La fuente oficial describe importación de café de cooperativas a través de Roasters United, tostado propio, opciones de espresso y preparación manual de filtro. Las fotos se seleccionan del bloque identificado como 1040.",
+      "photoTip": "Combinar la fachada con una taza sobre un fondo limpio. Evitar mezclar las fotos de Wieden con las otras sedes que aparecen en la misma web.",
+      "tags": [
+        "Café de origen",
+        "Escala pequeña",
+        "Fachada y taza"
+      ],
+      "sources": [
+        "kaffeefabrik",
+        "kaffeefabrik-cafes"
+      ],
+      "priority": false,
+      "number": 18,
+      "photoIds": [
+        "II-024",
+        "II-025"
+      ],
+      "relatedLandmarks": [
+        {
+          "id": "karlskirche",
+          "name": "Karlskirche y Karlsplatz"
+        },
+        {
+          "id": "naschmarkt",
+          "name": "Naschmarkt"
+        }
+      ]
+    },
+    {
+      "id": "kaffemik",
+      "name": "Kaffemik",
+      "kind": "cafe",
+      "zone": "neubau",
+      "address": "Zollergasse 5, 1070 Wien",
+      "subtitle": "La pausa contemporánea de Neubau",
+      "description": "Un local pequeño que se abre al barrio mediante sus mesas exteriores y una fachada clara. Las fotografías ofrecen dos escalas útiles: la calle como contexto y la preparación de café como escena cercana.",
+      "evidence": "Se presenta explícitamente como specialty coffee, con espresso y filtro de su propia tostadora en Wolfsgraben desde 2022. La página del café identifica Zollergasse 5 y sus fotografías.",
+      "photoTip": "Usar la fachada en vertical para mostrar el contexto; alternar con el barista y la máquina para aportar movimiento sin cambiar de lugar.",
+      "tags": [
+        "Especialidad",
+        "Fachada clara",
+        "Preparación"
+      ],
+      "sources": [
+        "kaffemik-cafe",
+        "kaffemik"
+      ],
+      "priority": true,
+      "number": 19,
+      "photoIds": [
+        "II-026",
+        "II-027"
+      ],
+      "relatedLandmarks": [
+        {
+          "id": "museumsquartier",
+          "name": "MuseumsQuartier"
+        },
+        {
+          "id": "secession",
+          "name": "Secession"
+        }
+      ]
+    },
+    {
+      "id": "caffe-couture",
+      "name": "CaffèCouture · Studio Palais Ferstel",
+      "kind": "cafe",
+      "zone": "centro",
+      "address": "Herrengasse 14, 1010 Wien · Palais Ferstel Passage",
+      "subtitle": "Una barra sobria dentro del centro histórico",
+      "description": "El Studio del pasaje de Palais Ferstel contrapone una barra de aspecto mineral con un espacio recogido y mobiliario discreto. Es una referencia de diseño contenido para introducir café de especialidad sin recurrir al gran café histórico.",
+      "evidence": "La marca se define como tostador de especialidad y detalla su selección de orígenes y estilo de tueste. La página del Studio identifica Herrengasse 14 y publica la foto del espacio.",
+      "photoTip": "La vertical disponible conserva la relación entre la barra, el techo y la zona de trabajo. Puede dialogar con las fotografías de las arcadas del pasaje.",
+      "tags": [
+        "Especialidad",
+        "Barra mineral",
+        "Palais Ferstel"
+      ],
+      "sources": [
+        "caffe-couture-studio",
+        "caffe-couture"
+      ],
+      "priority": true,
+      "note": "Café Central, en el mismo conjunto, anuncia obras. El acceso efectivo al pasaje y el aspecto final se comprobarán antes de plantear una visita; no se deduce que el Studio esté cerrado.",
+      "number": 20,
+      "photoIds": [
+        "II-028"
+      ],
+      "relatedLandmarks": [
+        {
+          "id": "freyung",
+          "name": "Freyung y Palais Ferstel"
+        },
+        {
+          "id": "cafe-central",
+          "name": "Café Central"
+        }
+      ]
+    },
+    {
+      "id": "flora",
+      "name": "&flora · Hotel Gilbert",
+      "kind": "restaurante",
+      "zone": "neubau",
+      "address": "Breite Gasse 9, 1070 Wien",
+      "subtitle": "Color, terrazzo y vegetación",
+      "description": "Una de las referencias más claras de interior contemporáneo: barra luminosa, mesas de dibujo marcado, vegetación y asientos de color. Permite construir una escena de restaurante cálida y gráfica, muy distinta de los salones imperiales.",
+      "evidence": "La web oficial identifica a Parvin Razavi y describe una cocina de influencias austríacas, internacionales y orientales. Hotel Gilbert confirma la relación con la café-brasserie y publica su interior.",
+      "photoTip": "Usar la vista elevada de las mesas para el ritmo y el color; la vista frontal sitúa la barra y explica mejor el espacio.",
+      "tags": [
+        "Diseño contemporáneo",
+        "Color y plantas",
+        "Cocina de autor"
+      ],
+      "sources": [
+        "flora-oficial",
+        "flora-hotel",
+        "hotel-gilbert"
+      ],
+      "priority": true,
+      "number": 21,
+      "photoIds": [
+        "II-029",
+        "II-030"
+      ],
+      "relatedLandmarks": [
+        {
+          "id": "museumsquartier",
+          "name": "MuseumsQuartier"
+        },
+        {
+          "id": "volksgarten",
+          "name": "Volksgarten"
+        }
+      ]
+    },
+    {
+      "id": "motto-am-fluss",
+      "name": "Motto am Fluss",
+      "kind": "restaurante",
+      "zone": "canal",
+      "address": "Schwedenplatz / Donaukanal, 1010 Wien",
+      "subtitle": "Del café junto al agua a una cena cálida",
+      "description": "Un restaurante y café junto al Donaukanal con dos atmósferas que conviene distinguir: la terraza luminosa y la sala de tonos cálidos al anochecer. Las lámparas, el vidrio y las mesas permiten una secuencia de imágenes con mucho ambiente.",
+      "evidence": "La web oficial separa café, terraza, restaurante y bar, y describe cocina austríaca de estilo internacional contemporáneo en un interior de inspiración veneciana. Las fotos se vinculan a esos espacios sin confundirlos con el restaurante Motto de otra dirección.",
+      "photoTip": "La sala al anochecer aporta el plano amplio; la mesa a la luz de una vela sirve como detalle. La terraza se conserva como referencia visual de otra estación.",
+      "tags": [
+        "Donaukanal",
+        "Luz nocturna",
+        "Terraza y sala"
+      ],
+      "sources": [
+        "motto-am-fluss"
+      ],
+      "priority": false,
+      "note": "Las fotografías de terraza no confirman su uso ni su aspecto en enero. El café y el restaurante son áreas distintas del mismo conjunto.",
+      "number": 22,
+      "photoIds": [
+        "II-031",
+        "II-032",
+        "II-033"
+      ],
+      "relatedLandmarks": [
+        {
+          "id": "ankeruhr",
+          "name": "Ankeruhr y Hoher Markt"
+        },
+        {
+          "id": "stadtpark",
+          "name": "Stadtpark y Johann Strauss"
+        }
+      ]
+    },
+    {
+      "id": "salonplafond",
+      "name": "Salonplafond",
+      "kind": "restaurante",
+      "zone": "canal",
+      "address": "Stubenring 5, 1010 Wien · MAK",
+      "subtitle": "Un salón monumental con vida contemporánea",
+      "description": "El restaurante del MAK combina la altura de un gran salón, techo trabajado y mesas con un ambiente actual. El patio ofrece un segundo lenguaje, más verde y nocturno, que amplía las posibilidades de imagen del mismo lugar.",
+      "evidence": "Su web confirma la sede en el Museum für angewandte Kunst, presenta carta y publica una galería propia con sala, patio y platos. Se incluye por la combinación de arquitectura y propuesta gastronómica; no se atribuyen premios sin contrastar.",
+      "photoTip": "Una vista amplia para leer techo y profundidad de sala; después el patio al anochecer. La imagen exterior es estacional y no promete servicio de terraza en enero.",
+      "tags": [
+        "MAK",
+        "Gran salón",
+        "Patio nocturno"
+      ],
+      "sources": [
+        "salonplafond-about",
+        "salonplafond"
+      ],
+      "priority": true,
+      "number": 23,
+      "photoIds": [
+        "II-034",
+        "II-035"
+      ],
+      "relatedLandmarks": [
+        {
+          "id": "stadtpark",
+          "name": "Stadtpark y Johann Strauss"
+        },
+        {
+          "id": "kunsthaus",
+          "name": "Kunst Haus Wien"
+        }
+      ]
+    },
+    {
+      "id": "das-loft",
+      "name": "Das LOFT",
+      "kind": "restaurante",
+      "zone": "canal",
+      "address": "Praterstraße 1, 1020 Wien · planta 18",
+      "subtitle": "La ciudad entra en la sala",
+      "description": "Un restaurante elevado donde la vista de Viena y el techo de color forman parte de la escena. Su valor para el estudio está en la superposición de mesa, cristal y skyline, con un acabado más cinematográfico que doméstico.",
+      "evidence": "La web oficial confirma la planta 18 del Design Tower, la dirección y la propuesta de restaurante y bar, con carta y galería actual. Se selecciona por el espacio y la relación con la ciudad.",
+      "photoTip": "Mantener visible una parte del techo y la línea de ventanas. La toma con Stephansdom al fondo aporta un anclaje claro a Viena.",
+      "tags": [
+        "Skyline",
+        "Techo de color",
+        "Restaurante y bar"
+      ],
+      "sources": [
+        "das-loft"
+      ],
+      "priority": true,
+      "number": 24,
+      "photoIds": [
+        "II-036",
+        "II-037"
+      ],
+      "relatedLandmarks": [
+        {
+          "id": "ankeruhr",
+          "name": "Ankeruhr y Hoher Markt"
+        },
+        {
+          "id": "stephansdom",
+          "name": "Stephansdom"
+        }
+      ]
+    },
+    {
+      "id": "chez-bernard",
+      "name": "Chez Bernard · Hotel MOTTO",
+      "kind": "restaurante",
+      "zone": "neubau",
+      "address": "Mariahilfer Straße 71A · acceso por Schadekgasse 20, 1060 Wien",
+      "subtitle": "Vegetación, lámparas y una luz dorada",
+      "description": "El restaurante de la séptima planta del Hotel MOTTO crea una atmósfera de lámparas cálidas, plantas y mesas próximas. La imagen disponible comunica un lugar vivo y envolvente, con un detalle de barra que permite una transición más íntima.",
+      "evidence": "La web del restaurante identifica la planta, el acceso y una cocina moderna basada en clásicos reinterpretados. Se distingue la galería del restaurante de los anuncios de habitaciones que también aparecen en la web.",
+      "photoTip": "Usar la vista general de la sala para ambiente y el detalle de copas para textura. Se descarta la fotografía de habitación que aparecía mezclada en la página.",
+      "tags": [
+        "Luz cálida",
+        "Vegetación",
+        "Restaurante de hotel"
+      ],
+      "sources": [
+        "chez-bernard"
+      ],
+      "priority": true,
+      "note": "Extensión hacia Mariahilf: está más al oeste que el núcleo de monumentos del centro. Se incluye como referencia estética, sin convertirlo en una parada obligatoria.",
+      "number": 25,
+      "photoIds": [
+        "II-038",
+        "II-039"
+      ],
+      "relatedLandmarks": [
+        {
+          "id": "museumsquartier",
+          "name": "MuseumsQuartier"
+        },
+        {
+          "id": "naschmarkt",
+          "name": "Naschmarkt"
+        }
+      ]
+    },
+    {
+      "id": "mochi",
+      "name": "Mochi · Praterstraße",
+      "kind": "restaurante",
+      "zone": "canal",
+      "address": "Praterstraße 15, 1020 Wien",
+      "subtitle": "Madera, cobre y cocina a la vista",
+      "description": "Un espacio de escala cercana con cocina abierta y materiales cálidos. La fotografía de prensa permite leer el restaurante con claridad: barra, mesas, luminarias y el trabajo de cocina dentro de una misma escena.",
+      "evidence": "La Guía MICHELIN confirma Praterstraße 15 y describe cocina japonesa con giros actuales y una cocina abierta. La foto procede de la carpeta específica 01_Mochi/Ort del material oficial de prensa de 2026, no de otras marcas del grupo.",
+      "photoTip": "La vista de prensa funciona como imagen de ambiente completa. La barra conduce la mirada hacia la cocina; conservar su proporción evita cortar el espacio.",
+      "tags": [
+        "Japonés contemporáneo",
+        "Cocina abierta",
+        "Materiales cálidos"
+      ],
+      "sources": [
+        "mochi",
+        "mochi-guide"
+      ],
+      "priority": false,
+      "number": 26,
+      "photoIds": [
+        "II-040"
+      ],
+      "relatedLandmarks": [
+        {
+          "id": "ankeruhr",
+          "name": "Ankeruhr y Hoher Markt"
+        },
+        {
+          "id": "kunsthaus",
+          "name": "Kunst Haus Wien"
+        }
+      ]
+    },
+    {
+      "id": "tian",
+      "name": "TIAN Restaurant",
+      "kind": "restaurante",
+      "zone": "centro",
+      "address": "Himmelpfortgasse 23, 1010 Wien",
+      "subtitle": "Una sala clara para una cocina vegetal",
+      "description": "Bóvedas claras, mesas cuidadas y un servicio en movimiento construyen una escena elegante y luminosa. Aporta un contraste reposado frente a los interiores oscuros, sin perder profundidad arquitectónica.",
+      "evidence": "La fuente oficial y la Guía MICHELIN documentan su cocina vegetariana creativa, con opción vegana. La imagen de sala se obtiene de la biblioteca oficial de medios del propio restaurante.",
+      "photoTip": "Conservar las bóvedas y la secuencia de mesas. El movimiento de la persona de servicio es parte de la fotografía original, no una distorsión añadida.",
+      "tags": [
+        "Vegetariano creativo",
+        "Sala luminosa",
+        "Bóvedas"
+      ],
+      "sources": [
+        "tian-wien",
+        "tian-guide"
+      ],
+      "priority": false,
+      "number": 27,
+      "photoIds": [
+        "II-041"
+      ],
+      "relatedLandmarks": [
+        {
+          "id": "stadtpark",
+          "name": "Stadtpark y Johann Strauss"
+        },
+        {
+          "id": "franziskanerplatz",
+          "name": "Franziskanerplatz"
+        }
+      ]
+    },
+    {
+      "id": "tian-bistro",
+      "name": "TIAN Bistro am Spittelberg",
+      "kind": "restaurante",
+      "zone": "neubau",
+      "address": "Schrankgasse 4, 1070 Wien",
+      "subtitle": "La mesa como paisaje",
+      "description": "Una alternativa vegetal de espíritu compartido en Spittelberg. Las fotos seleccionadas se centran en la comida y el gesto de compartir; su interés aquí es una mesa cálida y orgánica que puede acompañar las escenas de paseo por el barrio.",
+      "evidence": "La web oficial identifica Schrankgasse 4 y describe platos de temporada para compartir, de cocina vegetariana y vegana. Las fotografías elegidas pertenecen a esa web y no al TIAN Restaurant de Himmelpfortgasse.",
+      "photoTip": "La toma de mesa funciona en vertical; el plato sostenido sobre el banco suma una escala de detalle. Estas imágenes no son un recorrido del interior.",
+      "tags": [
+        "Vegetariano y vegano",
+        "Para compartir",
+        "Fotografía de mesa"
+      ],
+      "sources": [
+        "tian-bistro"
+      ],
+      "priority": false,
+      "note": "Cobertura fotográfica centrada en platos y mesa; no se ha seleccionado una vista general del local con la misma calidad.",
+      "number": 28,
+      "photoIds": [
+        "II-042",
+        "II-043"
+      ],
+      "relatedLandmarks": [
+        {
+          "id": "museumsquartier",
+          "name": "MuseumsQuartier"
+        }
+      ]
+    },
+    {
+      "id": "steirereck",
+      "name": "Steirereck im Stadtpark",
+      "kind": "restaurante",
+      "zone": "canal",
+      "address": "Am Heumarkt 2A, 1030 Wien · Stadtpark",
+      "subtitle": "Arquitectura y cocina austríaca creativa",
+      "description": "El conjunto de Steirereck aporta una referencia gastronómica singular dentro del Stadtpark. Interesa el diálogo entre parque, edificio histórico y arquitectura contemporánea; es una pieza para comparar con los restaurantes del casco antiguo.",
+      "evidence": "La fuente oficial presenta una cocina austríaca que combina tradición y nuevas técnicas. La Guía MICHELIN confirma la identidad del restaurante del Stadtpark y su cocina creativa. No se confunde con la Meierei situada en el mismo conjunto.",
+      "photoTip": "Priorizar una vista que identifique la ampliación contemporánea; evitar presentar únicamente la fachada de la Meierei como si fuera el nuevo pabellón.",
+      "tags": [
+        "Stadtpark",
+        "Cocina creativa",
+        "Arquitectura"
+      ],
+      "sources": [
+        "steirereck",
+        "steirereck-guide"
+      ],
+      "priority": false,
+      "number": 29,
+      "photoIds": [
+        "II-044"
+      ],
+      "relatedLandmarks": [
+        {
+          "id": "stadtpark",
+          "name": "Stadtpark y Johann Strauss"
+        }
+      ]
+    }
+  ],
+  "photos": [
+    {
+      "fileTitle": "File:Griechengasse Durchgang.jpg",
+      "rank": 1,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Griechengasse_Durchgang.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/82/Griechengasse_Durchgang.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Griechengasse_Durchgang.jpg/1920px-Griechengasse_Durchgang.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 3000,
+      "originalHeight": 4000,
+      "artist": "Thomas Ledl",
+      "credit": "Own work",
+      "license": "CC BY-SA 3.0 at",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/at/deed.en",
+      "description": "Griechenbeisl/Zum roten Dachl/Reichenberger Beisl samt Turm",
+      "date": "2014-04-05",
+      "rights": "licensed",
+      "status": "downloaded-and-visually-reviewed",
+      "key": "griechengasse-1",
+      "placeId": "griechengasse",
+      "localFile": "griechengasse-1.jpg",
+      "resolvedImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Griechengasse_Durchgang.jpg/1920px-Griechengasse_Durchgang.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 2560,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 1494381,
+      "sha256": "92f6d43d2c094e2c93a91f737b0e2547dffabf460b9de4a34cf511a54cca6489",
+      "rightsNote": "Licencia identificada: respetar atribución y condiciones de la ficha original.",
+      "id": "II-001",
+      "caption": "Paso estrecho, adoquines y faroles en Griechengasse.",
+      "alt": "Paso estrecho, adoquines y faroles en Griechengasse.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "fileTitle": "File:Wien 01 Schönlaterngasse a.jpg",
+      "rank": 1,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Wien_01_Sch%C3%B6nlaterngasse_a.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Wien_01_Sch%C3%B6nlaterngasse_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Wien_01_Sch%C3%B6nlaterngasse_a.jpg/1920px-Wien_01_Sch%C3%B6nlaterngasse_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 3000,
+      "originalHeight": 1688,
+      "artist": "Gugerell",
+      "credit": "Own work",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Schönlaterngasse in Wien 1 bei Nr. 11 Richtung Westen",
+      "date": "2012-09-28",
+      "rights": "licensed",
+      "status": "downloaded-and-visually-reviewed",
+      "key": "schoenlaterngasse-1",
+      "placeId": "schoenlaterngasse",
+      "localFile": "schoenlaterngasse-1.jpg",
+      "resolvedImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Wien_01_Sch%C3%B6nlaterngasse_a.jpg/1920px-Wien_01_Sch%C3%B6nlaterngasse_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 1080,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 400176,
+      "sha256": "2e48dd9631b5fe284cf6070763353f15d5421f28953be78abc8bf47cc6ff2aa7",
+      "sourceLicenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "rightsNote": "Licencia identificada: respetar atribución y condiciones de la ficha original.",
+      "id": "II-002",
+      "caption": "Perspectiva de Schönlaterngasse con fachadas y pavimento.",
+      "alt": "Perspectiva de Schönlaterngasse con fachadas y pavimento.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "fileTitle": "File:Wien-Schönlaterngasse-1.jpg",
+      "rank": 2,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Wien-Sch%C3%B6nlaterngasse-1.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Wien-Sch%C3%B6nlaterngasse-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Wien-Sch%C3%B6nlaterngasse-1.jpg/1920px-Wien-Sch%C3%B6nlaterngasse-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 3147,
+      "originalHeight": 1984,
+      "artist": "SchiDD",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Schönlaterngasse in Wien, Kopie der \"Schönen Laterne\"",
+      "date": "2014-11-20 10:50:29",
+      "rights": "licensed",
+      "status": "downloaded-and-visually-reviewed",
+      "key": "schoenlaterngasse-2",
+      "placeId": "schoenlaterngasse",
+      "localFile": "schoenlaterngasse-2.jpg",
+      "resolvedImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Wien-Sch%C3%B6nlaterngasse-1.jpg/1920px-Wien-Sch%C3%B6nlaterngasse-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 1210,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 641634,
+      "sha256": "34e209620946f97c7a10e11abbdc716c493eea07726cd725df4f0b4d9ec70a48",
+      "rightsNote": "Licencia identificada: respetar atribución y condiciones de la ficha original.",
+      "id": "II-003",
+      "caption": "Detalle del farol y la fachada de Schönlaterngasse.",
+      "alt": "Detalle del farol y la fachada de Schönlaterngasse.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "fileTitle": "File:Wien 01 Blutgasse a.jpg",
+      "rank": 1,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Wien_01_Blutgasse_a.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Wien_01_Blutgasse_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Wien_01_Blutgasse_a.jpg/1920px-Wien_01_Blutgasse_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 3000,
+      "originalHeight": 1688,
+      "artist": "Gugerell",
+      "credit": "Own work",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Blutgasse in Wien 1 bei Nr. 3 Richtung Süden",
+      "date": "2012-09-05",
+      "rights": "licensed",
+      "status": "downloaded-and-visually-reviewed",
+      "key": "blutgasse-1",
+      "placeId": "blutgasse",
+      "localFile": "blutgasse-1.jpg",
+      "resolvedImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Wien_01_Blutgasse_a.jpg/1920px-Wien_01_Blutgasse_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 1080,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 503979,
+      "sha256": "25ef02560af903d34a13b524394febb56035ce3c9662fa8747f2cc854cfe36b3",
+      "sourceLicenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "rightsNote": "Licencia identificada: respetar atribución y condiciones de la ficha original.",
+      "id": "II-004",
+      "caption": "Calle estrecha y fachadas claras de Blutgasse.",
+      "alt": "Calle estrecha y fachadas claras de Blutgasse.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "fileTitle": "File:Bodega Flores, Ballgasse 6 1010 Wien.JPG",
+      "rank": 2,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bodega_Flores,_Ballgasse_6_1010_Wien.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/Bodega_Flores%2C_Ballgasse_6_1010_Wien.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Bodega_Flores%2C_Ballgasse_6_1010_Wien.JPG/1920px-Bodega_Flores%2C_Ballgasse_6_1010_Wien.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 6774,
+      "originalHeight": 4517,
+      "artist": "Feel free to use my photos, but please mention me as the author and if you want send me a message . or ( rufre@lenz-nenning.at )",
+      "credit": "Own work",
+      "license": "CC BY-SA 3.0 at",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/at/deed.en",
+      "description": "Ballgasse in Wien.",
+      "date": "2014-11-20",
+      "rights": "licensed",
+      "status": "downloaded-and-visually-reviewed",
+      "key": "ballgasse-2",
+      "placeId": "ballgasse",
+      "localFile": "ballgasse-2.jpg",
+      "resolvedImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Bodega_Flores%2C_Ballgasse_6_1010_Wien.JPG/1920px-Bodega_Flores%2C_Ballgasse_6_1010_Wien.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 1280,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 571361,
+      "sha256": "d800a464baa347b5eb40367d4d376d1108886c1c4e65830e92dafd3439e1e831",
+      "rightsNote": "Licencia identificada: respetar atribución y condiciones de la ficha original.",
+      "id": "II-005",
+      "caption": "Ballgasse al anochecer, con faroles y pavimento iluminado.",
+      "alt": "Ballgasse al anochecer, con faroles y pavimento iluminado.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "fileTitle": "File:Wien 01 Ballgasse a.jpg",
+      "rank": 1,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Wien_01_Ballgasse_a.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/18/Wien_01_Ballgasse_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Wien_01_Ballgasse_a.jpg/1920px-Wien_01_Ballgasse_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 3000,
+      "originalHeight": 1687,
+      "artist": "Gugerell",
+      "credit": "Own work",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Ballgasse in Wien 1 bei Nr. 1 Richtung Osten.",
+      "date": "2012-09-05",
+      "rights": "licensed",
+      "status": "downloaded-and-visually-reviewed",
+      "key": "ballgasse-1",
+      "placeId": "ballgasse",
+      "localFile": "ballgasse-1.jpg",
+      "resolvedImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Wien_01_Ballgasse_a.jpg/1920px-Wien_01_Ballgasse_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 1080,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 515835,
+      "sha256": "8da3b89be7dad1b9b33bb3183d7e716447c68871f775b070f8aba490f45dc957",
+      "sourceLicenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "rightsNote": "Licencia identificada: respetar atribución y condiciones de la ficha original.",
+      "id": "II-006",
+      "caption": "La curva de Ballgasse durante el día.",
+      "alt": "La curva de Ballgasse durante el día.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "fileTitle": "File:Bäckerstraße Wien 2022-08-08 01.jpg",
+      "rank": 4,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:B%C3%A4ckerstra%C3%9Fe_Wien_2022-08-08_01.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/B%C3%A4ckerstra%C3%9Fe_Wien_2022-08-08_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/B%C3%A4ckerstra%C3%9Fe_Wien_2022-08-08_01.jpg/1920px-B%C3%A4ckerstra%C3%9Fe_Wien_2022-08-08_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 8384,
+      "originalHeight": 5612,
+      "artist": "Leonhard Lenz",
+      "credit": "Own work",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Bäckerstraße in Vienna.",
+      "date": "2022-08-08 19:26:11",
+      "rights": "licensed",
+      "status": "downloaded-and-visually-reviewed",
+      "key": "baeckerstrasse-4",
+      "placeId": "baeckerstrasse",
+      "localFile": "baeckerstrasse-4.jpg",
+      "resolvedImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/B%C3%A4ckerstra%C3%9Fe_Wien_2022-08-08_01.jpg/1920px-B%C3%A4ckerstra%C3%9Fe_Wien_2022-08-08_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 1285,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 516938,
+      "sha256": "69c513df793ba0c6affc283d4bae962ceed39b461cb3cbd11270d8a530fbafd8",
+      "sourceLicenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "rightsNote": "Licencia identificada: respetar atribución y condiciones de la ficha original.",
+      "id": "II-007",
+      "caption": "Vista de Bäckerstraße, sus fachadas y la perspectiva de la calle.",
+      "alt": "Vista de Bäckerstraße, sus fachadas y la perspectiva de la calle.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "fileTitle": "File:Wien 01 Domgasse a.jpg",
+      "rank": 2,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Wien_01_Domgasse_a.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Wien_01_Domgasse_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Wien_01_Domgasse_a.jpg/1920px-Wien_01_Domgasse_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 2000,
+      "originalHeight": 1125,
+      "artist": "Gugerell",
+      "credit": "Own work",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Domgasse in Wien 1 bei der Schulerstraße Richtung Süden",
+      "date": "2012-09-05",
+      "rights": "licensed",
+      "status": "downloaded-and-visually-reviewed",
+      "key": "domgasse-2",
+      "placeId": "domgasse",
+      "localFile": "domgasse-2.jpg",
+      "resolvedImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Wien_01_Domgasse_a.jpg/1920px-Wien_01_Domgasse_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 1080,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 401524,
+      "sha256": "5b6b807153f2ff03ccf354b2e611c78662ce46026ee2144d11e987eff630a59c",
+      "sourceLicenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "rightsNote": "Licencia identificada: respetar atribución y condiciones de la ficha original.",
+      "id": "II-008",
+      "caption": "Domgasse, con adoquines y fachadas junto a Mozarthaus.",
+      "alt": "Domgasse, con adoquines y fachadas junto a Mozarthaus.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "fileTitle": "File:Wien 01 Naglergasse a.jpg",
+      "rank": 1,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Wien_01_Naglergasse_a.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Wien_01_Naglergasse_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Wien_01_Naglergasse_a.jpg/1920px-Wien_01_Naglergasse_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 3000,
+      "originalHeight": 1687,
+      "artist": "Gugerell",
+      "credit": "Own work",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Naglergasse in Wien 1 beim Haarhof Richtung Nordwesten",
+      "date": "2012-09-10",
+      "rights": "licensed",
+      "status": "downloaded-and-visually-reviewed",
+      "key": "naglergasse-1",
+      "placeId": "naglergasse",
+      "localFile": "naglergasse-1.jpg",
+      "resolvedImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Wien_01_Naglergasse_a.jpg/1920px-Wien_01_Naglergasse_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 1080,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 566972,
+      "sha256": "f58f8758b7dd5af9b0cff1aba98a524e2f0d6b3f5aaa533fba91de1019032d6b",
+      "sourceLicenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "rightsNote": "Licencia identificada: respetar atribución y condiciones de la ficha original.",
+      "id": "II-009",
+      "caption": "El cambio de dirección de Naglergasse entre fachadas altas.",
+      "alt": "El cambio de dirección de Naglergasse entre fachadas altas.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "fileTitle": "File:Vienna Haarhof (52570867130).jpg",
+      "rank": 2,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Vienna_Haarhof_(52570867130).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/34/Vienna_Haarhof_%2852570867130%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Vienna_Haarhof_%2852570867130%29.jpg/1920px-Vienna_Haarhof_%2852570867130%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 4512,
+      "originalHeight": 3008,
+      "artist": "Jorge Franganillo",
+      "credit": "Vienna: Haarhof",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "description": "Vienna (Austria)",
+      "date": "2022-04-19 10:42",
+      "rights": "licensed",
+      "status": "downloaded-and-visually-reviewed",
+      "key": "haarhof-2",
+      "placeId": "haarhof",
+      "localFile": "haarhof-2.jpg",
+      "resolvedImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Vienna_Haarhof_%2852570867130%29.jpg/1920px-Vienna_Haarhof_%2852570867130%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 1280,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 910077,
+      "sha256": "07b46f0d5d252f09233c45f3f0981ca66c5fdfa130ed80ff91a00784b0dda05f",
+      "rightsNote": "Licencia identificada: respetar atribución y condiciones de la ficha original.",
+      "id": "II-010",
+      "caption": "Mesas y fachadas pastel en Haarhof, con el pavimento húmedo.",
+      "alt": "Mesas y fachadas pastel en Haarhof, con el pavimento húmedo.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "fileTitle": "File:Wien - Kohlmarkt - View SW towards Hofburg.jpg",
+      "rank": 2,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Wien_-_Kohlmarkt_-_View_SW_towards_Hofburg.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/Wien_-_Kohlmarkt_-_View_SW_towards_Hofburg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Wien_-_Kohlmarkt_-_View_SW_towards_Hofburg.jpg/1920px-Wien_-_Kohlmarkt_-_View_SW_towards_Hofburg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 2592,
+      "originalHeight": 3915,
+      "artist": "Txllxt TxllxT",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Wien - Kohlmarkt - View SW towards Hofburg",
+      "date": "2008-09-05 12:46:43",
+      "rights": "licensed",
+      "status": "downloaded-and-visually-reviewed",
+      "key": "kohlmarkt-calle-2",
+      "placeId": "kohlmarkt-calle",
+      "localFile": "kohlmarkt-calle-2.jpg",
+      "resolvedImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Wien_-_Kohlmarkt_-_View_SW_towards_Hofburg.jpg/1920px-Wien_-_Kohlmarkt_-_View_SW_towards_Hofburg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 2900,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 1546511,
+      "sha256": "9a48b172534329f0cc69d9c80b738d0a2e3233f70f42dacdeda8593406e528dc",
+      "rightsNote": "Licencia identificada: respetar atribución y condiciones de la ficha original.",
+      "id": "II-011",
+      "caption": "Kohlmarkt hacia la cúpula de Michaelerplatz y Hofburg.",
+      "alt": "Kohlmarkt hacia la cúpula de Michaelerplatz y Hofburg.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "fileTitle": "File:Wien 01 Kärntner Straße a.jpg",
+      "rank": 4,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Wien_01_K%C3%A4rntner_Stra%C3%9Fe_a.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/24/Wien_01_K%C3%A4rntner_Stra%C3%9Fe_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Wien_01_K%C3%A4rntner_Stra%C3%9Fe_a.jpg/1920px-Wien_01_K%C3%A4rntner_Stra%C3%9Fe_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 3000,
+      "originalHeight": 1688,
+      "artist": "Gugerell",
+      "credit": "Own work",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "de:Kärntner Straße in Wien 1 bei Nr. 18 Richtung Norden",
+      "date": "2012-08-19",
+      "rights": "licensed",
+      "status": "downloaded-and-visually-reviewed",
+      "key": "kaerntnerstrasse-4",
+      "placeId": "kaerntnerstrasse",
+      "localFile": "kaerntnerstrasse-4.jpg",
+      "resolvedImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Wien_01_K%C3%A4rntner_Stra%C3%9Fe_a.jpg/1920px-Wien_01_K%C3%A4rntner_Stra%C3%9Fe_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 1080,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 695364,
+      "sha256": "3e75268aac80aef1bbb08469a7db081d7ae91f00692cbd946e7369dcbc46814f",
+      "sourceLicenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "rightsNote": "Licencia identificada: respetar atribución y condiciones de la ficha original.",
+      "id": "II-012",
+      "caption": "Perspectiva peatonal de Kärntner Straße.",
+      "alt": "Perspectiva peatonal de Kärntner Straße.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "fileTitle": "File:Wien, Kärntner Straße, Blumenstand -- 2018 -- 3159.jpg",
+      "rank": 1,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Wien,_K%C3%A4rntner_Stra%C3%9Fe,_Blumenstand_--_2018_--_3159.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Wien%2C_K%C3%A4rntner_Stra%C3%9Fe%2C_Blumenstand_--_2018_--_3159.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Wien%2C_K%C3%A4rntner_Stra%C3%9Fe%2C_Blumenstand_--_2018_--_3159.jpg/1920px-Wien%2C_K%C3%A4rntner_Stra%C3%9Fe%2C_Blumenstand_--_2018_--_3159.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 6720,
+      "originalHeight": 4480,
+      "artist": "Dietmar Rabich",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Flower sale at Kärtner Straße , Vienna , Austria",
+      "date": "Taken on 15 June 2018, 12:51",
+      "rights": "licensed",
+      "status": "downloaded-and-visually-reviewed",
+      "key": "kaerntnerstrasse-1",
+      "placeId": "kaerntnerstrasse",
+      "localFile": "kaerntnerstrasse-1.jpg",
+      "resolvedImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Wien%2C_K%C3%A4rntner_Stra%C3%9Fe%2C_Blumenstand_--_2018_--_3159.jpg/1920px-Wien%2C_K%C3%A4rntner_Stra%C3%9Fe%2C_Blumenstand_--_2018_--_3159.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 1280,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 975870,
+      "sha256": "efb7094c2be7ba0eed13ba81b434881a2a8db8f8b5848ba61b8955e3120bf16a",
+      "rightsNote": "Licencia identificada: respetar atribución y condiciones de la ficha original.",
+      "id": "II-013",
+      "caption": "Flores como detalle de color en Kärntner Straße.",
+      "alt": "Flores como detalle de color en Kärntner Straße.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "fileTitle": "File:Wien Spittelberggasse.jpg",
+      "rank": 2,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Wien_Spittelberggasse.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Wien_Spittelberggasse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Wien_Spittelberggasse.jpg/1920px-Wien_Spittelberggasse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 2680,
+      "originalHeight": 2304,
+      "artist": "Doris Antony , Berlin",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Street in Vienna , Austria",
+      "date": "2009-10-25",
+      "rights": "licensed",
+      "status": "downloaded-and-visually-reviewed",
+      "key": "spittelberggasse-2",
+      "placeId": "spittelberggasse",
+      "localFile": "spittelberggasse-2.jpg",
+      "resolvedImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Wien_Spittelberggasse.jpg/1920px-Wien_Spittelberggasse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 1651,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 763940,
+      "sha256": "5f6768f680a015f82c9b3703642fc647a4a8210419044d3193d2a062ee3e924f",
+      "rightsNote": "Licencia identificada: respetar atribución y condiciones de la ficha original.",
+      "id": "II-014",
+      "caption": "Casas y faroles de Spittelberggasse, sin decoración temporal como protagonista.",
+      "alt": "Casas y faroles de Spittelberggasse, sin decoración temporal como protagonista.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "fileTitle": "File:Wien Gutenberggasse bergauf.jpg",
+      "rank": 1,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Wien_Gutenberggasse_bergauf.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/82/Wien_Gutenberggasse_bergauf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Wien_Gutenberggasse_bergauf.jpg/1920px-Wien_Gutenberggasse_bergauf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 3902,
+      "originalHeight": 5853,
+      "artist": "Isiwal",
+      "credit": "Own work",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Uphill view through Gutenberggasse at Spittelberg in Vienna.",
+      "date": "2015-03-18",
+      "rights": "licensed",
+      "status": "downloaded-and-visually-reviewed",
+      "key": "gutenberggasse-1",
+      "placeId": "gutenberggasse",
+      "localFile": "gutenberggasse-1.jpg",
+      "resolvedImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Wien_Gutenberggasse_bergauf.jpg/1920px-Wien_Gutenberggasse_bergauf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 2880,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 1409404,
+      "sha256": "adb0e5b4bac567b3720b74704773a249e43d3897615d06bb8f8e15d3d8a10d58",
+      "rightsNote": "Licencia identificada: respetar atribución y condiciones de la ficha original.",
+      "id": "II-015",
+      "caption": "Pavimento y fachadas de Gutenberggasse, en Spittelberg.",
+      "alt": "Pavimento y fachadas de Gutenberggasse, en Spittelberg.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "fileTitle": "File:Wien-Linke Wienzeile-32-Nr 40-38-2007-gje.jpg",
+      "rank": 3,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Wien-Linke_Wienzeile-32-Nr_40-38-2007-gje.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Wien-Linke_Wienzeile-32-Nr_40-38-2007-gje.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Wien-Linke_Wienzeile-32-Nr_40-38-2007-gje.jpg/1920px-Wien-Linke_Wienzeile-32-Nr_40-38-2007-gje.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 3072,
+      "originalHeight": 2048,
+      "artist": "Gerd Eichmann",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Linke Wienzeile, Vienna",
+      "date": "2007-05-03 19:10:20",
+      "rights": "licensed",
+      "status": "downloaded-and-visually-reviewed",
+      "key": "linke-wienzeile-3",
+      "placeId": "linke-wienzeile",
+      "localFile": "linke-wienzeile-3.jpg",
+      "resolvedImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Wien-Linke_Wienzeile-32-Nr_40-38-2007-gje.jpg/1920px-Wien-Linke_Wienzeile-32-Nr_40-38-2007-gje.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 1280,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 651889,
+      "sha256": "d53e77f6b82a9862e5af0241d72700edfa2c25cb18be366982cad54e096b79ed",
+      "rightsNote": "Licencia identificada: respetar atribución y condiciones de la ficha original.",
+      "id": "II-016",
+      "caption": "Majolikahaus y la fachada vecina de Linke Wienzeile 38–40.",
+      "alt": "Majolikahaus y la fachada vecina de Linke Wienzeile 38–40.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "fileTitle": "File:Wien-Linke Wienzeile-36-Nr 40-Majolikahaus-2007-gje.jpg",
+      "rank": 1,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Wien-Linke_Wienzeile-36-Nr_40-Majolikahaus-2007-gje.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Wien-Linke_Wienzeile-36-Nr_40-Majolikahaus-2007-gje.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Wien-Linke_Wienzeile-36-Nr_40-Majolikahaus-2007-gje.jpg/1920px-Wien-Linke_Wienzeile-36-Nr_40-Majolikahaus-2007-gje.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 3072,
+      "originalHeight": 1899,
+      "artist": "Gerd Eichmann",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Linke Wienzeile, Vienna",
+      "date": "2007-05-03 19:12:14",
+      "rights": "licensed",
+      "status": "downloaded-and-visually-reviewed",
+      "key": "linke-wienzeile-1",
+      "placeId": "linke-wienzeile",
+      "localFile": "linke-wienzeile-1.jpg",
+      "resolvedImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Wien-Linke_Wienzeile-36-Nr_40-Majolikahaus-2007-gje.jpg/1920px-Wien-Linke_Wienzeile-36-Nr_40-Majolikahaus-2007-gje.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 1187,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 500388,
+      "sha256": "930413b88de02b93e696b6233c647ae8cbf89650617d89f332941bc19f31ef80",
+      "rightsNote": "Licencia identificada: respetar atribución y condiciones de la ficha original.",
+      "id": "II-017",
+      "caption": "Detalle floral y balcones del Majolikahaus.",
+      "alt": "Detalle floral y balcones del Majolikahaus.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "fileTitle": "File:Wien 02 Praterstraße 016 a.jpg",
+      "rank": 4,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Wien_02_Praterstra%C3%9Fe_016_a.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Wien_02_Praterstra%C3%9Fe_016_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Wien_02_Praterstra%C3%9Fe_016_a.jpg/1920px-Wien_02_Praterstra%C3%9Fe_016_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 3000,
+      "originalHeight": 2103,
+      "artist": "Gugerell",
+      "credit": "Own work",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Praterstraße bei Nr. 16 in Wien 2 Richtung Nordost",
+      "date": "2021-06-13 16:22:14",
+      "rights": "licensed",
+      "status": "downloaded-and-visually-reviewed",
+      "key": "praterstrasse-4",
+      "placeId": "praterstrasse",
+      "localFile": "praterstrasse-4.jpg",
+      "resolvedImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Wien_02_Praterstra%C3%9Fe_016_a.jpg/1920px-Wien_02_Praterstra%C3%9Fe_016_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 1346,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 864937,
+      "sha256": "6c1897730b0dd1ee6a7242965104303cff6924f638bf353629eb488f0bf07dd4",
+      "sourceLicenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "rightsNote": "Licencia identificada: respetar atribución y condiciones de la ficha original.",
+      "id": "II-018",
+      "caption": "La fachada verde de Praterstraße junto a Nestroyplatz.",
+      "alt": "La fachada verde de Praterstraße junto a Nestroyplatz.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "fileTitle": "File:Wien-Ferstel-Passage-2.jpg",
+      "rank": 3,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Wien-Ferstel-Passage-2.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/80/Wien-Ferstel-Passage-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Wien-Ferstel-Passage-2.jpg/1920px-Wien-Ferstel-Passage-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 2078,
+      "originalHeight": 3039,
+      "artist": "SchiDD",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Palais Ferstel und Ferstel-Passage Wien, Freyung",
+      "date": "2014-11-20 12:05:26",
+      "rights": "licensed",
+      "status": "downloaded-and-visually-reviewed",
+      "key": "ferstel-pasaje-3",
+      "placeId": "ferstel-pasaje",
+      "localFile": "ferstel-pasaje-3.jpg",
+      "resolvedImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Wien-Ferstel-Passage-2.jpg/1920px-Wien-Ferstel-Passage-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 2808,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 1184058,
+      "sha256": "46d4bf4e5751836a1aed3ac61a40571b2af157ed3631203bd7a58aba3f6ec468",
+      "rightsNote": "Licencia identificada: respetar atribución y condiciones de la ficha original.",
+      "id": "II-019",
+      "caption": "Perspectiva de las arcadas de Ferstelpassage. Fotografía de archivo.",
+      "alt": "Perspectiva de las arcadas de Ferstelpassage. Fotografía de archivo.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "fileTitle": "File:Wien, Ferstel-Passage -- 2018 -- 3091.jpg",
+      "rank": 1,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Wien,_Ferstel-Passage_--_2018_--_3091.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/Wien%2C_Ferstel-Passage_--_2018_--_3091.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Wien%2C_Ferstel-Passage_--_2018_--_3091.jpg/1920px-Wien%2C_Ferstel-Passage_--_2018_--_3091.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalWidth": 6720,
+      "originalHeight": 4480,
+      "artist": "Dietmar Rabich",
+      "credit": "Own work",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Palais Ferstel , Vienna , Austria",
+      "date": "Taken on 14 June 2018, 10:57",
+      "rights": "licensed",
+      "status": "downloaded-and-visually-reviewed",
+      "key": "ferstel-pasaje-1",
+      "placeId": "ferstel-pasaje",
+      "localFile": "ferstel-pasaje-1.jpg",
+      "resolvedImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Wien%2C_Ferstel-Passage_--_2018_--_3091.jpg/1920px-Wien%2C_Ferstel-Passage_--_2018_--_3091.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 1280,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 804051,
+      "sha256": "e9a09abcb86ac34e149bb084e1fe678c69a91dd82adc4957af16dfdec6f7173c",
+      "rightsNote": "Licencia identificada: respetar atribución y condiciones de la ficha original.",
+      "id": "II-020",
+      "caption": "Cubierta y patio de la fuente de Ferstelpassage. Fotografía de archivo.",
+      "alt": "Cubierta y patio de la fuente de Ferstelpassage. Fotografía de archivo.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "key": "balthasar-1",
+      "placeId": "balthasar",
+      "downloadUrl": "https://balthasar.at/wp-content/uploads/2021/04/Balthasar2020-47-web-scaled.jpg",
+      "sourcePage": "https://balthasar.at/",
+      "sourceAlt": "",
+      "publisher": "Balthasar Kaffee Bar",
+      "artist": "Fotógrafo no identificado para esta imagen",
+      "license": "Referencia editorial · reutilización no confirmada",
+      "licenseUrl": "",
+      "rights": "reference-only",
+      "date": "",
+      "sourceFile": "balthasar-web.json",
+      "localFile": "balthasar-1.jpg",
+      "resolvedImageUrl": "https://balthasar.at/wp-content/uploads/2021/04/Balthasar2020-47-web-scaled.jpg",
+      "width": 2560,
+      "height": 1255,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 505506,
+      "sha256": "b30a8428e984f86d96b22b4ef1f02ec17ba91e91ae9fb01b2e9828815f7bafed",
+      "status": "downloaded-and-visually-reviewed",
+      "credit": "Publicada por Balthasar Kaffee Bar · fotógrafo no identificado",
+      "rightsNote": "Referencia de la web oficial, sin licencia abierta identificada. El ZIP de prensa contiene otro conjunto acreditado a Nicky Webb; no se ha confirmado que ese crédito o sus permisos correspondan a esta imagen. Reutilización por confirmar.",
+      "id": "II-021",
+      "caption": "Barra frontal de Balthasar, con pared mineral y máquinas de café.",
+      "alt": "Barra frontal de Balthasar, con pared mineral y máquinas de café.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "key": "balthasar-3",
+      "placeId": "balthasar",
+      "downloadUrl": "https://balthasar.at/wp-content/uploads/2021/04/Balthasar2020-130-web-scaled.jpg",
+      "sourcePage": "https://balthasar.at/",
+      "sourceAlt": "",
+      "publisher": "Balthasar Kaffee Bar",
+      "artist": "Fotógrafo no identificado para esta imagen",
+      "license": "Referencia editorial · reutilización no confirmada",
+      "licenseUrl": "",
+      "rights": "reference-only",
+      "date": "",
+      "sourceFile": "balthasar-web.json",
+      "localFile": "balthasar-3.jpg",
+      "resolvedImageUrl": "https://balthasar.at/wp-content/uploads/2021/04/Balthasar2020-130-web-scaled.jpg",
+      "width": 2560,
+      "height": 1255,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 281993,
+      "sha256": "4d3d3ddfae18d2ef78d7532f7ee8740cc0245c4a1e9580ad8a450902a24dab1a",
+      "status": "downloaded-and-visually-reviewed",
+      "credit": "Publicada por Balthasar Kaffee Bar · fotógrafo no identificado",
+      "rightsNote": "Referencia de la web oficial, sin licencia abierta identificada. El ZIP de prensa contiene otro conjunto acreditado a Nicky Webb; no se ha confirmado que ese crédito o sus permisos correspondan a esta imagen. Reutilización por confirmar.",
+      "id": "II-022",
+      "caption": "La máquina de café y el área de mesas de Balthasar.",
+      "alt": "La máquina de café y el área de mesas de Balthasar.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "key": "jonas-reindl-1",
+      "placeId": "jonas-reindl",
+      "downloadUrl": "https://www.jonasreindl.at/wp-content/uploads/2025/07/1090-56-crop.jpg",
+      "sourcePage": "https://www.jonasreindl.at/",
+      "sourceAlt": "1090 56 crop",
+      "publisher": "Jonas Reindl Coffee Roasters",
+      "artist": "Fotógrafo no identificado en la fuente consultada",
+      "license": "Referencia editorial · reutilización no confirmada",
+      "licenseUrl": "",
+      "rights": "reference-only",
+      "date": "",
+      "sourceFile": "jonas-reindl-web.json",
+      "localFile": "jonas-reindl-1.jpg",
+      "resolvedImageUrl": "https://www.jonasreindl.at/wp-content/uploads/2025/07/1090-56-crop.jpg",
+      "width": 1600,
+      "height": 1280,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 1369040,
+      "sha256": "d68003aa84bc51845b9827aac2631a013f4896b2ee77a7dc2935ef75d5075205",
+      "status": "downloaded-and-visually-reviewed",
+      "rightsNote": "Fuente pública oficial o de prensa. No se ha localizado una licencia abierta ni se ha confirmado permiso para reutilizarla en la web del regalo.",
+      "id": "II-023",
+      "caption": "Expositor de café de Jonas Reindl. Detalle corporativo; no identifica una sede concreta.",
+      "alt": "Expositor de café de Jonas Reindl. Detalle corporativo; no identifica una sede concreta.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "key": "kaffeefabrik-1",
+      "placeId": "kaffeefabrik",
+      "downloadUrl": "https://www.kaffeefabrik.at/cdn/shop/files/1040DSC_0224_667e09c9-ed44-41ca-aabb-ccda75b268c7.jpg?v=1720088491",
+      "sourcePage": "https://www.kaffeefabrik.at/pages/cafes",
+      "sourceAlt": "",
+      "publisher": "kaffeefabrik-cafes",
+      "artist": "Fotógrafo no identificado en la fuente consultada",
+      "license": "Referencia editorial · reutilización no confirmada",
+      "licenseUrl": "",
+      "rights": "reference-only",
+      "date": "",
+      "sourceFile": "kaffeefabrik-cafes-web.json",
+      "localFile": "kaffeefabrik-1.jpg",
+      "resolvedImageUrl": "https://www.kaffeefabrik.at/cdn/shop/files/1040DSC_0224_667e09c9-ed44-41ca-aabb-ccda75b268c7.jpg?v=1720088491",
+      "width": 4503,
+      "height": 3378,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 1756311,
+      "sha256": "2db19f745bd8d28a449d31e11628ec5a80a4c67030aa54b151af65e04c1f637e",
+      "status": "downloaded-and-visually-reviewed",
+      "rightsNote": "Fuente pública oficial o de prensa. No se ha localizado una licencia abierta ni se ha confirmado permiso para reutilizarla en la web del regalo.",
+      "id": "II-024",
+      "caption": "Fachada y mesas exteriores de Kaffeefabrik en Wieden, bloque 1040 de la galería oficial.",
+      "alt": "Fachada y mesas exteriores de Kaffeefabrik en Wieden, bloque 1040 de la galería oficial.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "key": "kaffeefabrik-2",
+      "placeId": "kaffeefabrik",
+      "downloadUrl": "https://www.kaffeefabrik.at/cdn/shop/files/1040DSC_0015.jpg?v=1720358147",
+      "sourcePage": "https://www.kaffeefabrik.at/pages/cafes",
+      "sourceAlt": "",
+      "publisher": "kaffeefabrik-cafes",
+      "artist": "Fotógrafo no identificado en la fuente consultada",
+      "license": "Referencia editorial · reutilización no confirmada",
+      "licenseUrl": "",
+      "rights": "reference-only",
+      "date": "",
+      "sourceFile": "kaffeefabrik-cafes-web.json",
+      "localFile": "kaffeefabrik-2.jpg",
+      "resolvedImageUrl": "https://www.kaffeefabrik.at/cdn/shop/files/1040DSC_0015.jpg?v=1720358147",
+      "width": 5100,
+      "height": 3400,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 1475463,
+      "sha256": "ee3de32e70b5953eea8c138a53d040750842913aa1c6bea65af19e2685f72c27",
+      "status": "downloaded-and-visually-reviewed",
+      "rightsNote": "Fuente pública oficial o de prensa. No se ha localizado una licencia abierta ni se ha confirmado permiso para reutilizarla en la web del regalo.",
+      "id": "II-025",
+      "caption": "Taza de Kaffeefabrik y detalle de latte art en la galería de Wieden.",
+      "alt": "Taza de Kaffeefabrik y detalle de latte art en la galería de Wieden.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "key": "kaffemik-1",
+      "placeId": "kaffemik",
+      "downloadUrl": "https://cdn.shopify.com/s/files/1/0354/2319/1177/files/DSCF6233-2_websize.jpg?v=1723489207",
+      "sourcePage": "https://www.kaffemik.at/pages/cafe",
+      "sourceAlt": "Café kaffemik in der Zollergasse 5 in Wien Neubau, Gäste sitzen vor dem Lokal",
+      "publisher": "kaffemik-cafe",
+      "artist": "Fotógrafo no identificado en la fuente consultada",
+      "license": "Referencia editorial · reutilización no confirmada",
+      "licenseUrl": "",
+      "rights": "reference-only",
+      "date": "",
+      "sourceFile": "kaffemik-cafe-web.json",
+      "localFile": "kaffemik-1.jpg",
+      "resolvedImageUrl": "https://cdn.shopify.com/s/files/1/0354/2319/1177/files/DSCF6233-2_websize.jpg?v=1723489207",
+      "width": 1600,
+      "height": 1600,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 464432,
+      "sha256": "3fbadc9b9dbc7dfbe64520878177b873a107b487a7d3b35958b7722c31d20aaa",
+      "status": "downloaded-and-visually-reviewed",
+      "rightsNote": "Fuente pública oficial o de prensa. No se ha localizado una licencia abierta ni se ha confirmado permiso para reutilizarla en la web del regalo.",
+      "id": "II-026",
+      "caption": "Fachada de Kaffemik y mesas en Zollergasse 5.",
+      "alt": "Fachada de Kaffemik y mesas en Zollergasse 5.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "key": "kaffemik-2",
+      "placeId": "kaffemik",
+      "downloadUrl": "https://cdn.shopify.com/s/files/1/0354/2319/1177/files/06-Kaffemik-36_websize.jpg?v=1723489206",
+      "sourcePage": "https://www.kaffemik.at/pages/cafe",
+      "sourceAlt": "Barista schäumt Milch an der Siebträgermaschine im Café kaffemik in Wien",
+      "publisher": "kaffemik-cafe",
+      "artist": "Fotógrafo no identificado en la fuente consultada",
+      "license": "Referencia editorial · reutilización no confirmada",
+      "licenseUrl": "",
+      "rights": "reference-only",
+      "date": "",
+      "sourceFile": "kaffemik-cafe-web.json",
+      "localFile": "kaffemik-2.jpg",
+      "resolvedImageUrl": "https://cdn.shopify.com/s/files/1/0354/2319/1177/files/06-Kaffemik-36_websize.jpg?v=1723489206",
+      "width": 1067,
+      "height": 1600,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 261528,
+      "sha256": "86b8fa5115a12e3ba1baf6fd38dec2794a347435bab071396b29b61c54cab0ac",
+      "status": "downloaded-and-visually-reviewed",
+      "rightsNote": "Fuente pública oficial o de prensa. No se ha localizado una licencia abierta ni se ha confirmado permiso para reutilizarla en la web del regalo.",
+      "id": "II-027",
+      "caption": "Preparación de café en Kaffemik, junto a la máquina de espresso.",
+      "alt": "Preparación de café en Kaffemik, junto a la máquina de espresso.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "key": "caffe-couture-1",
+      "placeId": "caffe-couture",
+      "downloadUrl": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85%2Cfit=scale-down%2Cformat=auto%2Ctrim=0;0;0;0%2Cwidth=1920%2Cheight=2560/image/521664561/7ab28a65-9b53-4fa8-9fe2-7c80064b84f3.jpg",
+      "sourcePage": "https://www.caffecouture.net/studio-palais-ferstel/",
+      "sourceAlt": "",
+      "publisher": "caffe-couture-studio",
+      "artist": "Fotógrafo no identificado en la fuente consultada",
+      "license": "Referencia editorial · reutilización no confirmada",
+      "licenseUrl": "",
+      "rights": "reference-only",
+      "date": "",
+      "sourceFile": "caffe-couture-studio-web.json",
+      "localFile": "caffe-couture-1.jpg",
+      "resolvedImageUrl": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85%2Cfit=scale-down%2Cformat=auto%2Ctrim=0;0;0;0%2Cwidth=1920%2Cheight=2560/image/521664561/7ab28a65-9b53-4fa8-9fe2-7c80064b84f3.jpg",
+      "width": 1920,
+      "height": 2560,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 619496,
+      "sha256": "76cdaa97ae277ac98dcc2f99ef7d2abb80ceb45f6beb3c60d228727fc642f414",
+      "status": "downloaded-and-visually-reviewed",
+      "rightsNote": "Fuente pública oficial o de prensa. No se ha localizado una licencia abierta ni se ha confirmado permiso para reutilizarla en la web del regalo.",
+      "id": "II-028",
+      "caption": "La barra del Studio CaffèCouture en Palais Ferstel, según su página oficial.",
+      "alt": "La barra del Studio CaffèCouture en Palais Ferstel, según su página oficial.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "key": "flora-sala-grande",
+      "placeId": "flora",
+      "downloadUrl": "https://www.hotel-gilbert.at/wp-content/uploads/2021/09/rz_gilbert153442-min-1-scaled.jpg",
+      "sourcePage": "https://www.hotel-gilbert.at/en/",
+      "artist": "Fotógrafo no identificado en la fuente consultada",
+      "publisher": "flora",
+      "license": "Referencia editorial · reutilización no confirmada",
+      "licenseUrl": "",
+      "rights": "reference-only",
+      "date": "",
+      "localFile": "flora-sala-grande.jpg",
+      "resolvedImageUrl": "https://www.hotel-gilbert.at/wp-content/uploads/2021/09/rz_gilbert153442-min-1-scaled.jpg",
+      "width": 2560,
+      "height": 1707,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 758755,
+      "sha256": "26b702e01c614377d5cbe5bc2917c64b48c380d16b0ca1556af05b9b59808e1b",
+      "status": "downloaded-and-visually-reviewed",
+      "rightsNote": "Fuente pública oficial o de prensa. No se ha localizado una licencia abierta ni se ha confirmado permiso para reutilizarla en la web del regalo.",
+      "id": "II-029",
+      "caption": "Vista elevada de mesas, barra y asientos de color en &flora, Hotel Gilbert.",
+      "alt": "Vista elevada de mesas, barra y asientos de color en &flora, Hotel Gilbert.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "key": "flora-sala-native",
+      "placeId": "flora",
+      "downloadUrl": "https://www.hotel-gilbert.at/wp-content/uploads/2022/06/01_rz_gilbert153242_web_lowres.jpg",
+      "sourcePage": "https://www.hotel-gilbert.at/en/flora",
+      "artist": "Fotógrafo no identificado en la fuente consultada",
+      "publisher": "flora",
+      "license": "Referencia editorial · reutilización no confirmada",
+      "licenseUrl": "",
+      "rights": "reference-only",
+      "date": "",
+      "localFile": "flora-sala-native.jpg",
+      "resolvedImageUrl": "https://www.hotel-gilbert.at/wp-content/uploads/2022/06/01_rz_gilbert153242_web_lowres.jpg",
+      "width": 2560,
+      "height": 1707,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 1029616,
+      "sha256": "71d542bf003590301fc710f2e2fc0bd318378a106a9dd218113e812899c47356",
+      "status": "downloaded-and-visually-reviewed",
+      "rightsNote": "Fuente pública oficial o de prensa. No se ha localizado una licencia abierta ni se ha confirmado permiso para reutilizarla en la web del regalo.",
+      "id": "II-030",
+      "caption": "Vista frontal de la barra y las mesas de &flora.",
+      "alt": "Vista frontal de la barra y las mesas de &flora.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "key": "motto-am-fluss-2",
+      "placeId": "motto-am-fluss",
+      "downloadUrl": "https://mottoamfluss.at/wp-content/uploads/2026/03/CRD_7267.jpg",
+      "sourcePage": "https://mottoamfluss.at/",
+      "sourceAlt": "",
+      "publisher": "Motto am Fluss",
+      "artist": "Fotógrafo no identificado en la fuente consultada",
+      "license": "Referencia editorial · reutilización no confirmada",
+      "licenseUrl": "",
+      "rights": "reference-only",
+      "date": "",
+      "sourceFile": "motto-am-fluss-web.json",
+      "localFile": "motto-am-fluss-2.jpg",
+      "resolvedImageUrl": "https://mottoamfluss.at/wp-content/uploads/2026/03/CRD_7267.jpg",
+      "width": 2592,
+      "height": 1728,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 2835363,
+      "sha256": "8c0ca5bc6c623d87473137d7e6da3137b2db4f17fcd1c44d97d841e3ed714c48",
+      "status": "downloaded-and-visually-reviewed",
+      "rightsNote": "Fuente pública oficial o de prensa. No se ha localizado una licencia abierta ni se ha confirmado permiso para reutilizarla en la web del regalo.",
+      "id": "II-031",
+      "caption": "Sala de Motto am Fluss al anochecer, con lámparas cálidas y ventanales.",
+      "alt": "Sala de Motto am Fluss al anochecer, con lámparas cálidas y ventanales.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "key": "motto-am-fluss-4",
+      "placeId": "motto-am-fluss",
+      "downloadUrl": "https://mottoamfluss.at/wp-content/uploads/2026/03/DSC03712-Enhanced-NR.jpg",
+      "sourcePage": "https://mottoamfluss.at/",
+      "sourceAlt": "",
+      "publisher": "Motto am Fluss",
+      "artist": "Fotógrafo no identificado en la fuente consultada",
+      "license": "Referencia editorial · reutilización no confirmada",
+      "licenseUrl": "",
+      "rights": "reference-only",
+      "date": "",
+      "sourceFile": "motto-am-fluss-web.json",
+      "localFile": "motto-am-fluss-4.jpg",
+      "resolvedImageUrl": "https://mottoamfluss.at/wp-content/uploads/2026/03/DSC03712-Enhanced-NR.jpg",
+      "width": 1603,
+      "height": 2400,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 3424980,
+      "sha256": "8ec820d3fc0742c3faf6f58ee986f9f794224b4efc352414cbc3c0f2aa19a027",
+      "status": "downloaded-and-visually-reviewed",
+      "rightsNote": "Fuente pública oficial o de prensa. No se ha localizado una licencia abierta ni se ha confirmado permiso para reutilizarla en la web del regalo.",
+      "id": "II-032",
+      "caption": "Una mesa a la luz de una vela en Motto am Fluss.",
+      "alt": "Una mesa a la luz de una vela en Motto am Fluss.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "key": "motto-am-fluss-3",
+      "placeId": "motto-am-fluss",
+      "downloadUrl": "https://mottoamfluss.at/wp-content/uploads/2026/03/anna_heise_046A9072-1500x2250.jpg",
+      "sourcePage": "https://mottoamfluss.at/",
+      "sourceAlt": "",
+      "publisher": "Motto am Fluss",
+      "artist": "Fotógrafo no identificado en la fuente consultada",
+      "license": "Referencia editorial · reutilización no confirmada",
+      "licenseUrl": "",
+      "rights": "reference-only",
+      "date": "",
+      "sourceFile": "motto-am-fluss-web.json",
+      "localFile": "motto-am-fluss-3.jpg",
+      "resolvedImageUrl": "https://mottoamfluss.at/wp-content/uploads/2026/03/anna_heise_046A9072-1500x2250.jpg",
+      "width": 1500,
+      "height": 2250,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 3175905,
+      "sha256": "b50766853e7da16ce5ec72517a897642627ca245721c9c73058fc7d21be0f147",
+      "status": "downloaded-and-visually-reviewed",
+      "rightsNote": "Fuente pública oficial o de prensa. No se ha localizado una licencia abierta ni se ha confirmado permiso para reutilizarla en la web del regalo.",
+      "id": "II-033",
+      "caption": "Terraza de Motto am Fluss con vegetación y luz de otra estación.",
+      "alt": "Terraza de Motto am Fluss con vegetación y luz de otra estación.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "key": "salonplafond-4",
+      "placeId": "salonplafond",
+      "downloadUrl": "https://www.salonplafond.wien/uploads/gallery/Salonplafond_A21_750-1-scaled.jpg",
+      "sourcePage": "https://www.salonplafond.wien/about.php",
+      "sourceAlt": "",
+      "publisher": "salonplafond-about",
+      "artist": "Fotógrafo no identificado en la fuente consultada",
+      "license": "Referencia editorial · reutilización no confirmada",
+      "licenseUrl": "",
+      "rights": "reference-only",
+      "date": "",
+      "sourceFile": "salonplafond-about-web.json",
+      "localFile": "salonplafond-4.jpg",
+      "resolvedImageUrl": "https://www.salonplafond.wien/uploads/gallery/Salonplafond_A21_750-1-scaled.jpg",
+      "width": 2560,
+      "height": 1280,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 792533,
+      "sha256": "a35fdf498c3d34ddefd601fefa9a4c08e0a87ff7e9429579d32161627afefbed",
+      "status": "downloaded-and-visually-reviewed",
+      "rightsNote": "Fuente pública oficial o de prensa. No se ha localizado una licencia abierta ni se ha confirmado permiso para reutilizarla en la web del regalo.",
+      "id": "II-034",
+      "caption": "La sala de Salonplafond, con techo trabajado y mesas en perspectiva.",
+      "alt": "La sala de Salonplafond, con techo trabajado y mesas en perspectiva.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "key": "salonplafond-3",
+      "placeId": "salonplafond",
+      "downloadUrl": "https://www.salonplafond.wien/uploads/gallery/Salonplafond_530-copy.jpg",
+      "sourcePage": "https://www.salonplafond.wien/about.php",
+      "sourceAlt": "",
+      "publisher": "salonplafond-about",
+      "artist": "Fotógrafo no identificado en la fuente consultada",
+      "license": "Referencia editorial · reutilización no confirmada",
+      "licenseUrl": "",
+      "rights": "reference-only",
+      "date": "",
+      "sourceFile": "salonplafond-about-web.json",
+      "localFile": "salonplafond-3.jpg",
+      "resolvedImageUrl": "https://www.salonplafond.wien/uploads/gallery/Salonplafond_530-copy.jpg",
+      "width": 1613,
+      "height": 806,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 275991,
+      "sha256": "b9fc4e0882b1a91b4eba2c914265dd8fe6cfc26fce58e2f019b2f63bfc427cb1",
+      "status": "downloaded-and-visually-reviewed",
+      "rightsNote": "Fuente pública oficial o de prensa. No se ha localizado una licencia abierta ni se ha confirmado permiso para reutilizarla en la web del regalo.",
+      "id": "II-035",
+      "caption": "Patio de Salonplafond al anochecer; imagen de una temporada con terraza.",
+      "alt": "Patio de Salonplafond al anochecer; imagen de una temporada con terraza.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "key": "loft-sala-1",
+      "placeId": "das-loft",
+      "downloadUrl": "https://dasloftwien.at/img/asset/aW1hZ2VzL2Rlc2lnbi9rZXl2aXN1YWxzL2wxNDkwMTExLmpwZw/l1490111.jpg?w=1680&fm=webp&q=85&h=1474&fit=crop&s=6952330e0a229a10e7991e0081d10f29",
+      "sourcePage": "https://dasloftwien.at/",
+      "artist": "Fotógrafo no identificado en la fuente consultada",
+      "publisher": "das-loft",
+      "license": "Referencia editorial · reutilización no confirmada",
+      "licenseUrl": "",
+      "rights": "reference-only",
+      "date": "",
+      "localFile": "loft-sala-1.webp",
+      "resolvedImageUrl": "https://dasloftwien.at/img/asset/aW1hZ2VzL2Rlc2lnbi9rZXl2aXN1YWxzL2wxNDkwMTExLmpwZw/l1490111.jpg?w=1680&fm=webp&q=85&h=1474&fit=crop&s=6952330e0a229a10e7991e0081d10f29",
+      "width": 1680,
+      "height": 1474,
+      "format": "WEBP",
+      "mime": "image/webp",
+      "bytes": 156514,
+      "sha256": "3ed7129699946dde822fbd9efa73d8d13cbe0b0c4c8f0bb09abc3053d75a70ca",
+      "status": "downloaded-and-visually-reviewed",
+      "rightsNote": "Fuente pública oficial o de prensa. No se ha localizado una licencia abierta ni se ha confirmado permiso para reutilizarla en la web del regalo.",
+      "id": "II-036",
+      "caption": "Sala de Das LOFT, techo de color y ventanales sobre Viena.",
+      "alt": "Sala de Das LOFT, techo de color y ventanales sobre Viena.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "key": "das-loft-3",
+      "placeId": "das-loft",
+      "downloadUrl": "https://dasloftwien.at/img/asset/aW1hZ2VzL2Rlc2lnbi9sMTAwNDQyNl9taWxhLXp5dGthLmpwZw/l1004426_mila-zytka.jpg?w=1680&fm=webp&q=85&h=1474&fit=crop&s=c88dc25b0d5fa140384dbe7c5697b226",
+      "sourcePage": "https://dasloftwien.at/",
+      "sourceAlt": "",
+      "publisher": "Das LOFT",
+      "artist": "Fotógrafo no identificado en la fuente consultada",
+      "license": "Referencia editorial · reutilización no confirmada",
+      "licenseUrl": "",
+      "rights": "reference-only",
+      "date": "",
+      "sourceFile": "das-loft-web.json",
+      "localFile": "das-loft-3.webp",
+      "resolvedImageUrl": "https://dasloftwien.at/img/asset/aW1hZ2VzL2Rlc2lnbi9sMTAwNDQyNl9taWxhLXp5dGthLmpwZw/l1004426_mila-zytka.jpg?w=1680&fm=webp&q=85&h=1474&fit=crop&s=c88dc25b0d5fa140384dbe7c5697b226",
+      "width": 1680,
+      "height": 1474,
+      "format": "WEBP",
+      "mime": "image/webp",
+      "bytes": 201772,
+      "sha256": "3c9fa0ae2b11473425d77547674f100fc42f6c6f124bf608d734edd0286dc594",
+      "status": "downloaded-and-visually-reviewed",
+      "rightsNote": "Fuente pública oficial o de prensa. No se ha localizado una licencia abierta ni se ha confirmado permiso para reutilizarla en la web del regalo.",
+      "id": "II-037",
+      "caption": "La vista de Stephansdom desde Das LOFT, con una comensal en primer plano.",
+      "alt": "La vista de Stephansdom desde Das LOFT, con una comensal en primer plano.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "key": "chez-bernard-1",
+      "placeId": "chez-bernard",
+      "downloadUrl": "https://www.chezbernard.at/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fwpy176x4%2Ftest%2F1608d4ca3dd9ec955116dd9d9589933942b14aeb-8192x5464.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=2048&q=75",
+      "sourcePage": "https://www.chezbernard.at/en",
+      "sourceAlt": "Intro",
+      "publisher": "Chez Bernard",
+      "artist": "Fotógrafo no identificado en la fuente consultada",
+      "license": "Referencia editorial · reutilización no confirmada",
+      "licenseUrl": "",
+      "rights": "reference-only",
+      "date": "",
+      "sourceFile": "chez-bernard-web.json",
+      "localFile": "chez-bernard-1.jpg",
+      "resolvedImageUrl": "https://www.chezbernard.at/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fwpy176x4%2Ftest%2F1608d4ca3dd9ec955116dd9d9589933942b14aeb-8192x5464.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=2048&q=75",
+      "width": 2048,
+      "height": 1366,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 243558,
+      "sha256": "d6f0e9854ba7e2eae2c1e7b338ff648fccd70aeb7c4411e8323ab5a563b69029",
+      "status": "downloaded-and-visually-reviewed",
+      "rightsNote": "Fuente pública oficial o de prensa. No se ha localizado una licencia abierta ni se ha confirmado permiso para reutilizarla en la web del regalo.",
+      "id": "II-038",
+      "caption": "Sala de Chez Bernard con vegetación, lámparas cálidas y mesas ocupadas.",
+      "alt": "Sala de Chez Bernard con vegetación, lámparas cálidas y mesas ocupadas.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "key": "chez-detalle-1",
+      "placeId": "chez-bernard",
+      "downloadUrl": "https://www.chezbernard.at/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fwpy176x4%2Ftest%2F28ee76222245aa9eb77453cd3de84a1bd688fe45-1366x2048.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=2048&q=75",
+      "sourcePage": "https://www.chezbernard.at/en",
+      "sourceAlt": "Intro",
+      "publisher": "Chez Bernard",
+      "artist": "Fotógrafo no identificado en la fuente consultada",
+      "license": "Referencia editorial · reutilización no confirmada",
+      "licenseUrl": "",
+      "rights": "reference-only",
+      "date": "",
+      "sourceFile": "chez-bernard-web.json",
+      "localFile": "chez-detalle-1.webp",
+      "resolvedImageUrl": "https://www.chezbernard.at/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fwpy176x4%2Ftest%2F28ee76222245aa9eb77453cd3de84a1bd688fe45-1366x2048.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=2048&q=75",
+      "width": 1366,
+      "height": 2048,
+      "format": "WEBP",
+      "mime": "image/webp",
+      "bytes": 161788,
+      "sha256": "d575b5ea0b3bdb4fc2ff1a019fecfe09c3543e053c588bc750b7cd39706157ce",
+      "status": "downloaded-and-visually-reviewed",
+      "rightsNote": "Fuente pública oficial o de prensa. No se ha localizado una licencia abierta ni se ha confirmado permiso para reutilizarla en la web del regalo.",
+      "id": "II-039",
+      "caption": "Detalle de copas y luz cálida en la barra de Chez Bernard.",
+      "alt": "Detalle de copas y luz cálida en la barra de Chez Bernard.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "key": "mochi-prensa-sala",
+      "placeId": "mochi",
+      "localFile": "mochi-prensa-sala.jpg",
+      "downloadUrl": "https://www.mochi.at/bf_2020/mochi/wp-content/uploads/Mochi-Presse_2026.zip",
+      "sourcePage": "https://www.mochi.at/",
+      "archiveMember": "Zip Ordner Presse/01_Fotos/01_Mochi/Ort/Mochi neu.jpg",
+      "artist": "Fotógrafo no identificado en la fuente consultada",
+      "publisher": "Mochi · archivo de prensa 2026",
+      "license": "Material oficial de prensa · reutilización por confirmar",
+      "licenseUrl": "",
+      "rights": "reference-only",
+      "date": "",
+      "width": 7115,
+      "height": 4724,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 11243300,
+      "sha256": "d80351a8dd152f1f2d92d54e1173594fcdc21dd6bc4edcd75a17813d4488b2ed",
+      "status": "downloaded-and-visually-reviewed",
+      "rightsNote": "Fuente pública oficial o de prensa. No se ha localizado una licencia abierta ni se ha confirmado permiso para reutilizarla en la web del regalo.",
+      "id": "II-040",
+      "caption": "La barra y cocina abierta de Mochi Praterstraße. Archivo oficial de prensa 2026, carpeta 01_Mochi/Ort.",
+      "alt": "La barra y cocina abierta de Mochi Praterstraße. Archivo oficial de prensa 2026, carpeta 01_Mochi/Ort.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "key": "tian-mood",
+      "placeId": "tian",
+      "downloadUrl": "https://www.tian-restaurant.com/wien/wp-content/uploads/sites/2/2025/09/8_TIAN_Restaurant_mood-scaled.jpg",
+      "sourcePage": "https://www.tian-restaurant.com/wien/",
+      "sourceMediaId": 27077,
+      "artist": "Fotógrafo no identificado en la fuente consultada",
+      "license": "Referencia editorial · reutilización no confirmada",
+      "licenseUrl": "",
+      "rights": "reference-only",
+      "date": "2025-09-12T11:47:35",
+      "publisher": "TIAN Restaurant",
+      "localFile": "tian-mood.jpg",
+      "resolvedImageUrl": "https://www.tian-restaurant.com/wien/wp-content/uploads/sites/2/2025/09/8_TIAN_Restaurant_mood-scaled.jpg",
+      "width": 2560,
+      "height": 1920,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 590403,
+      "sha256": "7927d5ed13f710cfc82a796101c26c8941255d6cb5da6768b46c665a1a8074e8",
+      "status": "downloaded-and-visually-reviewed",
+      "rightsNote": "Fuente pública oficial o de prensa. No se ha localizado una licencia abierta ni se ha confirmado permiso para reutilizarla en la web del regalo.",
+      "id": "II-041",
+      "caption": "Sala y servicio de TIAN Restaurant, con bóvedas claras y mesas en perspectiva.",
+      "alt": "Sala y servicio de TIAN Restaurant, con bóvedas claras y mesas en perspectiva.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "key": "tian-bistro-1",
+      "placeId": "tian-bistro",
+      "downloadUrl": "https://www.tian-bistro.com/wp-content/uploads/sites/7/2025/06/TIAN_Hannes-Klaeger-76.jpg",
+      "sourcePage": "https://www.tian-bistro.com/",
+      "sourceAlt": "",
+      "publisher": "TIAN Bistro am Spittelberg",
+      "artist": "Fotógrafo no identificado en la fuente consultada",
+      "license": "Referencia editorial · reutilización no confirmada",
+      "licenseUrl": "",
+      "rights": "reference-only",
+      "date": "",
+      "sourceFile": "tian-bistro-web.json",
+      "localFile": "tian-bistro-1.jpg",
+      "resolvedImageUrl": "https://www.tian-bistro.com/wp-content/uploads/sites/7/2025/06/TIAN_Hannes-Klaeger-76.jpg",
+      "width": 5584,
+      "height": 8368,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 5505677,
+      "sha256": "1c7a0cb2e99625c0870c30f2bc807ce997fda5522d71b5249df251b7faddad8a",
+      "status": "downloaded-and-visually-reviewed",
+      "rightsNote": "Fuente pública oficial o de prensa. No se ha localizado una licencia abierta ni se ha confirmado permiso para reutilizarla en la web del regalo.",
+      "id": "II-042",
+      "caption": "Mesa de platos para compartir de TIAN Bistro am Spittelberg.",
+      "alt": "Mesa de platos para compartir de TIAN Bistro am Spittelberg.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "key": "tian-bistro-espacio",
+      "placeId": "tian-bistro",
+      "downloadUrl": "https://www.tian-bistro.com/wp-content/uploads/sites/7/2026/11/DSCF3644.jpg",
+      "sourcePage": "https://www.tian-bistro.com/",
+      "artist": "Fotógrafo no identificado en la fuente consultada",
+      "publisher": "tian-bistro",
+      "license": "Referencia editorial · reutilización no confirmada",
+      "licenseUrl": "",
+      "rights": "reference-only",
+      "date": "",
+      "localFile": "tian-bistro-espacio.jpg",
+      "resolvedImageUrl": "https://www.tian-bistro.com/wp-content/uploads/sites/7/2026/11/DSCF3644.jpg",
+      "width": 2657,
+      "height": 3543,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 5784386,
+      "sha256": "e41454db2a4005eb5f403751ba8db5ff0627dd3728fd57046a122031fe2e1da5",
+      "status": "downloaded-and-visually-reviewed",
+      "rightsNote": "Fuente pública oficial o de prensa. No se ha localizado una licencia abierta ni se ha confirmado permiso para reutilizarla en la web del regalo.",
+      "id": "II-043",
+      "caption": "Un plato sobre el banco de TIAN Bistro. Detalle gastronómico, no una vista general del local.",
+      "alt": "Un plato sobre el banco de TIAN Bistro. Detalle gastronómico, no una vista general del local.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    },
+    {
+      "key": "steirereck-ampliacion-3",
+      "placeId": "steirereck",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Wien_03_Steirereck_a.jpg/1920px-Wien_03_Steirereck_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Wien_03_Steirereck_a.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Wien_03_Steirereck_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalWidth": 3000,
+      "originalHeight": 1687,
+      "fileTitle": "File:Wien 03 Steirereck a.jpg",
+      "artist": "Gugerell",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "rights": "licensed",
+      "date": "2021-06-20 10:23:35",
+      "localFile": "steirereck-ampliacion-3.jpg",
+      "resolvedImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Wien_03_Steirereck_a.jpg/1920px-Wien_03_Steirereck_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 1080,
+      "format": "JPEG",
+      "mime": "image/jpeg",
+      "bytes": 742263,
+      "sha256": "6417aa81119eac044c35b57e8e5e3e1145536d730d8e258831c46e5a5eb79b65",
+      "status": "downloaded-and-visually-reviewed",
+      "sourceLicenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "rightsNote": "Licencia identificada: respetar atribución y condiciones de la ficha original.",
+      "id": "II-044",
+      "caption": "Ampliación contemporánea de Steirereck im Stadtpark, con su fachada metálica y acceso.",
+      "alt": "Ampliación contemporánea de Steirereck im Stadtpark, con su fachada metálica y acceso.",
+      "reviewDate": "2026-11-15",
+      "review": "Lugar o contexto identificable, proporción conservada, sin marcas de agua añadidas visibles; resolución comprobada. Se descartan variantes recortadas, ampliadas o ajenas a la ficha."
+    }
+  ],
+  "counts": {
+    "places": 29,
+    "photos": 44,
+    "categories": {
+      "calle": 15,
+      "cafe": 5,
+      "restaurante": 9
+    },
+    "rights": {
+      "licensed": 21,
+      "reference-only": 23
+    },
+    "priority": 12
+  },
+  "csvHeaders": [
+    "Foto",
+    "ID lugar",
+    "Lugar",
+    "Tipo",
+    "Zona",
+    "Dirección o sector",
+    "Descripción",
+    "Encuadre",
+    "Relación con volumen I",
+    "Descripción foto",
+    "Ancho",
+    "Alto",
+    "Crédito",
+    "Licencia o condición",
+    "Estado de uso",
+    "Condiciones",
+    "URL licencia",
+    "Página de procedencia",
+    "URL imagen o archivo",
+    "Miembro de archivo",
+    "SHA-256",
+    "Fuentes de la ficha"
+  ]
+}

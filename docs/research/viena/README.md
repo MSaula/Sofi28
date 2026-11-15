@@ -1,4 +1,15 @@
-# Viena, lugar a lugar — índice interno
+# Cuadernos de Viena — índice interno
+
+La investigación se organiza en dos documentos independientes. La segunda parte amplía las referencias visuales y conserva las fichas del primer estudio; todavía no se incorpora a la web del regalo.
+
+| Estudio | Contenido | Abrir |
+| --- | --- | --- |
+| I · Viena, lugar a lugar | 32 lugares y 34 fotos: monumentos, plazas, jardines e interiores | [Informe y documentación](#volumen-i--viena-lugar-a-lugar) |
+| II · Viena, entre calles y mesas | 29 fichas y 44 fotos: 15 calles/pasajes, 5 cafés y 9 restaurantes | [Estudio visual II](volumen-2/README.md) · [ZIP privado](https://github.com/MSaula/Sofi28/raw/refs/heads/private-download/downloads/Indice-visual-Viena-II.zip) |
+
+[Registro de ambos estudios](indice-estudios.json). Los índices separados permiten elegir imágenes y lugares sin alterar los datos que utiliza actualmente el mapa de la web principal.
+
+## Volumen I — Viena, lugar a lugar
 
 [Descargar el informe HTML y sus índices](https://github.com/MSaula/Sofi28/raw/refs/heads/private-download/downloads/Indice-visual-Viena.zip). Requiere acceso al repositorio privado. Descomprimir y abrir **Indice-visual-Viena.html**; funciona sin servidor y sin conexión.
 

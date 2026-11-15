@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "originalState": {
+    "head": "45194943c9a7d7ced138cdc3e2ff970691b8591d",
+    "src_tree": "f21ca96f609de2349710e60fc4ac0f401d072f50",
+    "public_tree": "325209fe37789625ca4ff3a7732093c3c4e41263",
+    "gift_zip_sha256": "9ac656a81db9bcf893b7ec217496402325eb3b182160488060a3ab7973195058",
+    "initial_report_sha256": "16e534ac17f00f82c4851331dd0172720328bee011c8633fe28dc6bd483ec27e"
+  },
+  "workingTreeBeforeResearchDelivery": "clean",
+  "giftZipUnchanged": true,
+  "volumeIZipUnchanged": true,
+  "applicationAndPublicFilesChanged": false,
+  "extraction": {
+    "passed": true,
+    "photos": 44,
+    "sha256Matched": 44
+  }
+}

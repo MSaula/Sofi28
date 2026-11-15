@@ -1,0 +1,43 @@
+{
+  "archive": "downloads/Indice-visual-Viena-II.zip",
+  "bytes": 60040290,
+  "sha256": "60274a3dcf30ab1ab73fe6426f7f2f3b120f1fb599b1caf1735a0620fd97ebda",
+  "htmlBytes": 79788207,
+  "htmlSha256": "4656ede43bcad77962f6041900b2b6e29a4b84242bc077f6a04a1276836ccd73",
+  "crcPassed": true,
+  "archiveFiles": [
+    "Viena-II-Calles-Cafes-Restaurantes.html",
+    "Viena-II-Lugares-y-fuentes.json",
+    "Viena-II-Fotografias.csv",
+    "LEEME.txt",
+    "CREDITOS-Y-CONDICIONES.txt",
+    "Extraer-fotografias.py",
+    "MANIFIESTO-SHA256.txt"
+  ],
+  "date": "2026-11-15",
+  "counts": {
+    "places": 29,
+    "photos": 44,
+    "categories": {
+      "calle": 15,
+      "cafe": 5,
+      "restaurante": 9
+    },
+    "rights": {
+      "licensed": 21,
+      "reference-only": 23
+    },
+    "priority": 12
+  },
+  "browserValidationPassed": true,
+  "extractionPassed": true,
+  "status": "locally-validated-awaiting-private-upload",
+  "repository": "MSaula/Sofi28",
+  "repositoryVisibility": "PRIVATE",
+  "branch": "private-download",
+  "remoteBranchesBefore": {
+    "main": "8a30c1af019e57149dbcf98ba8a5932feb0f87d1",
+    "gh-pages": "a276f224e4072e3f60879ed3cc6025304c551322",
+    "private-download": "45194943c9a7d7ced138cdc3e2ff970691b8591d"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "checks": [
+    {
+      "name": "metadata-source-rights-and-all-embedded-hashes",
+      "result": "passed",
+      "detail": "29 entries; 44 distinct native files; 21 licensed / 23 reference-only; resolution, credits, branches and source integrity"
+    },
+    {
+      "name": "offline-loading-and-native-image-dimensions",
+      "result": "passed",
+      "detail": "Standalone HTML, 44 decoded files at verified dimensions, no external dependencies"
+    },
+    {
+      "name": "search-and-75-combined-filter-states",
+      "result": "passed",
+      "detail": "Concepts, broad sectors, rights, accent/ß-insensitive search, related landmarks, priority, empty and reset"
+    },
+    {
+      "name": "all-44-viewer-states-and-original-downloads",
+      "result": "passed",
+      "detail": "Correct sequence, dimensions, source, conditional license, wrap, scroll lock, Escape, restored focus; licensed and 11MB press photo downloads match hashes"
+    },
+    {
+      "name": "json-and-csv-export-parity",
+      "result": "passed",
+      "detail": "Offline exports match the packaged JSON logically and CSV byte for byte; 44 photo rows"
+    },
+    {
+      "name": "chapters-catalog-and-cross-links",
+      "result": "passed",
+      "detail": "Both concepts, zone shortcuts, hidden-place hero links and catalog access to any photo"
+    },
+    {
+      "name": "responsive-composition-and-overflow",
+      "result": "passed",
+      "detail": "1440 desktop, 390 mobile, 320 narrow and 844 landscape; long addresses, notes, cards, rights and viewer"
+    },
+    {
+      "name": "bounded-accessibility-audit",
+      "result": "passed",
+      "detail": "No serious/critical axe WCAG A/AA findings in document and reference-only viewer"
+    },
+    {
+      "name": "print-layout",
+      "result": "passed",
+      "detail": "All selected entries retained for printing without horizontal page overflow"
+    }
+  ],
+  "requests": [],
+  "errors": [],
+  "screenshots": [
+    "desktop-inicio.png",
+    "mobile-inicio.png",
+    "narrow-inicio.png",
+    "landscape-inicio.png"
+  ],
+  "totalChecks": 9,
+  "passed": true
+}
