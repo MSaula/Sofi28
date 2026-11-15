@@ -77,12 +77,4 @@
     document.querySelector('#floor-description').textContent=floors[index][1];
     document.querySelectorAll('[data-floor]').forEach(b => b.setAttribute('aria-pressed',b===button));
   }));
-  for(const [id,detail] of [['seat-detail',true],['seat-overview',false]]) {
-    document.getElementById(id).addEventListener('click',()=>{
-      const image=document.querySelector('#seat-plan');image.src=detail?'planos/mittelloge-marcada.svg':'planos/sala-marcada.svg';
-      image.closest('figure').classList.toggle('overview',!detail);
-      document.querySelector('#seat-detail').setAttribute('aria-pressed',detail);
-      document.querySelector('#seat-overview').setAttribute('aria-pressed',!detail);
-    });
-  }
 })();

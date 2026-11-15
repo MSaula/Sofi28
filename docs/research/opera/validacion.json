@@ -1,10 +1,14 @@
 {
   "browser": "154.0.8037.57",
+  "revision": 2,
   "offlineValidation": "Local file bytes fulfilled at an intercepted localhost origin; no real HTTP traffic. Direct file navigation is blocked by managed browser policy.",
   "directFileNavigationVerified": false,
   "mainWebsitePreserved": true,
-  "photosVerified": 44,
+  "photosVerified": 45,
   "linkedViews": 2,
+  "reconstructedPositions": 1753,
+  "sameBoxPhotoVerified": true,
+  "exactSeatPhotoAvailable": false,
   "modes": [
     {
       "name": "desktop",
@@ -14,9 +18,11 @@
       "errors": [],
       "httpRequests": 0,
       "overflow": [],
-      "localViewerImagesChecked": 44,
+      "localViewerImagesChecked": 45,
       "floorPlansChecked": 7,
-      "seatPlansChecked": 2,
+      "seatPlansChecked": 3,
+      "globalMapAndInsetVisibleTogether": true,
+      "sameBoxPhotoOpened": true,
       "seriousCriticalAxe": 0
     },
     {
@@ -27,9 +33,11 @@
       "errors": [],
       "httpRequests": 0,
       "overflow": [],
-      "localViewerImagesChecked": 4,
+      "localViewerImagesChecked": 5,
       "floorPlansChecked": 7,
-      "seatPlansChecked": 2,
+      "seatPlansChecked": 3,
+      "globalMapAndInsetVisibleTogether": true,
+      "sameBoxPhotoOpened": true,
       "seriousCriticalAxe": 0
     },
     {
@@ -40,9 +48,11 @@
       "errors": [],
       "httpRequests": 0,
       "overflow": [],
-      "localViewerImagesChecked": 4,
+      "localViewerImagesChecked": 5,
       "floorPlansChecked": 7,
-      "seatPlansChecked": 2,
+      "seatPlansChecked": 3,
+      "globalMapAndInsetVisibleTogether": true,
+      "sameBoxPhotoOpened": true,
       "seriousCriticalAxe": 0
     },
     {
@@ -53,9 +63,11 @@
       "errors": [],
       "httpRequests": 0,
       "overflow": [],
-      "localViewerImagesChecked": 4,
+      "localViewerImagesChecked": 5,
       "floorPlansChecked": 7,
-      "seatPlansChecked": 2,
+      "seatPlansChecked": 3,
+      "globalMapAndInsetVisibleTogether": true,
+      "sameBoxPhotoOpened": true,
       "seriousCriticalAxe": 0
     },
     {
@@ -66,9 +78,11 @@
       "errors": [],
       "httpRequests": 0,
       "overflow": [],
-      "localViewerImagesChecked": 4,
+      "localViewerImagesChecked": 5,
       "floorPlansChecked": 7,
-      "seatPlansChecked": 2,
+      "seatPlansChecked": 3,
+      "globalMapAndInsetVisibleTogether": true,
+      "sameBoxPhotoOpened": true,
       "seriousCriticalAxe": 0
     }
   ]

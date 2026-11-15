@@ -10,5 +10,13 @@
   },
   "giftZipSha256": "c01d4ece62803553891a28203d2bb501c812bcb938951b48aed7ba2c8b80d82c",
   "giftZipUnchanged": true,
-  "publicDeployment": false
+  "publicDeployment": false,
+  "revision2": {
+    "baselineHead": "51714949d3faa83af2c1feac6cb9829dd4ce71a9",
+    "mainFilesUnchanged": 99,
+    "giftZipUnchanged": true,
+    "previousLocalPhotosUnchanged": 44,
+    "newLocalPhoto": "OP47",
+    "newPhotoSha256": "2eca7e352b06cced2238ee49ca1f0c8c49ffc518c19177c8b6709db95c01522d"
+  }
 }

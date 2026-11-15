@@ -1,7 +1,8 @@
 {
   "date": "2026-11-15",
+  "revision": 2,
   "timezone": "Europe/Madrid",
-  "localPhotos": 44,
+  "localPhotos": 45,
   "linkedUnavailableViews": 2,
   "mainWebsiteModified": false,
   "sources": [
@@ -103,6 +104,24 @@
       "note": "Enlazado por la Ópera, pero no leído en este entorno.",
       "consulted": "2026-11-15",
       "sha256": "9882cea81cd0d6edbd3a6a3c9bceafe2a507b631ebfb1fed3518a4cc0961ded8"
+    },
+    {
+      "id": "S12",
+      "title": "Vista desde Mittelloge: fotografía de C.Stadler/Bwag",
+      "url": "https://commons.wikimedia.org/wiki/File:Wien_-_Staatsoper,_Zuschauerraum_mit_B%C3%BChne.JPG",
+      "status": "200",
+      "note": "La descripción alemana identifica expresamente el palco; no identifica fila ni asiento. Original de 5300 × 3520 px.",
+      "consulted": "2026-11-15",
+      "sha256": "f1031258bc69eff03958cca0ba130f45465aa6f3384a20606d6b5a5bd8fa3d2a"
+    },
+    {
+      "id": "S13",
+      "title": "Geometría del mapa oficial de butacas",
+      "url": "https://tickets.wiener-staatsoper.at/webshop/webticket/seatmap?eventId=16677",
+      "status": "200",
+      "note": "Reconstrucción de las 1753 posiciones sentadas del área principal. Versión geométrica contrastada con la función del 22 de enero.",
+      "consulted": "2026-11-15",
+      "sha256": "a6b8c6781aee1d7ea14c3e9a18a47add1084e07d66734401016c6cbfb4a0e3be"
     }
   ],
   "images": [
@@ -1212,11 +1231,43 @@
       "viewIndex": 14,
       "reviewedVisually": false,
       "sha256Verified": false
+    },
+    {
+      "id": "OP47",
+      "category": "vistas",
+      "title": "Vista real desde Mittelloge hacia el escenario",
+      "description": "Fotografía tomada desde la Mittelloge, según la descripción alemana del propio autor. Confirma la vista frontal desde el mismo palco; la fila y el asiento de la cámara no están documentados. Foto del 26/02/2023: no representa Living Legacies ni la presencia de espectadores del día de nuestra función.",
+      "status": "downloaded",
+      "localFile": "fotos/OP47-vista-desde-mittelloge.jpg",
+      "width": 5300,
+      "height": 3520,
+      "bytes": 9963567,
+      "sha256": "2eca7e352b06cced2238ee49ca1f0c8c49ffc518c19177c8b6709db95c01522d",
+      "mime": "image/jpeg",
+      "orientation": "horizontal",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Wien_-_Staatsoper%2C_Zuschauerraum_mit_B%C3%BChne.JPG",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Wien_-_Staatsoper,_Zuschauerraum_mit_B%C3%BChne.JPG",
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "rightsNote": "Atribuir a C.Stadler/Bwag y respetar las condiciones CC BY-SA 4.0.",
+      "evidence": "same-box-source-confirmed",
+      "viewpoint": "Mittelloge",
+      "row": null,
+      "seatNumber": null,
+      "exactSeatConfirmed": false,
+      "sourceDescriptionGerman": "Blick von der Mittelloge zur Bühne in der Wiener Staatsoper.",
+      "captureDate": "2023-02-26",
+      "qualityNote": "5300 × 3520 px; original recibido sin retoque, recorte ni recompresión.",
+      "reviewedVisually": true,
+      "sha256Verified": true
     }
   ],
   "plans": {
     "buildingSvg": 7,
     "officialPdf": "planos/Saalplan-2026_27-DE.pdf",
+    "reconstructedSeatMap": "planos/mapa-completo-reconstruido.svg",
+    "reconstructionData": "reconstruccion-butacas.json",
     "annotatedSeatPlans": [
       "planos/sala-marcada.svg",
       "planos/mittelloge-marcada.svg"

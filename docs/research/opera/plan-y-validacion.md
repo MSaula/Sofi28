@@ -39,7 +39,7 @@ Informe independiente en HTML, índice fotográfico y archivos reutilizables. No
 | Observación | Causa | Resolución y comprobación |
 | --- | --- | --- |
 | La primera consulta de entradas correspondía al 29, no al 22 de enero | Se había leído el enlace de una función adicional de la página | Leer el módulo principal: evento 16677. Verificar cabecera 22/01/2027 y usar esa función para obtener el bloque |
-| Error al exportar las plazas de la primera vista | Un registro del catálogo omite viewIndex | Conservar ese campo opcional como null; los índices 14/15 de las dos plazas seleccionadas sí están presentes |
+| Error al exportar las plazas de la primera vista | Un registro del catálogo omite viewIndex | Conservar ese campo opcional como null; los índices 13/14 de las dos plazas seleccionadas sí están presentes |
 | Foto inicial negra en la primera captura | Petición lazy de la imagen de portada aún sin decodificar | Prioridad alta y carga eager; captura tras decode. Portadas PC y móvil revisadas |
 | Contraste de cuatro rótulos por debajo de AA | Marca secundaria y etiquetas doradas sobre fondo claro | Oscurecer los colores. axe A/AA sin infracciones serias/críticas en los cinco modos y en el visor |
 | Detalle del plano mostraba parte de la siguiente zona | Recorte vertical demasiado extenso | Ajustar el viewBox, conservando las coordenadas del PDF. Verificación visual de los círculos 23 y 24 |
@@ -56,3 +56,24 @@ Informe independiente en HTML, índice fotográfico y archivos reutilizables. No
 - Preservación: 34 archivos de src, 65 de public y el SHA-256 de downloads/Viena.zip idénticos al inicio. No se requiere repetir las pruebas de la aplicación porque no se ha modificado.
 
 Evidencias: [validacion.json](validacion.json), [registro](validacion.log), [preservación](preservacion.json), [portada PC](portada-escritorio.png), [móvil](portada-movil.png), [plazas señaladas](asientos-escritorio.png), [plantas](plantas-escritorio.png), [visor móvil](visor-movil.png) y [archivo](archivo-escritorio.png).
+
+
+## Segunda iteración — mapa global y vista desde el mismo palco
+
+### Cambios solicitados
+
+El contexto global queda visible al entrar en la sección de asientos. La reconstrucción completa y el detalle de la numeración se muestran a la vez, sin alternar uno por otro. El plano oficial completo sigue disponible en un desplegable y como PDF.
+
+- Reconstrucción SVG de **1.753 posiciones sentadas** a partir del área principal de la geometría pública del simulador. Se conservan coordenadas y agrupaciones; la rotación de 180° sitúa el escenario arriba como en el PDF. La versión `356552144` coincide con la del mapa de la función del 22/01/2027.
+- Mittelloge está destacado en dorado y enmarcado, con las plazas s500/23 y s501/24 en azul. No se usan colores de disponibilidad ni se interpreta el recuento del catálogo como aforo físico. Las zonas de pie de las otras tres áreas no se convierten en butacas.
+- El rótulo inicial tapaba 16 posiciones de palcos adyacentes. Se desplazó al espacio vacío entre parterre y Mittelloge. La comprobación de intersecciones confirma **cero butacas cubiertas**, además de verificar los 1.753 IDs únicos y los dos puntos seleccionados.
+- Se añade **OP47**, fotografía de 5.300 × 3.520 px y 9.963.567 bytes, C.Stadler/Bwag, CC BY-SA 4.0, tomada el 26/02/2023. La descripción alemana de su autor dice «Blick von der Mittelloge zur Bühne». Por ello se clasifica como vista del mismo palco; **fila y asiento no documentados**. Se conserva el JPEG original, sin retoque ni recorte del archivo.
+- Las dos vistas individuales APNR500/APNR501 siguen devolviendo 503 al descargarlas en el entorno. Se revisaron también fuentes alternativas: se descartaron resultados de la Staatsoper de Berlín; A View From My Seat devuelve 403. No se atribuye OP47 a una de las dos plazas exactas.
+
+### Validación de la revisión
+
+La auditoría completa se repite tras la corrección del rótulo: cinco tamaños/modos de Chromium, 45 fotos locales verificadas por hash, 45 aperturas en PC y cinco referencias en cada uno de los otros cuatro modos. OP47 se abre además desde su nueva sección en los cinco modos; el visor conserva sus dimensiones nativas y la indicación de fila/asiento desconocidos.
+
+Se verifican el mapa global y el detalle visibles conjuntamente, el SVG reconstruido, el SVG de detalle, el plano oficial completo desplegable y las siete plantas. Cero errores JavaScript, solicitudes externas, desbordamientos e infracciones serias/críticas de axe en los estados revisados. Se inspeccionan las capturas de PC/móvil, el mapa y la fotografía completa.
+
+Los 44 originales anteriores, los 99 archivos de src/public y Viena.zip conservan sus hashes. El paquete actualizado contiene 45 fotos locales y dos vistas exactas enlazadas pendientes. Evidencias añadidas: [geometría reconstruida](reconstruccion-butacas.json), [fuente del mapa](plano-butacas-fuente.json), [fuente de la fotografía](vista-mittelloge-fuente.json), [mapa PC](asientos-escritorio.png), [mapa móvil](asientos-movil.png), [foto del mismo palco](vista-mittelloge-escritorio.png) y [visor móvil](vista-mittelloge-visor-movil.png).

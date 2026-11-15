@@ -97,5 +97,23 @@
     "note": "Enlazado por la Ópera, pero no leído en este entorno.",
     "consulted": "2026-11-15",
     "sha256": "9882cea81cd0d6edbd3a6a3c9bceafe2a507b631ebfb1fed3518a4cc0961ded8"
+  },
+  {
+    "id": "S12",
+    "title": "Vista desde Mittelloge: fotografía de C.Stadler/Bwag",
+    "url": "https://commons.wikimedia.org/wiki/File:Wien_-_Staatsoper,_Zuschauerraum_mit_B%C3%BChne.JPG",
+    "status": "200",
+    "note": "La descripción alemana identifica expresamente el palco; no identifica fila ni asiento. Original de 5300 × 3520 px.",
+    "consulted": "2026-11-15",
+    "sha256": "f1031258bc69eff03958cca0ba130f45465aa6f3384a20606d6b5a5bd8fa3d2a"
+  },
+  {
+    "id": "S13",
+    "title": "Geometría del mapa oficial de butacas",
+    "url": "https://tickets.wiener-staatsoper.at/webshop/webticket/seatmap?eventId=16677",
+    "status": "200",
+    "note": "Reconstrucción de las 1753 posiciones sentadas del área principal. Versión geométrica contrastada con la función del 22 de enero.",
+    "consulted": "2026-11-15",
+    "sha256": "a6b8c6781aee1d7ea14c3e9a18a47add1084e07d66734401016c6cbfb4a0e3be"
   }
 ]

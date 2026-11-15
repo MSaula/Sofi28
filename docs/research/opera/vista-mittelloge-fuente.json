@@ -1,0 +1,127 @@
+{
+  "batchcomplete": "",
+  "query": {
+    "pages": {
+      "129300731": {
+        "pageid": 129300731,
+        "ns": 6,
+        "title": "File:Wien - Staatsoper, Zuschauerraum mit Bühne.JPG",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 9963567,
+            "width": 5300,
+            "height": 3520,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Wien_-_Staatsoper%2C_Zuschauerraum_mit_B%C3%BChne.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Wien_-_Staatsoper,_Zuschauerraum_mit_B%C3%BChne.JPG",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=129300731",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-03-05 22:27:11",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Wien - Staatsoper, Zuschauerraum mit Bühne",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Canon EOS 5D Mark IV|Auditoria|Stages|Seats of theaters|Self-published work|Photographs by Bwag|Files with coordinates missing SDC location of creation|Auditorium of the Vienna State Opera",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "48.203270",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "16.369120",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Blick von der Mittelloge zur Bühne in der <a href=\"https://de.wikipedia.org/wiki/Wiener_Staatsoper\" class=\"extiw\" title=\"de:Wiener Staatsoper\">Wiener Staatsoper</a>.<br>Das Opernhaus wurde ab Ende 1861 nach Plänen der Architekten <a href=\"https://de.wikipedia.org/wiki/August_Sicard_von_Sicardsburg\" class=\"extiw\" title=\"de:August Sicard von Sicardsburg\">August Sicard von Sicardsburg</a> und <a href=\"https://de.wikipedia.org/wiki/Eduard_van_der_N%C3%BCll\" class=\"extiw\" title=\"de:Eduard van der Nüll\">Eduard van der Nüll</a> im Stil der <a href=\"https://de.wikipedia.org/wiki/Neorenaissance\" class=\"extiw\" title=\"de:Neorenaissance\">Neorenaissance</a> errichtet. Nach amerikanischen Bombardements am 12. März 1945 geriet das Operngebäude in Brand und wurde gleich nach dem Krieg wieder aufgebaut. Der Zuschauerraum wurde bis auf den großen Mittelluster nach historischem Vorbild wieder aufgebaut. Der Fassungsraum des Auditoriums betrug ursprünglich 2881 und jetzt 2284 Plätze (davon 1709 Sitz-, 567 Steh-, 4 Rollstuhl- und 4 Begleiterplätze). Der Orchesterraum bietet mit seiner Größe von 123m² etwa 110 Musikern Platz: <a rel=\"nofollow\" class=\"external autonumber\" href=\"https://www.wiener-staatsoper.at/staatsoper/das-haus/geschichte-architektur/architektur/\">[1]</a>.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2023-02-26",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"de\">Eigenes Werk</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Bwag\" title=\"User:Bwag\">C.Stadler/Bwag</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<b>Deutsch:</b> Hallo, du darfst meine Fotos kostenlos nutzen, aber nenne mich bitte als Fotograf, beispielsweise <i>„Foto: C.Stadler/Bwag“</i> oder <i>© C.Stadler/Bwag; CC-BY-SA-4.0</i>. Auf mehr Angaben bestehe ich nicht - im Gegensatz zu manch anderen, die die Vorgaben der unten angeführten Lizenzierung auf Punkt und Beistrich einfordern.<br><b>English:</b> Feel free to use my photos, but please mention me as the author like <i>© C.Stadler/Bwag</i> or <i>© C.Stadler/Bwag; CC-BY-SA-4.0</i> (that's good enough) and if you want send me a message: <a rel=\"nofollow\" class=\"external text\" href=\"mailto:bwag@gmx.net\">bwag@gmx.net</a>.",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ],
+        "revisions": [
+          {
+            "slots": {
+              "main": {
+                "contentmodel": "wikitext",
+                "contentformat": "text/x-wiki",
+                "*": "== {{int:filedesc}} ==\n{{Information \n|Description= {{de|1= Blick von der Mittelloge zur Bühne in der [[:de:Wiener Staatsoper|Wiener Staatsoper]].<br/>Das Opernhaus wurde ab Ende 1861 nach Plänen der Architekten [[:de:August Sicard von Sicardsburg|August Sicard von Sicardsburg]] und [[:de:Eduard van der Nüll|Eduard van der Nüll]] im Stil der [[:de:Neorenaissance|Neorenaissance]] errichtet. Nach amerikanischen Bombardements am 12. März 1945 geriet das Operngebäude in Brand und wurde gleich nach dem Krieg wieder aufgebaut. Der Zuschauerraum wurde bis auf den großen Mittelluster nach historischem Vorbild wieder aufgebaut. Der Fassungsraum des Auditoriums betrug ursprünglich 2881 und jetzt 2284 Plätze (davon 1709 Sitz-, 567 Steh-, 4 Rollstuhl- und 4 Begleiterplätze). Der Orchesterraum bietet mit seiner Größe von 123m² etwa 110 Musikern Platz: [https://www.wiener-staatsoper.at/staatsoper/das-haus/geschichte-architektur/architektur/].}}\n{{en|1= Vienna Opera main auditorium.}}\n|Source= {{own}}\n|Date= 2023-02-26\n|Author= [[User:Bwag|C.Stadler/Bwag]] \n|Permission= {{User:Bwag/Credits}}\n|other versions=\n}}\n{{Object location dec|48.20327|16.36912}}\n{{Location|48.20311|16.36904|heading:20}}\n\n== {{int:license-header}} ==\n{{self|cc-by-sa-4.0}}\n\n[[Category:Auditorium of the Vienna State Opera]]\n[[Category:Stages]]\n[[Category:Seats of theaters]]\n[[Category:Auditoria]]\n[[Category:Taken with Canon EOS 5D Mark IV]]\n[[Category:Photographs by Bwag]]"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

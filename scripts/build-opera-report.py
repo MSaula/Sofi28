@@ -10,10 +10,12 @@ import hashlib
 import html
 import json
 import re
+import runpy
 import shutil
 import xml.etree.ElementTree as ET
 
 import fitz
+from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 WORK = Path('/workspace/artifacts/opera-research')
@@ -95,6 +97,31 @@ for n,s in enumerate(seats,45):
         reviewedVisually=False,sha256Verified=False))
 assert len(photos)==46 and sum(bool(p['localFile']) for p in photos)==44
 
+# The German description explicitly identifies the same box; no seat is given.
+view_source=json.loads((WORK/'revision2/central-view-source.json').read_text())
+view_info=next(iter(view_source['query']['pages'].values()))['imageinfo'][0]
+view_meta=view_info['extmetadata']
+clean=lambda key:html.unescape(re.sub('<[^>]+>', '', view_meta[key]['value']))
+assert 'Blick von der Mittelloge zur Bühne' in clean('ImageDescription')
+view_file=OUT/'fotos/OP47-vista-desde-mittelloge.jpg'
+shutil.copyfile(WORK/'revision2/central-view-original.jpg',view_file)
+with Image.open(view_file) as im:
+    assert im.size==(5300,3520)
+view_bytes=view_file.read_bytes()
+photos.append(dict(id='OP47',category='vistas',title='Vista real desde Mittelloge hacia el escenario',
+    description='Fotografía tomada desde la Mittelloge, según la descripción alemana del propio autor. Confirma la vista frontal desde el mismo palco; la fila y el asiento de la cámara no están documentados. Foto del 26/02/2023: no representa Living Legacies ni la presencia de espectadores del día de nuestra función.',
+    status='downloaded',localFile='fotos/'+view_file.name,width=5300,height=3520,bytes=len(view_bytes),
+    sha256=hashlib.sha256(view_bytes).hexdigest(),mime='image/jpeg',orientation='horizontal',
+    originalUrl=view_info['url'].split('?')[0],sourcePage=view_info['descriptionurl'],
+    author=clean('Artist'),license=clean('LicenseShortName'),licenseUrl=clean('LicenseUrl'),
+    rightsNote='Atribuir a C.Stadler/Bwag y respetar las condiciones CC BY-SA 4.0.',
+    evidence='same-box-source-confirmed',viewpoint='Mittelloge',row=None,seatNumber=None,exactSeatConfirmed=False,
+    sourceDescriptionGerman='Blick von der Mittelloge zur Bühne in der Wiener Staatsoper.',captureDate='2023-02-26',
+    qualityNote='5300 × 3520 px; original recibido sin retoque, recorte ni recompresión.',reviewedVisually=True,sha256Verified=True))
+local_count=sum(bool(p['localFile']) for p in photos)
+assert len(photos)==47 and local_count==45
+reconstruction=runpy.run_path(str(ROOT/'scripts/build-opera-seatmap.py'))['build'](WORK,OUT)
+
 # Preserve the original seven SVG plans, removing only active handlers.
 ET.register_namespace('','http://www.w3.org/2000/svg')
 ET.register_namespace('xlink','http://www.w3.org/1999/xlink')
@@ -145,6 +172,8 @@ evidence={'date':'2026-11-15','sourcePage':'https://tickets.wiener-staatsoper.at
     'pdfSource':BASE+'/files/Kalender-Tickets/Ticketinfos/Saalplan-2026_27-DE.pdf',
     'pdfSha256':hashlib.sha256((WORK/'seating-pdf.pdf').read_bytes()).hexdigest(),
     'viewDownloadStatus':'Connection to static.eventim.com returns HTTP 503 upstream remote reset; images not downloaded or visually verified.',
+    'alternativeView':{'photoId':'OP47','viewpoint':'Mittelloge','exactSeatConfirmed':False,'source':view_info['descriptionurl'],'width':5300,'height':3520},
+    'reconstruction':{k:reconstruction[k] for k in ['seatmapId','seatmapVersion','seatedPositions','sourceAndPerformanceVersionsMatch']},
     'method':'Read-only public block metadata from the official shop; no purchase, seat reservation or cart submission.'}
 (OUT/'evidencia-asientos.json').write_text(json.dumps(evidence,ensure_ascii=False,indent=2)+'\n')
 
@@ -160,13 +189,15 @@ sources=[
  ('S9','Información sobre entradas',BASE+'/en/ticket-info/','info.html','200','Leyenda y enlace al PDF de temporada.'),
  ('S10','Índice de fotografías exteriores en Commons','https://commons.wikimedia.org/','commons.json','200','Créditos y licencias por fotografía; las páginas de archivo se enlazan individualmente.'),
  ('S11','Programa digital externo','https://issuu.com/wienerstaatsoper/docs/programme_booklet_living_legacies_','programme.html','403','Enlazado por la Ópera, pero no leído en este entorno.'),
+ ('S12','Vista desde Mittelloge: fotografía de C.Stadler/Bwag',view_info['descriptionurl'],'revision2/central-view-source.json','200','La descripción alemana identifica expresamente el palco; no identifica fila ni asiento. Original de 5300 × 3520 px.'),
+ ('S13','Geometría del mapa oficial de butacas','https://tickets.wiener-staatsoper.at/webshop/webticket/seatmap?eventId=16677','public-seatmap.json','200','Reconstrucción de las 1753 posiciones sentadas del área principal. Versión geométrica contrastada con la función del 22 de enero.'),
 ]
 source_data=[]
 for id,title,url,file,status,note in sources:
     source_data.append(dict(id=id,title=title,url=url,status=status,note=note,consulted='2026-11-15',sha256=hashlib.sha256((WORK/file).read_bytes()).hexdigest()))
-catalog={'date':'2026-11-15','timezone':'Europe/Madrid','localPhotos':44,'linkedUnavailableViews':2,
+catalog={'date':'2026-11-15','revision':2,'timezone':'Europe/Madrid','localPhotos':local_count,'linkedUnavailableViews':2,
     'mainWebsiteModified':False,'sources':source_data,'images':photos,
-    'plans':{'buildingSvg':7,'officialPdf':'planos/Saalplan-2026_27-DE.pdf','annotatedSeatPlans':['planos/sala-marcada.svg','planos/mittelloge-marcada.svg']}}
+    'plans':{'buildingSvg':7,'officialPdf':'planos/Saalplan-2026_27-DE.pdf','reconstructedSeatMap':'planos/mapa-completo-reconstruido.svg','reconstructionData':'reconstruccion-butacas.json','annotatedSeatPlans':['planos/sala-marcada.svg','planos/mittelloge-marcada.svg']}}
 (OUT/'indice-imagenes.json').write_text(json.dumps(catalog,ensure_ascii=False,indent=2)+'\n')
 (OUT/'fuentes.json').write_text(json.dumps(source_data,ensure_ascii=False,indent=2)+'\n')
 fields=['id','category','title','status','localFile','width','height','bytes','orientation','author','license','licenseUrl','sourcePage','originalUrl','sha256','description','evidence','seatId','row','seatNumber','reviewedVisually']
@@ -191,15 +222,16 @@ for p in photos:
     meta=f'{p["width"]} × {p["height"]} px · {p["orientation"]}' if local else 'Sin archivo local · resolución no comprobada'
     cards.append(f'<article class="photo-card" data-id="{id}" data-category="{p["category"]}">{visual}<div class="photo-tag">{id} / {esc(labels[p["category"]])}</div><h3>{esc(p["title"])}</h3><p>{esc(p["description"])}</p><div class="photo-meta">{esc(meta)}<br>{esc(p["author"])} · {esc(p["license"])}</div><a class="photo-source" href="{esc(p["sourcePage"] if local else p["originalUrl"])}" target="_blank" rel="noopener">{"Fuente" if local else "Abrir vista oficial"} ↗</a></article>')
 seat_links=[]
-for p in photos[-2:]:
+for p in [p for p in photos if p['evidence']=='seat-exact-official']:
     seat_links.append(f'<article><span class="status-label">Vínculo exacto · archivo pendiente</span><h3>{esc(p["title"])}</h3><p>El catálogo oficial relaciona {esc(p["seatId"])} con la fotografía {esc("APNR"+p["seatId"][1:])}. La vista está identificada, pero no se ha descargado ni examinado. No se garantiza que el enlace funcione desde todas las redes.</p><a href="{esc(p["originalUrl"])}" target="_blank" rel="noopener">Abrir la vista en el CDN oficial ↗</a></article>')
 floors=['Planta baja','Palcos de parterre','Primer nivel','Segundo nivel','Balcón','Galería','Galería superior']
-tokens={'CSS':(DOCS/'informe.css').read_text(),'JS':(DOCS/'informe.js').read_text(),'PHOTO_COUNT':'44',
+tokens={'CSS':(DOCS/'informe.css').read_text(),'JS':(DOCS/'informe.js').read_text(),'PHOTO_COUNT':str(local_count),
     'PHOTO_DATA':json.dumps(photos,ensure_ascii=False).replace('<','\\u003c'),
     'ROOM_TRIPTYCH':''.join(figure(id) for id in ['OP25','OP19','OP12']),
     'BOX_PHOTOS':''.join(figure(id) for id in ['OP16','OP17','OP18','OP35']),
+    'SAME_BOX_VIEW':figure('OP47'),
     'PHOTO_CARDS':'\n'.join(cards),'SEAT_LINKS':'\n'.join(seat_links),
-    'FILTER_BUTTONS':'<button data-filter="all" aria-pressed="true">Todo · 46</button>'+''.join(f'<button data-filter="{k}" aria-pressed="false">{esc(v)} · {sum(p["category"]==k for p in photos)}</button>' for k,v in labels.items()),
+    'FILTER_BUTTONS':f'<button data-filter="all" aria-pressed="true">Todo · {len(photos)}</button>'+''.join(f'<button data-filter="{k}" aria-pressed="false">{esc(v)} · {sum(p["category"]==k for p in photos)}</button>' for k,v in labels.items()),
     'FLOOR_BUTTONS':''.join(f'<button data-floor="{n}" aria-pressed="{str(n==0).lower()}">{n+1:02} / {esc(name)}</button>' for n,name in enumerate(floors)),
     'SOURCES':'<ol class="sources">'+''.join(f'<li><strong>[{s["id"]}] {esc(s["title"])}</strong><a href="{esc(s["url"])}" target="_blank" rel="noopener">{esc(s["url"])}</a><small>Consulta {s["consulted"]} · HTTP {s["status"]} · {esc(s["note"])}</small></li>' for s in source_data)+'</ol>'}
 for id in ['OP01','OP05','OP09','OP02']:tokens['PHOTO_'+id]=image(id)
@@ -215,10 +247,12 @@ for character,path in [('↗','M3 9 9 3M3 3h6v6'),('↓','M6 1v8M3 6l3 3 3-3M2 1
 
 Descomprime toda la carpeta y abre Informe-Opera-Viena.html en un navegador.
 No muevas el HTML fuera de su carpeta: utiliza fotos/ y planos/.
-El informe, las 44 fotos descargadas, los planos, filtros y ampliaciones funcionan offline.
+El informe, las 45 fotos descargadas, los planos, filtros y ampliaciones funcionan offline.
 Los enlaces a fuentes y a las dos vistas pendientes requieren Internet.
 
 Incluye 11 imágenes oficiales de la producción y material arquitectónico real.
+Incluye una reconstrucción completa con 1753 posiciones del catálogo oficial y las dos plazas señaladas.
+OP47 es una foto real de 5300 x 3520 px tomada desde Mittelloge; su fila y asiento no están documentados.
 Las vistas de fila 3, 23 y 24 están identificadas individualmente, pero su CDN
 devuelve 503 en este entorno: no se incluyen como fotografías descargadas.
 Las imágenes genéricas de palcos no se presentan como el interior exacto de Mittelloge.
@@ -227,4 +261,4 @@ El reparto de bailarines para el 22/01/2027 no figura en la ficha consultada.
 Cada archivo fotográfico recibido conserva sus bytes; los derechos se indican en el índice.
 La página del regalo y Viena.zip no se han modificado. Esta es una investigación separada.
 ''')
-print(json.dumps({'photos':44,'linkedViews':2,'photoBytes':sum(p.get('bytes') or 0 for p in photos),'plans':10,'htmlBytes':len(template.encode()),'output':str(OUT)},ensure_ascii=False))
+print(json.dumps({'photos':local_count,'linkedViews':2,'photoBytes':sum(p.get('bytes') or 0 for p in photos),'plans':11,'reconstructedSeats':reconstruction['seatedPositions'],'htmlBytes':len(template.encode()),'output':str(OUT)},ensure_ascii=False))

@@ -349,5 +349,19 @@
   "pdfSource": "https://www.wiener-staatsoper.at/files/Kalender-Tickets/Ticketinfos/Saalplan-2026_27-DE.pdf",
   "pdfSha256": "50f0d541a3c61e65b9f11457a23d22bd101c03ba4ac3391738c40bd7e17b05c2",
   "viewDownloadStatus": "Connection to static.eventim.com returns HTTP 503 upstream remote reset; images not downloaded or visually verified.",
+  "alternativeView": {
+    "photoId": "OP47",
+    "viewpoint": "Mittelloge",
+    "exactSeatConfirmed": false,
+    "source": "https://commons.wikimedia.org/wiki/File:Wien_-_Staatsoper,_Zuschauerraum_mit_B%C3%BChne.JPG",
+    "width": 5300,
+    "height": 3520
+  },
+  "reconstruction": {
+    "seatmapId": "cl001v146",
+    "seatmapVersion": 356552144,
+    "seatedPositions": 1753,
+    "sourceAndPerformanceVersionsMatch": true
+  },
   "method": "Read-only public block metadata from the official shop; no purchase, seat reservation or cart submission."
 }

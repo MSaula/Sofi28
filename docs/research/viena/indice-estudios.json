@@ -39,16 +39,18 @@
       "volume": 3,
       "title": "Wiener Staatsoper y Living Legacies",
       "date": "2026-11-15",
-      "photos": 44,
+      "photos": 45,
       "linkedUnavailableViews": 2,
       "balletPhotos": 11,
-      "plans": 10,
+      "plans": 11,
       "data": "../opera/indice-imagenes.json",
       "readme": "../opera/README.md",
       "archive": "downloads/Informe-Opera-Viena.zip",
       "applicationIntegrated": false,
-      "filePageUrl": "https://github.com/MSaula/Sofi28/blob/416546937fc4ecdedbe4a6065725f8bd49d34547/downloads/Informe-Opera-Viena.zip",
-      "artifactCommit": "416546937fc4ecdedbe4a6065725f8bd49d34547"
+      "filePageUrl": "https://github.com/MSaula/Sofi28/blob/private-download/downloads/Informe-Opera-Viena.zip",
+      "reconstructedSeats": 1753,
+      "sameBoxViewPhoto": "OP47",
+      "revision": 2
     }
   ]
 }
