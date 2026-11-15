@@ -1,6 +1,6 @@
 # Sofi 28 — Viena, enero de 2027
 
-**Entrega privada con capítulos de Viena y Living Legacies, fotografías y mapas:** [abrir Viena.zip en GitHub](https://github.com/MSaula/Sofi28/blob/private-download/downloads/Viena.zip), en la rama `private-download`. Abrir el enlace en una pestaña del navegador con la sesión de GitHub iniciada en una cuenta autorizada; después pulsar el botón de descarga (↓ / «Download raw file»). La conexión de GitHub con ChatGPT no inicia esa sesión en el navegador. GitHub puede devolver 404 si no reconoce el acceso al repositorio privado. Descomprimir y abrir `Viena.html`. Esta entrega no actualiza GitHub Pages.
+**Entrega privada con capítulos de Viena y Living Legacies, fotografías y mapas:** [abrir Viena.zip en GitHub](https://github.com/MSaula/Sofi28/blob/c5879dfc3de600c799e93c59e3d156baf5a54f45/downloads/Viena.zip), en la rama `private-download`. Abrir el enlace en una pestaña del navegador con la sesión de GitHub iniciada en una cuenta autorizada; después pulsar el botón de descarga (↓ / «Download raw file»). La conexión de GitHub con ChatGPT no inicia esa sesión en el navegador. GitHub puede devolver 404 si no reconoce el acceso al repositorio privado. Descomprimir y abrir `Viena.html`. Esta entrega no actualiza GitHub Pages.
 
 Web-regalo con carta, cronología, mapas, apartamento, paseo cinematográfico por Viena y revelación del ballet. React + Vite. El desplazamiento es nativo: las escenas usan CSS `sticky` y su animación depende de la posición del scroll, también al retroceder.
 

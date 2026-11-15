@@ -1,0 +1,20 @@
+{
+  "verifiedAt": "2026-11-15T23:15:38.552021+00:00",
+  "repository": "MSaula/Sofi28",
+  "private": true,
+  "artifactCommit": "c5879dfc3de600c799e93c59e3d156baf5a54f45",
+  "zipGitBlobSha1": "95bdd3ef902a324739291235c0f240828364ad9a",
+  "zipSha256": "829029576578eff7b5d4fb375af3d7a92bcafef12e6e57e199a17b3f626009f6",
+  "zipBytes": 59011259,
+  "remoteZipCrcVerified": true,
+  "remoteHtmlSha256": "a2c5fb6f2a92bbbadd53f4724947fb14ff8411a17d3918295c2b55da6c82f032",
+  "remoteEmbeddedOriginalPhotosVerified": 64,
+  "filePageUrl": "https://github.com/MSaula/Sofi28/blob/c5879dfc3de600c799e93c59e3d156baf5a54f45/downloads/Viena.zip",
+  "unauthenticatedFilePageHttpStatus": 404,
+  "protectedRefsUnchanged": {
+    "main": "8a30c1af019e57149dbcf98ba8a5932feb0f87d1",
+    "gh-pages": "a276f224e4072e3f60879ed3cc6025304c551322"
+  },
+  "verification": "Authenticated Git Blob API, base64 decoded, Git object SHA-1 and full SHA-256, archive CRC, HTML SHA-256 and all 64 native photo hashes",
+  "publicDeploymentRun": false
+}
