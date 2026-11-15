@@ -1,6 +1,6 @@
 # Wiener Staatsoper y Living Legacies — cuaderno III
 
-[**Abrir el paquete del informe en GitHub**](https://github.com/MSaula/Sofi28/blob/private-download/downloads/Informe-Opera-Viena.zip). Requiere sesión iniciada con una cuenta autorizada. Pulsar ↓ / «Download raw file», descomprimir **toda la carpeta** y abrir **Informe-Opera-Viena.html**, manteniendo junto a ella `fotos/` y `planos/`.
+[**Abrir el paquete del informe en GitHub**](https://github.com/MSaula/Sofi28/blob/416546937fc4ecdedbe4a6065725f8bd49d34547/downloads/Informe-Opera-Viena.zip). Requiere sesión iniciada con una cuenta autorizada. Pulsar ↓ / «Download raw file», descomprimir **toda la carpeta** y abrir **Informe-Opera-Viena.html**, manteniendo junto a ella `fotos/` y `planos/`.
 
 El cuaderno reúne **44 fotografías descargadas y dos vistas de asiento enlazadas**, 7 plantas oficiales, el PDF real de asientos 2026/27 con las plazas 23 y 24 señaladas y un informe sobre las tres coreografías, la música, los créditos, el edificio y la visita. Incluye **11 fotografías oficiales de Living Legacies** de 2.500 px de lado largo, de Ashley Taylor, y fotos de sala, palcos genéricos, salones, backstage y exterior. Los archivos mantienen los bytes recibidos.
 

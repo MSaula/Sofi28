@@ -47,7 +47,8 @@
       "readme": "../opera/README.md",
       "archive": "downloads/Informe-Opera-Viena.zip",
       "applicationIntegrated": false,
-      "filePageUrl": "https://github.com/MSaula/Sofi28/blob/private-download/downloads/Informe-Opera-Viena.zip"
+      "filePageUrl": "https://github.com/MSaula/Sofi28/blob/416546937fc4ecdedbe4a6065725f8bd49d34547/downloads/Informe-Opera-Viena.zip",
+      "artifactCommit": "416546937fc4ecdedbe4a6065725f8bd49d34547"
     }
   ]
 }
