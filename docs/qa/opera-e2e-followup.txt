@@ -1,0 +1,26 @@
+
+Running 17 tests using 2 workers
+
+(node:152537) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:152536) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/browser/experience.spec.js:224:3 › 390×844: complete wheel traversal, reverse and rotation remain free of horizontal overflow (26.5s)
+  ✓   2 tests/browser/experience.spec.js:224:3 › 1440×1000: complete wheel traversal, reverse and rotation remain free of horizontal overflow (29.2s)
+  ✓   3 tests/browser/experience.spec.js:224:3 › 844×390: complete wheel traversal, reverse and rotation remain free of horizontal overflow (13.5s)
+  ✓   4 tests/browser/experience.spec.js:224:3 › 1000×650: complete wheel traversal, reverse and rotation remain free of horizontal overflow (23.3s)
+  ✓   5 tests/browser/experience.spec.js:224:3 › 320×700: complete wheel traversal, reverse and rotation remain free of horizontal overflow (22.3s)
+  ✓   6 tests/browser/experience.spec.js:474:1 › opera reveals the programme before complete ticket information (16.1s)
+  ✓   7 tests/browser/opera.spec.js:15:1 › Opera advances and reverses through architecture, complete photographs and the editorial handoff (7.5s)
+  ✓   8 tests/browser/opera.spec.js:53:3 › PC: the single moving photograph lands exactly in its editorial slot and releases without a jump (4.2s)
+  ✓   9 tests/browser/opera.spec.js:53:3 › wide PC: the single moving photograph lands exactly in its editorial slot and releases without a jump (4.9s)
+  ✓  10 tests/browser/opera.spec.js:53:3 › laptop: the single moving photograph lands exactly in its editorial slot and releases without a jump (4.8s)
+  ✓  11 tests/browser/opera.spec.js:53:3 › short laptop: the single moving photograph lands exactly in its editorial slot and releases without a jump (4.6s)
+  ✓  12 tests/browser/opera.spec.js:53:3 › mobile: the single moving photograph lands exactly in its editorial slot and releases without a jump (4.5s)
+  ✓  13 tests/browser/opera.spec.js:114:1 › a delayed final photograph leaves the preceding image visible until decoding completes (3.9s)
+  ✓  14 tests/browser/opera.spec.js:140:1 › the complete map, real box view, programme and shared city map preserve information, focus and scroll (8.3s)
+  ✓  15 tests/browser/opera.spec.js:210:1 › small, landscape and reduced motion views keep the entire chapter in normal readable flow (15.8s)
+  ✓  17 tests/browser/opera.spec.js:282:1 › closing an editorial photograph after changing between cinematic and static layouts returns to that photograph (5.8s)
+  ✓  16 tests/browser/opera.spec.js:251:1 › Opera header, menu, programme, tickets and photograph dialog have no serious accessibility findings (27.6s)
+
+  17 passed (2.0m)

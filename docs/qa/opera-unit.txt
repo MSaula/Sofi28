@@ -1,0 +1,52 @@
+
+> para-ti-viena@0.1.0 test
+> node --test --experimental-test-isolation=none tests/*.test.js
+
+✔ the city curation links the two studies with authentic files and only existing map references (99.920928ms)
+✔ opaque city plates cover the full film at every transition, with restrained camera overscan (25.777565ms)
+✔ city transforms and copy stay continuous and exactly reversible, including all edit boundaries (20.048248ms)
+✔ visited places have country-specific, sourced coordinates; islands and regions remain distinct (2.715857ms)
+✔ Europe frame includes Iberia, Edinburgh, Copenhagen and Paros without expanding for Iceland or Lanzarote (43.332437ms)
+✔ aircraft, trace and zoom use one geographic path, remain bounded and reverse exactly (9.608362ms)
+✔ the final birthday card reserves typography space instead of a photograph throughout the calendar zoom (1.330927ms)
+✔ January 2027 correctly places 22–24 in Friday, Saturday and Sunday (0.156065ms)
+✔ all fifteen memories preserve the supplied months without invented days (0.302065ms)
+✔ birthday editions 23–28 use the upper lane, with photos reserved for memories (0.905866ms)
+✔ timeline spans 2022–2027 and all annotations remain discoverable without lane collisions (20.463335ms)
+✔ timeline movement and collision fades are continuous through zoom and edge crossings (231.841096ms)
+✔ portrait birthday compositions preserve photo ratio and fit the available stage (0.407364ms)
+✔ all five supplied portraits are assigned by filename to their birthday editions (0.268415ms)
+✔ scene progress respects the actual sticky height and both boundaries (0.133962ms)
+✔ journey states never show an accommodation before the city or a destination before arrival (2.767494ms)
+✔ flight heading remains finite and continuous on reaching the endpoint (0.22556ms)
+✔ distance-based curve progression is monotonic and reaches both airports (0.366112ms)
+✔ Vienna contains attributed streets and its historical geometry reference remains on the named street (0.416759ms)
+✔ all street geometry lies inside its declared geographic extent (2.885862ms)
+✔ camera interpolation keeps required locations inside both viewport shapes (1.469086ms)
+✔ an independent ICS parser sees the inclusive weekend and 19:00 Vienna performance (3.864669ms)
+✔ calendar TEXT escapes and UTF-8 folding round-trip without corruption (0.585373ms)
+✔ no admission documents are public and unconfirmed content remains unset (0.905225ms)
+✔ displayed dates and exported times share the supplied trip date model (0.085659ms)
+✔ the five Opera photographs preserve the original report bytes and evidence (77.085697ms)
+✔ the complete sales plan preserves 1753 positions and the booked seats without an occluding label (1.374363ms)
+✔ cinematic phases remain continuous and reversible and keep the programme until after the images (8.830799ms)
+✔ the final photograph lands on a measured responsive target and never needs pixel enlargement (0.340023ms)
+✔ apartment photos are five original listing assets with factual captions (0.900067ms)
+✔ Airbnb's public point replaces the street midpoint without inventing precision (0.125599ms)
+✔ apartment aperture, camera and caption are continuous, bounded and reversible (19.516025ms)
+✔ the city catalogue retains 32 real photos, independent credits, and exactly five primary places (82.429387ms)
+✔ critical map references identify the actual photographed objects, not nearby substitutes (0.328686ms)
+✔ every walking route matches the real network geometry, endpoints and pedestrian timing (5.706758ms)
+✔ official context has true feature IDs, source requests and the WFS advertised licence (0.744133ms)
+✔ all places and the apartment fit the opening view at desktop and mobile dimensions (0.621267ms)
+✔ route fitting keeps home, destination and path in frame; camera operations preserve geography (10.859498ms)
+✔ map labels never move their pins or overlap each other; home is allocated first (1.155348ms)
+✔ cartographic paths preserve holes and route geometry without NaN or fabricated polygons (5.096588ms)
+ℹ tests 40
+ℹ suites 0
+ℹ pass 40
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 908.556071

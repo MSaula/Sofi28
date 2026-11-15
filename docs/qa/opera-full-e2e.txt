@@ -1,0 +1,112 @@
+
+> para-ti-viena@0.1.0 test:e2e
+> playwright test
+
+
+Running 66 tests using 2 workers
+
+(node:148662) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:148663) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   2 tests/browser/apartment.spec.js:20:3 › mobile: apartment reveal is reversible, keeps its image and leads to real photo captions (8.9s)
+  ✓   1 tests/browser/apartment.spec.js:20:3 › desktop: apartment reveal is reversible, keeps its image and leads to real photo captions (9.2s)
+  ✓   3 tests/browser/apartment.spec.js:20:3 › narrow: apartment reveal is reversible, keeps its image and leads to real photo captions (7.4s)
+  ✓   4 tests/browser/apartment.spec.js:20:3 › laptop: apartment reveal is reversible, keeps its image and leads to real photo captions (8.4s)
+  ✓   6 tests/browser/apartment.spec.js:156:1 › short viewports and reduced motion retain the complete apartment without pinning the scene (7.0s)
+  ✓   5 tests/browser/apartment.spec.js:91:1 › apartment gallery reaches every corner, supports keyboard, and restores focus after the photo viewer (13.5s)
+  ✓   7 tests/browser/apartment.spec.js:185:1 › Vienna pin projects Airbnb's accepted coordinates and no longer draws a street-sized uncertainty circle (9.1s)
+  ✓   8 tests/browser/apartment.spec.js:256:1 › the completed apartment and its photo captions have no serious accessibility violations (6.4s)
+  ✓   9 tests/browser/apartment.spec.js:287:1 › rotating during the apartment reveal preserves the chapter and returns to the same reveal (5.1s)
+  ✓  11 tests/browser/city.spec.js:99:1 › late inset decode never shows an empty framed photograph (3.4s)
+  ✓  10 tests/browser/city.spec.js:14:1 › desktop: the four acts retain decoded authentic photos, readable copy and reversible covered transitions (22.5s)
+  ✓  12 tests/browser/city.spec.js:131:1 › the horizontal collection filters, reaches both ends and opens the matching original photographs (20.1s)
+  ✓  13 tests/browser/city.spec.js:216:1 › one shared map opens from the journey, the city and a landmark photo without nested dialogs (7.6s)
+  ✓  14 tests/browser/city.spec.js:257:1 › closing the city map after rotation returns to its actual origin, not to the flight (7.8s)
+  ✓  15 tests/browser/city.spec.js:285:3 › mobile: the city remains readable and usable without horizontal page overflow (7.8s)
+  ✓  16 tests/browser/city.spec.js:285:3 › narrow: the city remains readable and usable without horizontal page overflow (7.3s)
+  ✓  17 tests/browser/city.spec.js:285:3 › landscape: the city remains readable and usable without horizontal page overflow (5.7s)
+  ✓  18 tests/browser/city.spec.js:285:3 › reduced: the city remains readable and usable without horizontal page overflow (5.3s)
+  ✓  19 tests/browser/city.spec.js:342:1 › city collection and photograph dialog have no serious or critical accessibility findings (11.1s)
+  ✓  20 tests/browser/europe-map.spec.js:13:3 › desktop: Europe shows real visited places without displaced markers or colliding labels (9.3s)
+  ✓  21 tests/browser/europe-map.spec.js:13:3 › mobile: Europe shows real visited places without displaced markers or colliding labels (8.5s)
+  ✓  22 tests/browser/europe-map.spec.js:13:3 › narrow: Europe shows real visited places without displaced markers or colliding labels (7.7s)
+  ✓  23 tests/browser/europe-map.spec.js:13:3 › laptop: Europe shows real visited places without displaced markers or colliding labels (8.8s)
+  ✓  24 tests/browser/europe-map.spec.js:154:1 › final card uses a large typographic composition with five historical photos and no future image (15.6s)
+  ✓  26 tests/browser/experience.spec.js:16:3 › desktop: flight marker matches the actual SVG route throughout its movement (6.2s)
+  ✓  25 tests/browser/europe-map.spec.js:195:1 › map labels fade continuously through departure, arrival and the city zoom (20.7s)
+  ✓  28 tests/browser/experience.spec.js:16:3 › mobile: flight marker matches the actual SVG route throughout its movement (6.1s)
+  ✓  27 tests/browser/experience.spec.js:82:3 › desktop: chronology clips at the window, crossfades crowded labels and keeps all memories discoverable (24.6s)
+  ✓  30 tests/browser/experience.spec.js:186:1 › navigation locks background scrolling, restores focus and calendar download parses correctly (5.7s)
+  ✓  29 tests/browser/experience.spec.js:82:3 › mobile: chronology clips at the window, crossfades crowded labels and keeps all memories discoverable (24.5s)
+  ✓  32 tests/browser/experience.spec.js:246:1 › landscape and reduced motion use readable static maps, preserving every essential detail (4.5s)
+  ✓  33 tests/browser/experience.spec.js:267:1 › narrow and short laptop calendars clip sliding cards and keep photo copy and the final month readable (54.1s)
+  ✓  34 tests/browser/experience.spec.js:318:1 › historical photos get a large portrait frame and release space for the final dates (8.3s)
+  ✘  31 tests/browser/experience.spec.js:217:1 › a complete wheel traversal, reverse and rotation keep every viewport free of horizontal overflow (1.6m)
+(node:150866) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  35 tests/browser/experience.spec.js:354:1 › supplied portraits load in their correct cards without cropping, including reverse and static views (32.4s)
+  ✓  36 tests/browser/experience.spec.js:411:1 › static chronology retains five portraits, a typographic future card and the ten ordinary trips (8.9s)
+  ✓  37 tests/browser/experience.spec.js:444:1 › map provenance and downloadable source data preserve the approximate location claim (4.3s)
+  ✓  39 tests/browser/experience.spec.js:510:1 › horizontal city cards remain reachable on mobile and intermediate viewport widths (16.1s)
+  ✓  38 tests/browser/experience.spec.js:474:1 › opera reveals the programme before complete ticket information (18.2s)
+  ✓  41 tests/browser/experience.spec.js:569:1 › orientation changes preserve the accommodation chapter and visible reference pin (6.9s)
+  ✓  42 tests/browser/opera.spec.js:15:1 › Opera advances and reverses through architecture, complete photographs and the editorial handoff (7.2s)
+  ✓  43 tests/browser/opera.spec.js:53:3 › PC: the single moving photograph lands exactly in its editorial slot and releases without a jump (4.8s)
+  ✓  44 tests/browser/opera.spec.js:53:3 › wide PC: the single moving photograph lands exactly in its editorial slot and releases without a jump (4.9s)
+  ✓  45 tests/browser/opera.spec.js:53:3 › laptop: the single moving photograph lands exactly in its editorial slot and releases without a jump (4.2s)
+  ✓  46 tests/browser/opera.spec.js:53:3 › short laptop: the single moving photograph lands exactly in its editorial slot and releases without a jump (4.6s)
+  ✓  47 tests/browser/opera.spec.js:53:3 › mobile: the single moving photograph lands exactly in its editorial slot and releases without a jump (4.9s)
+  ✓  40 tests/browser/experience.spec.js:538:1 › stable full-flow screens have no serious or critical accessibility violations (41.4s)
+  ✓  48 tests/browser/opera.spec.js:114:1 › a delayed final photograph leaves the preceding image visible until decoding completes (3.7s)
+  ✓  49 tests/browser/opera.spec.js:140:1 › the complete map, real box view, programme and shared city map preserve information, focus and scroll (9.1s)
+  ✓  50 tests/browser/opera.spec.js:210:1 › small, landscape and reduced motion views keep the entire chapter in normal readable flow (17.4s)
+  ✓  52 tests/browser/timeline-motion.spec.js:10:3 › desktop: a birthday card passes through both edges with its month and keeps its identity (6.5s)
+  ✓  53 tests/browser/timeline-motion.spec.js:10:3 › mobile: a birthday card passes through both edges with its month and keeps its identity (6.1s)
+  ✓  54 tests/browser/timeline-motion.spec.js:10:3 › narrow: a birthday card passes through both edges with its month and keeps its identity (5.8s)
+  ✓  51 tests/browser/opera.spec.js:251:1 › Opera header, menu, programme, tickets and photograph dialog have no serious accessibility findings (29.0s)
+  ✓  55 tests/browser/timeline-motion.spec.js:10:3 › laptop: a birthday card passes through both edges with its month and keeps its identity (7.0s)
+  ✓  56 tests/browser/timeline-motion.spec.js:58:1 › zoom opens the same photo and date elements continuously before the horizontal journey (16.6s)
+  ✓  57 tests/browser/timeline-motion.spec.js:110:1 › calendar and card stay synchronized while the final dates change the available height (20.9s)
+  ✓  58 tests/browser/vienna-explorer.spec.js:25:1 › desktop overview gives the five key places and apartment clear, correctly positioned markers (10.8s)
+  ✓  60 tests/browser/vienna-explorer.spec.js:124:1 › map markers support keyboard and rapid selections never leave stale card or route data (18.1s)
+  ✓  61 tests/browser/vienna-explorer.spec.js:163:1 › nearby secondary markers select the actual closest point in both the story and the explorer (7.9s)
+  ✓  62 tests/browser/vienna-explorer.spec.js:201:1 › walking route and map pins remain aligned while zooming and panning, with no truncated blue stroke (12.0s)
+  ✓  63 tests/browser/vienna-explorer.spec.js:295:1 › dialog locks the story, restores focus and leaves reverse scroll and destination reveal intact (6.0s)
+  ✓  64 tests/browser/vienna-explorer.spec.js:328:1 › mobile, narrow and landscape layouts keep cards reachable and return to the city after rotation (10.0s)
+  ✓  59 tests/browser/vienna-explorer.spec.js:79:1 › all 32 cards select the matching original photo, description, pedestrian metrics and route (57.8s)
+  ✓  65 tests/browser/vienna-explorer.spec.js:363:1 › search, empty results and the map overview are usable without a pointer (8.2s)
+  ✓  66 tests/browser/vienna-explorer.spec.js:392:1 › the overview, selected card and searchable catalogue have no serious accessibility violations (13.2s)
+
+
+  1) tests/browser/experience.spec.js:217:1 › a complete wheel traversal, reverse and rotation keep every viewport free of horizontal overflow
+
+    Test timeout of 90000ms exceeded.
+
+    Error: page.waitForTimeout: Test timeout of 90000ms exceeded.
+
+       at helpers.js:50
+
+      48 |   for (let i = 0; i < 150; i++) {
+      49 |     await page.mouse.wheel(0, 280);
+    > 50 |     await page.waitForTimeout(20);
+         |                ^
+      51 |     const frame = await page.evaluate(() => ({
+      52 |       y: scrollY,
+      53 |       max: document.documentElement.scrollHeight - innerHeight,
+        at walkPage (/workspace/Sofi28/tests/browser/helpers.js:50:16)
+        at /workspace/Sofi28/tests/browser/experience.spec.js:230:5
+
+    Error Context: test-results/experience-a-complete-whee-0dd6f-free-of-horizontal-overflow/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/experience-a-complete-whee-0dd6f-free-of-horizontal-overflow/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/experience-a-complete-whee-0dd6f-free-of-horizontal-overflow/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests/browser/experience.spec.js:217:1 › a complete wheel traversal, reverse and rotation keep every viewport free of horizontal overflow
+  65 passed (7.6m)

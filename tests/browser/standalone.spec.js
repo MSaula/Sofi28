@@ -6,6 +6,7 @@ import { memories } from "../../src/content.js";
 import listing from "../../src/data/airbnb-listing.json" with { type: "json" };
 import { createHash } from "node:crypto";
 import { places } from "../../src/viennaPlaces.js";
+import { operaPhotos } from "../../src/operaContent.js";
 import { cityPlaces } from "../../src/cityContent.js";
 
 test("exported HTML runs without server or network, with assets, animation and calendar", async ({
@@ -134,7 +135,7 @@ test("exported HTML runs without server or network, with assets, animation and c
     [".calendar-scene", 0.96],
     [".journey-scene", 0.5],
     [".journey-scene", 0.98],
-    [".opera-scene", 0.9],
+    [".opera-scene", 0.98],
   ]) {
     await scrollScene(page, selector, p);
     if (selector === ".calendar-scene") {
@@ -170,7 +171,7 @@ test("exported HTML runs without server or network, with assets, animation and c
       await page.keyboard.press("Escape");
     }
     if (selector === ".opera-scene")
-      await expect(page.locator(".opera-content")).toHaveCSS("opacity", "1");
+      await expect(page.locator(".opera-programme")).toHaveCSS("opacity", "1");
   }
 
   await scrollScene(page, ".journey-scene", 0.98);
@@ -218,6 +219,42 @@ test("exported HTML runs without server or network, with assets, animation and c
     .toBe(true);
   await page.keyboard.press("Escape");
   await expect(explorer).not.toBeVisible();
+
+  for (const [key, photo] of Object.entries(operaPhotos)) {
+    const src = await page
+      .locator(`[data-opera-photo="${key}"]`)
+      .first()
+      .getAttribute("src");
+    expect(src).toMatch(/^data:image\//);
+    expect(
+      createHash("sha256")
+        .update(Buffer.from(src.split(",")[1], "base64"))
+        .digest("hex"),
+    ).toBe(photo.sha256);
+  }
+  await page
+    .locator("#ballet-detalles")
+    .evaluate((n) => n.scrollIntoView({ behavior: "instant" }));
+  await expect(page.locator(".opera-tickets [data-opera-seat]")).toHaveCount(
+    1753,
+  );
+  await page
+    .getByRole("button", { name: /Ver la vista desde Mittelloge/ })
+    .click();
+  await expect(page.locator(".opera-viewer")).toBeVisible();
+  await expect
+    .poll(() =>
+      page.locator(".opera-viewer img").evaluate((i) => i.naturalWidth),
+    )
+    .toBe(5300);
+  await page.keyboard.press("Escape");
+  await page
+    .getByRole("button", { name: "Ampliar plano completo de butacas" })
+    .click();
+  await expect(page.locator(".opera-viewer [data-selected=true]")).toHaveCount(
+    2,
+  );
+  await page.keyboard.press("Escape");
 
   const images = await page
     .locator("main img")

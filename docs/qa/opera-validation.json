@@ -1,0 +1,128 @@
+{
+  "completedAt": "2026-11-15T23:12:43.237063+00:00",
+  "status": "passed",
+  "sourceFingerprintSha256": "2390e39081b8d00ec4af48523404e9cc8f57c022e9305e49a7c74f2d2cd3df76",
+  "unit": {
+    "passed": 40,
+    "failed": 0,
+    "log": "opera-unit.txt"
+  },
+  "browser": {
+    "finalCasesCovered": 71,
+    "unresolvedFailures": 0,
+    "initialFullRun": {
+      "passed": 65,
+      "total": 66,
+      "failure": "90-second aggregate timeout for five wheel traversals; replaced by five independent cases",
+      "log": "opera-full-e2e.txt"
+    },
+    "followup": {
+      "passed": 17,
+      "scope": "Five whole-page viewport traversals, existing Opera information case and eleven Opera cases, including resize restoration",
+      "log": "opera-e2e-followup.txt"
+    },
+    "afterFinalLayerCorrection": {
+      "passed": 11,
+      "scope": "All Opera cases, with paint order and pointer gating assertions",
+      "log": "opera-opera-final.txt"
+    }
+  },
+  "standalone": {
+    "passed": 1,
+    "failed": 0,
+    "offline": true,
+    "originalOperaPhotoHashesVerified": 5,
+    "seatedPositions": 1753,
+    "selectedSeats": 2,
+    "log": "opera-offline.txt",
+    "htmlSha256": "a2c5fb6f2a92bbbadd53f4724947fb14ff8411a17d3918295c2b55da6c82f032"
+  },
+  "visual": {
+    "modes": 9,
+    "keyframes": 63,
+    "capturesSaved": 8,
+    "consoleErrors": [],
+    "failedResponses": [],
+    "recording": "opera-scroll-desktop.webm",
+    "review": "opera-visual-review.json",
+    "wheelFrameTimesMs": {
+      "samples": 508,
+      "median": 16.699999999999818,
+      "p95": 33.399999999999636,
+      "max": 66.69999999999982
+    },
+    "scope": "Chromium viewport emulation, not physical-device or universal frame-rate certification"
+  },
+  "fullFlow": [
+    {
+      "mode": "desktop",
+      "wheelFrames": 128,
+      "reachedEnd": true,
+      "overflowFrames": 0,
+      "errors": [],
+      "reverseAndRotation": true
+    },
+    {
+      "mode": "mobile",
+      "wheelFrames": 109,
+      "reachedEnd": true,
+      "overflowFrames": 0,
+      "errors": [],
+      "reverseAndRotation": true
+    },
+    {
+      "mode": "landscape",
+      "wheelFrames": 48,
+      "reachedEnd": true,
+      "overflowFrames": 0,
+      "errors": [],
+      "reverseAndRotation": true
+    },
+    {
+      "mode": "reduced",
+      "wheelFrames": 52,
+      "reachedEnd": true,
+      "overflowFrames": 0,
+      "errors": [],
+      "reverseAndRotation": true
+    }
+  ],
+  "content": {
+    "operaOriginalPhotos": 5,
+    "allOriginalPhotos": 64,
+    "mainAreaSeatedPositions": 1753,
+    "seatBlocks": 111,
+    "selectedIds": [
+      500,
+      501
+    ],
+    "selectedSeatNumbers": [
+      "23",
+      "24"
+    ],
+    "row": "3",
+    "box": "Mittelloge",
+    "viewEvidence": "Same box confirmed by author; camera row and seat unknown",
+    "nativeProductionLongSide": 2500,
+    "roomPhotoDimensions": [
+      5300,
+      3520
+    ]
+  },
+  "preservation": {
+    "existingPublicFiles": 65,
+    "researchArchives": 4,
+    "researchArchivesUnchanged": true
+  },
+  "package": {
+    "htmlBytes": 80285214,
+    "htmlSha256": "a2c5fb6f2a92bbbadd53f4724947fb14ff8411a17d3918295c2b55da6c82f032",
+    "zipBytes": 59011259,
+    "zipSha256": "829029576578eff7b5d4fb375af3d7a92bcafef12e6e57e199a17b3f626009f6",
+    "embeddedOriginalPhotos": 64,
+    "preservedPublicFiles": 65,
+    "preservedResearchArchives": 4,
+    "zipCrcVerified": true
+  },
+  "delivery": "Private repository branch only; public deployment not run."
+}

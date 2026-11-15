@@ -1,0 +1,4578 @@
+{
+  "browser": "154.0.8037.57",
+  "emulatedViewports": true,
+  "modes": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "reduced": false,
+      "staticMode": false,
+      "errors": [],
+      "badResponses": [],
+      "frames": [
+        {
+          "p": 0,
+          "overflow": false,
+          "target": {
+            "x": 80.625,
+            "y": 336.515625,
+            "width": 488.609375,
+            "height": 366.453125
+          },
+          "moving": {
+            "x": 0,
+            "y": 68,
+            "width": 1425,
+            "height": 932
+          },
+          "copy": {
+            "x": 790.0625,
+            "y": 259.640625,
+            "width": 554.296875,
+            "height": 548.703125
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 1425,
+            "height": 932
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.1599,
+          "overflow": false,
+          "target": {
+            "x": 80.625,
+            "y": 336.515625,
+            "width": 488.609375,
+            "height": 366.453125
+          },
+          "moving": {
+            "x": 0,
+            "y": 68,
+            "width": 1425,
+            "height": 932
+          },
+          "copy": {
+            "x": 790.0625,
+            "y": 259.640625,
+            "width": 554.296875,
+            "height": 548.703125
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 1425,
+            "height": 932
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.3101,
+          "overflow": false,
+          "target": {
+            "x": 80.625,
+            "y": 336.515625,
+            "width": 488.609375,
+            "height": 366.453125
+          },
+          "moving": {
+            "x": 0,
+            "y": 68,
+            "width": 1425,
+            "height": 932
+          },
+          "copy": {
+            "x": 790.0625,
+            "y": 259.640625,
+            "width": 554.296875,
+            "height": 548.703125
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 1425,
+            "height": 932
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.4001,
+          "overflow": false,
+          "target": {
+            "x": 80.625,
+            "y": 336.515625,
+            "width": 488.609375,
+            "height": 366.453125
+          },
+          "moving": {
+            "x": 0,
+            "y": 68,
+            "width": 1425,
+            "height": 932
+          },
+          "copy": {
+            "x": 790.0625,
+            "y": 259.640625,
+            "width": 554.296875,
+            "height": 548.703125
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 1425,
+            "height": 932
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.55,
+          "overflow": false,
+          "target": {
+            "x": 80.625,
+            "y": 336.515625,
+            "width": 488.609375,
+            "height": 366.453125
+          },
+          "moving": {
+            "x": 0,
+            "y": 68,
+            "width": 1425,
+            "height": 932
+          },
+          "copy": {
+            "x": 790.0625,
+            "y": 259.640625,
+            "width": 554.296875,
+            "height": 548.703125
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 1425,
+            "height": 932
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.7,
+          "overflow": false,
+          "target": {
+            "x": 80.625,
+            "y": 336.515625,
+            "width": 488.609375,
+            "height": 366.453125
+          },
+          "moving": {
+            "x": 0,
+            "y": 68,
+            "width": 1425,
+            "height": 932
+          },
+          "copy": {
+            "x": 790.0625,
+            "y": 259.640625,
+            "width": 554.296875,
+            "height": 548.703125
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 1425,
+            "height": 932
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.82,
+          "overflow": false,
+          "target": {
+            "x": 80.625,
+            "y": 336.515625,
+            "width": 488.609375,
+            "height": 366.453125
+          },
+          "moving": {
+            "x": 12.5625,
+            "y": 109.875,
+            "width": 1278.953125,
+            "height": 843.78125
+          },
+          "copy": {
+            "x": 790.0625,
+            "y": 259.640625,
+            "width": 554.296875,
+            "height": 548.703125
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 1425,
+            "height": 932
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.8799,
+          "overflow": false,
+          "target": {
+            "x": 80.625,
+            "y": 336.515625,
+            "width": 488.609375,
+            "height": 366.453125
+          },
+          "moving": {
+            "x": 55.0625,
+            "y": 251.421875,
+            "width": 785.34375,
+            "height": 545.671875
+          },
+          "copy": {
+            "x": 790.0625,
+            "y": 259.640625,
+            "width": 554.296875,
+            "height": 548.703125
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 1425,
+            "height": 932
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.9399,
+          "overflow": false,
+          "target": {
+            "x": 80.625,
+            "y": 336.515625,
+            "width": 488.609375,
+            "height": 366.453125
+          },
+          "moving": {
+            "x": 80.609375,
+            "y": 336.5,
+            "width": 488.609375,
+            "height": 366.453125
+          },
+          "copy": {
+            "x": 790.0625,
+            "y": 259.640625,
+            "width": 554.296875,
+            "height": 548.703125
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 1425,
+            "height": 932
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.98,
+          "overflow": false,
+          "target": {
+            "x": 80.625,
+            "y": 336.515625,
+            "width": 488.609375,
+            "height": 366.453125
+          },
+          "moving": {
+            "x": 80.625,
+            "y": 336.515625,
+            "width": 488.609375,
+            "height": 366.453125
+          },
+          "copy": {
+            "x": 790.0625,
+            "y": 259.640625,
+            "width": 554.296875,
+            "height": 548.703125
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 1425,
+            "height": 932
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "wide",
+      "width": 1920,
+      "height": 1080,
+      "reduced": false,
+      "staticMode": false,
+      "errors": [],
+      "badResponses": [],
+      "frames": [
+        {
+          "p": 0,
+          "overflow": false,
+          "target": {
+            "x": 110.015625,
+            "y": 314.265625,
+            "width": 654.609375,
+            "height": 490.953125
+          },
+          "moving": {
+            "x": 0,
+            "y": 68,
+            "width": 1905,
+            "height": 1012
+          },
+          "copy": {
+            "x": 1055.921875,
+            "y": 288.625,
+            "width": 739.046875,
+            "height": 570.734375
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 1905,
+            "height": 1012
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.16,
+          "overflow": false,
+          "target": {
+            "x": 110.015625,
+            "y": 314.265625,
+            "width": 654.609375,
+            "height": 490.953125
+          },
+          "moving": {
+            "x": 0,
+            "y": 68,
+            "width": 1905,
+            "height": 1012
+          },
+          "copy": {
+            "x": 1055.921875,
+            "y": 288.625,
+            "width": 739.046875,
+            "height": 570.734375
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 1905,
+            "height": 1012
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.3099,
+          "overflow": false,
+          "target": {
+            "x": 110.015625,
+            "y": 314.265625,
+            "width": 654.609375,
+            "height": 490.953125
+          },
+          "moving": {
+            "x": 0,
+            "y": 68,
+            "width": 1905,
+            "height": 1012
+          },
+          "copy": {
+            "x": 1055.921875,
+            "y": 288.625,
+            "width": 739.046875,
+            "height": 570.734375
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 1905,
+            "height": 1012
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.4,
+          "overflow": false,
+          "target": {
+            "x": 110.015625,
+            "y": 314.265625,
+            "width": 654.609375,
+            "height": 490.953125
+          },
+          "moving": {
+            "x": 0,
+            "y": 68,
+            "width": 1905,
+            "height": 1012
+          },
+          "copy": {
+            "x": 1055.921875,
+            "y": 288.625,
+            "width": 739.046875,
+            "height": 570.734375
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 1905,
+            "height": 1012
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.5501,
+          "overflow": false,
+          "target": {
+            "x": 110.015625,
+            "y": 314.265625,
+            "width": 654.609375,
+            "height": 490.953125
+          },
+          "moving": {
+            "x": 0,
+            "y": 68,
+            "width": 1905,
+            "height": 1012
+          },
+          "copy": {
+            "x": 1055.921875,
+            "y": 288.625,
+            "width": 739.046875,
+            "height": 570.734375
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 1905,
+            "height": 1012
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.7,
+          "overflow": false,
+          "target": {
+            "x": 110.015625,
+            "y": 314.265625,
+            "width": 654.609375,
+            "height": 490.953125
+          },
+          "moving": {
+            "x": 0,
+            "y": 68,
+            "width": 1905,
+            "height": 1012
+          },
+          "copy": {
+            "x": 1055.921875,
+            "y": 288.625,
+            "width": 739.046875,
+            "height": 570.734375
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 1905,
+            "height": 1012
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.8199,
+          "overflow": false,
+          "target": {
+            "x": 110.015625,
+            "y": 314.265625,
+            "width": 654.609375,
+            "height": 490.953125
+          },
+          "moving": {
+            "x": 17.140625,
+            "y": 106.375,
+            "width": 1710.140625,
+            "height": 930.796875
+          },
+          "copy": {
+            "x": 1055.921875,
+            "y": 288.625,
+            "width": 739.046875,
+            "height": 570.734375
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 1905,
+            "height": 1012
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.8799,
+          "overflow": false,
+          "target": {
+            "x": 110.015625,
+            "y": 314.265625,
+            "width": 654.609375,
+            "height": 490.953125
+          },
+          "moving": {
+            "x": 75.140625,
+            "y": 236.203125,
+            "width": 1050.953125,
+            "height": 656.109375
+          },
+          "copy": {
+            "x": 1055.921875,
+            "y": 288.625,
+            "width": 739.046875,
+            "height": 570.734375
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 1905,
+            "height": 1012
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.9399,
+          "overflow": false,
+          "target": {
+            "x": 110.015625,
+            "y": 314.265625,
+            "width": 654.609375,
+            "height": 490.953125
+          },
+          "moving": {
+            "x": 110,
+            "y": 314.25,
+            "width": 654.609375,
+            "height": 490.953125
+          },
+          "copy": {
+            "x": 1055.921875,
+            "y": 288.625,
+            "width": 739.046875,
+            "height": 570.734375
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 1905,
+            "height": 1012
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.98,
+          "overflow": false,
+          "target": {
+            "x": 110.015625,
+            "y": 314.265625,
+            "width": 654.609375,
+            "height": 490.953125
+          },
+          "moving": {
+            "x": 110.015625,
+            "y": 314.265625,
+            "width": 654.609375,
+            "height": 490.953125
+          },
+          "copy": {
+            "x": 1055.921875,
+            "y": 288.625,
+            "width": 739.046875,
+            "height": 570.734375
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 1905,
+            "height": 1012
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "laptop",
+      "width": 1280,
+      "height": 800,
+      "reduced": false,
+      "staticMode": false,
+      "errors": [],
+      "badResponses": [],
+      "frames": [
+        {
+          "p": 0,
+          "overflow": false,
+          "target": {
+            "x": 71.671875,
+            "y": 255.515625,
+            "width": 437.9375,
+            "height": 328.453125
+          },
+          "moving": {
+            "x": 0,
+            "y": 68,
+            "width": 1265,
+            "height": 732
+          },
+          "copy": {
+            "x": 695.421875,
+            "y": 203.78125,
+            "width": 497.890625,
+            "height": 460.421875
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 1265,
+            "height": 732
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.1601,
+          "overflow": false,
+          "target": {
+            "x": 71.671875,
+            "y": 255.515625,
+            "width": 437.9375,
+            "height": 328.453125
+          },
+          "moving": {
+            "x": 0,
+            "y": 68,
+            "width": 1265,
+            "height": 732
+          },
+          "copy": {
+            "x": 695.421875,
+            "y": 203.78125,
+            "width": 497.890625,
+            "height": 460.421875
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 1265,
+            "height": 732
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.31,
+          "overflow": false,
+          "target": {
+            "x": 71.671875,
+            "y": 255.515625,
+            "width": 437.9375,
+            "height": 328.453125
+          },
+          "moving": {
+            "x": 0,
+            "y": 68,
+            "width": 1265,
+            "height": 732
+          },
+          "copy": {
+            "x": 695.421875,
+            "y": 203.78125,
+            "width": 497.890625,
+            "height": 460.421875
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 1265,
+            "height": 732
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.3999,
+          "overflow": false,
+          "target": {
+            "x": 71.671875,
+            "y": 255.515625,
+            "width": 437.9375,
+            "height": 328.453125
+          },
+          "moving": {
+            "x": 0,
+            "y": 68,
+            "width": 1265,
+            "height": 732
+          },
+          "copy": {
+            "x": 695.421875,
+            "y": 203.78125,
+            "width": 497.890625,
+            "height": 460.421875
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 1265,
+            "height": 732
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.5501,
+          "overflow": false,
+          "target": {
+            "x": 71.671875,
+            "y": 255.515625,
+            "width": 437.9375,
+            "height": 328.453125
+          },
+          "moving": {
+            "x": 0,
+            "y": 68,
+            "width": 1265,
+            "height": 732
+          },
+          "copy": {
+            "x": 695.421875,
+            "y": 203.78125,
+            "width": 497.890625,
+            "height": 460.421875
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 1265,
+            "height": 732
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.7001,
+          "overflow": false,
+          "target": {
+            "x": 71.671875,
+            "y": 255.515625,
+            "width": 437.9375,
+            "height": 328.453125
+          },
+          "moving": {
+            "x": 0,
+            "y": 68,
+            "width": 1265,
+            "height": 732
+          },
+          "copy": {
+            "x": 695.421875,
+            "y": 203.78125,
+            "width": 497.890625,
+            "height": 460.421875
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 1265,
+            "height": 732
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.82,
+          "overflow": false,
+          "target": {
+            "x": 71.671875,
+            "y": 255.515625,
+            "width": 437.9375,
+            "height": 328.453125
+          },
+          "moving": {
+            "x": 11.171875,
+            "y": 97.25,
+            "width": 1135.96875,
+            "height": 669.03125
+          },
+          "copy": {
+            "x": 695.421875,
+            "y": 203.78125,
+            "width": 497.890625,
+            "height": 460.421875
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 1265,
+            "height": 732
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.88,
+          "overflow": false,
+          "target": {
+            "x": 71.671875,
+            "y": 255.515625,
+            "width": 437.9375,
+            "height": 328.453125
+          },
+          "moving": {
+            "x": 49.015625,
+            "y": 196.25,
+            "width": 699.328125,
+            "height": 455.984375
+          },
+          "copy": {
+            "x": 695.421875,
+            "y": 203.78125,
+            "width": 497.890625,
+            "height": 460.421875
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 1265,
+            "height": 732
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.9401,
+          "overflow": false,
+          "target": {
+            "x": 71.671875,
+            "y": 255.515625,
+            "width": 437.9375,
+            "height": 328.453125
+          },
+          "moving": {
+            "x": 71.671875,
+            "y": 255.515625,
+            "width": 437.9375,
+            "height": 328.453125
+          },
+          "copy": {
+            "x": 695.421875,
+            "y": 203.78125,
+            "width": 497.890625,
+            "height": 460.421875
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 1265,
+            "height": 732
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.9801,
+          "overflow": false,
+          "target": {
+            "x": 71.671875,
+            "y": 255.515625,
+            "width": 437.9375,
+            "height": 328.453125
+          },
+          "moving": {
+            "x": 71.671875,
+            "y": 255.515625,
+            "width": 437.9375,
+            "height": 328.453125
+          },
+          "copy": {
+            "x": 695.421875,
+            "y": 203.78125,
+            "width": 497.890625,
+            "height": 460.421875
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 1265,
+            "height": 732
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "short",
+      "width": 1000,
+      "height": 650,
+      "reduced": false,
+      "staticMode": false,
+      "errors": [],
+      "badResponses": [],
+      "frames": [
+        {
+          "p": 0,
+          "overflow": false,
+          "target": {
+            "x": 32,
+            "y": 208.328125,
+            "width": 363.78125,
+            "height": 272.828125
+          },
+          "moving": {
+            "x": 0,
+            "y": 68,
+            "width": 985,
+            "height": 582
+          },
+          "copy": {
+            "x": 537.640625,
+            "y": 141.453125,
+            "width": 415.34375,
+            "height": 435.078125
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 985,
+            "height": 582
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.16,
+          "overflow": false,
+          "target": {
+            "x": 32,
+            "y": 208.328125,
+            "width": 363.78125,
+            "height": 272.828125
+          },
+          "moving": {
+            "x": 0,
+            "y": 68,
+            "width": 985,
+            "height": 582
+          },
+          "copy": {
+            "x": 537.640625,
+            "y": 141.453125,
+            "width": 415.34375,
+            "height": 435.078125
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 985,
+            "height": 582
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.3099,
+          "overflow": false,
+          "target": {
+            "x": 32,
+            "y": 208.328125,
+            "width": 363.78125,
+            "height": 272.828125
+          },
+          "moving": {
+            "x": 0,
+            "y": 68,
+            "width": 985,
+            "height": 582
+          },
+          "copy": {
+            "x": 537.640625,
+            "y": 141.453125,
+            "width": 415.34375,
+            "height": 435.078125
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 985,
+            "height": 582
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.3999,
+          "overflow": false,
+          "target": {
+            "x": 32,
+            "y": 208.328125,
+            "width": 363.78125,
+            "height": 272.828125
+          },
+          "moving": {
+            "x": 0,
+            "y": 68,
+            "width": 985,
+            "height": 582
+          },
+          "copy": {
+            "x": 537.640625,
+            "y": 141.453125,
+            "width": 415.34375,
+            "height": 435.078125
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 985,
+            "height": 582
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.5501,
+          "overflow": false,
+          "target": {
+            "x": 32,
+            "y": 208.328125,
+            "width": 363.78125,
+            "height": 272.828125
+          },
+          "moving": {
+            "x": 0,
+            "y": 68,
+            "width": 985,
+            "height": 582
+          },
+          "copy": {
+            "x": 537.640625,
+            "y": 141.453125,
+            "width": 415.34375,
+            "height": 435.078125
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 985,
+            "height": 582
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.7,
+          "overflow": false,
+          "target": {
+            "x": 32,
+            "y": 208.328125,
+            "width": 363.78125,
+            "height": 272.828125
+          },
+          "moving": {
+            "x": 0,
+            "y": 68,
+            "width": 985,
+            "height": 582
+          },
+          "copy": {
+            "x": 537.640625,
+            "y": 141.453125,
+            "width": 415.34375,
+            "height": 435.078125
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 985,
+            "height": 582
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.8201,
+          "overflow": false,
+          "target": {
+            "x": 32,
+            "y": 208.328125,
+            "width": 363.78125,
+            "height": 272.828125
+          },
+          "moving": {
+            "x": 5.015625,
+            "y": 90.015625,
+            "width": 887.484375,
+            "height": 533.46875
+          },
+          "copy": {
+            "x": 537.640625,
+            "y": 141.453125,
+            "width": 415.34375,
+            "height": 435.078125
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 985,
+            "height": 582
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.8801,
+          "overflow": false,
+          "target": {
+            "x": 32,
+            "y": 208.328125,
+            "width": 363.78125,
+            "height": 272.828125
+          },
+          "moving": {
+            "x": 21.90625,
+            "y": 164.078125,
+            "width": 559.59375,
+            "height": 370.28125
+          },
+          "copy": {
+            "x": 537.640625,
+            "y": 141.453125,
+            "width": 415.34375,
+            "height": 435.078125
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 985,
+            "height": 582
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.9399,
+          "overflow": false,
+          "target": {
+            "x": 32,
+            "y": 208.328125,
+            "width": 363.78125,
+            "height": 272.828125
+          },
+          "moving": {
+            "x": 31.984375,
+            "y": 208.3125,
+            "width": 363.78125,
+            "height": 272.828125
+          },
+          "copy": {
+            "x": 537.640625,
+            "y": 141.453125,
+            "width": 415.34375,
+            "height": 435.078125
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 985,
+            "height": 582
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.9799,
+          "overflow": false,
+          "target": {
+            "x": 32,
+            "y": 208.328125,
+            "width": 363.78125,
+            "height": 272.828125
+          },
+          "moving": {
+            "x": 32,
+            "y": 208.328125,
+            "width": 363.78125,
+            "height": 272.828125
+          },
+          "copy": {
+            "x": 537.640625,
+            "y": 141.453125,
+            "width": 415.34375,
+            "height": 435.078125
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 985,
+            "height": 582
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tablet",
+      "width": 768,
+      "height": 700,
+      "reduced": false,
+      "staticMode": false,
+      "errors": [],
+      "badResponses": [],
+      "frames": [
+        {
+          "p": 0,
+          "overflow": false,
+          "target": {
+            "x": 32,
+            "y": 269.6875,
+            "width": 266.828125,
+            "height": 200.109375
+          },
+          "moving": {
+            "x": 0,
+            "y": 68,
+            "width": 753,
+            "height": 632
+          },
+          "copy": {
+            "x": 413.546875,
+            "y": 165.453125,
+            "width": 307.4375,
+            "height": 437.078125
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 753,
+            "height": 632
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.1601,
+          "overflow": false,
+          "target": {
+            "x": 32,
+            "y": 269.6875,
+            "width": 266.828125,
+            "height": 200.109375
+          },
+          "moving": {
+            "x": 0,
+            "y": 68,
+            "width": 753,
+            "height": 632
+          },
+          "copy": {
+            "x": 413.546875,
+            "y": 165.453125,
+            "width": 307.4375,
+            "height": 437.078125
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 753,
+            "height": 632
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.3101,
+          "overflow": false,
+          "target": {
+            "x": 32,
+            "y": 269.6875,
+            "width": 266.828125,
+            "height": 200.109375
+          },
+          "moving": {
+            "x": 0,
+            "y": 68,
+            "width": 753,
+            "height": 632
+          },
+          "copy": {
+            "x": 413.546875,
+            "y": 165.453125,
+            "width": 307.4375,
+            "height": 437.078125
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 753,
+            "height": 632
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.3999,
+          "overflow": false,
+          "target": {
+            "x": 32,
+            "y": 269.6875,
+            "width": 266.828125,
+            "height": 200.109375
+          },
+          "moving": {
+            "x": 0,
+            "y": 68,
+            "width": 753,
+            "height": 632
+          },
+          "copy": {
+            "x": 413.546875,
+            "y": 165.453125,
+            "width": 307.4375,
+            "height": 437.078125
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 753,
+            "height": 632
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.5501,
+          "overflow": false,
+          "target": {
+            "x": 32,
+            "y": 269.6875,
+            "width": 266.828125,
+            "height": 200.109375
+          },
+          "moving": {
+            "x": 0,
+            "y": 68,
+            "width": 753,
+            "height": 632
+          },
+          "copy": {
+            "x": 413.546875,
+            "y": 165.453125,
+            "width": 307.4375,
+            "height": 437.078125
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 753,
+            "height": 632
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.7,
+          "overflow": false,
+          "target": {
+            "x": 32,
+            "y": 269.6875,
+            "width": 266.828125,
+            "height": 200.109375
+          },
+          "moving": {
+            "x": 0,
+            "y": 68,
+            "width": 753,
+            "height": 632
+          },
+          "copy": {
+            "x": 413.546875,
+            "y": 165.453125,
+            "width": 307.4375,
+            "height": 437.078125
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 753,
+            "height": 632
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.82,
+          "overflow": false,
+          "target": {
+            "x": 32,
+            "y": 269.6875,
+            "width": 266.828125,
+            "height": 200.109375
+          },
+          "moving": {
+            "x": 5,
+            "y": 99.5625,
+            "width": 676.875,
+            "height": 564.375
+          },
+          "copy": {
+            "x": 413.546875,
+            "y": 165.453125,
+            "width": 307.4375,
+            "height": 437.078125
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 753,
+            "height": 632
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.8799,
+          "overflow": false,
+          "target": {
+            "x": 32,
+            "y": 269.6875,
+            "width": 266.828125,
+            "height": 200.109375
+          },
+          "moving": {
+            "x": 21.84375,
+            "y": 205.703125,
+            "width": 421.015625,
+            "height": 337.078125
+          },
+          "copy": {
+            "x": 413.546875,
+            "y": 165.453125,
+            "width": 307.4375,
+            "height": 437.078125
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 753,
+            "height": 632
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.9401,
+          "overflow": false,
+          "target": {
+            "x": 32,
+            "y": 269.6875,
+            "width": 266.828125,
+            "height": 200.109375
+          },
+          "moving": {
+            "x": 32,
+            "y": 269.6875,
+            "width": 266.828125,
+            "height": 200.109375
+          },
+          "copy": {
+            "x": 413.546875,
+            "y": 165.453125,
+            "width": 307.4375,
+            "height": 437.078125
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 753,
+            "height": 632
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.98,
+          "overflow": false,
+          "target": {
+            "x": 32,
+            "y": 269.6875,
+            "width": 266.828125,
+            "height": 200.109375
+          },
+          "moving": {
+            "x": 32,
+            "y": 269.6875,
+            "width": 266.828125,
+            "height": 200.109375
+          },
+          "copy": {
+            "x": 413.546875,
+            "y": 165.453125,
+            "width": 307.4375,
+            "height": 437.078125
+          },
+          "stage": {
+            "x": 0,
+            "y": 68,
+            "width": 753,
+            "height": 632
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "reduced": false,
+      "staticMode": false,
+      "errors": [],
+      "badResponses": [],
+      "frames": [
+        {
+          "p": 0,
+          "overflow": false,
+          "target": {
+            "x": 26,
+            "y": 132.75,
+            "width": 253.21875,
+            "height": 189.90625
+          },
+          "moving": {
+            "x": 0,
+            "y": 60,
+            "width": 375,
+            "height": 784
+          },
+          "copy": {
+            "x": 26,
+            "y": 376.65625,
+            "width": 323,
+            "height": 394.578125
+          },
+          "stage": {
+            "x": 0,
+            "y": 60,
+            "width": 375,
+            "height": 784
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.1601,
+          "overflow": false,
+          "target": {
+            "x": 26,
+            "y": 132.75,
+            "width": 253.21875,
+            "height": 189.90625
+          },
+          "moving": {
+            "x": 0,
+            "y": 60,
+            "width": 375,
+            "height": 784
+          },
+          "copy": {
+            "x": 26,
+            "y": 376.65625,
+            "width": 323,
+            "height": 394.578125
+          },
+          "stage": {
+            "x": 0,
+            "y": 60,
+            "width": 375,
+            "height": 784
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.31,
+          "overflow": false,
+          "target": {
+            "x": 26,
+            "y": 132.75,
+            "width": 253.21875,
+            "height": 189.90625
+          },
+          "moving": {
+            "x": 0,
+            "y": 60,
+            "width": 375,
+            "height": 784
+          },
+          "copy": {
+            "x": 26,
+            "y": 376.65625,
+            "width": 323,
+            "height": 394.578125
+          },
+          "stage": {
+            "x": 0,
+            "y": 60,
+            "width": 375,
+            "height": 784
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.4001,
+          "overflow": false,
+          "target": {
+            "x": 26,
+            "y": 132.75,
+            "width": 253.21875,
+            "height": 189.90625
+          },
+          "moving": {
+            "x": 0,
+            "y": 60,
+            "width": 375,
+            "height": 784
+          },
+          "copy": {
+            "x": 26,
+            "y": 376.65625,
+            "width": 323,
+            "height": 394.578125
+          },
+          "stage": {
+            "x": 0,
+            "y": 60,
+            "width": 375,
+            "height": 784
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.55,
+          "overflow": false,
+          "target": {
+            "x": 26,
+            "y": 132.75,
+            "width": 253.21875,
+            "height": 189.90625
+          },
+          "moving": {
+            "x": 0,
+            "y": 60,
+            "width": 375,
+            "height": 784
+          },
+          "copy": {
+            "x": 26,
+            "y": 376.65625,
+            "width": 323,
+            "height": 394.578125
+          },
+          "stage": {
+            "x": 0,
+            "y": 60,
+            "width": 375,
+            "height": 784
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.7002,
+          "overflow": false,
+          "target": {
+            "x": 26,
+            "y": 132.75,
+            "width": 253.21875,
+            "height": 189.90625
+          },
+          "moving": {
+            "x": 0,
+            "y": 60,
+            "width": 375,
+            "height": 784
+          },
+          "copy": {
+            "x": 26,
+            "y": 376.65625,
+            "width": 323,
+            "height": 394.578125
+          },
+          "stage": {
+            "x": 0,
+            "y": 60,
+            "width": 375,
+            "height": 784
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.8201,
+          "overflow": false,
+          "target": {
+            "x": 26,
+            "y": 132.75,
+            "width": 253.21875,
+            "height": 189.90625
+          },
+          "moving": {
+            "x": 4.0625,
+            "y": 71.390625,
+            "width": 355.90625,
+            "height": 690.875
+          },
+          "copy": {
+            "x": 26,
+            "y": 376.65625,
+            "width": 323,
+            "height": 394.578125
+          },
+          "stage": {
+            "x": 0,
+            "y": 60,
+            "width": 375,
+            "height": 784
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.8801,
+          "overflow": false,
+          "target": {
+            "x": 26,
+            "y": 132.75,
+            "width": 253.21875,
+            "height": 189.90625
+          },
+          "moving": {
+            "x": 17.796875,
+            "y": 109.8125,
+            "width": 291.609375,
+            "height": 377.1875
+          },
+          "copy": {
+            "x": 26,
+            "y": 376.65625,
+            "width": 323,
+            "height": 394.578125
+          },
+          "stage": {
+            "x": 0,
+            "y": 60,
+            "width": 375,
+            "height": 784
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.9402,
+          "overflow": false,
+          "target": {
+            "x": 26,
+            "y": 132.75,
+            "width": 253.21875,
+            "height": 189.90625
+          },
+          "moving": {
+            "x": 26,
+            "y": 132.75,
+            "width": 253.21875,
+            "height": 189.90625
+          },
+          "copy": {
+            "x": 26,
+            "y": 376.65625,
+            "width": 323,
+            "height": 394.578125
+          },
+          "stage": {
+            "x": 0,
+            "y": 60,
+            "width": 375,
+            "height": 784
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        },
+        {
+          "p": 0.98,
+          "overflow": false,
+          "target": {
+            "x": 26,
+            "y": 132.75,
+            "width": 253.21875,
+            "height": 189.90625
+          },
+          "moving": {
+            "x": 26,
+            "y": 132.75,
+            "width": 253.21875,
+            "height": 189.90625
+          },
+          "copy": {
+            "x": 26,
+            "y": 376.65625,
+            "width": 323,
+            "height": 394.578125
+          },
+          "stage": {
+            "x": 0,
+            "y": 60,
+            "width": 375,
+            "height": 784
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "ensemble",
+              "loaded": true,
+              "width": 2500,
+              "height": 1406
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "narrow",
+      "width": 320,
+      "height": 700,
+      "reduced": false,
+      "staticMode": true,
+      "errors": [],
+      "badResponses": [],
+      "frames": [
+        {
+          "p": 1,
+          "overflow": false,
+          "target": {
+            "x": 24,
+            "y": 771.625,
+            "width": 200,
+            "height": 150
+          },
+          "moving": null,
+          "copy": {
+            "x": 24,
+            "y": 978.625,
+            "width": 257,
+            "height": 408.078125
+          },
+          "stage": {
+            "x": 0,
+            "y": -0.4375,
+            "width": 305,
+            "height": 1427.140625
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "landscape",
+      "width": 844,
+      "height": 390,
+      "reduced": false,
+      "staticMode": true,
+      "errors": [],
+      "badResponses": [],
+      "frames": [
+        {
+          "p": 1,
+          "overflow": false,
+          "target": {
+            "x": 50.625,
+            "y": 626.6875,
+            "width": 283.03125,
+            "height": 212.265625
+          },
+          "moving": null,
+          "copy": {
+            "x": 452.90625,
+            "y": 530.921875,
+            "width": 325.453125,
+            "height": 432.328125
+          },
+          "stage": {
+            "x": 0,
+            "y": -0.109375,
+            "width": 829,
+            "height": 1033.359375
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "reduced",
+      "width": 1440,
+      "height": 1000,
+      "reduced": true,
+      "staticMode": true,
+      "errors": [],
+      "badResponses": [],
+      "frames": [
+        {
+          "p": 1,
+          "overflow": false,
+          "target": {
+            "x": 86.390625,
+            "y": 1085.046875,
+            "width": 483.796875,
+            "height": 362.84375
+          },
+          "moving": null,
+          "copy": {
+            "x": 789.65625,
+            "y": 1006.375,
+            "width": 548.9375,
+            "height": 548.703125
+          },
+          "stage": {
+            "x": 0,
+            "y": -0.34375,
+            "width": 1425,
+            "height": 1625.421875
+          },
+          "photos": [
+            {
+              "name": "room",
+              "loaded": true,
+              "width": 5300,
+              "height": 3520
+            },
+            {
+              "name": "jump",
+              "loaded": true,
+              "width": 2500,
+              "height": 1875
+            },
+            {
+              "name": "duet",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            },
+            {
+              "name": "rhapsody",
+              "loaded": true,
+              "width": 1875,
+              "height": 2500
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "wheelTiming": {
+    "samples": 508,
+    "median": 16.699999999999818,
+    "p95": 33.399999999999636,
+    "max": 66.69999999999982
+  }
+}

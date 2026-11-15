@@ -1,0 +1,1096 @@
+@font-face {
+  font-family: Instrument Serif;
+  src: url("../assets/fonts/InstrumentSerif-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+.opera-chapter {
+  --op-ink: #100e0c;
+  --op-paper: #f5eee0;
+  --op-gold: #d0b37d;
+  background: var(--op-ink);
+  color: var(--op-paper);
+}
+.opera-chapter button,
+.opera-chapter a {
+  -webkit-tap-highlight-color: transparent;
+}
+.opera-chapter button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+.opera-chapter :focus-visible {
+  outline: 2px solid #edc784;
+  outline-offset: 6px;
+}
+.opera-label {
+  display: block;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.19em;
+  line-height: 1.6;
+  color: var(--op-gold);
+}
+.opera-chapter .opera-scene {
+  height: 620svh;
+  background: #100e0c;
+  isolation: isolate;
+}
+.opera-chapter .opera-stage {
+  top: 68px;
+  height: calc(100svh - 68px);
+  min-height: 0;
+  overflow: hidden;
+  background: #100e0c;
+}
+.opera-prologue {
+  position: absolute;
+  inset: 0;
+  background: #faf9f6;
+  color: #211d18;
+  text-align: center;
+  padding: 5.5vh 24px;
+  z-index: 2;
+  pointer-events: none;
+}
+.opera-prologue .opera-label {
+  color: #756141;
+}
+.opera-prologue h2,
+.opera-static-opening h2 {
+  font-family:
+    Instrument Serif,
+    Georgia,
+    serif;
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  font-size: clamp(46px, 6vw, 90px);
+  line-height: 1.02;
+  margin: 12px 0;
+}
+.opera-prologue p {
+  font-size: 12px;
+  margin: 0;
+  color: #665b4d;
+}
+.opera-room {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  will-change: clip-path, opacity;
+  pointer-events: none;
+}
+.opera-room > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  will-change: transform;
+}
+.opera-room-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(16, 14, 12, 0.3),
+    transparent 32%,
+    transparent 80%,
+    rgba(16, 14, 12, 0.2)
+  );
+}
+.opera-dance-layers,
+.opera-portal,
+.opera-ensemble {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.opera-dance-layers {
+  z-index: 4;
+}
+.opera-portal,
+.opera-ensemble {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #100e0c;
+}
+.opera-portal {
+  background: radial-gradient(ellipse at 50% 50%, #362515, #100e0c 72%);
+  will-change: clip-path;
+}
+.opera-ensemble {
+  background: #0c101b;
+}
+.opera-portal > img,
+.opera-ensemble > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 2500px;
+  max-height: 2500px;
+  object-fit: contain;
+  padding: 32px 48px;
+}
+.opera-photo-credit {
+  position: absolute;
+  bottom: 15px;
+  right: 22px;
+  color: #d2c7b2;
+  font-size: 9px;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+  text-shadow: 0 1px 4px #000;
+}
+.opera-cinema-hud {
+  position: absolute;
+  z-index: 7;
+  left: 48px;
+  right: 48px;
+  bottom: 28px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  pointer-events: none;
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  color: #e4d6bb;
+}
+.opera-cinema-hud > span:nth-child(2) {
+  margin-left: auto;
+}
+.opera-cinema-hud > span:first-child {
+  padding-left: 14px;
+  border-left: 1px solid #c3a36b;
+}
+.opera-moving-photo {
+  position: absolute;
+  z-index: 6;
+  pointer-events: none;
+  overflow: hidden;
+  background: #071b39;
+  will-change: left, top, width, height, opacity;
+}
+.opera-moving-photo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 2500px;
+  max-height: 1875px;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
+.opera-moving-photo .opera-photo-credit {
+  font-size: 8px;
+  right: 14px;
+  bottom: 10px;
+}
+.opera-skip {
+  position: absolute;
+  z-index: 8;
+  bottom: 24px;
+  left: 48px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #17120fd9;
+  border: 1px solid #73634c;
+  border-radius: 30px;
+  padding: 10px 16px;
+  font-size: 11px !important;
+}
+.opera-cinema-hud {
+  bottom: 30px;
+}
+.opera-cinema-hud > span:first-child {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  display: none;
+}
+.opera-programme {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  align-items: center;
+  gap: clamp(30px, 5vw, 100px);
+  padding: 45px clamp(32px, 5.6vw, 120px);
+  max-width: 1900px;
+  margin: auto;
+}
+.opera-programme-mosaic {
+  display: grid;
+  grid-template-columns: 1fr 0.28fr;
+  column-gap: 12px;
+  align-items: center;
+  min-width: 0;
+  position: relative;
+}
+.opera-editorial-hero {
+  display: block;
+  aspect-ratio: 4/3;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  overflow: hidden;
+  position: relative;
+}
+.opera-editorial-hero > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.opera-image-expand {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: #17120fbb;
+  border: 1px solid #a9997f99;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  z-index: 2;
+}
+.opera-editorial-support {
+  display: grid;
+  gap: 12px;
+}
+.opera-editorial-support button {
+  padding: 0;
+  aspect-ratio: 3/4;
+  background: #201910;
+  border: 0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.opera-editorial-support img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.opera-mosaic-caption {
+  position: relative;
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 9px;
+  color: #b9aa92;
+  margin: 15px 0 0;
+  line-height: 1.5;
+}
+.opera-mosaic-caption .opera-photo-credit {
+  position: static;
+  font-size: 8px;
+  white-space: nowrap;
+}
+.opera-programme-copy h2 {
+  font-family:
+    Instrument Serif,
+    Georgia,
+    serif;
+  font-size: clamp(76px, 9.2vw, 145px);
+  font-weight: 400;
+  line-height: 0.88;
+  letter-spacing: -0.035em;
+  margin: 22px 0 24px;
+}
+.opera-chapter em {
+  font-family: inherit;
+  font-style: normal;
+  color: #d2b486;
+}
+.opera-programme-copy > p {
+  font-size: 15px;
+  line-height: 1.65;
+  max-width: 430px;
+  color: #c4b9a8;
+  margin: 0 0 18px;
+}
+.opera-programme-copy .opera-programme-lead {
+  font-size: 21px;
+  color: #f5eee0;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+.opera-programme-facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  border-top: 1px solid #4b3d2c;
+  padding-top: 19px;
+  margin-top: 24px;
+}
+.opera-programme-facts p {
+  margin: 0;
+}
+.opera-programme-facts strong,
+.opera-programme-facts span {
+  display: block;
+  font-size: 11px;
+  line-height: 1.5;
+}
+.opera-programme-facts strong {
+  color: #f5eee0;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.opera-programme-facts span {
+  color: #bcae99;
+}
+.opera-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid #a78c61;
+  padding: 5px 0;
+  font-size: 12px !important;
+  color: #ecd6ae !important;
+  text-decoration: none;
+}
+.opera-programme-copy > .opera-text-link {
+  margin-top: 27px;
+}
+.opera-tickets {
+  padding: 54px clamp(32px, 6vw, 130px) 52px;
+  max-width: 1600px;
+  margin: auto;
+  scroll-margin-top: 0;
+}
+.opera-tickets-heading {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  column-gap: 50px;
+  align-items: end;
+  margin-bottom: 32px;
+}
+.opera-tickets-heading > .opera-label {
+  grid-column: 1/-1;
+  margin-bottom: 8px;
+}
+.opera-tickets-heading h2 {
+  font-family:
+    Instrument Serif,
+    Georgia,
+    serif;
+  font-size: clamp(52px, 5.3vw, 74px);
+  font-weight: 400;
+  line-height: 0.94;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+.opera-tickets-heading > p {
+  color: #c1b39e;
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 300px;
+  margin: 0 0 6px;
+}
+.opera-ticket-layout {
+  display: grid;
+  grid-template-columns: 0.8fr 1.25fr;
+  gap: clamp(30px, 5vw, 90px);
+  align-items: start;
+}
+.opera-ticket-copy {
+  border-top: 1px solid #685333;
+  padding-top: 25px;
+}
+.opera-ticket-date {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 29px;
+}
+.opera-ticket-date > strong {
+  font-family:
+    Instrument Serif,
+    Georgia,
+    serif;
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 0.9;
+}
+.opera-ticket-date > div > span {
+  font-size: 14px;
+  color: #cbbba2;
+}
+.opera-ticket-date p {
+  font-size: 27px;
+  margin: 6px 0 0;
+}
+.opera-ticket-date small {
+  display: block;
+  font-size: 10px;
+  color: #bcae99;
+  margin-top: 3px;
+}
+.opera-ticket-seat {
+  padding: 22px 0;
+  border-top: 1px solid #423728;
+  border-bottom: 1px solid #423728;
+}
+.opera-ticket-seat h3 {
+  font-family:
+    Instrument Serif,
+    Georgia,
+    serif;
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  margin: 6px 0 18px;
+}
+.opera-ticket-seat > div {
+  display: flex;
+  gap: 50px;
+}
+.opera-ticket-seat > div p {
+  margin: 0;
+}
+.opera-ticket-seat > div span {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  color: #bba78b;
+}
+.opera-ticket-seat > div strong {
+  display: block;
+  font-family:
+    Instrument Serif,
+    Georgia,
+    serif;
+  font-size: 38px;
+  font-weight: 400;
+  margin-top: 4px;
+}
+.opera-ticket-seat > p {
+  font-size: 11px;
+  color: #c5b79f;
+  margin: 15px 0 0;
+}
+.opera-view-button {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  text-align: left;
+  padding: 16px 0;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid #423728;
+}
+.opera-view-button > img {
+  width: 92px;
+  height: 68px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.opera-view-button > span {
+  flex: 1;
+}
+.opera-view-button > span > svg {
+  color: #d1b27c;
+  margin-bottom: 6px;
+}
+.opera-view-button strong,
+.opera-view-button small {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.opera-view-button small {
+  font-size: 9px;
+  color: #c6b79e;
+  font-weight: 400;
+}
+.opera-ticket-address {
+  display: flex;
+  gap: 12px;
+  padding: 22px 0;
+  color: #d5bd95;
+}
+.opera-ticket-address > svg {
+  flex: none;
+  margin-top: 2px;
+}
+.opera-ticket-address p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.opera-ticket-address strong,
+.opera-ticket-address span {
+  display: block;
+}
+.opera-ticket-address span {
+  color: #c6b79e;
+}
+.opera-ticket-address .opera-text-link {
+  font-size: 10px !important;
+  margin-top: 10px;
+}
+.opera-map-panel {
+  border: 1px solid #51422f;
+  border-radius: 12px;
+  padding: 20px;
+  background: linear-gradient(145deg, #211b14, #15120e);
+}
+.opera-map-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.opera-map-top .opera-label {
+  font-size: 8px;
+  letter-spacing: 0.13em;
+}
+.opera-map-expand {
+  display: grid;
+  place-items: center;
+  background: #292016;
+  border: 1px solid #79623d;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+.opera-seat-map {
+  display: block;
+  width: 100%;
+  height: clamp(330px, calc(100svh - 450px), 500px);
+  max-height: 500px;
+  margin: 15px auto 0;
+}
+.opera-map-caption {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  color: #ecd5ab;
+  font-size: 11px;
+  text-align: center;
+  line-height: 1.6;
+}
+.opera-selected-dot {
+  width: 6px;
+  height: 6px;
+  background: #fff4d9;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #d7b46d33;
+  flex: none;
+}
+.opera-map-note {
+  font-size: 9px;
+  line-height: 1.6;
+  color: #b6a68e;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.opera-programme-details {
+  border-top: 1px solid #5b482d;
+  border-bottom: 1px solid #5b482d;
+  margin-top: 65px;
+}
+.opera-programme-details summary {
+  cursor: pointer;
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  font-family:
+    Instrument Serif,
+    Georgia,
+    serif;
+  font-size: 30px;
+}
+.opera-programme-details summary > span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: Inter, sans-serif;
+  font-size: 10px;
+  color: #d5bd95;
+}
+.opera-piece-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+  padding: 18px 0 30px;
+}
+.opera-piece-grid h3 {
+  font-family:
+    Instrument Serif,
+    Georgia,
+    serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.1;
+  margin: 12px 0;
+}
+.opera-piece-grid p {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #c6b79e;
+}
+.opera-piece-grid .opera-piece-music {
+  font-size: 10px;
+  color: #bca98b;
+}
+.opera-programme-duration {
+  font-size: 11px;
+  line-height: 1.7;
+  color: #c6b79e;
+  margin-bottom: 28px;
+}
+.opera-programme-duration a {
+  color: #ecd5ab;
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  margin-left: 10px;
+}
+.opera-chapter-credit {
+  font-size: 9px;
+  color: #bca98b;
+  line-height: 1.7;
+  margin: 27px 0 0;
+}
+.opera-chapter-credit a {
+  color: inherit;
+}
+.opera-viewer {
+  width: min(1400px, 96vw);
+  max-width: none;
+  max-height: 95svh;
+  padding: 26px 32px;
+  border: 1px solid #75613e;
+  border-radius: 14px;
+  color: #f5eee0;
+  background: #100e0c;
+  overflow: auto;
+}
+.opera-viewer::backdrop {
+  background: #090806ed;
+  backdrop-filter: blur(12px);
+}
+.opera-viewer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+.opera-viewer-top h2 {
+  font-family:
+    Instrument Serif,
+    Georgia,
+    serif;
+  font-size: 38px;
+  font-weight: 400;
+  margin: 6px 0 18px;
+  line-height: 1.1;
+}
+.opera-viewer-image {
+  height: min(65svh, 780px);
+  display: flex;
+  justify-content: center;
+}
+.opera-viewer-image > img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+.opera-viewer-image .opera-seat-map {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  max-height: none;
+}
+.opera-viewer-image.is-map {
+  height: min(77svh, 1000px);
+}
+.opera-viewer-caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  align-items: start;
+  margin-top: 18px;
+}
+.opera-viewer-caption p {
+  font-size: 11px;
+  line-height: 1.6;
+  color: #cbbba2;
+  max-width: 760px;
+  margin: 0;
+}
+.opera-viewer-caption a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  line-height: 1.6;
+  color: #dfc59d;
+  flex-shrink: 0;
+}
+.opera-static-opening {
+  padding: 45px 0 35px;
+  position: relative;
+}
+.opera-static-opening > img {
+  width: 100%;
+  max-height: 72svh;
+  object-fit: contain;
+  margin: 30px auto 0;
+  display: block;
+}
+.opera-static-opening .opera-photo-credit {
+  position: static;
+  display: block;
+  text-align: right;
+  margin-top: 8px;
+}
+.opera-chapter .reduced-scene {
+  height: auto !important;
+}
+.opera-chapter .reduced-scene .opera-stage {
+  position: relative;
+  top: auto;
+  height: auto;
+  overflow: visible;
+  padding: 0 clamp(24px, 6vw, 90px);
+}
+.opera-chapter .reduced-scene .opera-programme {
+  position: relative;
+  padding: 40px 0 70px;
+  opacity: 1;
+}
+.opera-source-credits {
+  font-size: 13px;
+  line-height: 1.7;
+}
+.opera-source-credits ul {
+  padding-left: 20px;
+}
+.opera-source-credits a {
+  color: #245bb5;
+}
+html[data-opera-chrome] .site-header {
+  background: var(--opera-chrome-bg);
+  color: var(--opera-chrome-fg);
+  border-color: #9b815344;
+  backdrop-filter: blur(18px);
+}
+html[data-opera-chrome] .site-header .wordmark,
+html[data-opera-chrome] .site-header .menu-button {
+  color: inherit;
+}
+html[data-opera-chrome] .site-header .wordmark > span {
+  color: #c6a46c;
+}
+html[data-opera-chrome] .site-header .header-chapter {
+  color: inherit;
+  opacity: 0.75;
+}
+html[data-opera-chrome] .navigation-dialog {
+  background: #15110e;
+  color: #f5eee0;
+  border-color: #665033;
+}
+html[data-opera-chrome] .navigation-dialog .dialog-top .wordmark {
+  color: inherit;
+}
+html[data-opera-chrome] .navigation-dialog nav button {
+  color: #f5eee0;
+  border-color: #5b482e;
+}
+html[data-opera-chrome] .navigation-dialog nav button span,
+html[data-opera-chrome] .navigation-dialog > .eyebrow {
+  color: #ceb282;
+}
+@media (min-width: 701px) and (max-height: 800px) {
+  .opera-programme {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    gap: 4vw;
+  }
+  .opera-programme-copy h2 {
+    font-size: clamp(68px, 8vw, 105px);
+    margin: 16px 0;
+  }
+  .opera-programme-copy > p {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+  .opera-programme-copy .opera-programme-lead {
+    font-size: 18px;
+  }
+  .opera-programme-facts {
+    margin-top: 16px;
+    padding-top: 14px;
+  }
+  .opera-programme-copy > .opera-text-link {
+    margin-top: 16px;
+  }
+  .opera-editorial-support {
+    gap: 8px;
+  }
+}
+@media (max-width: 1000px) {
+  .opera-programme {
+    gap: 28px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .opera-programme-copy h2 {
+    font-size: clamp(62px, 8.8vw, 88px);
+  }
+  .opera-ticket-layout {
+    grid-template-columns: 1fr 1.12fr;
+    gap: 30px;
+  }
+  .opera-tickets {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .opera-tickets-heading {
+    gap: 30px;
+  }
+  .opera-map-panel {
+    padding: 14px;
+  }
+  .opera-view-button {
+    gap: 10px;
+  }
+  .opera-view-button > img {
+    width: 68px;
+  }
+  .opera-map-top .opera-label {
+    font-size: 7px;
+  }
+  .opera-ticket-seat > div {
+    gap: 35px;
+  }
+}
+@media (max-width: 700px) {
+  .opera-chapter .opera-scene {
+    height: 590svh;
+  }
+  .opera-chapter .opera-stage {
+    top: 60px;
+    height: calc(100svh - 60px);
+  }
+  .opera-prologue {
+    padding: 7vh 20px;
+  }
+  .opera-prologue h2 {
+    font-size: 49px;
+  }
+  .opera-prologue p {
+    font-size: 11px;
+  }
+  .opera-portal > img,
+  .opera-ensemble > img {
+    padding: 45px 12px;
+  }
+  .opera-cinema-hud {
+    left: 20px;
+    right: 20px;
+    bottom: 25px;
+    font-size: 8px;
+  }
+  .opera-skip {
+    left: 20px;
+    bottom: 20px;
+    padding: 9px 12px;
+  }
+  .opera-photo-credit {
+    font-size: 8px;
+    right: 12px;
+    bottom: 12px;
+  }
+  .opera-programme {
+    grid-template-columns: 1fr;
+    align-content: center;
+    gap: 27px;
+    padding: 24px 26px;
+  }
+  .opera-programme-mosaic {
+    grid-template-columns: 1fr 0.24fr;
+    gap: 9px;
+    max-width: 450px;
+    width: 100%;
+    margin: auto;
+  }
+  .opera-editorial-support {
+    gap: 9px;
+  }
+  .opera-mosaic-caption {
+    font-size: 8px;
+    margin-top: 6px;
+  }
+  .opera-mosaic-caption .opera-photo-credit {
+    font-size: 7px;
+  }
+  .opera-programme-copy {
+    max-width: 450px;
+    margin: auto;
+    width: 100%;
+  }
+  .opera-programme-copy > .opera-label {
+    font-size: 8px;
+  }
+  .opera-programme-copy h2 {
+    font-size: 77px;
+    line-height: 0.83;
+    margin: 14px 0 17px;
+  }
+  .opera-programme-copy > p {
+    font-size: 12px;
+    line-height: 1.55;
+    margin: 0 0 12px;
+    max-width: 400px;
+  }
+  .opera-programme-copy .opera-programme-lead {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+  .opera-programme-facts {
+    gap: 15px;
+    margin-top: 15px;
+    padding-top: 12px;
+  }
+  .opera-programme-facts strong,
+  .opera-programme-facts span {
+    font-size: 9px;
+  }
+  .opera-programme-copy > .opera-text-link {
+    margin-top: 15px;
+    font-size: 11px !important;
+  }
+  .opera-tickets {
+    padding: 65px 24px 35px;
+  }
+  .opera-tickets-heading {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 35px;
+  }
+  .opera-tickets-heading > .opera-label {
+    margin: 0;
+    font-size: 8px;
+  }
+  .opera-tickets-heading h2 {
+    font-size: 58px;
+  }
+  .opera-tickets-heading > p {
+    font-size: 12px;
+    max-width: 300px;
+  }
+  .opera-ticket-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .opera-ticket-date {
+    margin-bottom: 20px;
+  }
+  .opera-ticket-date > strong {
+    font-size: 90px;
+  }
+  .opera-ticket-seat h3 {
+    font-size: 43px;
+  }
+  .opera-view-button > img {
+    width: 90px;
+  }
+  .opera-map-top .opera-label {
+    font-size: 7px;
+    max-width: 180px;
+  }
+  .opera-map-expand {
+    width: 38px;
+    height: 38px;
+  }
+  .opera-map-caption {
+    font-size: 9px;
+  }
+  .opera-programme-details {
+    margin-top: 35px;
+  }
+  .opera-programme-details summary {
+    font-size: 25px;
+    padding: 20px 0;
+  }
+  .opera-programme-details summary > span {
+    font-size: 8px;
+  }
+  .opera-piece-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding-top: 0;
+  }
+  .opera-piece-grid h3 {
+    font-size: 30px;
+  }
+  .opera-viewer {
+    width: 96vw;
+    padding: 18px 16px;
+  }
+  .opera-viewer-top h2 {
+    font-size: 29px;
+    margin-bottom: 18px;
+  }
+  .opera-viewer-top .opera-label {
+    font-size: 8px;
+  }
+  .opera-viewer-caption {
+    display: block;
+  }
+  .opera-viewer-caption p {
+    font-size: 10px;
+  }
+  .opera-viewer-caption a {
+    margin-top: 10px;
+    font-size: 9px;
+  }
+  .opera-viewer-image {
+    height: 58svh;
+  }
+  .opera-viewer-image.is-map {
+    height: 62svh;
+  }
+  .opera-static-opening h2 {
+    font-size: 47px;
+  }
+  .opera-chapter .reduced-scene .opera-programme {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    gap: 30px;
+  }
+  .opera-static-opening {
+    padding-top: 40px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .opera-chapter * {
+    scroll-behavior: auto !important;
+    animation: none !important;
+    transition: none !important;
+  }
+}

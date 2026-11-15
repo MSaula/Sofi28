@@ -214,17 +214,17 @@ test("navigation locks background scrolling, restores focus and calendar downloa
   );
 });
 
-test("a complete wheel traversal, reverse and rotation keep every viewport free of horizontal overflow", async ({
-  page,
-}) => {
-  test.setTimeout(90000);
-  for (const [width, height] of [
-    [1440, 1000],
-    [390, 844],
-    [844, 390],
-    [1000, 650],
-    [320, 700],
-  ]) {
+for (const [width, height] of [
+  [1440, 1000],
+  [390, 844],
+  [844, 390],
+  [1000, 650],
+  [320, 700],
+]) {
+  test(`${width}×${height}: complete wheel traversal, reverse and rotation remain free of horizontal overflow`, async ({
+    page,
+  }) => {
+    test.setTimeout(60000);
     await page.setViewportSize({ width, height });
     await page.goto("/");
     await walkPage(page);
@@ -240,8 +240,8 @@ test("a complete wheel traversal, reverse and rotation keep every viewport free 
         page.evaluate(() => document.documentElement.scrollWidth <= innerWidth),
       )
       .toBe(true);
-  }
-});
+  });
+}
 
 test("landscape and reduced motion use readable static maps, preserving every essential detail", async ({
   page,
@@ -257,7 +257,7 @@ test("landscape and reduced motion use readable static maps, preserving every es
   await page.setViewportSize({ width: 390, height: 844 });
   await page.emulateMedia({ reducedMotion: "reduce" });
   await expect(page.locator(".calendar-result")).toHaveCSS("opacity", "1");
-  await expect(page.locator(".opera-content")).toHaveCSS("opacity", "1");
+  await expect(page.locator(".opera-programme")).toHaveCSS("opacity", "1");
   await expect(page.locator(".static-map-pair .map-panel")).toHaveCount(2);
   await expect(page.locator(".summary-ballet")).toContainText(
     "Living Legacies",
@@ -471,7 +471,7 @@ test("map provenance and downloadable source data preserve the approximate locat
   );
 });
 
-test("opera title follows the aperture reveal and final information stays clear of the footer", async ({
+test("opera reveals the programme before complete ticket information", async ({
   page,
 }) => {
   for (const [width, height] of [
@@ -483,35 +483,27 @@ test("opera title follows the aperture reveal and final information stays clear 
   ]) {
     await page.setViewportSize({ width, height });
     await page.goto("/");
-    await scrollScene(page, ".opera-scene", 0.64);
-    await expect(page.locator(".opera-content")).toHaveCSS("opacity", "0");
-    const clip = await page
-      .locator(".opera-aperture")
-      .evaluate((n) => getComputedStyle(n).clipPath);
-    expect(clip.startsWith("inset(")).toBe(true);
-    expect(
-      clip
-        .match(/[\d.]+/g)
-        .map(Number)
-        .every((n) => n === 0),
-    ).toBe(true);
+    const staticMode = await page
+      .locator(".opera-scene")
+      .evaluate((n) => n.classList.contains("reduced-scene"));
+    if (!staticMode) {
+      await scrollScene(page, ".opera-scene", 0.7);
+      await expect(page.locator(".opera-programme")).toHaveCSS("opacity", "0");
+    }
     await scrollScene(page, ".opera-scene", 0.98);
-    await expect(page.locator(".opera-content")).toHaveCSS("opacity", "1");
-    await expect(page.locator(".opera-content h2")).toHaveText(
-      "Living Legacies.",
+    await expect(page.locator(".opera-programme")).toHaveCSS("opacity", "1");
+    await expect(page.locator(".opera-programme h2")).toHaveText(
+      "LivingLegacies.",
     );
-    await expect(page.locator(".opera-date strong")).toHaveText("19:00");
-    await expect(page.locator(".opera-date span")).toContainText(
-      "22 de enero de 2027",
+    await expect(page.locator(".opera-ticket-date")).toContainText("19:00");
+    await expect(page.locator(".opera-ticket-date")).toContainText(
+      "enero de 2027",
     );
-    const content = await page.locator(".opera-content").boundingBox();
-    const footer = await page
-      .locator(".opera-scene .scene-bottom")
-      .boundingBox();
-    expect(
-      content.y + content.height,
-      `Opera information overlaps footer at ${width}×${height}`,
-    ).toBeLessThan(footer.y - 10);
+    await expect(page.locator(".opera-ticket-seat")).toContainText("23 + 24");
+    const box = await page.locator(".opera-programme").boundingBox();
+    const heading = await page.locator(".opera-programme h2").boundingBox();
+    expect(heading.x + heading.width).toBeLessThanOrEqual(width);
+    if (!staticMode) expect(box.height).toBeLessThanOrEqual(height);
   }
 });
 

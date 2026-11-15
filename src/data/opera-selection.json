@@ -1,0 +1,121 @@
+{
+  "prepared": "2026-11-15",
+  "reportArchiveSha256": "f29344442190148881fb1b7e904d0d17bcfbfe2a8d5afaadee85f8ee8a2781d1",
+  "photos": {
+    "room": {
+      "id": "OP47",
+      "title": "Vista real desde Mittelloge hacia el escenario",
+      "description": "Fotografía tomada desde la Mittelloge, según la descripción alemana del propio autor. Confirma la vista frontal desde el mismo palco; la fila y el asiento de la cámara no están documentados. Foto del 26/02/2023: no representa Living Legacies ni la presencia de espectadores del día de nuestra función.",
+      "width": 5300,
+      "height": 3520,
+      "bytes": 9963567,
+      "sha256": "2eca7e352b06cced2238ee49ca1f0c8c49ffc518c19177c8b6709db95c01522d",
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "rightsNote": "Atribuir a C.Stadler/Bwag y respetar las condiciones CC BY-SA 4.0.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Wien_-_Staatsoper,_Zuschauerraum_mit_B%C3%BChne.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Wien_-_Staatsoper%2C_Zuschauerraum_mit_B%C3%BChne.JPG",
+      "evidence": "same-box-source-confirmed",
+      "src": "/images/opera-auditorium.jpg",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "duet": {
+      "id": "OP08",
+      "title": "Within the Golden Hour · dúo",
+      "description": "Pareja enlazada con una pierna elevada y fondo cálido oscuro. E. Bottaro y Masayu Kimoto según el archivo. Fotografía oficial anterior a la función del 22/01/2027; no confirma su reparto.",
+      "width": 1875,
+      "height": 2500,
+      "bytes": 873603,
+      "sha256": "be7dfb25e2f60e8dce9d9323affd6966a6b29eaf1e9e9afa97592b083f09d452",
+      "author": "Ashley Taylor",
+      "license": "Sin licencia abierta declarada; referencia documental",
+      "rightsNote": "La descarga pública no acredita permiso de reutilización. Revisar las condiciones antes de publicar.",
+      "sourcePage": "https://www.wiener-staatsoper.at/en/calendar/detail/living-legacies/2027-01-22/",
+      "originalUrl": "https://www.wiener-staatsoper.at/files/Produktionen/2_Ballett/Living_Legacies/Wheeldon_WithinTheGoldenHour_EBottaro_MKimoto_01_FOTO_AshleyTaylor.jpg",
+      "evidence": "production-official",
+      "src": "/images/opera-duet.jpg",
+      "licenseUrl": null
+    },
+    "ensemble": {
+      "id": "OP01",
+      "title": "Rhapsody · escena de conjunto",
+      "description": "Composición horizontal: bailarina en el centro, conjunto al fondo y arquitectura escénica. Buen plano general para presentar la pieza. Fotografía oficial anterior a la función del 22/01/2027; no confirma su reparto.",
+      "width": 2500,
+      "height": 1406,
+      "bytes": 1110168,
+      "sha256": "1140f5e4fee316c9d8b7d91f30cbfe232e9d31ca30d96d6f8ef8e9c096813cca",
+      "author": "Ashley Taylor",
+      "license": "Sin licencia abierta declarada; referencia documental",
+      "rightsNote": "La descarga pública no acredita permiso de reutilización. Revisar las condiciones antes de publicar.",
+      "sourcePage": "https://www.wiener-staatsoper.at/en/calendar/detail/living-legacies/2027-01-22/",
+      "originalUrl": "https://www.wiener-staatsoper.at/files/Produktionen/2_Ballett/Living_Legacies/Ashton_Rhapsody_CTrenary_Damenensemble_FOTO_AshleyTaylor.jpg",
+      "evidence": "production-official",
+      "src": "/images/opera-ensemble.jpg",
+      "licenseUrl": null
+    },
+    "jump": {
+      "id": "OP05",
+      "title": "Divertimento No. 15 · salto en paralelo",
+      "description": "Dos bailarines extienden las piernas en un salto simultáneo sobre fondo azul. Davide Dato y T. Afshar según el nombre oficial del archivo. Fotografía oficial anterior a la función del 22/01/2027; no confirma su reparto.",
+      "width": 2500,
+      "height": 1875,
+      "bytes": 1200391,
+      "sha256": "4c42526f086d386baeba9956d5e4b8a41d0f6063c0c4b469037557ccc1a7ae32",
+      "author": "Ashley Taylor",
+      "license": "Sin licencia abierta declarada; referencia documental",
+      "rightsNote": "La descarga pública no acredita permiso de reutilización. Revisar las condiciones antes de publicar.",
+      "sourcePage": "https://www.wiener-staatsoper.at/en/calendar/detail/living-legacies/2027-01-22/",
+      "originalUrl": "https://www.wiener-staatsoper.at/files/Produktionen/2_Ballett/Living_Legacies/Balanchine_DivertimentoNr15_DDato_TAfshar_FOTO_AshleyTaylor.jpg",
+      "evidence": "production-official",
+      "src": "/images/opera-jump.jpg",
+      "licenseUrl": null
+    },
+    "rhapsody": {
+      "id": "OP03",
+      "title": "Rhapsody · pareja, variación de encuadre",
+      "description": "Pareja en escena, con tutú claro y vestuario masculino de tonos dorados. Cassandra Trenary y António Casalinho según el archivo. Fotografía oficial anterior a la función del 22/01/2027; no confirma su reparto.",
+      "width": 1875,
+      "height": 2500,
+      "bytes": 716508,
+      "sha256": "e1c6963b2039b9adff3ae6beb1384fbfa82e8beb5193566635b30c305f96ef2a",
+      "author": "Ashley Taylor",
+      "license": "Sin licencia abierta declarada; referencia documental",
+      "rightsNote": "La descarga pública no acredita permiso de reutilización. Revisar las condiciones antes de publicar.",
+      "sourcePage": "https://www.wiener-staatsoper.at/en/calendar/detail/living-legacies/2027-01-22/",
+      "originalUrl": "https://www.wiener-staatsoper.at/files/Produktionen/2_Ballett/Living_Legacies/Ashton_Rhapsody_CTrenary_ACasalinho_02_FOTO_AshleyTaylor-2.jpg",
+      "evidence": "production-official",
+      "src": "/images/opera-rhapsody.jpg",
+      "licenseUrl": null
+    }
+  },
+  "programmeUrl": "https://www.wiener-staatsoper.at/en/calendar/detail/living-legacies/2027-01-22/",
+  "pieces": [
+    {
+      "id": "divertimento",
+      "name": "Divertimento No. 15",
+      "choreographer": "George Balanchine",
+      "music": "Wolfgang Amadeus Mozart",
+      "year": 1956,
+      "photo": "jump",
+      "description": "La música se convierte en líneas, encuentros y una ligereza que parece no pesar."
+    },
+    {
+      "id": "golden-hour",
+      "name": "Within the Golden Hour",
+      "choreographer": "Christopher Wheeldon",
+      "music": "Ezio Bosso y Antonio Vivaldi",
+      "year": 2008,
+      "photo": "duet",
+      "description": "Pequeños cuadros de belleza fugaz, inspirados en la luz y los tonos dorados de Klimt."
+    },
+    {
+      "id": "rhapsody",
+      "name": "Rhapsody",
+      "choreographer": "Frederick Ashton",
+      "music": "Sergei Rachmaninov",
+      "year": 1980,
+      "photo": "rhapsody",
+      "description": "Saltos, precisión y lirismo: la brillantez del movimiento al encuentro del piano."
+    }
+  ]
+}

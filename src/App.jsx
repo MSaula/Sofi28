@@ -22,7 +22,7 @@ import { downloadCalendar } from "./calendar";
 import { tripDateLabels } from "./dates";
 import CalendarScene from "./components/CalendarScene";
 import JourneyScene from "./components/JourneyScene";
-import OperaScene, { OperaDetails } from "./components/OperaScene";
+import OperaScene, { OperaCredits } from "./components/OperaScene";
 import Stay from "./components/Stay";
 import City, { CityCredits } from "./components/City";
 import ViennaExplorer from "./components/ViennaExplorer";
@@ -64,7 +64,11 @@ function App() {
         Saltar a la carta
       </a>
       <header className="site-header">
-        <a href="#inicio" className="wordmark" aria-label="Volver al inicio">
+        <a
+          href="#inicio"
+          className="wordmark"
+          aria-label={`${site.name} · Volver al inicio`}
+        >
           {site.name}
           <span>•</span>
         </a>
@@ -156,10 +160,7 @@ function App() {
         </div>
         <Stay />
         <City explorerRef={explorer} />
-        <div data-chapter="Una noche especial">
-          <OperaScene />
-          <OperaDetails />
-        </div>
+        <OperaScene explorerRef={explorer} />
         <Summary />
       </main>
       <footer className="site-footer">
@@ -241,10 +242,11 @@ function App() {
         <p className="muted">
           Las fotografías del apartamento proceden del anuncio de Airbnb
           compartido y analizado. Las del mapa proceden de Wikimedia Commons,
-          con autor y licencia en cada ficha. Las imágenes del ballet son
-          ilustraciones conceptuales.
+          con autor y licencia en cada ficha. El ballet se presenta con
+          fotografías reales de producción y del auditorio.
         </p>
         <CityCredits />
+        <OperaCredits />
       </dialog>
       <ViennaExplorer ref={explorer} />
     </>

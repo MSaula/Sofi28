@@ -179,7 +179,7 @@ test("the horizontal collection filters, reaches both ends and opens the matchin
   await page
     .getByRole("button", {
       name: "Ver fotografía de Belvedere Superior",
-      exact: true,
+      exact: false,
     })
     .click();
   const viewer = page.getByRole("dialog", { name: "Una mirada a Viena" });
@@ -208,7 +208,7 @@ test("the horizontal collection filters, reaches both ends and opens the matchin
   await expect(
     page.getByRole("button", {
       name: "Ver fotografía de Belvedere Superior",
-      exact: true,
+      exact: false,
     }),
   ).toBeFocused();
 });
@@ -236,7 +236,7 @@ test("one shared map opens from the journey, the city and a landmark photo witho
   await page
     .getByRole("button", {
       name: "Ver fotografía de Belvedere Superior",
-      exact: true,
+      exact: false,
     })
     .click();
   await page
@@ -320,7 +320,7 @@ for (const [name, width, height, reduced] of [
       )
       .toBe(true);
     await page
-      .getByRole("button", { name: "Ver fotografía de TIAN", exact: true })
+      .getByRole("button", { name: "Ver fotografía de TIAN", exact: false })
       .click();
     await expect(
       page.getByRole("dialog", { name: "Una mirada a Viena" }),
@@ -349,7 +349,7 @@ test("city collection and photograph dialog have no serious or critical accessib
       await page
         .getByRole("button", {
           name: "Ver fotografía de Belvedere Superior",
-          exact: true,
+          exact: false,
         })
         .click();
     const results = await new AxeBuilder({ page })

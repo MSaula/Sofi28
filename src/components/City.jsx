@@ -523,7 +523,12 @@ export default function City({ explorerRef }) {
                     cardFraming[place.id]?.position || "50% 50%",
                 }}
                 onClick={(event) => openPhoto(place.id, event)}
-                aria-label={"Ver fotografía de " + place.name}
+                aria-label={
+                  "Ver fotografía de " +
+                  place.name +
+                  " · " +
+                  String(index + 1).padStart(2, "0")
+                }
               >
                 <img
                   src={place.image}
@@ -531,7 +536,7 @@ export default function City({ explorerRef }) {
                   loading="lazy"
                   decoding="async"
                 />
-                <span className="city-card-number">
+                <span className="city-card-number" aria-hidden="true">
                   {String(index + 1).padStart(2, "0")}
                 </span>
                 <span className="city-card-plus" aria-hidden="true">
