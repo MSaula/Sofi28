@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="es" data-estilo="editorial-vienes">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f5f7" />
+    <meta
+      name="description"
+      content="Hoy cumples 28 años. Y eso merece un regalo a la altura."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Sofi 28</title>
+    <link rel="icon" type="image/svg+xml" href="/Sofi28/favicon.svg" />
+    <script type="module" crossorigin src="/Sofi28/editorial-565626721a40.js"></script>
+    <link rel="stylesheet" crossorigin href="/Sofi28/editorial-6b79d6723b87.css">
+    <style id="editorial-vienes">/* The editorial edition shares the original layouts, assets and scroll stages. */
+:root {
+  --ev-paper: #f3f2ed;
+  --ev-sheet: #faf9f5;
+  --ev-ink: #191b21;
+  --ev-muted: #49515d;
+  --ev-line: #a7afc0;
+  --ev-blue: #1d43bf;
+  --ev-blue-pale: #e7edf9;
+  --ev-night: #101c37;
+  --ev-panel: #172749;
+  --ev-night-line: #546587;
+  --ev-light: #f6f5ef;
+  --ev-light-blue: #c1d1ff;
+  --blue: var(--ev-blue);
+  --readable-muted: var(--ev-muted);
+  --muted: var(--ev-muted);
+  background: var(--ev-paper);
+  color: var(--ev-ink);
+}
+
+/* Print-like chrome and rules connect the light chapters. */
+.site-header {
+  background: #f3f2edee;
+  border-bottom-color: var(--ev-line);
+}
+
+.site-header .wordmark { font-weight: 760; }
+.header-chapter { color: var(--ev-muted); }
+.menu-button svg { color: var(--ev-blue); }
+
+.eyebrow,
+.text-link:not(.light-link),
+.letter-rule,
+.letter-signature,
+.scroll-invitation { color: var(--ev-blue); }
+
+.eyebrow { font-weight: 710; }
+button:focus-visible,
+a:focus-visible { outline-color: var(--ev-blue); }
+
+.navigation-dialog,
+.credits-dialog,
+.vienna-explorer { background: var(--ev-sheet); color: var(--ev-ink); border-radius: 4px; }
+.navigation-dialog nav > button { border-color: var(--ev-line); font-weight: 620; }
+.navigation-dialog nav > button > span { color: var(--ev-blue); }
+.site-footer { border-top-color: var(--ev-line); background: var(--ev-paper); }
+
+.hero h1 {
+  font-weight: 775;
+  letter-spacing: -0.073em;
+}
+
+.hero h1 > span { font-weight: 800; }
+
+.hero-orbit::before {
+  border-radius: 0;
+  background: repeating-linear-gradient(90deg, transparent 0 31px, #1d43bf16 31px 32px);
+  mask-image: radial-gradient(ellipse, #000 10%, transparent 72%);
+}
+
+.hero-orbit > span { border-color: #1d43bf24; }
+.hero-orbit::after { background: var(--ev-blue); box-shadow: none; }
+.hero-bottom { box-shadow: 0 -1px 0 var(--ev-line); padding-top: 12px; }
+.round-arrow { border-color: var(--ev-line); border-radius: 3px; }
+
+@media (max-width: 700px) {
+  .hero-orbit::after { left: 38%; top: 18%; }
+  .city-heading-row h2 { font-size: clamp(33px, 10.7vw, 43px); }
+}
+
+@media (min-width: 1000px) {
+  .hero-copy { width: 100%; }
+  .hero h1 {
+    display: grid;
+    grid-template-columns: minmax(0, .93fr) minmax(0, 1.07fr);
+    align-items: end;
+    font-size: clamp(79px, 8.2vw, 132px);
+  }
+  .hero h1 > br { display: none; }
+  .hero h1 > span {
+    justify-self: end;
+    white-space: nowrap;
+    font-size: clamp(92px, 10vw, 166px);
+  }
+}
+
+.letter-section,
+.stay-section.stay-experience,
+.stay-scene { background-color: var(--ev-sheet); }
+.letter-rule { border-color: var(--ev-line); }
+.letter-placeholder { border-color: var(--ev-blue); }
+
+.letter-copy h2,
+.calendar-stage .calendar-heading h2,
+.journey-heading-copy h2,
+.stay-heading-row h2,
+.stay-gallery-heading h3,
+.city-heading-row h2,
+.city-gallery-heading h3,
+.v-explorer-header h2 { font-weight: 725; }
+
+.calendar-scene .calendar-stage,
+.journey-scene .journey-stage,
+.stay-experience .stay-stage,
+.city-experience,
+.city-experience .city-scene,
+.city-experience .city-stage { background-color: var(--ev-paper); }
+
+.calendar-stage .calendar-result > p > span,
+.birthday-card-edition,
+.stay-heading-row h2 span,
+.stay-gallery-heading h3 span,
+.city-heading-row h2 span,
+.city-gallery-heading h3 span { color: var(--ev-blue); }
+
+.birthday-card {
+  background: var(--ev-sheet);
+  box-shadow: inset 0 0 0 1px var(--ev-line);
+}
+.birthday-card-current {
+  background: var(--ev-blue-pale);
+  box-shadow: inset 0 0 0 1px var(--ev-blue);
+}
+.birthday-photo { border-radius: 3px; }
+.calendar-canvas .target-month > rect:first-child { fill: var(--ev-sheet); }
+.calendar-canvas [data-selected-day] rect,
+.calendar-canvas [fill="#2368f5"] { fill: var(--ev-blue); }
+.calendar-canvas [stroke="#b9c2d0"],
+.memory-connectors path { stroke: var(--ev-line); }
+
+.map-panel { border-color: var(--ev-line); border-radius: 4px; }
+.air-route-progress { stroke: var(--ev-blue); }
+.v-selected-pin .v-pin-disc,
+.v-home-disc { fill: var(--ev-blue); }
+.v-walk-line { stroke: var(--ev-blue); }
+.v-explorer-sidebar { background: var(--ev-sheet); border-color: var(--ev-line); }
+.v-place-search { border-color: var(--ev-line); border-radius: 3px; }
+.v-origin-pill,
+.v-list-selected { background: var(--ev-blue-pale); }
+.v-list-place small { color: var(--ev-muted); }
+
+.stay-film-title,
+.city-film-copy h3 { font-weight: 675; }
+.stay-card-image,
+.city-card-photo { border-radius: 4px; }
+.stay-card-copy h4,
+.city-card-copy h4 { font-weight: 690; }
+.stay-gallery-controls,
+.city-gallery-toolbar { box-shadow: 0 1px 0 var(--ev-line); }
+.rail-buttons button { border-color: var(--ev-line); border-radius: 3px; }
+.city-map-button,
+.city-filters button { border-color: var(--ev-line); border-radius: 3px; }
+.city-map-button { background: var(--ev-blue-pale); color: var(--ev-blue); }
+.city-map-button:hover { background: #dce6fa; }
+.city-filters button[aria-pressed="true"] {
+  background: var(--ev-blue);
+  border-color: var(--ev-blue);
+}
+
+/* Deep blue frames the existing photographs without altering their treatment. */
+html[data-estilo="editorial-vienes"][data-opera-chrome] .site-header,
+html[data-estilo="editorial-vienes"][data-opera-chrome] .navigation-dialog {
+  background: var(--ev-night);
+  border-color: var(--ev-night-line);
+}
+html[data-estilo="editorial-vienes"][data-opera-chrome] .navigation-dialog nav button { border-color: var(--ev-night-line); }
+html[data-estilo="editorial-vienes"][data-opera-chrome] .menu-button svg,
+html[data-estilo="editorial-vienes"][data-opera-chrome] .site-header .wordmark > span { color: var(--ev-light-blue); }
+
+.opera-chapter {
+  --op-ink: var(--ev-night);
+  --op-paper: var(--ev-light);
+  --op-gold: var(--ev-light-blue);
+}
+
+.opera-chapter .opera-scene,
+.opera-chapter .opera-stage,
+.opera-viewer { background-color: var(--ev-night); }
+.opera-prologue { background-color: var(--ev-paper); color: var(--ev-ink); }
+.opera-prologue .opera-label { color: var(--ev-blue); }
+.opera-prologue p { color: var(--ev-muted); }
+.opera-exterior-light { background: radial-gradient(ellipse at 50% 46%, #304c75, #182b4d 54%, var(--ev-night)); }
+.opera-finale-light { background: radial-gradient(ellipse at 50% 48%, #33203a, #201d3a 53%, var(--ev-night) 88%); }
+
+.opera-prologue h2,
+.opera-static-opening h2,
+.opera-programme-copy h2,
+.opera-tickets-heading h2,
+.opera-ticket-date > strong,
+.opera-ticket-seat h3,
+.opera-ticket-seat > div strong,
+.opera-programme-details summary,
+.opera-piece-grid h3,
+.opera-viewer-top h2 {
+  font-family: "Inter Variable", Inter, sans-serif;
+  font-weight: 720;
+  letter-spacing: -0.065em;
+}
+
+.opera-prologue h2,
+.opera-static-opening h2 { font-size: clamp(37px, 5.2vw, 76px); }
+.opera-programme-copy h2 { font-size: clamp(53px, 7.2vw, 112px); }
+.opera-tickets-heading h2 { font-size: clamp(38px, 4.25vw, 66px); }
+.opera-programme-copy .opera-programme-lead,
+.opera-programme-facts strong { color: var(--ev-light); }
+.opera-chapter em { color: var(--ev-light-blue); }
+.opera-programme-copy > p,
+.opera-programme-facts span,
+.opera-tickets-heading > p,
+.opera-ticket-date small,
+.opera-ticket-seat > div span,
+.opera-ticket-seat > p,
+.opera-view-button small,
+.opera-ticket-address,
+.opera-chapter-credit { color: #cad2e3; }
+.opera-programme-facts,
+.opera-ticket-copy,
+.opera-ticket-seat,
+.opera-view-button,
+.opera-viewer,
+.opera-programme-details { border-color: var(--ev-night-line); }
+.opera-text-link { border-color: var(--ev-light-blue); color: var(--ev-light-blue) !important; }
+.opera-chapter :focus-visible { outline-color: var(--ev-light-blue); }
+
+.opera-map-panel,
+.opera-chapter .opera-map-expand { background: var(--ev-panel); border-color: var(--ev-night-line); }
+.opera-map-caption,
+.opera-view-button > span > svg { color: var(--ev-light-blue); }
+.opera-map-note,
+.opera-ticket-address span { color: #cad2e3; }
+.opera-selected-dot { background: var(--ev-light); box-shadow: 0 0 0 3px #c1d1ff44; }
+.opera-seat-map > rect { fill: var(--ev-night); }
+.opera-seat-map [data-opera-block] polygon { fill: #253553; stroke: var(--ev-night-line); }
+.opera-seat-map [data-opera-block="489"] polygon { fill: #354f81; stroke: var(--ev-light-blue); }
+.opera-seat-map [data-opera-seat] { fill: #8596b8; }
+.opera-seat-map [data-opera-seat][fill="#ceb37b"] { fill: var(--ev-light-blue); }
+.opera-seat-map [data-selected="true"] { fill: var(--ev-light); stroke: var(--ev-light); }
+.opera-seat-map .opera-plan-annotations,
+.opera-seat-map > text { fill: var(--ev-light-blue); }
+.opera-plan-annotations rect { fill: var(--ev-light-blue); }
+.opera-plan-annotations text[fill] { fill: var(--ev-night); }
+.opera-plan-annotations path { stroke: var(--ev-light-blue); }
+
+@media (max-width: 700px) {
+  .opera-programme-copy h2 { font-size: clamp(43px, 12vw, 67px); }
+}
+
+/* The final postcard brings the cobalto and paper back after the theatre. */
+.summary-section {
+  --postal-paper: var(--ev-paper);
+  --postal-ink: var(--ev-ink);
+  --postal-muted: var(--ev-muted);
+  --postal-blue: var(--ev-blue);
+  --postal-line: var(--ev-line);
+  --postal-wine: #13254e;
+  --postal-ivory: var(--ev-light);
+  --postal-gold: var(--ev-light-blue);
+  --postal-serif: "Inter Variable", Inter, sans-serif;
+}
+.postal-heading em { font-weight: 800; letter-spacing: -0.085em; font-size: clamp(59px, 8.4cqi, 92px); }
+.postal-stay h3 { font-weight: 730; letter-spacing: -0.058em; font-size: clamp(25px, 3.35cqi, 38px); }
+.postal-performance h3 { font-weight: 755; letter-spacing: -0.064em; font-size: clamp(34px, 4.1cqi, 48px); }
+.postal-performance::after { background: linear-gradient(90deg, #13254e 49%, #13254eed 55%, #13254e90 64%, transparent 82%); }
+.postal-seats { background: var(--ev-panel); border-color: var(--ev-night-line); }
+.postal-seats > div + div { border-color: var(--ev-night-line); }
+.postal-signoff p { font-size: clamp(17px, 2.3cqi, 26px); font-weight: 500; letter-spacing: -0.045em; }
+.postal-signoff strong { font-weight: 700; }
+</style>
+  </head>
+  <body>
+    <noscript
+      >Esta experiencia necesita JavaScript para mostrar la carta y las
+      animaciones.</noscript
+    >
+    <div id="root"></div>
+  </body>
+</html>
