@@ -31,6 +31,7 @@ function App() {
   useReveal();
   useResponsiveScrollAnchor();
   const reduced = useReducedMotion();
+  const firstSection = site.includeLetter ? "#carta" : "#fechas";
   const menu = useRef(null);
   const credits = useRef(null);
   const explorer = useRef(null);
@@ -60,8 +61,8 @@ function App() {
 
   return (
     <>
-      <a className="skip-link" href="#carta">
-        Saltar a la carta
+      <a className="skip-link" href={firstSection}>
+        {site.includeLetter ? "Saltar a la carta" : "Saltar a las fechas"}
       </a>
       <header className="site-header">
         <a
@@ -107,7 +108,7 @@ function App() {
               <br />
               Una historia por descubrir.
             </span>
-            <a href="#carta" className="scroll-invitation">
+            <a href={firstSection} className="scroll-invitation">
               <span>Sin prisa. Sigue bajando.</span>
               <span className="round-arrow">
                 <ArrowDown size={19} />
@@ -121,36 +122,38 @@ function App() {
           </div>
         </section>
 
-        <section
-          className="letter-section section-pad"
-          id="carta"
-          data-chapter="Unas palabras"
-        >
-          <div className="letter-rule">
-            <span>UNAS PALABRAS</span>
-            <Heart size={15} strokeWidth={1.5} />
-          </div>
-          <div className="letter-copy">
-            <h2>{trip.letterTitle}</h2>
-            {trip.letter.length ? (
-              trip.letter.map((paragraph, i) => <p key={i}>{paragraph}</p>)
-            ) : (
-              <div className="letter-placeholder">
-                <p>Este espacio es para tu carta.</p>
-                <p>
-                  Las palabras las pondrás tú.
-                  <br />
-                  Lo que viene después, lo descubrimos juntos.
-                </p>
-              </div>
-            )}
-            <span className="letter-signature">Para ti. Siempre.</span>
-          </div>
-          <div className="letter-end">
-            <span>Y ahora…</span>
-            <ArrowDown size={18} />
-          </div>
-        </section>
+        {site.includeLetter && (
+          <section
+            className="letter-section section-pad"
+            id="carta"
+            data-chapter="Unas palabras"
+          >
+            <div className="letter-rule">
+              <span>UNAS PALABRAS</span>
+              <Heart size={15} strokeWidth={1.5} />
+            </div>
+            <div className="letter-copy">
+              <h2>{trip.letterTitle}</h2>
+              {trip.letter.length ? (
+                trip.letter.map((paragraph, i) => <p key={i}>{paragraph}</p>)
+              ) : (
+                <div className="letter-placeholder">
+                  <p>Este espacio es para tu carta.</p>
+                  <p>
+                    Las palabras las pondrás tú.
+                    <br />
+                    Lo que viene después, lo descubrimos juntos.
+                  </p>
+                </div>
+              )}
+              <span className="letter-signature">Para ti. Siempre.</span>
+            </div>
+            <div className="letter-end">
+              <span>Y ahora…</span>
+              <ArrowDown size={18} />
+            </div>
+          </section>
+        )}
 
         <div data-chapter="Unos días para nosotros">
           <CalendarScene />
@@ -200,7 +203,7 @@ function App() {
         </span>
         <nav>
           {[
-            ["#carta", "Unas palabras"],
+            ...(site.includeLetter ? [["#carta", "Unas palabras"]] : []),
             ["#fechas", "Unos días"],
             ["#destino", "Un destino"],
             ["#estancia", "Nuestro lugar"],

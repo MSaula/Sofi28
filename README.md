@@ -1,6 +1,6 @@
 # Sofi 28 — Viena, enero de 2027
 
-**Entrega privada con capítulos de Viena y Living Legacies, fotografías y mapas:** [abrir Viena.zip en GitHub](https://github.com/MSaula/Sofi28/blob/c5879dfc3de600c799e93c59e3d156baf5a54f45/downloads/Viena.zip), en la rama `private-download`. Abrir el enlace en una pestaña del navegador con la sesión de GitHub iniciada en una cuenta autorizada; después pulsar el botón de descarga (↓ / «Download raw file»). La conexión de GitHub con ChatGPT no inicia esa sesión en el navegador. GitHub puede devolver 404 si no reconoce el acceso al repositorio privado. Descomprimir y abrir `Viena.html`. Esta entrega no actualiza GitHub Pages.
+Dos versiones autónomas disponibles: [descargar con carta](https://github.com/MSaula/Sofi28/raw/refs/heads/private-download/downloads/Sofi28-con-carta.zip) y [descargar sin carta](https://github.com/MSaula/Sofi28/raw/refs/heads/private-download/downloads/Sofi28-sin-carta.zip). Cada ZIP contiene su HTML completo para abrirlo sin conexión. [GitHub Pages](https://msaula.github.io/Sofi28/) publica la versión sin carta.
 
 Web-regalo con carta, cronología, mapas, apartamento, paseo cinematográfico por Viena y revelación del ballet. React + Vite. El desplazamiento es nativo: las escenas usan CSS `sticky` y su animación depende de la posición del scroll, también al retroceder.
 
@@ -41,7 +41,7 @@ Las pruebas de navegador usan Chromium del sistema si existe en `/usr/bin/chromi
 
 Todo el contenido personal está en [`src/content.js`](src/content.js):
 
-- **Carta:** rellenar `trip.letter` con un párrafo por elemento. Admite cualquier longitud; no hay animación de lectura. `letterTitle` controla su título.
+- **Carta:** rellenar `trip.letter` con un párrafo por elemento. Admite cualquier longitud; no hay animación de lectura. `letterTitle` controla su título. `VITE_WITH_LETTER=false npm run build` compila el proyecto sin la sección ni su entrada de navegación. El texto se conserva para la edición con carta.
 - **Viajes anteriores:** los quince lugares y meses proporcionados están en `memories`, desde Niza (marzo de 2022). No se inventan días concretos. `birthdayAge` identifica Niza, Londres, Islandia, Dolomitas y Florencia como Sofi 23–27; `currentBirthdayGift` contiene Sofi 28. Los regalos van arriba del calendario y los otros diez viajes, abajo.
 - **Fotos de los dos:** las cinco fotografías de `s28p.zip` están asociadas por nombre a Niza, Londres, Islandia, Dolomitas y Florencia (Sofi 23–27). Se conservan los JPEG originales, sin recortar ni recomprimir. Sofi 28 es una tarjeta tipográfica más grande, con «Lo próximo» y fecha, sin foto ni placeholder. Para cambiar una foto, editar `{ src, alt }` en `src/content.js` y colocar el archivo en `public/images`. El HTML offline incluye también WebP, PNG, AVIF y SVG.
 - **Composición fotográfica:** las tarjetas históricas reservan una foto vertical 3:4 completa y una columna para edición, destino y mes/año. Tamaño, cámara, colisiones y apertura se calculan juntos. La versión estática usa el mismo recurso. Diseño, asociación de originales y validación: [docs/plan-timeline-fotos.md](docs/plan-timeline-fotos.md).
@@ -65,28 +65,23 @@ Las fechas del viaje y el inicio de la función se editan una sola vez al princi
 - Calles de Viena: **OpenStreetMap contributors**, licencia **ODbL 1.0**, extracto de [EqualStreetNames Vienna](https://github.com/EqualStreetNames/equalstreetnames-vienna), snapshot 2026-10-02, commit `734333a5f858729a6bc227c2f8dae742af050d25`. `src/data/vienna-streets.json` conserva la procedencia, licencia y extensión. La agrupación por nombre y simplificación máxima de 1.5m mantienen las calles reales; no se incluyen ríos/parques inventados. Los datos derivados se pueden descargar desde «Datos y precisión» en el mapa, también sin conexión. Regeneración: `python3 scripts/build-vienna-data.py /ruta/al/checkout/equalstreetnames-vienna`.
 - Manzanas, superficies verdes y agua: **Stadt Wien / ViennaGIS**, datasets BAUBLOCKOGD, OEFFGRUENFLOGD y FMZKGEWOGD. La licencia anunciada por el servicio WFS es **CC BY 3.0 AT**. Procedencia, consultas, fecha y hashes en [vienna-context.json](src/data/vienna-context.json); los polígonos se generalizan como máximo 1.2 m, sin inventar edificios o parques. Las manzanas no se etiquetan como huellas individuales de edificios.
 - Lugares: objetos concretos de **OpenStreetMap/Nominatim**, revisados individualmente, con sus identificadores; Belvedere corresponde al palacio Superior y Kunst Haus Wien al museo correcto. Recorridos: **FOSSGIS/OSRM, perfil peatonal**, con geometría, distancia y duración originales. Metros redondeados y minutos orientativos desde el punto aproximado del alojamiento; no son distancias en línea recta. Datos en [vienna-places.json](src/data/vienna-places.json). Se obtienen al preparar la web y se sirven localmente, sin peticiones a esos servicios durante la visita.
-- Iconos: Lucide, licencia ISC. Tipografías: Inter e Instrument Serif, SIL Open Font License, servidas localmente. Las licencias de ambas tipografías acompañan al ZIP privado.
+- Iconos: Lucide, licencia ISC. Tipografías: Inter e Instrument Serif, SIL Open Font License, servidas localmente. Las licencias de ambas tipografías se incluyen en los HTML autónomos.
 
 ## Privacidad y alcance
 
 El PDF de las entradas, códigos QR, números de pedido y datos del comprador **no se incorporan** al repositorio ni a `public`. La página solo contiene los datos de la experiencia. No hay analítica, backend, peticiones automáticas a proveedores de mapas/fotos ni almacenamiento de datos. Los enlaces externos solo se abren al pulsarlos. `noindex` evita solicitar indexación; no sustituye al control de acceso si se publica en una URL pública.
 
-La entrega actual autorizada es privada: código y ZIP en **`private-download`**, con la descarga en `downloads/Viena.zip`. Los permisos los establece el repositorio, no el nombre de la rama. La rama nueva no es la fuente previamente propuesta para Pages y no contiene workflows de despliegue.
+El repositorio y GitHub Pages son públicos. El código y las dos descargas se guardan en `private-download`; la web se sirve desde la raíz de `pages-editorial`.
 
-La rama anterior **`gh-pages`** conserva la vista previa sin estas fotografías. No se actualiza en esta entrega: GitHub Pages puede exponer contenido públicamente incluso desde un repositorio privado. La configuración de Pages no se modifica como parte de esta entrega privada. El exportador antiguo de los párrafos siguientes corresponde a ese flujo separado; no se usa para entregar las fotos bajo la autorización privada actual.
-
-Para activar el alojamiento: en <https://github.com/MSaula/Sofi28/settings/pages>, elegir **Deploy from a branch → gh-pages → / (root)** y guardar. GitHub mostrará la URL cuando finalice el despliegue. La disponibilidad de Pages depende de la configuración y el plan del repositorio; no se ha cambiado su visibilidad.
-
-Para actualizar posteriormente la rama de vista previa, con publicación autorizada:
+Para generar las dos versiones a partir de una copia de la edición editorial con carta:
 
 ```sh
-npm run test:standalone
-npm run deploy:preview
+npm run export:letter-versions -- /ruta/al/checkout/pages-editorial
 ```
 
-El exportador usa Python 3 y el acceso Git HTTPS existente. Solo sube los archivos de la vista previa, conserva el historial de su propia rama y rechaza modificar una rama `gh-pages` ajena a este flujo. No usa force push ni cambia el checkout o el índice de trabajo.
+El exportador genera los HTML autónomos en `artifacts/letter-versions` y los dos ZIP en `downloads`. Incluye las imágenes, tipografías y licencias, y prepara en ese checkout `index.html`, que muestra la edición sin carta. La carta se elimina del contenido y del menú de esta edición; la portada enlaza directamente con las fechas. Los archivos preparados se validan antes de subirlos a `pages-editorial`.
 
-No se ha cambiado ni publicado la configuración del entorno. Esta tarea utiliza el checkout existente; no necesita un worktree adicional.
+La antigua rama `gh-pages` y `npm run deploy:preview` corresponden al flujo de publicación anterior. La publicación vigente utiliza `pages-editorial`.
 
 ## Auditoría y regresiones
 
